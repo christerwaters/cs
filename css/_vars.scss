@@ -2,8 +2,14 @@ $primary: #00f;
 $focus: #f90;
 $white: #fff;
 $black: #000;
+$serif: times new roman,times,serif;
 $handwritten: 'Citrus','Permanent Marker', cursive;
 $monospace: 'Mukta', monospace;
+
+$core_font-family-01: $serif;
+$core_font-family-02: $serif;
+$core_font-family-03: $serif;
+
 $bw: 3px;
 $sitewidth: 98rem;
 $border:$bw solid $black;
