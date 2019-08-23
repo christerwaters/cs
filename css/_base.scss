@@ -1,0 +1,237 @@
+
+body{
+  min-height:300vh;
+  max-width:100vw;
+  overflow-x:hidden;
+}
+.h-p-header{
+  z-index:250;
+  top:0;
+  width:100vw;
+  background:$primary;
+  position:absolute;
+  padding:8vw 0;
+  color:$white;
+  font-family: $handwritten;
+  font-size:5vw;
+  text-align:center;
+  text-transform:uppercase;
+  .text{
+    z-index:22;
+    margin:0 5vw;
+    .word{
+      z-index:22;
+      display:inline-block;
+      margin-right:2vw;
+      span{
+        display:inline-block;
+      }
+      #i{
+        text-transform:lowercase;
+        font-size:120%;
+      }
+    }
+    @for $i from 1 through 90 {
+      .word :nth-child(#{$i}){
+        transform:rotate(-10 + (random(20))+deg);
+        margin-right:((-2+random(4))/10)+vw;
+        margin-left:((-2+random(4))/10)+vw;
+        font-size:4+(random(100)/100)+vw;
+      }
+    }
+  }
+}
+.menu:hover{
+  background:rgba($primary,1);
+  transition:background 250ms;
+  .logo{
+    top:-200px;
+    transition:top 250ms;
+  }
+}
+.menu {
+  max-width:100vw;
+  width:100%;
+  background:rgba($primary,0);
+  transition:background 250ms;
+  height:60px;
+  z-index:230;
+  position:fixed;
+  .menu-inner{
+    ul{
+      float:right;
+      display:block;
+      li{
+        display:inline-block;
+        width:auto;
+      }
+    }
+  }
+  .logo:hover,
+  .logo {
+    z-index:200;
+    position:fixed;
+    display:block;
+    top:0;
+    left:0;
+    color:#000;
+    width: 50px;
+    transition:top 250ms;
+    height: 100vh;
+    text-align:right;
+    font-size:50px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform:rotate(180deg);
+    margin:10px 5px;
+    span{
+      font-family:times new roman,times,serif;
+      font-weight:700;
+    }
+  }
+}
+.site-wrap{
+  overflow-y:hidden;
+  max-width:100vw;
+  width:100vw;
+  z-index:220;
+  overflow:hidden;
+  position:absolute;
+  .site{
+    margin:48vw 60px 0 60px;
+  }
+  .events-wrap{
+      max-width:100%;
+      width:$sitewidth;
+      height:auto;
+      display:block;
+    .events{
+      display:flex;
+      .video,
+      .text{
+        width:50%;
+      }
+    }
+  }
+}
+.start-collab-btn{
+  padding:4rem 0;
+  margin:auto;
+  width: 17rem;
+  .psst{
+    width:100%;
+    transform:rotate(-7deg);
+    margin-left:-10px;
+    opacity:1;
+    text-align:center;
+    transform:opacity 100ms, transform 100ms;
+  }
+  button {
+    font-family: $monospace;
+    font-size: 1rem;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    margin:auto;
+  }
+  button p{
+    font-family: $monospace;
+  }
+  button.learn-more {
+    width: 17rem;
+    height: auto;
+    border: $primary solid 3px;
+  }
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: $bw solid transparent;
+    margin: -$bw;
+    border-right: $primary solid $bw;
+  }
+  button:hover.learn-more .circle{
+    background: $primary;
+    border: $bw solid $primary;
+
+  }
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  button.learn-more .circle .icon {
+    background: $primary;
+  }
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.35rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: $bw solid $primary;
+    border-right: $bw solid $primary;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  button:hover.learn-more .circle .icon.arrow::before {
+    border-top: 3px solid $white;
+    border-right: 3px solid $white;
+  }
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 1.3rem;
+    font-size: 1rem;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: $primary;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button.learn-more:hover .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: .5rem;
+  }
+  button:hover{
+    .circle {
+      width: 100%;
+    }
+
+    .circle .icon.arrow {
+      background: transparent;
+      -webkit-transform: translate(5px, 0);
+              transform: translate(5px, 0);
+    }
+    .button-text {
+      color: $white;
+    }
+  }
+}
