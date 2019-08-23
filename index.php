@@ -1,17 +1,15 @@
+<!-- Get all the portfolio items -->
 <?php
-  $wtrs_steam_loc=bloginfo('template_directory').'../wtrs-steam/';
+ include '../core/get_top.php';
 ?>
 <?php
- include $wtrs_steam_loc.'top.php';
-?>
-<?php
- include $wtrs_steam_loc.'loop_portfolio.php';
+ include '../core/loop_portfolio.php';
 ?>
 <!-- Get all the pages -->
 <?php
-  include $wtrs_steam_loc.'loop_pages.php';
+  include '../core/loop_pages.php';
 ?>
 <!-- Get everything right before </body> tag -->
 <?php
-  include $wtrs_steam_loc.'bottom.php';
+  include '../core/get_bottom.php';
 ?>
