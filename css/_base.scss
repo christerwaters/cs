@@ -17,13 +17,16 @@ body{
   text-align:center;
   text-transform:uppercase;
   .text{
+    font-family: $handwritten;
     z-index:22;
     margin:0 5vw;
     .word{
+      font-family: $handwritten;
       z-index:22;
       display:inline-block;
       margin-right:2vw;
       span{
+        font-family: $handwritten;
         display:inline-block;
       }
       #i{
