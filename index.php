@@ -1,4 +1,6 @@
-
+<?php
+  $wtrs_steam_loc=bloginfo('template_directory').'../wtrs-steam/';
+?>
 <?php
  include $wtrs_steam_loc.'top.php';
 ?>
