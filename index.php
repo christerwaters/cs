@@ -26,6 +26,20 @@
 
   </head>
   <body>
+    <div class="loader">
+      <div class="citrus-loader-floater" id="floater-1"></div>
+      <div class="citrus-loader-floater" id="floater-2"></div>
+      <div class="citrus-loader-floater" id="floater-3"></div>
+      <div class="citrus-loader-floater" id="floater-4"></div>
+      <div class="citrus-loader-floater" id="floater-5"></div>
+      <div class="citrus-loader-floater" id="floater-6"></div>
+      <div class="citrus-loader-floater" id="floater-7"></div>
+      <div class="citrus-loader-floater" id="floater-8"></div>
+      <div class="citrus-loader-floater" id="floater-9"></div>
+      <div class="citrus-loader-floater" id="floater-10"></div>
+      <div class="citrus-loader-floater" id="floater-11"></div>
+      <div class="citrus-loader-floater" id="floater-12"></div>
+    </div>
     <div class="h-p-header">
       <div class="text">
         <div class="line01">vi ønsker å redefinere</div>
