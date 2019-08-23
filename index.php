@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Christer Waters - WTRS.dev - Freelance designer & developer</title> <!-- Set the title of the page, this shows up in google etc. as well -->
+    <title> VI VIL SAMARBEIDE! - Citrus Studio</title> <!-- Set the title of the page, this shows up in google etc. as well -->
     <link rel="font" type="font/woff2" href="<?php bloginfo('template_directory'); ?>/fonts/gordita-medium.woff2">
     <link rel="font" type="font/woff2" href="<?php bloginfo('template_directory'); ?>/fonts/gordita-bold.woff2">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
