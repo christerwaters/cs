@@ -26,7 +26,48 @@
 
   </head>
   <body>
-
+    <div class="h-p-header">
+      <div class="text">
+        <div class="line01">vi ønsker å redefinere</div>
+        <div class="line02">forholdet mellom kreative</div>
+        <div class="line03">aktører. vi ønsker ikke </div>
+        <div class="line04">å konkurrere, men </div>
+        <div class="line05">å samarbeide.</div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="inner-menu">
+        <div class="emblem">
+        </div>
+        <ul>
+          <li>
+            Hæ?
+          </li>
+          <li>
+            Team
+          </li>
+          <li>
+            Kontakt
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <span>
+          CITRUS STUDIO
+        </span>
+      </div>
+    </div>
+    <div class="site-wrap">
+      <div class="site">
+        <div class="start-collab-btn">
+          <button class="learn-more">
+            <div class="circle mi" id="contact">
+              <span class="icon arrow"></span>
+            </div>
+            <p class="button-text mi" id="contact">KONTAKT OSS</p>
+          </button>
+          <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
+        </div>
 <?php
  include 'core/loop_portfolio.php';
 ?>
