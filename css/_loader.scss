@@ -5,7 +5,7 @@
     .citrus-loader-floater{
       display:block;
       position:fixed;
-      background:url(../media/media/focus.png);
+      background:url(../media/focus.png);
     }
 
     @for $i from 1 through 20 {
@@ -13,7 +13,6 @@
         $rndm:-20vw+random(140);
         left:$rndm;
         $rndm: random(12)*random(12);
-        $rndm:$rndm+'px';
         width:$rndm;
         height:$rndm;
         animation: floater $ee $ees2 infinite;
