@@ -81,6 +81,8 @@
         </div>
 <?php
  include 'core/loop_portfolio.php';
+?><?php
+ include 'core/get_functions.php';
 ?>
 <!-- Get all the pages -->
 <?php
