@@ -20,7 +20,7 @@
         width:$rndm+px;
         height:$rndm+px;
         animation: floater $ee $ees4*$rndm $ees*(random(30)/10) infinite;
-        $rndm: 12-$rndm+px;
+        $rndm: 12-($rndm*.3)+px;
         filter: blur($rndm);
       }
     }
