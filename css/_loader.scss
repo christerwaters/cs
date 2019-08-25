@@ -19,11 +19,10 @@
         $rndm: random(12);
         $blrndm: 12-($rndm)+px;
         filter: blur($blrndm);
-        
-        $rndm: random(12)*random(12);
+        animation: floater $ee (1000-($rndm*50))+ms $ees*(random(30)/10) infinite;
+        $rndm: $rndm*$rndm;
         width:$rndm+px;
         height:$rndm+px;
-        animation: floater $ee $ees4*$rndm $ees*(random(30)/10) infinite;
       }
     }
   }
