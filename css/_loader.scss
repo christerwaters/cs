@@ -25,13 +25,16 @@
   0% {
     width:0vw;
     float:left;
+    left:0;
   }
   50% {
     width:100vw;
-    float:right
+    float:right;
+    right:0;
   }
   100% {
+    right:0;
     width:0vw;
-    float:right
+    float:right;
   }
 }
