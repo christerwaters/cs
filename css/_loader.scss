@@ -1,31 +1,23 @@
 .p-open {
   .loader{
-    background:$primary;
+    background:$focus;
+    animation:loading $ee $ees3 infinite;
+    .citrus-loader{
+      background:$primary;
+    }
+  }
+  .loader .citrus-loader,
+  .loader{
     z-index:270;
-    animation:loading $ee $ees3;
     position:fixed;
     display:block;
     overflow: hidden;
+    height:100vh;
     img{
       width:30vw;
-      margin:40vh 35vw;
-      position:fixed;
+      margin: 25vh 35vw;
+      position:absolute;
       display:block;
-
-    }
-    .citrus-loader{
-      display:block;
-      position:fixed;
-      overflow:hidden;
-      width:100vw;
-      height:100vh;
-      z-index:270;
-      img{
-        width:30vw;
-        margin:40vh 35vw;
-        position:fixed;
-        display:block;
-      }
     }
   }
 }
