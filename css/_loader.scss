@@ -4,6 +4,7 @@
     background:#fff;
     opacity:1;
     .citrus-loader-floater{
+      margin-top:-20vh;
       display:block;
       position:fixed;
       background:url(../media/focus.png);
@@ -12,7 +13,7 @@
       z-index:270;
     }
 
-    @for $i from 1 through 20 {
+    @for $i from 1 through 60 {
       .citrus-loader-floater#floater-#{$i}{
         $rndm:-20vw+(10*random(14));
         left:$rndm;
