@@ -2,7 +2,7 @@
   .loader{
     z-index:270;
     background:#fff;
-    opacity:1;
+    animation:loader $ee $ees3;
     .citrus-loader-floater{
       margin-top:-20vh;
       display:block;
