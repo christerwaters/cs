@@ -1,0 +1,22 @@
+
+.portfolio-item{
+  font-family:$serif;
+  width:$md-scrn;
+  max-width:100%;
+  display:flex;
+  margin:auto;
+  .image-wrap,
+  .text-wrap{
+    display:inline-block;
+    width:55%;
+  }
+  .image-wrap{
+    margin-right:-5%;
+    img{
+      max-width:100%;
+    }
+  }
+  .text-wrap{
+    margin-left:-5%;
+  }
+}
