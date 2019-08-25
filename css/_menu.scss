@@ -21,10 +21,10 @@
   .inner-menu{
     padding: 1.35rem 0;
     ul{
+      text-align: right;
       max-width: 100%;
       width:$sm-scrn;
       right:0;
-      float:right;
       li{
         margin-right:.5rem;
       }
