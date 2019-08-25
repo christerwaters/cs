@@ -15,8 +15,8 @@
         $rndm:-20vw+random(140);
         left:$rndm;
         $rndm: random(12)*random(12);
-        width:$rndm;
-        height:$rndm;
+        width:$rndm+px;
+        height:$rndm+px;
         animation: floater $ee $ees2 infinite;
         animation-delay:$ees *(random(30)/10);
       }
@@ -33,15 +33,19 @@
 @keyframes floater {
   0% {
     top:120vh;
+    opacity:0;
   }
   1% {
     top:120vh;
+    opacity:1;
   }
   99%{
     top:-20vh;
+    opacity:1;
   }
   100% {
     top:120vh;
+    opacity:0;
   }
 }
 @keyframes loading {
