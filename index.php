@@ -36,6 +36,24 @@
       <div class="citrus-loader-floater" id="floater-10"></div>
       <div class="citrus-loader-floater" id="floater-11"></div>
       <div class="citrus-loader-floater" id="floater-12"></div>
+      <div class="citrus-loader-floater" id="floater-13"></div>
+      <div class="citrus-loader-floater" id="floater-14"></div>
+      <div class="citrus-loader-floater" id="floater-15"></div>
+      <div class="citrus-loader-floater" id="floater-16"></div>
+      <div class="citrus-loader-floater" id="floater-17"></div>
+      <div class="citrus-loader-floater" id="floater-18"></div>
+      <div class="citrus-loader-floater" id="floater-19"></div>
+      <div class="citrus-loader-floater" id="floater-20"></div>
+      <div class="citrus-loader-floater" id="floater-21"></div>
+      <div class="citrus-loader-floater" id="floater-22"></div>
+      <div class="citrus-loader-floater" id="floater-23"></div>
+      <div class="citrus-loader-floater" id="floater-24"></div>
+      <div class="citrus-loader-floater" id="floater-25"></div>
+      <div class="citrus-loader-floater" id="floater-26"></div>
+      <div class="citrus-loader-floater" id="floater-27"></div>
+      <div class="citrus-loader-floater" id="floater-28"></div>
+      <div class="citrus-loader-floater" id="floater-29"></div>
+      <div class="citrus-loader-floater" id="floater-30"></div>
     </div>
     <div class="h-p-header">
       <div class="text">
