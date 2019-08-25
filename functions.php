@@ -12,7 +12,7 @@ acf_add_local_field_group(array(
 		array(
 			'key' => 'field_5d629dbe3b824',
 			'label' => 'Type',
-			'name' => 'select_post_type',
+			'name' => 'format_type',
 			'type' => 'radio',
 			'instructions' => '',
 			'required' => 1,
@@ -93,21 +93,21 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'post_type',
+				'param' => 'format_type',
 				'operator' => '==',
 				'value' => 'post',
 			),
 		),
 		array(
 			array(
-				'param' => 'post_type',
+				'param' => 'format_type',
 				'operator' => '==',
 				'value' => 'page',
 			),
 		),
 		array(
 			array(
-				'param' => 'post_type',
+				'param' => 'format_type',
 				'operator' => '==',
 				'value' => 'portfolio',
 			),
