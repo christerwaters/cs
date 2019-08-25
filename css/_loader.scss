@@ -1,11 +1,13 @@
 .p-open {
   .loader{
+    z-index:270;
     background:#fff;
     opacity:1;
     .citrus-loader-floater{
       display:block;
       position:fixed;
       background:url(../media/focus.png);
+      z-index:270;
     }
 
     @for $i from 1 through 20 {
