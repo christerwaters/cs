@@ -1,68 +1,39 @@
 .p-open {
   .loader{
+    background:$primary;
     z-index:270;
-    background:#fff;
     animation:loading $ee $ees3;
-    .citrus-loader-floater{
-      margin-top:-20vh;
+    position:fixed;
+    display:block;
+    overflow: hidden;
+    img{
+      width:30vw;
+      margin:40vh 35vw;
+      position:fixed;
+      display:block;
+
+    }
+    .citrus-loader{
       display:block;
       position:fixed;
-      background:url(../media/focus.png);
-      background-size: contain;
-      background-repeat: no-repeat;
+      overflow:hidden;
+      width:100vw;
+      height:100vh;
       z-index:270;
-    }
-
-    @for $i from 1 through 20 {
-      .citrus-loader-floater#floater-#{$i}{
-        left:-5vw+random(110);
-        $rndm: random(12);
-        $blrndm: 12-($rndm)+px;
-        filter: blur($blrndm);
-        animation: floater $ee (1000-($rndm*20))+ms $ees*(random(30)/10) infinite;
-        $rndm: $rndm*$rndm;
-        width:$rndm+px;
-        height:$rndm+px;
+      img{
+        width:30vw;
+        margin:40vh 35vw;
+        position:fixed;
+        display:block;
       }
     }
   }
 }
-.loader{
-  animation:none;
-  display:block;
-  width:100vw;
-  min-height:100vh;
-  position:fixed;
-}
-@keyframes floater {
-  0% {
-    top:120vh;
-    opacity:0;
-  }
-  1% {
-    top:120vh;
-    opacity:1;
-  }
-  99%{
-    top:-20vh;
-    opacity:1;
-  }
-  100% {
-    top:120vh;
-    opacity:0;
-  }
-}
 @keyframes loading {
   0% {
-    opacity:0;
-  }
-  10% {
-    opacity:1;
-  }
-  90%{
-    opacity:1;
+    width:0;
   }
   100% {
-    opacity:0;
+    width:100vw;
   }
 }
