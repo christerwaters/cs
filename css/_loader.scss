@@ -19,8 +19,9 @@
         $rndm: random(12)*random(12);
         width:$rndm+px;
         height:$rndm+px;
-        filter: blur(12px-$rndm);
         animation: floater $ee $ees4*$rndm $ees*(random(30)/10) infinite;
+        $rndm: 12-$rndm+px;
+        filter: blur($rndm);
       }
     }
   }
