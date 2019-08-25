@@ -24,26 +24,10 @@
   </head>
   <body>
     <div class="loader">
-      <div class="citrus-loader-floater" id="floater-1"></div>
-      <div class="citrus-loader-floater" id="floater-2"></div>
-      <div class="citrus-loader-floater" id="floater-3"></div>
-      <div class="citrus-loader-floater" id="floater-4"></div>
-      <div class="citrus-loader-floater" id="floater-5"></div>
-      <div class="citrus-loader-floater" id="floater-6"></div>
-      <div class="citrus-loader-floater" id="floater-7"></div>
-      <div class="citrus-loader-floater" id="floater-8"></div>
-      <div class="citrus-loader-floater" id="floater-9"></div>
-      <div class="citrus-loader-floater" id="floater-10"></div>
-      <div class="citrus-loader-floater" id="floater-11"></div>
-      <div class="citrus-loader-floater" id="floater-12"></div>
-      <div class="citrus-loader-floater" id="floater-13"></div>
-      <div class="citrus-loader-floater" id="floater-14"></div>
-      <div class="citrus-loader-floater" id="floater-15"></div>
-      <div class="citrus-loader-floater" id="floater-16"></div>
-      <div class="citrus-loader-floater" id="floater-17"></div>
-      <div class="citrus-loader-floater" id="floater-18"></div>
-      <div class="citrus-loader-floater" id="floater-19"></div>
-      <div class="citrus-loader-floater" id="floater-20"></div>
+      <img src="<?php bloginfo('template_directory'); ?>/media/focus.png">
+      <div class="citrus-loader" id="floater-1">
+        <img src="<?php bloginfo('template_directory'); ?>/media/primary.png">
+      </div>
     </div>
     <div class="h-p-header">
       <div class="text">
