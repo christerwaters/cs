@@ -1,0 +1,14 @@
+.menu{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width:$sm-scrn;
+    right:0;
+    li{
+      flex-grow: 1;
+      margin-left: auto;
+      order: 2;
+    }
+  }
+}
