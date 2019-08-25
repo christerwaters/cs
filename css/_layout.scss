@@ -6,10 +6,12 @@
   display:flex;
   margin:auto;
   .image-wrap,
+  .video-wrap,
   .text-wrap{
     display:inline-block;
     width:55%;
   }
+  .video-wrap,
   .image-wrap{
     margin-right:-5%;
     img{
