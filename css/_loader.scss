@@ -25,27 +25,8 @@
 @keyframes loading {
   0% {
     width:0vw;
-    float:left;
-    left:0;
-  }
-  40% {
-    width:100vw;
-    float:left;
-    left:0;
-  }
-  60% {
-    width:100vw;
-    float:right;
-    right:0;
-  }
-  99% {
-    width:0vw;
-    float:right;
-    right:0;
   }
   100% {
-    width:0vw;
-    float:left;
-    left:0;
+    width:100vw;
   }
 }
