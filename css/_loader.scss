@@ -20,8 +20,7 @@
         $rndm: random(12)*random(12);
         width:$rndm+px;
         height:$rndm+px;
-        animation: floater $ee $ees6*$rndm infinite;
-        animation-delay:$ees *(random(30)/10);
+        animation: floater $ee $ees4*$rndm $ees*(random(30)/10) infinite;
       }
     }
   }
