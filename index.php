@@ -60,13 +60,13 @@
         </div>
         <ul>
           <li>
-            Hæ?
+            <a href="<?php bloginfo('template_directory'); ?>/hæ?">Hæ?</a>
           </li>
           <li>
-            Team
+            <a href="<?php bloginfo('template_directory'); ?>/team">Team</a>
           </li>
           <li>
-            Kontakt
+            <a href="<?php bloginfo('template_directory'); ?>/kontakt">Kontakt</a>
           </li>
         </ul>
       </div>
