@@ -12,7 +12,7 @@ acf_add_local_field_group(array(
 		array(
 			'key' => 'field_5d629dbe3b824',
 			'label' => 'Type',
-			'name' => 'type',
+			'name' => 'select_post_type',
 			'type' => 'radio',
 			'instructions' => '',
 			'required' => 1,
