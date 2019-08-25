@@ -16,12 +16,14 @@
     @for $i from 1 through 20 {
       .citrus-loader-floater#floater-#{$i}{
         left:-5vw+random(110);
+        $rndm: random(12);
+        $blrndm: 12-($rndm)+px;
+        filter: blur($blrndm);
+        
         $rndm: random(12)*random(12);
         width:$rndm+px;
         height:$rndm+px;
         animation: floater $ee $ees4*$rndm $ees*(random(30)/10) infinite;
-        $rndm: 12-($rndm*.3)+px;
-        filter: blur($rndm);
       }
     }
   }
