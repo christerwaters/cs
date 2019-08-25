@@ -93,21 +93,21 @@ acf_add_local_field_group(array(
 	'location' => array(
 		array(
 			array(
-				'param' => 'format_type',
+				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'post',
 			),
 		),
 		array(
 			array(
-				'param' => 'format_type',
+				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'page',
 			),
 		),
 		array(
 			array(
-				'param' => 'format_type',
+				'param' => 'post_type',
 				'operator' => '==',
 				'value' => 'portfolio',
 			),
