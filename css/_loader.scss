@@ -7,6 +7,8 @@
       display:block;
       position:fixed;
       background:url(../media/focus.png);
+      background-size: contain;
+      background-repeat: no-repeat;
       z-index:270;
     }
 
@@ -17,7 +19,7 @@
         $rndm: random(12)*random(12);
         width:$rndm+px;
         height:$rndm+px;
-        animation: floater $ee $ees2 infinite;
+        animation: floater $ee $ees6*$rndm infinite;
         animation-delay:$ees *(random(30)/10);
       }
     }
