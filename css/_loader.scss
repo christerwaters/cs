@@ -1,6 +1,7 @@
 .p-open {
   .loader{
     background:#fff;
+    width:100vw;
     .citrus-loader{
       background:$primary;
       animation:loading $ee $ees3 infinite;
