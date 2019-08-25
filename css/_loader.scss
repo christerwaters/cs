@@ -10,7 +10,6 @@
     @for $i from 1 through 20 {
       .citrus-loader-floater#floater-#{$i}{
         $rndm:-20vw+random(140);
-        $rndm:$rndm+'vw';
         left:$rndm;
         $rndm: random(12)*random(12);
         $rndm:$rndm+'px';
