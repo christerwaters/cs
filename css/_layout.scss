@@ -8,19 +8,18 @@
   .video-wrap,
   .text-wrap{
     display:inline-block;
-    width:55%;
+    width:50%;
   }
   .video-wrap,
   .image-wrap{
-    margin-right:-5%;
     img{
       max-width:100%;
     }
   }
   .text-wrap{
-    margin-left:-5%;
     h2{
-      margin-top: 2.357rem;
+      margin-left:-5%;
+      margin-top: -3.357rem;
     }
     .content{
       width:90%;
