@@ -24,8 +24,15 @@
       margin-top: -5.357rem;
     }
     h2:after{
-      width:2rem;
-      height:.2rem;
+      width:2.7rem;
+      height:.3rem;
+      display:block;
+      content:' ';
+      background:darken($primary,80%);
+    }
+    h2:hover:after{
+      width:3.2rem;
+      height:.3rem;
       display:block;
       content:' ';
       background:darken($primary,80%);
