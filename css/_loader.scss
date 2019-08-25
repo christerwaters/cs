@@ -1,9 +1,9 @@
 .p-open {
   .loader{
-    background:$focus;
-    animation:loading $ee $ees3 infinite;
+    background:#fff;
     .citrus-loader{
       background:$primary;
+      animation:loading $ee $ees3 infinite;
     }
   }
   .loader .citrus-loader,
@@ -23,9 +23,15 @@
 }
 @keyframes loading {
   0% {
-    width:0;
+    width:0vw;
+    float:left;
+  }
+  50% {
+    width:100vw;
+    float:right
   }
   100% {
-    width:100vw;
+    width:0vw;
+    float:right
   }
 }
