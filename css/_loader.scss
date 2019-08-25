@@ -19,7 +19,7 @@
         $rndm: random(12);
         $blrndm: 12-($rndm)+px;
         filter: blur($blrndm);
-        animation: floater $ee (1000-($rndm*50))+ms $ees*(random(30)/10) infinite;
+        animation: floater $ee (1000-($rndm*20))+ms $ees*(random(30)/10) infinite;
         $rndm: $rndm*$rndm;
         width:$rndm+px;
         height:$rndm+px;
