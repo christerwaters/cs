@@ -24,15 +24,11 @@
 @keyframes loading {
   0% {
     width:0vw;
-  }
-  1%{
     float:left;
     left:0;
   }
   50% {
     width:100vw;
-  }
-  51%{
     float:right;
     right:0;
   }
