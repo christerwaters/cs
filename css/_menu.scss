@@ -1,21 +1,41 @@
 .menu:hover{
-  background:#fff;
-  transition:background 250ms;
+  background-color:#fff;
+  transition:background-color $ee $ees;
   .logo{
-    top:-200px;
+    top:-60rem;
     transition:top 250ms;
+  }
+  .inner-menu{
+    .embled{
+      img{
+        margin-top:0rem;
+        transition:margin-top $ee $ees;
+      }
+    }
+    ul{
+      li{
+        margin-top:0rem;
+        transition:margin-top $ee $ees;
+      }
+    }
   }
 }
 .menu {
   max-width:100vw;
   width:100%;
-  background:rgba($primary,0);
-  transition:background 250ms;
+  background-color:rgba($primary,0);
+  transition:background-color $ee $ees;
   height:60px;
   z-index:230;
   position:fixed;
   .inner-menu{
     padding: 1.35rem 0;
+    .emblem{
+      img{
+        max-width:2rem;
+        margin-top:-4rem;
+      }
+    }
     ul{
       text-align: right;
       max-width: 100%;
@@ -26,6 +46,7 @@
         margin-right:.5rem;
         position: relative;
         display: inline-block;
+        margin-top:-4rem;
       }
     }
   }
@@ -38,7 +59,7 @@
     left:0;
     color:#000;
     width: 50px;
-    transition:top 250ms;
+    transition:top $ee $ees;
     height: 100vh;
     text-align:right;
     font-size:50px;
