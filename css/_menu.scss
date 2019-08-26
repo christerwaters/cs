@@ -8,13 +8,20 @@
   .inner-menu{
     .embled{
       img{
-        top:0rem;
-        transition:top $ee $ees;
+        top: -9rem;
+        margin-top: 0rem;
+        transition:margin-top $ee $ees;
+      }
+      .logotype{
+        top: -9.5rem;
+        margin-top: 0rem;
+        transition:margin-top $ee $ees;
       }
     }
     ul{
       li{
-        margin-top:0rem;
+        top: -9rem;
+        margin-top: 3rem;
         transition:top $ee $ees;
       }
     }
@@ -33,15 +40,17 @@
     .emblem{
       img{
         max-width:2rem;
-        top:-4rem;
-        transition:top $ee $ees;
+        top: -9rem;
+        margin-top: 0rem;
+        transition:margin-top $ee $ees;
       }
       .logotype{
         display: inline-block;
         font-size: 1rem;
         font-family: $serif;
-        top:-4rem;
-        transition:top $ee $ees;
+        top: -9rem;
+        margin-top: -.5rem;
+        transition:margin-top $ee $ees;
       }
     }
     ul{
@@ -54,8 +63,9 @@
         margin-right:.5rem;
         position: relative;
         display: inline-block;
-        top:-4rem;
-        transition:top $ee $ees;
+        top: -9rem;
+        margin-top: 0rem;
+        transition:margin-top $ee $ees;
       }
     }
   }
