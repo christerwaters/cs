@@ -39,27 +39,29 @@
       </div>
     </div>
     <div class="menu">
-      <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
-      <div class="logotype">CITRUS STUDIO</div>
-      <div class="mi">
-        <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
-      </div>
-      <div class="mi">
-        <a href="<?php echo get_site_url();?>/team">Team</a>
-      </div>
-      <div class="mi">
-        <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
-      </div>
-      <button class="learn-more">
-        <div class="circle mi" id="contact">
-          <span class="icon arrow"></span>
+      <div class="menu-inner">
+        <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
+        <div class="logotype">CITRUS STUDIO</div>
+        <div class="mi">
+          <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
         </div>
-        <p class="button-text mi" id="contact">KONTAKT OSS</p>
-      </button>
-      <div class="logo">
-        <span>
-          CITRUS STUDIO
-        </span>
+        <div class="mi">
+          <a href="<?php echo get_site_url();?>/team">Team</a>
+        </div>
+        <div class="mi">
+          <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
+        </div>
+        <button class="learn-more">
+          <div class="circle mi" id="contact">
+            <span class="icon arrow"></span>
+          </div>
+          <p class="button-text mi" id="contact">KONTAKT OSS</p>
+        </button>
+        <div class="logo">
+          <span>
+            CITRUS STUDIO
+          </span>
+        </div>
       </div>
     </div>
     <div class="site-wrap">
