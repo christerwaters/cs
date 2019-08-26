@@ -51,12 +51,6 @@
         <div class="mi">
           <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
         </div>
-        <button class="learn-more">
-          <div class="circle mi" id="contact">
-            <span class="icon arrow"></span>
-          </div>
-          <p class="button-text mi" id="contact">KONTAKT OSS</p>
-        </button>
         <div class="logo">
           <span>
             CITRUS STUDIO
