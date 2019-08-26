@@ -21,7 +21,7 @@
   .text-wrap{
     h2{
       margin-left: -14%;
-      margin-top: -5.357rem;
+      margin-top: -6.357rem;
     }
     h2:after{
       width:2.7rem;
@@ -31,6 +31,7 @@
       background:darken($primary,80%);
     }
     .content{
+      padding-top: 65px;
       width:90%;
       margin-left:10%;
     }
