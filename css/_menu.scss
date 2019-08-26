@@ -2,7 +2,17 @@
   .menu-inner{
     margin-top:0rem;
     transition:margin-top $ee $ees;
+    img.emblem{
+      margin-top: .76rem;
+      transition:opacity $ee $ees, margin-top $ee $ees;
+    }
+    .logotype{
+      margin-top: 1.25rem;
+      transition:opacity $ee $ees, margin-top $ee $ees;
+    }
     .mi{
+      color:$primary;
+      text-decoration: none;
       margin-top: 1rem;
       opacity:1;
       transition:margin-top $ee $ees, opacity $ee $ees;
@@ -43,14 +53,21 @@
     position:fixed;
 
     img.emblem{
-      margin-left: 3.4rem;
-      margin-left:80px;
+      margin-left: 1rem;
+      margin-top:.26rem;
       max-width:2rem;
+      opacity:0;
+      transition:opacity $ee $ees*.8, margin-top $ee $ees;
+      transition-delay:$ees*.8;
     }
     .logotype{
       display: inline-block;
       position:absolute;
       left:0;
+      opacity:0;
+      margin-top: .75rem;
+      transition:opacity $ee $ees*.8, margin-top $ee $ees;
+      transition-delay:$ees*.8;
     }
     .mi{
       width:auto;
@@ -68,15 +85,15 @@
     }
     .mi#one{
       right:12rem;
-      transition-delay:$ees3;
+      transition-delay:$ees*1.2;
     }
     .mi#two{
       right: 7.5rem;
-      transition-delay:$ees2;
+      transition-delay:$ees*1.3;
     }
     .mi#three{
       right: 1.9rem;
-      transition-delay:0s;
+      transition-delay:$ees*1.4;
     }
   }
 }
