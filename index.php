@@ -46,13 +46,13 @@
         </div>
         <ul>
           <li>
-            <a href="<?php bloginfo('template_directory'); ?>/hæ?">Hæ?</a>
+            <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
           </li>
           <li>
-            <a href="<?php bloginfo('template_directory'); ?>/team">Team</a>
+            <a href="<?php echo get_site_url();?>/team">Team</a>
           </li>
           <li>
-            <a href="<?php bloginfo('template_directory'); ?>/kontakt">Kontakt</a>
+            <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
           </li>
         </ul>
         <button class="learn-more">
