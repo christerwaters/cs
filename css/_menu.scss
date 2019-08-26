@@ -10,7 +10,7 @@
     }
     .logotype{
       opacity:1;
-      margin-top: 1.25rem;
+      margin-top: 1.15rem;
       transition:opacity $ee $ees, margin-top $ee $ees;
     }
     .mi{
@@ -68,6 +68,7 @@
       position:absolute;
       left:0;
       opacity:0;
+      margin-left: 3.8rem;
       margin-top: .75rem;
       transition:opacity $ee $ees*.8, margin-top $ee $ees;
       transition-delay:$ees*.8;
