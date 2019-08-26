@@ -21,13 +21,13 @@
       transition:margin-top $ee $ees, opacity $ee $ees;
     }
     .mi#one{
-      transition-delay:$ees2;
+      transition-delay:$ees*0.9;
     }
     .mi#two{
-      transition-delay:$ees3;
+      transition-delay:$ees;
     }
     .mi#one{
-      transition-delay:$ees4;
+      transition-delay:$ees*1.1;
     }
   }
   .logo{
