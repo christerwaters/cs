@@ -41,6 +41,8 @@
     <div class="menu">
       <div class="inner-menu">
         <div class="emblem">
+          <img src="<?php bloginfo('template_directory'); ?>/media/focus.png">
+          <p class="logotype">CITRUS STUDIO</p>
         </div>
         <ul>
           <li>
@@ -53,6 +55,12 @@
             <a href="<?php bloginfo('template_directory'); ?>/kontakt">Kontakt</a>
           </li>
         </ul>
+        <button class="learn-more">
+          <div class="circle mi" id="contact">
+            <span class="icon arrow"></span>
+          </div>
+          <p class="button-text mi" id="contact">KONTAKT OSS</p>
+        </button>
       </div>
       <div class="logo">
         <span>
