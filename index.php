@@ -42,13 +42,13 @@
       <div class="menu-inner">
         <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
         <div class="logotype">CITRUS STUDIO</div>
-        <div class="mi">
+        <div class="mi" id="01">
           <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
         </div>
-        <div class="mi">
+        <div class="mi" id="02">
           <a href="<?php echo get_site_url();?>/team">Team</a>
         </div>
-        <div class="mi">
+        <div class="mi" id="03">
           <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
         </div>
         <div class="logo">
