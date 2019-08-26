@@ -1,20 +1,10 @@
-.menu:hover{
-  .logo{
-    top:-40rem;
-    transition:top 250ms;
-  }
-}
 .menu {
   max-width:100%;
   width:100%;
-  max-height:3.5rem;
-  min-height:3.5rem;
   .menu-inner{
     max-width:100%;
     width:100%;
     max-height:3.5rem;
-    margin-top:-3.5rem;
-    background-color:#fff;
     z-index:230;
     position:absolute;
   }
@@ -34,8 +24,6 @@
     right:0;
   }
 }
-
-.logo:hover,
 .logo {
   z-index:200;
   position:fixed;
