@@ -1,6 +1,7 @@
 .menu:hover{
   .menu-inner{
     margin-top:0rem;
+    transition:margin-top $ee $ees;
   }
   .logo{
     top:-60rem;
@@ -22,21 +23,23 @@
     background-color:#fff;
     z-index:230;
     position:absolute;
-  }
-  .emblem img{
-    margin-left:80px;
-    max-width:2rem;
-  }
-  .logotype{
-    display: inline-block;
-    position:absolute;
-    left:0;
-  }
-  .mi{
-    width:auto;
-    display:inline-block;
-    position:absolute;
-    right:0;
+
+    .emblem img{
+      margin-left: 3.4rem;
+      margin-left:80px;
+      max-width:2rem;
+    }
+    .logotype{
+      display: inline-block;
+      position:absolute;
+      left:0;
+    }
+    .mi{
+      width:auto;
+      display:inline-block;
+      position:absolute;
+      right:0;
+    }
   }
 }
 
