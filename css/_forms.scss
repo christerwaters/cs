@@ -23,12 +23,12 @@ button:active {
   font-family: $serif, serif;
   display: inline-block;
   position:relative;
-  border:2px solid $primary;
+  border:2px solid $black;
   border-radius:22rem;
   transition:border-color $ee $ees;
 }
 .btn:hover{
-  border-color:$focus;
+  border-color:$primary;
   transition:border-color $ee $ees $ees*.66;
 }
 .btn:after{
@@ -61,7 +61,7 @@ button:active {
 }
 .btn:hover:before {
   width:100%;
-  background: $focus;
+  background: $primary;
 }
 .btn.center{
   margin:auto;
