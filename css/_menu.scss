@@ -78,13 +78,15 @@
       display:inline-block;
       position:absolute;
       right:0;
-      font-family:$sans-serif;
+      font-family:$serif;
       font-size:1rem;
       margin-top: .5rem;
       opacity:0;
       transition:margin-top $ee $ees, opacity $ee $ees;;
       a{
-        font-size: 1.2rem;
+        font-size: 1rem;
+        color:#000;
+        text-decoration: none;
       }
     }
     .mi#one{
@@ -96,7 +98,8 @@
       transition-delay:$ees;
     }
     .mi#three{
-      right: 1.9rem;
+      margin-top: 0.6rem;
+      right: 1rem;
       transition-delay:$ees*1.1;
     }
   }
