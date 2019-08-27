@@ -65,19 +65,21 @@
     <div class="site-wrap">
       <div class="site">
         <div class="start-collab-btn">
-          <button class="btn">
+          <button class="btn center">
             Kontakt Oss
           </button>
           <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
         </div>
-<?php
- include 'core/loop_portfolio.php';
-?>
-<!-- Get all the pages -->
-<?php
-  include 'core/loop_pages.php';
-?>
-<!-- Get everything right before </body> tag -->
+      <?php
+       include 'core/loop_portfolio.php';
+      ?>
+      <!-- Get all the pages -->
+      <?php
+        include 'core/loop_pages.php';
+      ?>
+      <!-- Get everything right before </body> tag -->
+      </div>
+    </div>
 <?php
   include 'core/get_bottom.php';
 ?>
