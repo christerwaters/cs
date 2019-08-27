@@ -28,8 +28,9 @@ button:active {
   transition:border-color $ee $ees;
 }
 .btn:hover{
+  color:$white;
   border-color:$primary;
-  transition:border-color $ee $ees $ees*.66;
+  transition:border-color $ee $ees $ees*.66,color $ee $ees $ees*.66;
 }
 .btn:after{
   transform:rotate(45deg);
@@ -45,7 +46,8 @@ button:active {
 .btn:hover:after{
   margin-left:.8rem;
   margin-right:-.3rem;
-  transition: margin-left $ee $ees $ees*.66, margin-right $ee $ees $ees*.66;
+  border-color:#fff;
+  transition: margin-left $ee $ees $ees*.66, margin-right $ee $ees $ees*.66, border-color $ee $ees $ees*.66;
 }
 .btn:before {
   border-radius:22rem;
@@ -64,5 +66,6 @@ button:active {
   background: $primary;
 }
 .btn.center{
-  margin:auto;
+  margin: auto;
+  display: block;
 }
