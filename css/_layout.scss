@@ -81,6 +81,16 @@
   margin:auto;
   display:block;
 }
+
+.portfolio-item.Text{
+  .image-wrap{
+    display:none;
+  }
+  .text-wrap,
+  .content-wrap{
+    width:100%;
+  }
+}
 .p-kontakt .portfolio-item,
 .p-kontakt .p-wrap#hae,
 .p-kontakt .p-wrap#team,
