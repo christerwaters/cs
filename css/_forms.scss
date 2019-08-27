@@ -46,7 +46,6 @@ button:active {
 .btn:hover:after{
   margin-left:.8rem;
   margin-right:-.3rem;
-  border-color:#fff;
   transition: margin-left $ee $ees $ees*.66, margin-right $ee $ees $ees*.66, border-color $ee $ees $ees*.66;
 }
 .btn:before {
@@ -63,7 +62,7 @@ button:active {
 }
 .btn:hover:before {
   width:100%;
-  background: brighten($primary,80%);
+  background: brighten($primary,50%);
 }
 .btn.center{
   margin: auto;
