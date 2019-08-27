@@ -41,7 +41,7 @@
     <div class="menu">
       <div class="menu-inner">
         <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
-        <div class="logotype">CITRUS STUDIO</div>
+        <div class="logotype">CITRUS <span class="hide-xs">STUDIO</span></div>
         <div class="mi" id="one">
           <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
         </div>
@@ -49,7 +49,11 @@
           <a href="<?php echo get_site_url();?>/team">Team</a>
         </div>
         <div class="mi" id="three">
-          <a href="<?php echo get_site_url();?>/kontakt">Kontakt</a>
+          <a href="<?php echo get_site_url();?>/kontakt">
+            <button class="btn">
+              Kontakt <span class="hide-xs">Oss</span>
+            </button>
+          </a>
         </div>
         <div class="logo">
           <span>
@@ -61,11 +65,8 @@
     <div class="site-wrap">
       <div class="site">
         <div class="start-collab-btn">
-          <button class="learn-more">
-            <div class="circle mi" id="contact">
-              <span class="icon arrow"></span>
-            </div>
-            <p class="button-text mi" id="contact">KONTAKT OSS</p>
+          <button class="btn">
+            Kontakt Oss
           </button>
           <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
         </div>
