@@ -28,14 +28,14 @@ button:active {
   transition:border-color $ee $ees;
 }
 .btn:hover{
-  color:$white;
+  color:$black;
   border-color:$primary;
   transition:border-color $ee $ees $ees*.66,color $ee $ees $ees*.66;
 }
 .btn:after{
   transform:rotate(45deg);
-  border-right:1px solid $primary;
-  border-top:1px solid $primary;
+  border-right:1px solid $black;
+  border-top:1px solid $black;
   width:.5rem;
   height:.5rem;
   display:inline-block;
@@ -63,7 +63,7 @@ button:active {
 }
 .btn:hover:before {
   width:100%;
-  background: $primary;
+  background: brighten($primary,80%);
 }
 .btn.center{
   margin: auto;
