@@ -76,8 +76,15 @@
     }
   }
 }
+.text#kontakt .text-wrap{
+  width:$sm-scrn;
+  margin:auto;
+  display:block;
+}
 .p-kontakt .p-wrap#hae,
-.p-kontakt .p-wrap#team{
+.p-kontakt .p-wrap#team,
+.p-home .p-wrap#kontakt,
+.p-team .p-wrap#kontakt{
   opacity:0;
   display:none;
 }
