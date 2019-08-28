@@ -71,13 +71,13 @@
           <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
         </div>
       <?php
-       include 'core/loop_portfolio.php';
-      ?>
-      <!-- Get all the pages -->
-      <?php
         include 'core/loop_pages.php';
       ?>
       <!-- Get everything right before </body> tag -->
+    <?php
+     include 'core/loop_portfolio.php';
+    ?>
+    <!-- Get all the pages -->
       </div>
     </div>
 <?php
