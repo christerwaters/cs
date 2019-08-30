@@ -1,20 +1,12 @@
 
-
+input[type=submit],
 button.btn {
-    display: inline-block;
-    border: none;
-    padding: 1rem 2rem;
-    margin: 0;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-button.btn {
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background:transparent;
   padding: 0.4rem 1.2rem 0.4rem 1rem;
   font-size: 1rem;
@@ -25,11 +17,13 @@ button.btn {
   border-radius:22rem;
   transition:border-color $ee $ees;
 }
+input[type=submit]:hover,
 button.btn:hover{
   color:$black;
   border-color:$primary;
   transition:border-color $ee $ees $ees*.66,color $ee $ees $ees*.66;
 }
+input[type=submit]:after,
 button.btn:after{
   transform:rotate(45deg);
   border-right:1px solid $black;
@@ -41,11 +35,13 @@ button.btn:after{
   margin-left:.5rem;
   transition: margin-left $ee $ees, margin-right $ee $ees;
 }
+input[type=submit]:hover:after,
 button.btn:hover:after{
   margin-left:.8rem;
   margin-right:-.3rem;
   transition: margin-left $ee $ees $ees*.66, margin-right $ee $ees $ees*.66, border-color $ee $ees $ees*.66;
 }
+input[type=submit]:before,
 button.btn:before {
   border-radius:22rem;
   content:'';
@@ -58,6 +54,8 @@ button.btn:before {
   transition: $ee $ees;
   z-index:-1;
 }
+
+input[type=submit]:hover:before,
 button.btn:hover:before {
   width:100%;
   background: brighten($primary,50%);
