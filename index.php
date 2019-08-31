@@ -76,6 +76,10 @@
           </a>
           <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
         </div>
+        <!-- Get everything right before </body> tag -->
+      <?php
+       include 'core/loop_users.php';
+      ?>
       <?php
         include 'core/loop_pages.php';
       ?>
