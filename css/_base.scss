@@ -54,7 +54,7 @@ body{
   overflow:hidden;
   position:absolute;
   .site{
-    margin:48vw 60px 0 60px;
+    margin:48vw 10px 0 0px;
   }
   .events-wrap{
       max-width:100%;
@@ -73,7 +73,6 @@ body{
 .start-collab-btn{
   padding:4rem 0;
   margin:auto;
-  width: 17rem;
   .psst{
     width: 12rem;
     transform:rotate(-7deg);
@@ -82,4 +81,18 @@ body{
     text-align:center;
     transform:opacity 100ms, transform 100ms;
   }
+}
+
+@media only screen and (min-width: $sm-scrn) {
+
+}
+@media only screen and (min-width: $md-scrn) {
+  .site-wrap{
+    .site{
+      margin:48vw 60px 0 60px;
+    }
+  }
+}
+@media only screen and (min-width: $lg-scrn) {
+
 }
