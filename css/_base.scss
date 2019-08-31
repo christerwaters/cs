@@ -183,10 +183,16 @@ body{
 .hide-xs{
   display:none;
 }
-@media only screen and (min-width: $sm-scrn) {
-.hide-xs{
+.show-xs{
   display:initial;
 }
+@media only screen and (min-width: $sm-scrn) {
+  .hide-xs{
+    display:initial;
+  }
+  .show-xs{
+    display:none;
+  }
 }
 @media only screen and (min-width: $md-scrn) {
   .site-wrap{
