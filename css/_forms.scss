@@ -79,6 +79,7 @@ textarea{
   font-size:3rem;
   border:8px $primary solid;
   transition:all $ee $ees;
+  box-sizing: border-box;
   color:$primary;
 }
 textarea:focus,
