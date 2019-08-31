@@ -1,15 +1,17 @@
-.p-wrap.video#hae{
-  .text-wrap{
-    width: 50%;
-    z-index: 201;
-    float: left;
-  }
-  .media-wrap{
-    width: 70%;
-    float: right;
-    margin-left: -30%;
-    .plyr--video .plyr__controls{
-      display:none;
+.p-hae{
+  .p-wrap.video#hae{
+    .text-wrap{
+      width: 50%;
+      z-index: 201;
+      float: left;
+    }
+    .media-wrap{
+      width: 70%;
+      float: right;
+      margin-left: -30%;
+      .plyr--video .plyr__controls{
+        display:none;
+      }
     }
   }
 }
