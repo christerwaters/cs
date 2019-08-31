@@ -40,8 +40,10 @@
     </div>
     <div class="menu">
       <div class="menu-inner">
-        <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
-        <div class="logotype">CITRUS <span class="hide-xs">STUDIO</span></div>
+        <a href="<?php echo get_site_url();?>">
+          <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
+          <div class="logotype">CITRUS <span class="hide-xs">STUDIO</span></div>
+        </a>
         <div class="mi" id="one">
           <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
         </div>
