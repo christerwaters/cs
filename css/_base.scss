@@ -79,6 +79,8 @@ body{
     margin-left:-10px;
     opacity:1;
     text-align:center;
+    display: block;
+    margin: auto;
     transform:opacity 100ms, transform 100ms;
   }
 }
@@ -137,7 +139,6 @@ body{
   .media-wrap,
   .text-wrap{
     display:inline-block;
-
     width: 100%;
     max-width: 100%;
   }
