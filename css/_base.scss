@@ -137,7 +137,9 @@ body{
   .media-wrap,
   .text-wrap{
     display:inline-block;
-    width:50%;
+
+    width: 100%;
+    max-width: 100%;
   }
   .image-wrap{
     width:100%;
