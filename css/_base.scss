@@ -58,21 +58,6 @@ body{
   position:absolute;
   margin-top:45vw;
   margin-bottom:20rem;
-  .site{
-  }
-  .events-wrap{
-      max-width:100%;
-      width:$sitewidth;
-      height:auto;
-      display:block;
-    .events{
-      display:flex;
-      .video,
-      .text{
-        width:50%;
-      }
-    }
-  }
 }
 .start-collab-btn{
   padding:4rem 0;
