@@ -17,9 +17,8 @@
     .mi{
       color:$primary;
       text-decoration: none;
-      margin-top: 1rem;
       opacity:1;
-      transition:margin-top $ee $ees, opacity $ee $ees;
+      transition:opacity $ee $ees;
     }
     .mi#one{
       transition-delay:$ees*0.9;
@@ -81,7 +80,7 @@
       right:0;
       font-family:$serif;
       font-size:1rem;
-      margin-top: .5rem;
+      margin-top: 1rem;
       opacity:0;
       transition:margin-top $ee $ees, opacity $ee $ees;;
       a{
