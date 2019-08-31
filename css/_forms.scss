@@ -67,6 +67,7 @@ button.btn.center{
 }
 
 
+input[type=submit],
 input[type=email],
 textarea{
   margin:auto;
@@ -79,6 +80,12 @@ textarea{
   transition:all $ee $ees;
   box-sizing: border-box;
   color:$primary;
+}
+input[type=submit]{
+
+    padding: 1rem 4rem;
+    width: auto;
+    border-radius: 0;
 }
 textarea{
   height:60vh;
