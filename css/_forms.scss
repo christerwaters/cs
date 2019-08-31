@@ -89,3 +89,7 @@ textarea:active{
   border-color:$focus;
   transition:all $ee $ees;
 }
+.wpcf7-response-output.wpcf7-validation-errors,
+.wpcf7-not-valid-tip{
+  display:none;
+}
