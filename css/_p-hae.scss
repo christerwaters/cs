@@ -8,5 +8,8 @@
     width: 70%;
     float: right;
     margin-left: -30%;
+    .plyr--video .plyr__controls{
+      display:none;
+    }
   }
 }
