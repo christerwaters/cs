@@ -1,9 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
-p{
-  font-family:$serif;
-  font-weight:300;
+@mixin typography($var){
+  h1,h2,h3,h4,h5{
+    word-wrap: break-word;
+  }
+  h1{
+    font-size:($font-size*2.2*$var)+rem;
+    font-family:$core_font-family-01;
+    font-weight:700;
+    margin-bottom:(10*$var*$font-size)+px;
+  }
+  h2{
+    font-size:($font-size*1.8*$var)+rem;
+    font-family:$core_font-family-01;
+    font-weight:700;
+    margin-bottom:(10*$var*$font-size)+px;
+  }
+  h3{
+    font-size:($font-size*1.5*$var)+rem;
+    font-family:$core_font-family-01;
+    font-weight:700;
+    margin-bottom:(10*$var*$font-size)+px;
+  }
+  h4{
+    font-size:($font-size*1.25*$var)+rem;
+    font-family:$core_font-family-01;
+    font-weight:700;
+    margin-bottom:(10*$var*$font-size)+px;
+  }
+  h5{
+    font-size:($font-size*$var)+rem;
+    font-family:$core_font-family-01;
+    font-weight:700;
+    margin-bottom:[10*$var*$font-size]+px;
+  }
+  p{
+    font-size:($font-size*$var*.9)+rem;
+    font-family:$serif;
+    line-height: (1.4*$var*$font-size*.8)+rem;
+    margin-bottom: (1.1*$var*$font-size*.8)+rem;
+    font-weight:300;
+    line-height: 1.76rem;
+  }
 }
-h1,h2,h3,h4,h6{
-  font-weight:300;
+@include typography(.7);
+
+@media only screen and (min-width: $sm-scrn) {
+  @include typography(.8);
+}
+@media only screen and (min-width: $md-scrn) {
+  @include typography(.9);
+}
+@media only screen and (min-width: $lg-scrn) {
+  @include typography(1);
 }
