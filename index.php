@@ -54,9 +54,12 @@
         </div>
         <div class="mi" id="three">
           <a href="<?php echo get_site_url();?>/kontakt">
-            <button class="btn">
+            <button class="btn hide-xs">
               Kontakt <span class="hide-xs">Oss</span>
             </button>
+            <span class="show-xs">
+              Kontakt
+            </span>
           </a>
         </div>
         <div class="logo">
