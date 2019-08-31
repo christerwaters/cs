@@ -108,13 +108,7 @@ body{
     h2{
       margin-left: -14%;
       margin-top: -6.357rem;
-    }
-    h2:after{
-      width:2.7rem;
-      height:.3rem;
-      display:block;
-      content:' ';
-      background:darken($primary,80%);
+      font-weight:300;
     }
     .content{
       padding-top: 65px;
