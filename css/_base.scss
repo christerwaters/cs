@@ -57,7 +57,7 @@ body{
   overflow:hidden;
   position:absolute;
   margin-top:45vw;
-  margin-bottom:20rem;
+  margin-bottom:10rem;
 }
 .start-collab-btn{
   padding:4rem 0;
@@ -81,7 +81,7 @@ body{
   width:$md-scrn;
   display:flex;
   margin:auto;
-  padding:9rem 0;
+  padding: 9rem 5rem;
   .image-wrap,
   .video-wrap,
   .text-wrap{
@@ -167,7 +167,7 @@ body{
     margin:auto;
 }
 .hide-xs{
-  display:none;
+  display:none !important;
 }
 .show-xs{
   display:initial;
