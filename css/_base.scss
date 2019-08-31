@@ -193,6 +193,8 @@ body{
     }
   }
 }
+.p-home .hide-home,
+.p-home .p-wrap#kontakt,
 .p-hae .portfolio-item,
 .p-hae .p-wrap#kontakt,
 .p-kontakt .portfolio-item,
@@ -214,8 +216,13 @@ body{
     max-width: 100%;
     margin:auto;
 }
+.hide-xs{
+  display:none;
+}
 @media only screen and (min-width: $sm-scrn) {
-
+.hide-xs{
+  display:initial;
+}
 }
 @media only screen and (min-width: $md-scrn) {
   .site-wrap{
