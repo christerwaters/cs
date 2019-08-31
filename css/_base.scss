@@ -28,9 +28,11 @@ body{
       z-index:22;
       display:inline-block;
       margin-right:2vw;
+      color:$white;
       span{
         font-family: $handwritten;
         display:inline-block;
+        color:$white;
       }
       #i{
         text-transform:lowercase;
