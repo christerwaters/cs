@@ -1,4 +1,4 @@
-
+.wp-block-button,
 input[type=submit],
 button.btn {
   margin: 0;
@@ -18,12 +18,14 @@ button.btn {
   transition:border-color $ee $ees;
   box-sizing: border-box;
 }
+.wp-block-button:hover,
 input[type=submit]:hover,
 button.btn:hover{
   color:$black;
   border-color:$primary;
   transition:border-color $ee $ees $ees*.66,color $ee $ees $ees*.66;
 }
+.wp-block-button:after,
 input[type=submit]:after,
 button.btn:after{
   transform:rotate(45deg);
@@ -36,12 +38,14 @@ button.btn:after{
   margin-left:.5rem;
   transition: margin-left $ee $ees, margin-right $ee $ees;
 }
+.wp-block-button:hover:after,
 input[type=submit]:hover:after,
 button.btn:hover:after{
   margin-left:.8rem;
   margin-right:-.3rem;
   transition: margin-left $ee $ees $ees*.66, margin-right $ee $ees $ees*.66, border-color $ee $ees $ees*.66;
 }
+.wp-block-button:before,
 input[type=submit]:before,
 button.btn:before {
   border-radius:22rem;
@@ -56,6 +60,7 @@ button.btn:before {
   z-index:-1;
 }
 
+.wp-block-button:hover:before,
 input[type=submit]:hover:before,
 button.btn:hover:before {
   width:100%;
