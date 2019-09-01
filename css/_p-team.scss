@@ -1,12 +1,14 @@
 .p-team{
+  .p-wrap#team{
     width: $md-scrn;
     margin: auto;
-  .team-image{
-    padding-top: 30%;
-    padding-bottom: 30%;
-    text-align: center;
-    font-size: 3rem;
-    margin: 20% 20%;
-    background: url(https://via.placeholder.com/350);
+    .team-image{
+      padding-top: 30%;
+      padding-bottom: 30%;
+      text-align: center;
+      font-size: 3rem;
+      margin: 20% 20%;
+      background: url(https://via.placeholder.com/350);
+    }
   }
 }
