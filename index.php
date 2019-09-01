@@ -2,24 +2,40 @@
 <html>
   <head>
     <title> VI VIL SAMARBEIDE! - Citrus Studio</title> <!-- Set the title of the page, this shows up in google etc. as well -->
-    <link rel="font" type="font/woff2" href="<?php bloginfo('template_directory'); ?>/fonts/gordita-medium.woff2">
-    <link rel="font" type="font/woff2" href="<?php bloginfo('template_directory'); ?>/fonts/gordita-bold.woff2">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
+
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<?php bloginfo('template_directory'); ?>/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php bloginfo('template_directory'); ?>/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php bloginfo('template_directory'); ?>/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php bloginfo('template_directory'); ?>/media/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#00f">
+    <meta name="msapplication-TileImage" content="<?php bloginfo('template_directory'); ?>/media/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#00f">
+
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"> <!-- stylesheet for this page -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="msapplication-TileColor" content="#1590D1">
-    <meta name="theme-color" content="#1590D1">
+    <meta name="msapplication-TileColor" content="#00f">
+    <meta name="theme-color" content="#00f">
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@christerwaters" />
     <meta name="twitter:creator" content="@christerwaters" />
     <meta property="og:url" content="https://wtrs.dev" />
     <meta property="og:title" content="Christer Waters - WTRS.dev - Freelance Designer & Developer" />
     <meta property="og:description" content="I build human-friendly websites, always optimized for search-engines and any device. I also create artworks in the form of still and moving imagry (video and photo)." />
+
 
   </head>
   <body>
