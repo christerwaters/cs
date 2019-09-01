@@ -46,3 +46,33 @@
 .p-home .p-wrap.Video#hae .text-wrap{
   padding-top:10%;
 }
+.row img{
+  width:100%;
+}
+.name{
+  animation:namefont $ees infinite;
+}
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower|Kalam|Shadows+Into+Light&display=swap');
+$name-font-01:'Indie Flower', cursive;
+$name-font-02:'Chilanka', cursive;
+$name-font-03:'Shadows Into Light', cursive;
+$name-font-04:'Kalam', cursive;
+$name-font-05:'Permanent Marker', cursive;
+
+@keyframes namefont {
+  0% {font-family:$name-font-01;}
+  25% {font-family:$name-font-02;}
+  50% {font-family:$name-font-03;}
+  75% {font-family:$name-font-04;}
+  100% {font-family:$name-font-05;}
+}
+
+
+body{
+  opacity:0;
+  transition:opacity $ee $ees;
+}
+body.p-open{
+  opacity:1;
+  transition:opacity $ee $ees;
+}
