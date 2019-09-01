@@ -76,11 +76,11 @@ $name-font-05:'Permanent Marker', cursive;
 
 body{
   opacity:0;
-  transition:opacity $ee $ees;
+  transition:opacity $ee $ees*2;
 }
 body.p-open{
   opacity:1;
-  transition:opacity $ee $ees;
+  transition:opacity $ee $ees*2;
 }
 .plyr__video-wrapper{
   background:$white;
