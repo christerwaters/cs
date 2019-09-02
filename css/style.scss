@@ -56,11 +56,11 @@
 
 body{
   opacity:0;
-  transition:opacity $ee $ees*2;
+  transition:opacity $ee $ees*4;
 }
 body.p-open{
   opacity:1;
-  transition:opacity $ee $ees*2;
+  transition:opacity $ee $ees*4;
 }
 .plyr__video-wrapper{
   background:$white;
