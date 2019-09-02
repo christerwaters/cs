@@ -4,23 +4,31 @@
     margin: auto;
     .team-image{
       padding-bottom: 60%;
-      text-align: center;
-      font-size: 3rem;
       margin: 20% 20%;
+      z-index: 201;
+      position: relative;
       background: url(https://via.placeholder.com/350);
     }
     .text-image{
       position:absolute;
       display:inline-block;
+      width:100%;
+      text-align: center;
+      font-size:5rem;
       max-height:3rem;
       overflow:hidden;
+      top: 50%;
+      transform: translateY(-50%);
     }
     .team-text{
       margin-top: -34%;
       width: 60%;
+      position: relative;
+      z-index: 202;
       text-align: right;
       margin-left: 30%;
       margin-right: 10%;
+      font-size:2rem;
     }
   }
 }
