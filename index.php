@@ -86,12 +86,6 @@
           <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
         </div>
         <!-- Get everything right before </body> tag -->
-
-        <div class="h-p-header">
-          <div class="text">
-            <div class="line01">Team</div>
-          </div>
-        </div>
       <?php
        include 'core/loop_users.php';
       ?>
