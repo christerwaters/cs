@@ -47,13 +47,13 @@
 
 
 
-.image-text{
+.text-image{
   animation:namefont $ees4 infinite;
 }
-.Elvira .image-text{animation-delay: $ees2;}
-.Henriette .image-text{animation-delay: $ees;}
-.Temar .image-text{animation-delay: $ees3;}
-.Marion .image-text{animation-delay: $ees4;}
+.Elvira .text-image{animation-delay: $ees2;}
+.Henriette .text-image{animation-delay: $ees;}
+.Temar .text-image{animation-delay: $ees3;}
+.Marion .text-image{animation-delay: $ees4;}
 
 @import url('https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower|Kalam|Shadows+Into+Light&display=swap');
 $name-font-01:'Indie Flower', cursive;
