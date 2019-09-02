@@ -49,30 +49,6 @@
 .row img{
   width:100%;
 }
-.team-image{
-  animation:namefont $ees4 infinite;
-}
-@import url('https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower|Kalam|Shadows+Into+Light&display=swap');
-$name-font-01:'Indie Flower', cursive;
-$name-font-02:'Chilanka', cursive;
-$name-font-03:'Shadows Into Light', cursive;
-$name-font-04:'Kalam', cursive;
-$name-font-05:'Permanent Marker', cursive;
-
-@keyframes namefont {
-  0% {font-family:$name-font-01;color:$focus;}
-  10% {font-family:$name-font-02;color:$focus;}
-  20% {font-family:$name-font-03;color:$primary;}
-  30% {font-family:$name-font-04;color:$focus;}
-  40% {font-family:$name-font-05;color:$primary;}
-  50% {font-family:$name-font-01;color:$focus;}
-  60% {font-family:$name-font-02;color:$focus;}
-  70% {font-family:$name-font-03;color:$primary;}
-  80% {font-family:$name-font-05;color:$primary;}
-  90% {font-family:$name-font-04;color:$focus;}
-  100% {font-family:$name-font-05;color:$focus;}
-}
-
 
 body{
   opacity:0;
