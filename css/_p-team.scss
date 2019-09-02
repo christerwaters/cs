@@ -14,8 +14,8 @@
       display:inline-block;
       width:100%;
       text-align: center;
-      font-size:5rem;
-      max-height:3rem;
+      font-size:4rem;
+      max-height:4.5rem;
       overflow:hidden;
       top: 50%;
       transform: translateY(-50%);
@@ -28,10 +28,50 @@
       text-align: right;
       margin-left: 30%;
       margin-right: 10%;
-      font-size:2rem;
+      .name{
+        font-size:2rem;
+      }
+      .title{
+        font-size:2rem*.8;
+      }
     }
   }
 }
 .team-rest{
   padding-top: 12rem;
+  .text-image{
+    display:none;
+  }
+}
+
+
+
+
+.image-text{
+  animation:namefont $ees4 infinite;
+}
+.Elvira .image-text{animation-delay: $ees2;}
+.Henriette .image-text{animation-delay: $ees;}
+.Temar .image-text{animation-delay: $ees3;}
+.Marion .image-text{animation-delay: $ees4;}
+
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Indie+Flower|Kalam|Shadows+Into+Light&display=swap');
+$name-font-01:'Indie Flower', cursive;
+$name-font-02:'Chilanka', cursive;
+$name-font-03:'Shadows Into Light', cursive;
+$name-font-04:'Kalam', cursive;
+$name-font-05:'Permanent Marker', cursive;
+
+@keyframes namefont {
+  0% {font-family:$name-font-01;color:$focus;}
+  10% {font-family:$name-font-02;color:$focus;}
+  20% {font-family:$name-font-03;color:$primary;}
+  30% {font-family:$name-font-04;color:$focus;}
+  40% {font-family:$name-font-05;color:$primary;}
+  50% {font-family:$name-font-01;color:$focus;}
+  60% {font-family:$name-font-02;color:$focus;}
+  70% {font-family:$name-font-03;color:$primary;}
+  80% {font-family:$name-font-05;color:$primary;}
+  90% {font-family:$name-font-04;color:$focus;}
+  100% {font-family:$name-font-05;color:$focus;}
 }
