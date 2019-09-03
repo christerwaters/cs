@@ -152,6 +152,7 @@ body{
 .p-kontakt .h-p-header,
 .p-team .h-p-header,
 .p-hae .h-p-header,
+.p-hae .p-wrap#hae .start-collab-btn,
 .p-home .hide-home,
 .p-hae .portfolio-item,
 .p-team .portfolio-item,
@@ -168,7 +169,7 @@ body{
 }
 
 
-.p-open.p-kontakt
+.p-open.p-kontakt{
   .start-collab-btn{
     display:none;
   }
@@ -176,6 +177,7 @@ body{
     width: $md-scrn;
     max-width: 100%;
     margin:auto;
+  }
 }
 .hide-xs{
   display:none !important;
