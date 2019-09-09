@@ -32,75 +32,89 @@
 
   </head>
   <body>
-    <div class="loader">
-      <img src="<?php bloginfo('template_directory'); ?>/media/focus.png">
-      <div class="citrus-loader" id="floater-1">
-        <img src="<?php bloginfo('template_directory'); ?>/media/primary.png">
-      </div>
-    </div>
-    <div class="h-p-header">
-      <div class="text">
-        <div class="line01">vi ønsker å redefinere</div>
-        <div class="line02">forholdet mellom kreative</div>
-        <div class="line03">aktører. vi ønsker ikke </div>
-        <div class="line04">å konkurrere, men </div>
-        <div class="line05">å samarbeide.</div>
-      </div>
-    </div>
     <div class="menu">
-      <div class="menu-inner">
-        <a href="<?php echo get_site_url();?>">
-          <img class="emblem" src="<?php bloginfo('template_directory'); ?>/media/focus.png">
-        </a>
-        <a href="<?php echo get_site_url();?>">
-          <div class="logotype">CITRUS <span class="hide-xs">STUDIO</span></div>
-        </a>
-        <div class="mi" id="one">
-          <a href="<?php echo get_site_url();?>/hæ?">Hæ?</a>
-        </div>
-        <div class="mi" id="two">
-          <a href="<?php echo get_site_url();?>/team">Team</a>
-        </div>
-        <div class="mi" id="three">
-          <a href="<?php echo get_site_url();?>/kontakt">
-            <button class="btn">
-              Kontakt <span class="hide-xs">Oss</span>
-            </button>
-          </a>
-        </div>
-        <div class="logo">
-          <span>
-            CITRUS STUDIO
-          </span>
-        </div>
-      </div>
-    </div>
-    <div class="site-wrap">
-      <div class="site">
-        <div class="start-collab-btn">
-          <a href="<?php echo get_site_url();?>/kontakt">
-            <button class="btn center">
-              Kontakt Oss
-            </button>
-          </a>
-          <img src="<?php bloginfo('template_directory'); ?>/media/match.png" class="psst">
-        </div>
-        <!-- Get everything right before </body> tag -->
-      <?php
-       include 'core/loop_users.php';
-      ?>
-      <?php
-        include 'core/loop_pages.php';
-      ?>
-      <!-- Get everything right before </body> tag -->
-    <?php
-     include 'core/loop_portfolio.php';
-    ?>
-    <!-- Get all the pages -->
-      </div>
-    </div>
+  <div class="menu-overlay"></div>
+  <div class="logotype">
+    <span>Citrus Studio</span>
+  </div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="underline"><span>Kontakt</span></a></li>
+        <li><a href="#" class="underline"><span>Team</span></a></li>
+        <li><a href="#" class="underline"><span>Om oss</span></a></li>
+        <li><a href="#" class="underline"><span>Events</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
 
-		<script>var randomize = $(".core-member");</script>
-<?php
-  include 'core/get_bottom.php';
-?>
+
+
+
+<div class="content">
+
+
+
+
+
+
+  <?php
+  $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
+  $portfolio_items = get_posts( $args );
+  foreach ($portfolio_items as $page_data) {
+      $content = apply_filters('the_content', $page_data->post_content);
+      $title = $page_data->post_title;
+      $post_slug = $page_data->post_name;
+      $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
+      $image_full = $imageid_full['0'];
+      $select_format_type = get_field('format_type',$page_data->ID);
+      $video_mp4 = get_field('video_file_mp4',$page_data->ID);
+      $website_url = get_field('website_url',$page_data->ID);
+  ?>
+  <a href="#<?php echo $post_slug;?>">
+    <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
+      <div class="inner">
+        <div class="featured-media">
+          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+            <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+          </video>
+        </div>
+        <h1><?php echo $title; ?></h1>
+        <!--noindex-->
+          <!--googleoff: index-->
+            <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
+          <!--googleon: index-->
+        <!--/noindex-->
+      </div>
+    </section>
+  </a>
+
+<?php }; ?>
+</div>
+<div class="contact-form">
+
+</div>
+<div class="grain"></div>
+<div class="footer">
+  <div class="col">
+    Privacy
+  </div>
+  <div class="col">
+    Cookies
+  </div>
+  <div class="col">
+    This is a test
+  </div>
+  <div class="col">
+    This is a test
+  </div>
+  <div class="col">
+    This is a test
+  </div>
+  <div class="dev-by-wtrs">
+    <a href="wtrs.dev">WTRS</a>
+  </div>
+</div>
+</body>
+</html>
