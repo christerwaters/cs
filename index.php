@@ -181,49 +181,39 @@
 </div>
 
 <!--  GET ALL THE PAGES -->
-<?php
-$pages = get_pages();
-foreach ($pages as $page_data) {
-    $content = apply_filters('the_content', $page_data->post_content);
-    $title = $page_data->post_title;
-    $post_slug = $page_data->post_name;
-    $select_format_type = get_field('format_type',$page_data->ID);
-    $video_mp4 = get_field('video_file_mp4',$page_data->ID);
-    $website_url = get_field('website_url',$page_data->ID);
-?>
-      <div class="p-wrap <?php echo $select_format_type;?>" id="<?php echo $post_slug?>">
-        <div class="media-wrap">
 
-          <?php if ( $select_format_type == ('Image')) {?>
-            <!-- LAY OUT THE TEMPLATE FOR IMAGES HERE -->
-            <div class="image-wrap">
-              <img src="<?php echo $image_full;?>" alt="<?php echo $title; ?>">
-            </div>
-          <?php };?>
-          <?php if ( $select_format_type == ('Video')) {?>
-            <!-- LAY OUT THE TEMPLATE FOR VIDEOS HERE -->
-            <div class="video-wrap">
-              <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
-                <source src="<?php echo $video_mp4;?>" type="video/mp4" />
-              </video>
-            </div>
-          <?php };?>
-        </div>
-        <div class="text-wrap">
-          <div class="p-wrap-title">
-            <div class="p-title">
-              <h2><?php echo $title ?></h2>
-            </div>
-          </div>
-          <div class="page">
-            <div class="p-content">
-              <?php echo $content ?>
-            </div>
-          </div>
-        </div>
+
+
+  <?php
+  $args = array('post_type' => 'page'); //declares that we will only be querying the portfolio post type
+  $portfolio_items = get_posts( $args );
+  foreach ($portfolio_items as $page_data) {
+      $content = apply_filters('the_content', $page_data->post_content);
+      $title = $page_data->post_title;
+      $post_slug = $page_data->post_name;
+      $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
+      $image_full = $imageid_full['0'];
+      $select_format_type = get_field('format_type',$page_data->ID);
+      $video_mp4 = get_field('video_file_mp4',$page_data->ID);
+      $website_url = get_field('website_url',$page_data->ID);
+  ?>
+  <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
+    <div class="inner">
+      <div class="featured-media tilt">
+        <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+          <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+        </video>
       </div>
-<?php
-} ?>
+      <h1><?php echo $title; ?></h1>
+      <!--noindex-->
+        <!--googleoff: index-->
+          <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
+        <!--googleon: index-->
+      <!--/noindex-->
+    </div>
+  </section>
+
+  <?php }; ?>
 
 
 
