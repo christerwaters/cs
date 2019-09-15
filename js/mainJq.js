@@ -47,3 +47,31 @@ function checkVisible() {
     }
   });
 }
+
+
+dontGo({
+	title: 'Alternative title text right here!',
+	timeout: 1000 //5 seconds
+});
+
+$(".team-member").click(function(){
+  if ($(this).hasClass("active")){
+    $(this).removeClass("active");
+  }else {
+    $(".team-member").removeClass("active");
+    $(this).addClass("active");
+  }
+});
+
+
+
+
+
+$('a').click(function(){
+    event.preventDefault();
+    var hyper = $(this).attr("href");
+    $("body").attr('class', 'p-open p-' + hyper);
+    plyr.get().forEach(function(instance) {
+      instance.pause();
+    });
+});
