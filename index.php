@@ -29,6 +29,7 @@
     <meta property="og:title" content="Christer Waters - WTRS.dev - Freelance Designer & Developer" />
     <meta property="og:description" content="I build human-friendly websites, always optimized for search-engines and any device. I also create artworks in the form of still and moving imagry (video and photo)." />
 
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
   </head>
   <body class="p-open p-home">
@@ -56,7 +57,7 @@
 
 <div class="content p-wrap" id="home">
 
-  
+
   <div class="h-p-header">
     <div class="text">
       <div class="line01">vi ønsker å redefinere</div>
