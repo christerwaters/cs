@@ -37,6 +37,54 @@ body{
   background:#fff;
 }
 
+
+
+.h-p-header{
+  z-index:250;
+  top:0;
+  color:$white;
+  width:100vw;
+  background:$primary;
+  position:absolute;
+  padding:8vw 0;
+  color:$white;
+  font-family: $handwritten;
+  font-size:5vw;
+  text-align:center;
+  text-transform:uppercase;
+  .text{
+    font-family: $handwritten;
+    z-index:22;
+    margin:0 5vw;
+    color:$white;
+    .word{
+      font-family: $handwritten;
+      z-index:22;
+      display:inline-block;
+      margin-right:2vw;
+      color:$white;
+      span{
+        font-family: $handwritten;
+        display:inline-block;
+        color:$white;
+      }
+      #i{
+        text-transform:lowercase;
+        font-size:120%;
+      }
+    }
+    @for $i from 1 through 90 {
+      .word :nth-child(#{$i}){
+        transform:rotate(-10 + (random(20))+deg);
+        margin-right:((-2+random(4))/10)+vw;
+        margin-left:((-2+random(4))/10)+vw;
+        font-size:4+(random(100)/100)+vw;
+      }
+    }
+  }
+}
+
+
 .menu-overlay,.grain{
   pointer-events:none;
   background-repeat:repeat;
