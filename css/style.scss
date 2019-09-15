@@ -586,18 +586,10 @@ $m-100: 100%;
     margin-left: 0%;
     width: 100%;
     opacity:0;
-    span{
-      margin-top:5px;
-      line-height:150%;
-      width:100%;
-      display:block;
-      color:#F90;
-    }
-    span.q{
-      padding-top:1rem;
-    }
-    span.a{
-      font-family:'Permanent Marker';
+    p{
+      font-size: 1.5rem;
+      color: #fff;
+      margin: 2rem 0;
     }
   }
   &.active{
@@ -620,10 +612,6 @@ $m-100: 100%;
         width: 30%;
         opacity:1;
         transition: opacity 100ms 500ms;
-        span{
-          margin-top:0px;
-          transition:margin-top 100ms 450ms;
-        }
       }
     }
   }
