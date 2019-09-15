@@ -197,6 +197,7 @@
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
   ?>
+  <div class="p-wrap" id="<?php echo $post_slug;?>">
   <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <div class="featured-media tilt">
@@ -210,8 +211,12 @@
           <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
         <!--googleon: index-->
       <!--/noindex-->
+      <div class="text">
+        <?php echo $content;?>
+      </div>
     </div>
   </section>
+</div>
 
   <?php }; ?>
 
