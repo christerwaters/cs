@@ -31,7 +31,7 @@
 
 
   </head>
-  <body>
+  <body class="p-open p-home">
     <div class="menu">
   <div class="menu-overlay"></div>
   <div class="logotype">
