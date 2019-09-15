@@ -95,7 +95,7 @@
 <div class="p-wrap" id="team">
 
   <div class="core">
-    <h1> Ledelsen </h1><!--
+    <h2> Ledelsen </h2><!--
   <?php
   $users = get_users( array( 'fields' => array( 'ID' ) ) );
   foreach($users as $user){
@@ -135,7 +135,7 @@
     </div>
     <!-- -->
     <div class="crew">
-      <h1> Crew </h1>
+      <h2> Crew </h2>
 
       <?php
       $users = get_users( array( 'fields' => array( 'ID' ) ) );
