@@ -366,6 +366,8 @@ body{
           opacity:1;
           transition:opacity 400ms $cb;
         }
+        .plyr,
+        video,
         img{
           filter: grayscale(0%);
           mix-blend-mode:normal;
