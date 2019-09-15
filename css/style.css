@@ -1433,6 +1433,7 @@ a.plyr__control::after, a.plyr__control::before {
   display: none !important; }
 
 body {
+  overflow-x: hidden;
   background: #fff; }
 
 .menu-overlay, .grain {
@@ -1444,14 +1445,18 @@ body {
   display: block;
   top: 0;
   left: 0;
-  z-index: 2222;
-  overflow: hidden; }
+  z-index: 2222; }
 
 .grain {
   mix-blend-mode: multiply;
   -webkit-animation: grain 700ms infinite;
           animation: grain 700ms infinite;
-  opacity: .05; }
+  opacity: .05;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated; }
 
 .menu-overlay {
   z-index: 2000;
@@ -1462,7 +1467,7 @@ body {
 
 .menu:hover .menu-overlay {
   background: #00f;
-  opacity: .6;
+  opacity: .9;
   -webkit-transition: opacity 125ms;
   transition: opacity 125ms; }
 
@@ -1489,11 +1494,11 @@ body {
     max-width: 60%;
     position: absolute;
     display: block;
-    padding: 1rem 1.5rem; }
+    margin: 1rem 1.5rem; }
     .menu .logotype span {
       text-transform: uppercase;
       font-size: 1.4rem;
-      font-family: Times New Roman, times, serif;
+      font-family: 'Times New Roman';
       font-weight: 900;
       color: #0D1317; }
   .menu .container {
@@ -1527,7 +1532,7 @@ body {
         .menu .container nav ul li a {
           text-decoration: none;
           position: relative;
-          font-family: Times New Roman, times, serif;
+          font-family: Times New Roman;
           font-size: 1.3rem;
           font-weight: 300;
           padding: 3px 0; }
@@ -1571,8 +1576,7 @@ body {
             transform: scaleX(1); } }
 .content {
   margin: 9rem auto;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
   .content section {
     padding: 2rem 1.5rem; }
     .content section .inner {
@@ -1592,10 +1596,53 @@ body {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         opacity: 1;
-        -webkit-transition: margin-top 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-        transition: margin-top 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
         right: 0;
-        margin-top: 2vw; }
+        margin-top: 3vw;
+        -webkit-transition: margin-top 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+        transition: margin-top 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
+        .content section .inner .featured-media .some {
+          position: absolute;
+          z-index: 220;
+          font-size: .7rem;
+          bottom: 0;
+          right: 0;
+          opacity: 0;
+          -webkit-transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+          transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+          margin-bottom: -1.4rem; }
+          .content section .inner .featured-media .some span {
+            padding: .2rem .5rem .3rem .5rem;
+            -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            margin: .5rem 0 0 .5rem;
+            border-radius: 4px;
+            -webkit-transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01), margin-top 200ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+            transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01), margin-top 200ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
+            .content section .inner .featured-media .some span:hover {
+              margin-top: -2px; }
+          .content section .inner .featured-media .some .tags {
+            width: 0.55rem;
+            height: 0.55rem;
+            display: inline-block;
+            margin: 0;
+            margin-left: .5rem;
+            padding: 0;
+            border: 0.385rem solid #6666ff;
+            background: #000099;
+            border-bottom: 0.385rem solid transparent;
+            border-radius: 50%;
+            margin-bottom: -0.495rem; }
+          .content section .inner .featured-media .some .twitter {
+            background: #1da1f2;
+            color: #f2f2f2; }
+          .content section .inner .featured-media .some .instagram {
+            background: #f09433;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+            color: #fff; }
+          .content section .inner .featured-media .some .youtube {
+            color: #fff;
+            background-color: #ff0000; }
         .content section .inner .featured-media img {
           -webkit-filter: grayscale(50%);
                   filter: grayscale(50%);
@@ -1606,17 +1653,19 @@ body {
           margin: auto;
           opacity: .8;
           width: 100%;
-          -webkit-transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
+          -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+          -webkit-transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), box-shadow 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+          transition: opacity 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), box-shadow 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 800ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
       .content section .inner h1, .content section .inner h2 {
         position: absolute;
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         font-size: 8vw;
-        font-family: Times New Roman, times, serif !important;
+        font-family: Times New Roman, sans-serif !important;
         line-height: 8vw;
         font-weight: 900 !important;
         margin: 0;
@@ -1626,6 +1675,7 @@ body {
         -webkit-transition: margin-top 800ms 200ms;
         transition: margin-top 800ms 200ms; }
       .content section .inner h1 {
+        pointer-events: none;
         z-index: 230;
         -webkit-text-stroke: 1px #F90; }
       .content section .inner .text-fill {
@@ -1636,23 +1686,29 @@ body {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     opacity: 1;
-    overflow: hidden;
     -webkit-transition: margin-top 400ms;
     transition: margin-top 400ms; }
+    .content section .inner .featured-media.visible .some {
+      margin-bottom: -1.8rem;
+      opacity: 1;
+      -webkit-transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+      transition: opacity 400ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
     .content section .inner .featured-media.visible img {
       -webkit-filter: grayscale(0%);
               filter: grayscale(0%);
       mix-blend-mode: normal;
       opacity: 1;
       width: 100%;
-      -webkit-transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
+      -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      -webkit-transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), box-shadow 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+      transition: opacity 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), box-shadow 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-filter 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01), -webkit-box-shadow 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
   .content section .inner h1.visible, .content section .inner h2.visible {
     margin-top: 0;
-    -webkit-transition: margin-top 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
-    transition: margin-top 500ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
+    -webkit-transition: margin-top 700ms cubic-bezier(0.24, 0.99, 0.75, 1.01);
+    transition: margin-top 700ms cubic-bezier(0.24, 0.99, 0.75, 1.01); }
 
 @media only screen and (min-width: 1050px) {
   .footer,
@@ -1663,15 +1719,21 @@ body {
 
   .content {
     max-width: 1050px;
-    width: 100%;
-    overflow: hidden; }
+    width: 100%; }
     .content section .inner h1, .content section .inner h2 {
       font-size: 5.2rem; } }
 .p-team section.portfolio-item {
   margin-right: -100vw;
   opacity: 0;
-  -webkit-transition: margin-right 400ms, opacity 400ms;
-  transition: margin-right 400ms, opacity 400ms; }
+  max-height: 0px;
+  padding: 0;
+  -webkit-transition: margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms;
+  transition: margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms; }
+  .p-team section.portfolio-item .inner {
+    height: 0;
+    max-height: 0;
+    -webkit-transition: height 400ms,max-height 400ms;
+    transition: height 400ms,max-height 400ms; }
 
 @-webkit-keyframes grain {
   0% {
@@ -1728,5 +1790,130 @@ a {
       color: brighten(#f90, 20%); }
   .footer .dev-by-wtrs {
     text-align: center; }
+
+.p-wrap {
+  max-width: 1050px;
+  display: block;
+  margin: auto;
+  width: 100%; }
+
+.core {
+  margin: 1.5rem; }
+  .core .team-member {
+    width: 50%; }
+
+.team-member {
+  font-family: 'Times New Roman';
+  width: 33.3333%;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 0; }
+  .team-member .about {
+    bottom: 0%;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 80% auto 0 auto;
+    text-align: center; }
+    .team-member .about .name {
+      width: 100%;
+      display: block;
+      font-weight: 700;
+      font-size: 1.5rem; }
+    .team-member .about .title {
+      width: 100%;
+      display: block;
+      font-weight: 300;
+      font-size: 1rem; }
+  .team-member .featured-image {
+    padding-left: 0%;
+    -webkit-transition: padding-left 500ms;
+    transition: padding-left 500ms;
+    width: 100%;
+    overflow: hidden;
+    background-image: radial-gradient(#3333ff 20%, transparent 20%), radial-gradient(#3333ff 20%, transparent 20%);
+    background-color: #00f;
+    background-position: 0 0, 15px 15px;
+    background-size: 5px 5px;
+    position: absolute;
+    z-index: 200; }
+    .team-member .featured-image .more {
+      position: absolute;
+      right: 0%;
+      margin: 15px 25px;
+      bottom: 0px;
+      color: #fff;
+      z-index: 210;
+      opacity: 1;
+      -webkit-transition: opacity 500ms;
+      transition: opacity 500ms; }
+      .team-member .featured-image .more::after {
+        margin-right: -8px;
+        margin-left: 8px;
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        position: relative;
+        content: ' ';
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff; }
+    .team-member .featured-image img {
+      z-index: 200;
+      display: block;
+      opacity: 1;
+      mix-blend-mode: multiply;
+      -webkit-transition: margin-left 500ms;
+      transition: margin-left 500ms;
+      margin-left: 0%;
+      -webkit-filter: grayscale(100%) contrast(130%) brightness(130%);
+              filter: grayscale(100%) contrast(130%) brightness(130%);
+      width: 100%; }
+  .team-member .bio {
+    z-index: 190;
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 0%;
+    width: 100%;
+    opacity: 0; }
+    .team-member .bio span {
+      margin-top: 5px;
+      line-height: 150%;
+      width: 100%;
+      display: block;
+      color: #F90; }
+    .team-member .bio span.q {
+      padding-top: 1rem; }
+    .team-member .bio span.a {
+      font-family: 'Permanent Marker'; }
+  .team-member.active .featured-image {
+    padding-left: 200%;
+    -webkit-transition: padding-left 500ms;
+    transition: padding-left 500ms; }
+    .team-member.active .featured-image .more {
+      opacity: 0;
+      margin-right: -100px;
+      -webkit-transition: opacity 500ms,margin-right 500ms;
+      transition: opacity 500ms,margin-right 500ms; }
+    .team-member.active .featured-image img {
+      mix-blend-mode: difference;
+      opacity: 1;
+      margin-left: -150%;
+      -webkit-transition: margin-left 500ms;
+      transition: margin-left 500ms; }
+    .team-member.active .featured-image .bio {
+      margin-left: -65%;
+      width: 30%;
+      opacity: 1;
+      -webkit-transition: opacity 100ms 500ms;
+      transition: opacity 100ms 500ms; }
+      .team-member.active .featured-image .bio span {
+        margin-top: 0px;
+        -webkit-transition: margin-top 100ms 450ms;
+        transition: margin-top 100ms 450ms; }
 
 /*# sourceMappingURL=style.css.map */

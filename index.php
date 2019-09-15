@@ -72,23 +72,102 @@
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
   ?>
-    <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
-      <div class="inner">
-        <div class="featured-media">
-          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
-            <source src="<?php echo $video_mp4;?>" type="video/mp4" />
-          </video>
-        </div>
-        <h1><?php echo $title; ?></h1>
-        <!--noindex-->
-          <!--googleoff: index-->
-            <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
-          <!--googleon: index-->
-        <!--/noindex-->
+  <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
+    <div class="inner">
+      <div class="featured-media" data-tilt>
+        <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+          <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+        </video>
       </div>
-    </section>
+      <h1><?php echo $title; ?></h1>
+      <!--noindex-->
+        <!--googleoff: index-->
+          <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
+        <!--googleon: index-->
+      <!--/noindex-->
+    </div>
+  </section>
 
-<?php }; ?>
+  <?php }; ?>
+</div>
+<div class="p-wrap" id="team">
+
+  <div class="core">
+    <h1> Ledelsen </h1>
+  <?php
+  $users = get_users( array( 'fields' => array( 'ID' ) ) );
+  foreach($users as $user){
+          $acfI = $user->ID;
+          $acfId= 'user_' . $acfI;
+          //print_r(get_user_meta ( $user->ID));
+          $firstname = get_user_meta ($user->ID, 'first_name', true);
+          $lastname = get_user_meta ($user->ID, 'last_name', true);
+          $title = get_field('hr_title', $acfId, true);
+          $status = get_field('hr_employment_status', $acfId, true);
+          $pic = get_field('hr_profile_picture', $acfId, true);
+          $bio = get_field('hr_bio', $acfId, true);
+          $email = get_field('hr_email', $acfId, true);
+          ?>
+          <?php if ($status == ('Full-time')){?>
+
+
+
+              <div class="team-member">
+                <div class="featured-image">
+                  <span class="bio">
+                    <p><?php echo $bio ?></p>
+                  </span>
+                  <span class="more">les mer</span>
+                  <img src="<?php echo $pic ?>">
+                </div>
+                <span class="about">
+                  <span class="title"><?php echo $title ?></span>
+                  <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
+                  <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
+                </span>
+              </div>
+        <?php };?>
+          <?php
+      }
+      ?>
+    </div>
+    <div class="crew">
+      <h1> Crew </h1>
+
+      <?php
+      $users = get_users( array( 'fields' => array( 'ID' ) ) );
+      foreach($users as $user){
+            $acfI = $user->ID;
+            $acfId= 'user_' . $acfI;
+            //print_r(get_user_meta ( $user->ID));
+            $firstname = get_user_meta ($user->ID, 'first_name', true);
+            $lastname = get_user_meta ($user->ID, 'last_name', true);
+            $title = get_field('hr_title', $acfId, true);
+            $status = get_field('hr_employment_status', $acfId, true);
+            $pic = get_field('hr_profile_picture', $acfId, true);
+            $bio = get_field('hr_bio', $acfId, true);
+            $email = get_field('hr_email', $acfId, true);
+            ?>
+            <?php if ($status == ('Freelancer')){?>
+                <div class="team-member">
+                  <div class="featured-image">
+                    <span class="bio">
+                      <p><?php echo $bio ?></p>
+                    </span>
+                    <span class="more">les mer</span>
+                    <img src="<?php echo $pic ?>">
+                  </div>
+                  <span class="about">
+                    <span class="title"><?php echo $title ?></span>
+                    <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
+                    <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
+                  </span>
+                </div>
+          <?php };?>
+            <?php
+        }
+        ?>
+    </div>
 </div>
 <div class="contact-form">
 
