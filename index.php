@@ -63,7 +63,7 @@
 </div>
 
 
-<div class="content">
+<div class="content p-wrap" id="home">
 
 
 
