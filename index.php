@@ -35,7 +35,9 @@
     <div class="menu">
   <div class="menu-overlay"></div>
   <div class="logotype">
-    <span>Citrus Studio</span>
+    <a href="<?php echo get_site_url();?>">
+      <span>Citrus Studio</span>
+    </a>
   </div>
   <div class="container">
     <nav>
