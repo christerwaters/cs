@@ -139,8 +139,8 @@
           <?php
       }
       ?>
-    </div>
     <!-- -->
+    </div>
     <div class="crew">
       <h2> Crew </h2>
 
