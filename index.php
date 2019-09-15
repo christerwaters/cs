@@ -93,7 +93,7 @@
 <div class="p-wrap" id="team">
 
   <div class="core">
-    <h1> Ledelsen </h1>
+    <h1> Ledelsen </h1><!--
   <?php
   $users = get_users( array( 'fields' => array( 'ID' ) ) );
   foreach($users as $user){
@@ -112,7 +112,7 @@
 
 
 
-              <div class="team-member">
+          --><div class="team-member">
                 <div class="featured-image">
                   <span class="bio">
                     <p><?php echo $bio ?></p>
@@ -125,11 +125,12 @@
                   <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
                   <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
                 </span>
-              </div>
+              </div><!--
         <?php };?>
           <?php
       }
       ?>
+    -->
     </div>
     <div class="crew">
       <h1> Crew </h1>
