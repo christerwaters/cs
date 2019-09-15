@@ -57,7 +57,7 @@
 
 
 
-<div class="h-p-header">
+<div class="h-p-header" id="home">
   <div class="text">
     <div class="line01">vi ønsker å redefinere</div>
     <div class="line02">forholdet mellom kreative</div>
