@@ -1,0 +1,18 @@
+.p-om-oss{
+
+}
+.p-om-oss,
+.p-team{
+  section.portfolio-item{
+    margin-right:-100vw;
+    opacity:0;
+    max-height:0px;
+    padding:0;
+    transition:margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms;
+    .inner{
+      height:0;
+      max-height:0;
+      transition:height 400ms,max-height 400ms;
+    }
+  }
+}
