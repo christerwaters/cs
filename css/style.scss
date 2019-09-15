@@ -24,7 +24,11 @@ $font-size:2;
 
 
 @import '../../core/css/reset';
-@import '../../core/css/plyr';$black:#0D1317;
+@import '../../core/css/plyr';
+@import 'paging';
+
+
+$black:#0D1317;
 
 $sm-scrn: 48em;
 $md-scrn: 62em;
@@ -311,6 +315,7 @@ body{
             background-color:#ff0000;
           }
         }
+        video,
         img{
           filter: grayscale(50%);
           mix-blend-mode:normal;
