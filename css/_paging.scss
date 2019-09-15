@@ -24,6 +24,12 @@
     }
   }
 }
+.p-wrap#team{
+  display:none;
+}
+.p-open.p-team .p-wrap#team{
+  display:block;
+}
 #home{
   display:none;
 }
