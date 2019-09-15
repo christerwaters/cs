@@ -231,8 +231,8 @@ foreach ($pages as $page_data) {
 <div class="contact-form">
 
 </div>
-<div class="grain"></div>
-
+<!--<div class="grain"></div>
+-->
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
 <script>
@@ -240,8 +240,8 @@ foreach ($pages as $page_data) {
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/url_handler.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/scrolled.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 
 <?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name; echo '<style>.p-open.p-'.  $post_slug . ' .p-wrap#' . $post_slug . '{opacity:1;display:block;}</style>' ;}?>
 
