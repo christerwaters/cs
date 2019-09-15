@@ -430,9 +430,6 @@ $m-100: 100%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   .col{ @include flexit($m-33);}
-//  @media only screen and (min-width: $sm-scrn) {.col{@include flexit($m-33);}}
-//  @media only screen and (min-width: $md-scrn) {.col{@include flexit($m-33);}}
-//  @media only screen and (min-width: $lg-scrn) {.col{@include flexit($m-33);}}
 
   a{
     border-bottom:2px solid #f90;
@@ -457,9 +454,17 @@ $m-100: 100%;
   width:100%;
 }
 .core {
+  white-space: nowrap;
   margin: 1.5rem;
   .team-member{
     width:50%;
+  }
+}
+.crew{
+  white-space: nowrap;
+  margin: 1.5rem;
+  .team-member{
+    width:25%;
   }
 }
 .team-member{

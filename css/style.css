@@ -1798,9 +1798,16 @@ a {
   width: 100%; }
 
 .core {
+  white-space: nowrap;
   margin: 1.5rem; }
   .core .team-member {
     width: 50%; }
+
+.crew {
+  white-space: nowrap;
+  margin: 1.5rem; }
+  .crew .team-member {
+    width: 25%; }
 
 .team-member {
   font-family: 'Times New Roman';
