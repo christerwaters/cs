@@ -1722,19 +1722,6 @@ body {
     width: 100%; }
     .content section .inner h1, .content section .inner h2 {
       font-size: 5.2rem; } }
-.p-team section.portfolio-item {
-  margin-right: -100vw;
-  opacity: 0;
-  max-height: 0px;
-  padding: 0;
-  -webkit-transition: margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms;
-  transition: margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms; }
-  .p-team section.portfolio-item .inner {
-    height: 0;
-    max-height: 0;
-    -webkit-transition: height 400ms,max-height 400ms;
-    transition: height 400ms,max-height 400ms; }
-
 @-webkit-keyframes grain {
   0% {
     background-image: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100); }
@@ -1746,7 +1733,6 @@ body {
     background-image: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=67&opacity=100); }
   100% {
     background-image: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100); } }
-
 @keyframes grain {
   0% {
     background-image: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100); }
@@ -1798,12 +1784,16 @@ a {
   width: 100%; }
 
 .core {
-  margin: 1.5rem; }
+  margin: 7rem 1.5rem 0 1.5rem; }
   .core .team-member {
     width: 50%; }
+  .core h2 {
+    font-size: 5rem; }
 
 .crew {
   margin: 1.5rem; }
+  .crew h2 {
+    font-size: 5rem; }
   .crew .team-member {
     width: 25%; }
 

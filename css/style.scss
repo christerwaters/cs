@@ -349,20 +349,6 @@ body{
     }
   }
 }
-.p-team{
-  section.portfolio-item{
-    margin-right:-100vw;
-    opacity:0;
-    max-height:0px;
-    padding:0;
-    transition:margin-right 400ms, opacity 200ms, max-height 400ms,padding 400ms;
-    .inner{
-      height:0;
-      max-height:0;
-      transition:height 400ms,max-height 400ms;
-    }
-  }
-}
 $bg-grain-01: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100);
 $bg-grain-02: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=65&opacity=100);
 $bg-grain-03: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=66&opacity=100);
@@ -454,12 +440,18 @@ $m-100: 100%;
   width:100%;
 }
 .core {
-  margin: 1.5rem;
+  margin: 7rem 1.5rem 0 1.5rem;
   .team-member{
     width:50%;
   }
+  h2{
+    font-size:5rem;
+  }
 }
 .crew{
+  h2{
+    font-size:5rem;
+  }
   margin: 1.5rem;
   .team-member{
     width:25%;

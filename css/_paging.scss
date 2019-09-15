@@ -1,8 +1,16 @@
 .p-om-oss{
 
 }
+.p-om-oss .p-wrap#om-oss{
+
+}
 .p-om-oss,
 .p-team{
+  .content{
+
+    display: none;
+    transition: display 0s 500ms;
+  }
   section.portfolio-item{
     margin-right:-100vw;
     opacity:0;
