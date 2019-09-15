@@ -62,16 +62,3 @@ $(".team-member").click(function(){
     $(this).addClass("active");
   }
 });
-
-
-
-
-
-$('a').click(function(){
-    event.preventDefault();
-    var hyper = $(this).attr("href");
-    $("body").attr('class', 'p-open p-' + hyper);
-    plyr.get().forEach(function(instance) {
-      instance.pause();
-    });
-});
