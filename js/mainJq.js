@@ -60,12 +60,6 @@ function checkVisible() {
 }
 
 
-dontGo({
-	title: 'Alternative title text right here!',
-	timeout: 1000 //5 seconds
-});
-
-
 
 var words = $(".line01").text().split(" ");
 $(".line01").empty();
