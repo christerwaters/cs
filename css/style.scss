@@ -315,8 +315,6 @@ body{
             background-color:#ff0000;
           }
         }
-        .plyr,
-        video,
         img{
           filter: grayscale(50%);
           mix-blend-mode:normal;
@@ -366,8 +364,6 @@ body{
           opacity:1;
           transition:opacity 400ms $cb;
         }
-        .plyr,
-        video,
         img{
           filter: grayscale(0%);
           mix-blend-mode:normal;
