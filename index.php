@@ -40,10 +40,10 @@
   <div class="container">
     <nav>
       <ul>
-        <li><a href="#" class="underline"><span>Kontakt</span></a></li>
-        <li><a href="#" class="underline"><span>Team</span></a></li>
-        <li><a href="#" class="underline"><span>Om oss</span></a></li>
-        <li><a href="#" class="underline"><span>Events</span></a></li>
+        <li><a href="<?php echo get_site_url();?>/kontakt" class="underline"><span>Kontakt</span></a></li>
+        <li><a href="<?php echo get_site_url();?>/team" class="underline"><span>Team</span></a></li>
+        <li><a href="<?php echo get_site_url();?>/om-oss" class="underline"><span>Om oss</span></a></li>
+        <li><a href="<?php echo get_site_url();?>/events" class="underline"><span>Events</span></a></li>
       </ul>
     </nav>
   </div>
