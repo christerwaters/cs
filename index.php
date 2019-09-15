@@ -52,6 +52,15 @@
 </div>
 
 
+<div class="h-p-header">
+  <div class="text">
+    <div class="line01">vi ønsker å redefinere</div>
+    <div class="line02">forholdet mellom kreative</div>
+    <div class="line03">aktører. vi ønsker ikke </div>
+    <div class="line04">å konkurrere, men </div>
+    <div class="line05">å samarbeide.</div>
+  </div>
+</div>
 
 
 <div class="content">
