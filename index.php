@@ -179,30 +179,59 @@
         ?>
     </div>
 </div>
+
+<!--  GET ALL THE PAGES -->
+<?php
+$pages = get_pages();
+foreach ($pages as $page_data) {
+    $content = apply_filters('the_content', $page_data->post_content);
+    $title = $page_data->post_title;
+    $post_slug = $page_data->post_name;
+    $select_format_type = get_field('format_type',$page_data->ID);
+    $video_mp4 = get_field('video_file_mp4',$page_data->ID);
+    $website_url = get_field('website_url',$page_data->ID);
+?>
+      <div class="p-wrap <?php echo $select_format_type;?>" id="<?php echo $post_slug?>">
+        <div class="media-wrap">
+
+          <?php if ( $select_format_type == ('Image')) {?>
+            <!-- LAY OUT THE TEMPLATE FOR IMAGES HERE -->
+            <div class="image-wrap">
+              <img src="<?php echo $image_full;?>" alt="<?php echo $title; ?>">
+            </div>
+          <?php };?>
+          <?php if ( $select_format_type == ('Video')) {?>
+            <!-- LAY OUT THE TEMPLATE FOR VIDEOS HERE -->
+            <div class="video-wrap">
+              <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+                <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+              </video>
+            </div>
+          <?php };?>
+        </div>
+        <div class="text-wrap">
+          <div class="p-wrap-title">
+            <div class="p-title">
+              <h2><?php echo $title ?></h2>
+            </div>
+          </div>
+          <div class="page">
+            <div class="p-content">
+              <?php echo $content ?>
+            </div>
+          </div>
+        </div>
+      </div>
+<?php
+} ?>
+
+
+
+
 <div class="contact-form">
 
 </div>
 <div class="grain"></div>
-<div class="footer">
-  <div class="col">
-    Privacy
-  </div>
-  <div class="col">
-    Cookies
-  </div>
-  <div class="col">
-    This is a test
-  </div>
-  <div class="col">
-    This is a test
-  </div>
-  <div class="col">
-    This is a test
-  </div>
-  <div class="dev-by-wtrs">
-    <a href="wtrs.dev">WTRS</a>
-  </div>
-</div>
 
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
