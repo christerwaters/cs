@@ -42,40 +42,39 @@ body{
   animation: grain 700ms infinite;
 }
 
-
 @keyframes grain{
   0%{
     background-image:url(/media/wn1.png);
   }
   10%{
-  background-image:url(/media/wn2.png);
+    background-image:url(/media/wn2.png);
   }
   20%{
-  background-image:url(/media/wn3.png);
+    background-image:url(/media/wn3.png);
   }
   30%{
-  background-image:url(/media/wn4.png);
+    background-image:url(/media/wn4.png);
   }
   40%{
-  background-image:url(/media/wn6.png);
+    background-image:url(/media/wn6.png);
   }
   50%{
-  background-image:url(/media/wn7.png);
+    background-image:url(/media/wn7.png);
   }
   60%{
-  background-image:url(/media/wn8.png);
+    background-image:url(/media/wn8.png);
   }
   70%{
-  background-image:url(/media/wn6.png);
+    background-image:url(/media/wn6.png);
   }
   80%{
-  background-image:url(/media/wn4.png);
+    background-image:url(/media/wn4.png);
   }
   90%{
-  background-image:url(/media/wn2.png);
+    background-image:url(/media/wn2.png);
   }
   100%{
-  background-image:url(/media/wn1.png);
+    background-image:url(/media/wn1.png);
   }
 }
 
