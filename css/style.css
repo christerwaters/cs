@@ -1453,7 +1453,12 @@ a.plyr__control::after, a.plyr__control::before {
     transition: height 400ms,max-height 400ms; }
 
 .p-open.p-home .p-wrap {
-  display: none; }
+  display: none;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  opacity: 0; }
 .p-open.p-home .p-wrap#home {
   display: block; }
 
@@ -1554,545 +1559,545 @@ body {
         text-transform: lowercase;
         font-size: 120%; }
     .h-p-header .text .word :nth-child(1) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: 0.2vw;
+      -webkit-transform: rotate(6deg);
+              transform: rotate(6deg);
+      margin-right: 0vw;
       margin-left: 0.2vw;
-      font-size: 4.41vw; }
+      font-size: 4.59vw; }
     .h-p-header .text .word :nth-child(2) {
-      -webkit-transform: rotate(1deg);
-              transform: rotate(1deg);
-      margin-right: 0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.72vw; }
-    .h-p-header .text .word :nth-child(3) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
-      margin-right: 0.2vw;
-      margin-left: 0vw;
-      font-size: 4.09vw; }
-    .h-p-header .text .word :nth-child(4) {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.56vw; }
-    .h-p-header .text .word :nth-child(5) {
-      -webkit-transform: rotate(10deg);
-              transform: rotate(10deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.28vw; }
-    .h-p-header .text .word :nth-child(6) {
-      -webkit-transform: rotate(-3deg);
-              transform: rotate(-3deg);
-      margin-right: 0vw;
-      margin-left: 0.1vw;
-      font-size: 4.84vw; }
-    .h-p-header .text .word :nth-child(7) {
-      -webkit-transform: rotate(8deg);
-              transform: rotate(8deg);
-      margin-right: 0.1vw;
-      margin-left: 0vw;
-      font-size: 4.39vw; }
-    .h-p-header .text .word :nth-child(8) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: 0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.65vw; }
-    .h-p-header .text .word :nth-child(9) {
-      -webkit-transform: rotate(-3deg);
-              transform: rotate(-3deg);
-      margin-right: 0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.58vw; }
-    .h-p-header .text .word :nth-child(10) {
-      -webkit-transform: rotate(7deg);
-              transform: rotate(7deg);
-      margin-right: 0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.6vw; }
-    .h-p-header .text .word :nth-child(11) {
-      -webkit-transform: rotate(3deg);
-              transform: rotate(3deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.08vw; }
-    .h-p-header .text .word :nth-child(12) {
-      -webkit-transform: rotate(-7deg);
-              transform: rotate(-7deg);
-      margin-right: -0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.16vw; }
-    .h-p-header .text .word :nth-child(13) {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.09vw; }
-    .h-p-header .text .word :nth-child(14) {
       -webkit-transform: rotate(-2deg);
               transform: rotate(-2deg);
       margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.21vw; }
+    .h-p-header .text .word :nth-child(3) {
+      -webkit-transform: rotate(7deg);
+              transform: rotate(7deg);
+      margin-right: 0vw;
       margin-left: 0.2vw;
-      font-size: 4.75vw; }
-    .h-p-header .text .word :nth-child(15) {
+      font-size: 4.67vw; }
+    .h-p-header .text .word :nth-child(4) {
+      -webkit-transform: rotate(-1deg);
+              transform: rotate(-1deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.93vw; }
+    .h-p-header .text .word :nth-child(5) {
       -webkit-transform: rotate(8deg);
               transform: rotate(8deg);
       margin-right: 0.1vw;
       margin-left: 0.1vw;
-      font-size: 4.78vw; }
-    .h-p-header .text .word :nth-child(16) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.06vw; }
-    .h-p-header .text .word :nth-child(17) {
-      -webkit-transform: rotate(-8deg);
-              transform: rotate(-8deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.74vw; }
-    .h-p-header .text .word :nth-child(18) {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-      margin-right: -0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.71vw; }
-    .h-p-header .text .word :nth-child(19) {
-      -webkit-transform: rotate(1deg);
-              transform: rotate(1deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.92vw; }
-    .h-p-header .text .word :nth-child(20) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.39vw; }
-    .h-p-header .text .word :nth-child(21) {
+      font-size: 4.95vw; }
+    .h-p-header .text .word :nth-child(6) {
       -webkit-transform: rotate(9deg);
               transform: rotate(9deg);
       margin-right: 0vw;
+      margin-left: 0vw;
+      font-size: 4.88vw; }
+    .h-p-header .text .word :nth-child(7) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0vw;
+      margin-left: 0.1vw;
+      font-size: 4.58vw; }
+    .h-p-header .text .word :nth-child(8) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0vw;
+      margin-left: -0.1vw;
+      font-size: 4.07vw; }
+    .h-p-header .text .word :nth-child(9) {
+      -webkit-transform: rotate(1deg);
+              transform: rotate(1deg);
+      margin-right: 0.2vw;
       margin-left: 0.2vw;
-      font-size: 4.53vw; }
-    .h-p-header .text .word :nth-child(22) {
+      font-size: 4.68vw; }
+    .h-p-header .text .word :nth-child(10) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0vw;
+      margin-left: 0vw;
+      font-size: 4.59vw; }
+    .h-p-header .text .word :nth-child(11) {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+      margin-right: 0.1vw;
+      margin-left: 0.2vw;
+      font-size: 4.69vw; }
+    .h-p-header .text .word :nth-child(12) {
+      -webkit-transform: rotate(9deg);
+              transform: rotate(9deg);
+      margin-right: -0.1vw;
+      margin-left: 0vw;
+      font-size: 4.34vw; }
+    .h-p-header .text .word :nth-child(13) {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+      margin-right: 0.1vw;
+      margin-left: 0.2vw;
+      font-size: 4.18vw; }
+    .h-p-header .text .word :nth-child(14) {
+      -webkit-transform: rotate(-7deg);
+              transform: rotate(-7deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.79vw; }
+    .h-p-header .text .word :nth-child(15) {
       -webkit-transform: rotate(-9deg);
               transform: rotate(-9deg);
       margin-right: 0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.56vw; }
+    .h-p-header .text .word :nth-child(16) {
+      -webkit-transform: rotate(6deg);
+              transform: rotate(6deg);
+      margin-right: 0vw;
       margin-left: 0vw;
-      font-size: 4.48vw; }
-    .h-p-header .text .word :nth-child(23) {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      margin-right: -0.1vw;
+      font-size: 4.56vw; }
+    .h-p-header .text .word :nth-child(17) {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+      margin-right: 0.1vw;
       margin-left: -0.1vw;
-      font-size: 4.74vw; }
-    .h-p-header .text .word :nth-child(24) {
+      font-size: 4.87vw; }
+    .h-p-header .text .word :nth-child(18) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.25vw; }
+    .h-p-header .text .word :nth-child(19) {
       -webkit-transform: rotate(8deg);
               transform: rotate(8deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.53vw; }
+    .h-p-header .text .word :nth-child(20) {
+      -webkit-transform: rotate(-1deg);
+              transform: rotate(-1deg);
+      margin-right: -0.1vw;
+      margin-left: 0.2vw;
+      font-size: 4.26vw; }
+    .h-p-header .text .word :nth-child(21) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.09vw; }
+    .h-p-header .text .word :nth-child(22) {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.98vw; }
+    .h-p-header .text .word :nth-child(23) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: 0vw;
+      margin-left: 0.1vw;
+      font-size: 4.17vw; }
+    .h-p-header .text .word :nth-child(24) {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
       margin-right: 0.1vw;
       margin-left: 0vw;
       font-size: 4.96vw; }
     .h-p-header .text .word :nth-child(25) {
-      -webkit-transform: rotate(-3deg);
-              transform: rotate(-3deg);
+      -webkit-transform: rotate(-9deg);
+              transform: rotate(-9deg);
       margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.57vw; }
+      margin-left: 0.1vw;
+      font-size: 5vw; }
     .h-p-header .text .word :nth-child(26) {
+      -webkit-transform: rotate(-6deg);
+              transform: rotate(-6deg);
+      margin-right: 0.2vw;
+      margin-left: -0.1vw;
+      font-size: 4.58vw; }
+    .h-p-header .text .word :nth-child(27) {
       -webkit-transform: rotate(-3deg);
               transform: rotate(-3deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.02vw; }
-    .h-p-header .text .word :nth-child(27) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
       margin-right: 0.1vw;
       margin-left: 0.2vw;
-      font-size: 4.51vw; }
+      font-size: 4.82vw; }
     .h-p-header .text .word :nth-child(28) {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.51vw; }
+    .h-p-header .text .word :nth-child(29) {
       -webkit-transform: rotate(6deg);
               transform: rotate(6deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.32vw; }
-    .h-p-header .text .word :nth-child(29) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: 0vw;
-      margin-left: 0.1vw;
-      font-size: 4.3vw; }
+      margin-right: 0.2vw;
+      margin-left: -0.1vw;
+      font-size: 4.26vw; }
     .h-p-header .text .word :nth-child(30) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.91vw; }
-    .h-p-header .text .word :nth-child(31) {
       -webkit-transform: rotate(7deg);
               transform: rotate(7deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.2vw; }
-    .h-p-header .text .word :nth-child(32) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
       margin-right: -0.1vw;
       margin-left: -0.1vw;
-      font-size: 4.4vw; }
+      font-size: 4.01vw; }
+    .h-p-header .text .word :nth-child(31) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: 0.1vw;
+      margin-left: 0vw;
+      font-size: 4.3vw; }
+    .h-p-header .text .word :nth-child(32) {
+      -webkit-transform: rotate(9deg);
+              transform: rotate(9deg);
+      margin-right: -0.1vw;
+      margin-left: -0.1vw;
+      font-size: 4.85vw; }
     .h-p-header .text .word :nth-child(33) {
-      -webkit-transform: rotate(-7deg);
-              transform: rotate(-7deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.23vw; }
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: 0.1vw;
+      margin-left: 0vw;
+      font-size: 4.34vw; }
     .h-p-header .text .word :nth-child(34) {
       -webkit-transform: rotate(1deg);
               transform: rotate(1deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.05vw; }
-    .h-p-header .text .word :nth-child(35) {
-      -webkit-transform: rotate(-6deg);
-              transform: rotate(-6deg);
-      margin-right: 0.2vw;
+      margin-right: 0vw;
       margin-left: 0vw;
-      font-size: 4.83vw; }
+      font-size: 4.65vw; }
+    .h-p-header .text .word :nth-child(35) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.33vw; }
     .h-p-header .text .word :nth-child(36) {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.6vw; }
+    .h-p-header .text .word :nth-child(37) {
       -webkit-transform: rotate(1deg);
               transform: rotate(1deg);
       margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.77vw; }
-    .h-p-header .text .word :nth-child(37) {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.58vw; }
+      margin-left: -0.1vw;
+      font-size: 4.13vw; }
     .h-p-header .text .word :nth-child(38) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.7vw; }
+    .h-p-header .text .word :nth-child(39) {
       -webkit-transform: rotate(6deg);
               transform: rotate(6deg);
       margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 5vw; }
-    .h-p-header .text .word :nth-child(39) {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.73vw; }
+      margin-left: 0.2vw;
+      font-size: 4.02vw; }
     .h-p-header .text .word :nth-child(40) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.45vw; }
-    .h-p-header .text .word :nth-child(41) {
-      -webkit-transform: rotate(-6deg);
-              transform: rotate(-6deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.99vw; }
-    .h-p-header .text .word :nth-child(42) {
       -webkit-transform: rotate(2deg);
               transform: rotate(2deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.1vw; }
-    .h-p-header .text .word :nth-child(43) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
       margin-right: 0vw;
+      margin-left: 0.1vw;
+      font-size: 4.86vw; }
+    .h-p-header .text .word :nth-child(41) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      margin-right: -0.1vw;
+      margin-left: 0vw;
+      font-size: 4.69vw; }
+    .h-p-header .text .word :nth-child(42) {
+      -webkit-transform: rotate(7deg);
+              transform: rotate(7deg);
+      margin-right: 0.1vw;
+      margin-left: 0vw;
+      font-size: 4.68vw; }
+    .h-p-header .text .word :nth-child(43) {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.52vw; }
+    .h-p-header .text .word :nth-child(44) {
+      -webkit-transform: rotate(-7deg);
+              transform: rotate(-7deg);
+      margin-right: 0vw;
+      margin-left: 0.2vw;
+      font-size: 4.02vw; }
+    .h-p-header .text .word :nth-child(45) {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+      margin-right: 0.1vw;
+      margin-left: 0.2vw;
+      font-size: 4.56vw; }
+    .h-p-header .text .word :nth-child(46) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: -0.1vw;
+      margin-left: 0.2vw;
+      font-size: 4.86vw; }
+    .h-p-header .text .word :nth-child(47) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      margin-right: -0.1vw;
+      margin-left: 0vw;
+      font-size: 4.54vw; }
+    .h-p-header .text .word :nth-child(48) {
+      -webkit-transform: rotate(-9deg);
+              transform: rotate(-9deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.43vw; }
+    .h-p-header .text .word :nth-child(49) {
+      -webkit-transform: rotate(9deg);
+              transform: rotate(9deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.25vw; }
+    .h-p-header .text .word :nth-child(50) {
+      -webkit-transform: rotate(1deg);
+              transform: rotate(1deg);
+      margin-right: -0.1vw;
       margin-left: 0vw;
       font-size: 4.87vw; }
-    .h-p-header .text .word :nth-child(44) {
-      -webkit-transform: rotate(3deg);
-              transform: rotate(3deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.83vw; }
-    .h-p-header .text .word :nth-child(45) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.08vw; }
-    .h-p-header .text .word :nth-child(46) {
-      -webkit-transform: rotate(8deg);
-              transform: rotate(8deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.09vw; }
-    .h-p-header .text .word :nth-child(47) {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.08vw; }
-    .h-p-header .text .word :nth-child(48) {
-      -webkit-transform: rotate(-8deg);
-              transform: rotate(-8deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.01vw; }
-    .h-p-header .text .word :nth-child(49) {
-      -webkit-transform: rotate(-6deg);
-              transform: rotate(-6deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.69vw; }
-    .h-p-header .text .word :nth-child(50) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.19vw; }
     .h-p-header .text .word :nth-child(51) {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
-      margin-right: 0.2vw;
-      margin-left: 0vw;
-      font-size: 4.36vw; }
-    .h-p-header .text .word :nth-child(52) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.96vw; }
-    .h-p-header .text .word :nth-child(53) {
-      -webkit-transform: rotate(3deg);
-              transform: rotate(3deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.62vw; }
-    .h-p-header .text .word :nth-child(54) {
-      -webkit-transform: rotate(1deg);
-              transform: rotate(1deg);
-      margin-right: 0.1vw;
-      margin-left: 0vw;
-      font-size: 4.92vw; }
-    .h-p-header .text .word :nth-child(55) {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.98vw; }
-    .h-p-header .text .word :nth-child(56) {
-      -webkit-transform: rotate(3deg);
-              transform: rotate(3deg);
-      margin-right: 0.1vw;
-      margin-left: 0vw;
-      font-size: 4.78vw; }
-    .h-p-header .text .word :nth-child(57) {
-      -webkit-transform: rotate(-7deg);
-              transform: rotate(-7deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.23vw; }
-    .h-p-header .text .word :nth-child(58) {
-      -webkit-transform: rotate(9deg);
-              transform: rotate(9deg);
-      margin-right: 0vw;
-      margin-left: 0.1vw;
-      font-size: 4.64vw; }
-    .h-p-header .text .word :nth-child(59) {
-      -webkit-transform: rotate(-3deg);
-              transform: rotate(-3deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.1vw; }
-    .h-p-header .text .word :nth-child(60) {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.96vw; }
-    .h-p-header .text .word :nth-child(61) {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      margin-right: 0.1vw;
-      margin-left: 0vw;
-      font-size: 4.84vw; }
-    .h-p-header .text .word :nth-child(62) {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-      margin-right: 0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.22vw; }
-    .h-p-header .text .word :nth-child(63) {
-      -webkit-transform: rotate(-7deg);
-              transform: rotate(-7deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.31vw; }
-    .h-p-header .text .word :nth-child(64) {
-      -webkit-transform: rotate(3deg);
-              transform: rotate(3deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.46vw; }
-    .h-p-header .text .word :nth-child(65) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
-      margin-right: 0.2vw;
-      margin-left: 0vw;
-      font-size: 4.66vw; }
-    .h-p-header .text .word :nth-child(66) {
       -webkit-transform: rotate(-1deg);
               transform: rotate(-1deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.67vw; }
-    .h-p-header .text .word :nth-child(67) {
-      -webkit-transform: rotate(-3deg);
-              transform: rotate(-3deg);
       margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.69vw; }
-    .h-p-header .text .word :nth-child(68) {
-      -webkit-transform: rotate(5deg);
-              transform: rotate(5deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.39vw; }
-    .h-p-header .text .word :nth-child(69) {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-      margin-right: 0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.31vw; }
-    .h-p-header .text .word :nth-child(70) {
+      margin-left: 0.1vw;
+      font-size: 4.13vw; }
+    .h-p-header .text .word :nth-child(52) {
       -webkit-transform: rotate(-8deg);
               transform: rotate(-8deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.25vw; }
-    .h-p-header .text .word :nth-child(71) {
-      -webkit-transform: rotate(-5deg);
-              transform: rotate(-5deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.59vw; }
-    .h-p-header .text .word :nth-child(72) {
-      -webkit-transform: rotate(7deg);
-              transform: rotate(7deg);
-      margin-right: 0.2vw;
-      margin-left: 0.1vw;
-      font-size: 4.02vw; }
-    .h-p-header .text .word :nth-child(73) {
-      -webkit-transform: rotate(9deg);
-              transform: rotate(9deg);
-      margin-right: 0.2vw;
-      margin-left: -0.1vw;
-      font-size: 4.36vw; }
-    .h-p-header .text .word :nth-child(74) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: 0vw;
-      margin-left: 0vw;
-      font-size: 4.28vw; }
-    .h-p-header .text .word :nth-child(75) {
-      -webkit-transform: rotate(6deg);
-              transform: rotate(6deg);
-      margin-right: -0.1vw;
-      margin-left: 0vw;
-      font-size: 4.26vw; }
-    .h-p-header .text .word :nth-child(76) {
-      -webkit-transform: rotate(-9deg);
-              transform: rotate(-9deg);
-      margin-right: 0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.34vw; }
-    .h-p-header .text .word :nth-child(77) {
-      -webkit-transform: rotate(9deg);
-              transform: rotate(9deg);
-      margin-right: 0vw;
-      margin-left: 0.2vw;
-      font-size: 4.36vw; }
-    .h-p-header .text .word :nth-child(78) {
-      -webkit-transform: rotate(-8deg);
-              transform: rotate(-8deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.62vw; }
-    .h-p-header .text .word :nth-child(79) {
-      -webkit-transform: rotate(1deg);
-              transform: rotate(1deg);
-      margin-right: 0.2vw;
-      margin-left: 0.2vw;
-      font-size: 4.19vw; }
-    .h-p-header .text .word :nth-child(80) {
-      -webkit-transform: rotate(-9deg);
-              transform: rotate(-9deg);
-      margin-right: 0.1vw;
-      margin-left: -0.1vw;
-      font-size: 4.31vw; }
-    .h-p-header .text .word :nth-child(81) {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-      margin-right: -0.1vw;
-      margin-left: 0.2vw;
-      font-size: 4.55vw; }
-    .h-p-header .text .word :nth-child(82) {
-      -webkit-transform: rotate(9deg);
-              transform: rotate(9deg);
-      margin-right: -0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.58vw; }
-    .h-p-header .text .word :nth-child(83) {
-      -webkit-transform: rotate(8deg);
-              transform: rotate(8deg);
       margin-right: 0.2vw;
       margin-left: 0vw;
-      font-size: 4.29vw; }
-    .h-p-header .text .word :nth-child(84) {
-      -webkit-transform: rotate(7deg);
-              transform: rotate(7deg);
+      font-size: 4.51vw; }
+    .h-p-header .text .word :nth-child(53) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
       margin-right: 0.1vw;
       margin-left: 0.2vw;
       font-size: 4.22vw; }
-    .h-p-header .text .word :nth-child(85) {
-      -webkit-transform: rotate(8deg);
-              transform: rotate(8deg);
+    .h-p-header .text .word :nth-child(54) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0vw;
+      margin-left: 0.2vw;
+      font-size: 4.69vw; }
+    .h-p-header .text .word :nth-child(55) {
+      -webkit-transform: rotate(9deg);
+              transform: rotate(9deg);
+      margin-right: 0vw;
+      margin-left: -0.1vw;
+      font-size: 4.04vw; }
+    .h-p-header .text .word :nth-child(56) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: -0.1vw;
+      margin-left: -0.1vw;
+      font-size: 4.92vw; }
+    .h-p-header .text .word :nth-child(57) {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.34vw; }
+    .h-p-header .text .word :nth-child(58) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: -0.1vw;
+      margin-left: -0.1vw;
+      font-size: 4.21vw; }
+    .h-p-header .text .word :nth-child(59) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
       margin-right: 0.1vw;
       margin-left: 0.1vw;
       font-size: 4.27vw; }
-    .h-p-header .text .word :nth-child(86) {
-      -webkit-transform: rotate(-6deg);
-              transform: rotate(-6deg);
-      margin-right: 0vw;
-      margin-left: -0.1vw;
-      font-size: 4.86vw; }
-    .h-p-header .text .word :nth-child(87) {
-      -webkit-transform: rotate(9deg);
-              transform: rotate(9deg);
-      margin-right: 0.1vw;
-      margin-left: 0.1vw;
-      font-size: 4.15vw; }
-    .h-p-header .text .word :nth-child(88) {
-      -webkit-transform: rotate(7deg);
-              transform: rotate(7deg);
+    .h-p-header .text .word :nth-child(60) {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
       margin-right: 0.1vw;
       margin-left: 0.2vw;
-      font-size: 4.57vw; }
-    .h-p-header .text .word :nth-child(89) {
+      font-size: 4.62vw; }
+    .h-p-header .text .word :nth-child(61) {
+      -webkit-transform: rotate(9deg);
+              transform: rotate(9deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.58vw; }
+    .h-p-header .text .word :nth-child(62) {
+      -webkit-transform: rotate(8deg);
+              transform: rotate(8deg);
+      margin-right: 0.2vw;
+      margin-left: -0.1vw;
+      font-size: 4.04vw; }
+    .h-p-header .text .word :nth-child(63) {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+      margin-right: 0vw;
+      margin-left: 0.1vw;
+      font-size: 5vw; }
+    .h-p-header .text .word :nth-child(64) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: 0.2vw;
+      margin-left: -0.1vw;
+      font-size: 4.88vw; }
+    .h-p-header .text .word :nth-child(65) {
+      -webkit-transform: rotate(4deg);
+              transform: rotate(4deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.05vw; }
+    .h-p-header .text .word :nth-child(66) {
+      -webkit-transform: rotate(-7deg);
+              transform: rotate(-7deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.13vw; }
+    .h-p-header .text .word :nth-child(67) {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+      margin-right: 0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.25vw; }
+    .h-p-header .text .word :nth-child(68) {
+      -webkit-transform: rotate(-6deg);
+              transform: rotate(-6deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.45vw; }
+    .h-p-header .text .word :nth-child(69) {
       -webkit-transform: rotate(-2deg);
               transform: rotate(-2deg);
+      margin-right: 0vw;
+      margin-left: 0vw;
+      font-size: 4.8vw; }
+    .h-p-header .text .word :nth-child(70) {
+      -webkit-transform: rotate(-6deg);
+              transform: rotate(-6deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.71vw; }
+    .h-p-header .text .word :nth-child(71) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.83vw; }
+    .h-p-header .text .word :nth-child(72) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.73vw; }
+    .h-p-header .text .word :nth-child(73) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.92vw; }
+    .h-p-header .text .word :nth-child(74) {
+      -webkit-transform: rotate(7deg);
+              transform: rotate(7deg);
+      margin-right: 0.2vw;
+      margin-left: 0vw;
+      font-size: 4.96vw; }
+    .h-p-header .text .word :nth-child(75) {
+      -webkit-transform: rotate(-1deg);
+              transform: rotate(-1deg);
+      margin-right: 0vw;
+      margin-left: 0.2vw;
+      font-size: 4.64vw; }
+    .h-p-header .text .word :nth-child(76) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
       margin-right: 0.1vw;
       margin-left: -0.1vw;
-      font-size: 4.36vw; }
-    .h-p-header .text .word :nth-child(90) {
+      font-size: 4.47vw; }
+    .h-p-header .text .word :nth-child(77) {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      margin-right: 0.2vw;
+      margin-left: 0.2vw;
+      font-size: 4.5vw; }
+    .h-p-header .text .word :nth-child(78) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: 0vw;
+      margin-left: -0.1vw;
+      font-size: 4.37vw; }
+    .h-p-header .text .word :nth-child(79) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.53vw; }
+    .h-p-header .text .word :nth-child(80) {
       -webkit-transform: rotate(8deg);
               transform: rotate(8deg);
       margin-right: -0.1vw;
       margin-left: -0.1vw;
-      font-size: 4.83vw; }
+      font-size: 4.95vw; }
+    .h-p-header .text .word :nth-child(81) {
+      -webkit-transform: rotate(3deg);
+              transform: rotate(3deg);
+      margin-right: 0vw;
+      margin-left: 0.2vw;
+      font-size: 4.42vw; }
+    .h-p-header .text .word :nth-child(82) {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      margin-right: 0.1vw;
+      margin-left: -0.1vw;
+      font-size: 4.27vw; }
+    .h-p-header .text .word :nth-child(83) {
+      -webkit-transform: rotate(7deg);
+              transform: rotate(7deg);
+      margin-right: 0vw;
+      margin-left: 0.2vw;
+      font-size: 4.33vw; }
+    .h-p-header .text .word :nth-child(84) {
+      -webkit-transform: rotate(-4deg);
+              transform: rotate(-4deg);
+      margin-right: -0.1vw;
+      margin-left: 0vw;
+      font-size: 4.81vw; }
+    .h-p-header .text .word :nth-child(85) {
+      -webkit-transform: rotate(-5deg);
+              transform: rotate(-5deg);
+      margin-right: 0.1vw;
+      margin-left: 0vw;
+      font-size: 4.9vw; }
+    .h-p-header .text .word :nth-child(86) {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+      margin-right: 0vw;
+      margin-left: 0vw;
+      font-size: 4.55vw; }
+    .h-p-header .text .word :nth-child(87) {
+      -webkit-transform: rotate(-9deg);
+              transform: rotate(-9deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.19vw; }
+    .h-p-header .text .word :nth-child(88) {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+      margin-right: -0.1vw;
+      margin-left: 0.1vw;
+      font-size: 4.9vw; }
+    .h-p-header .text .word :nth-child(89) {
+      -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+      margin-right: 0.2vw;
+      margin-left: 0.1vw;
+      font-size: 4.15vw; }
+    .h-p-header .text .word :nth-child(90) {
+      -webkit-transform: rotate(1deg);
+              transform: rotate(1deg);
+      margin-right: 0.2vw;
+      margin-left: -0.1vw;
+      font-size: 4.07vw; }
 
 .menu-overlay {
   pointer-events: none;
