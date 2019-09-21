@@ -7,8 +7,8 @@ $primary: #00f;
 $focus: #f90;
 $white: #fff;
 $black:#0D1317;
-$serif: Times New Roman,times,serif;
-$sans-serif: Arial;
+$serif: 'Times New Roman','times',serif;
+$sans-serif: 'Arial';
 $handwritten: 'Citrus','Permanent Marker', cursive;
 $monospace: 'Mukta', monospace;
 
@@ -37,12 +37,47 @@ $lg-scrn: 75em;
 
 $cb:cubic-bezier(.24,.99,.75,1.01);
 body{
-
   overflow-x:hidden;
   background:#fff;
   animation: grain 700ms infinite;
 }
 
+
+@keyframes grain{
+  0%{
+    background-image:url(/media/wn1.png);
+  }
+  10%{
+  background-image:url(/media/wn2.png);
+  }
+  20%{
+  background-image:url(/media/wn3.png);
+  }
+  30%{
+  background-image:url(/media/wn4.png);
+  }
+  40%{
+  background-image:url(/media/wn6.png);
+  }
+  50%{
+  background-image:url(/media/wn7.png);
+  }
+  60%{
+  background-image:url(/media/wn8.png);
+  }
+  70%{
+  background-image:url(/media/wn6.png);
+  }
+  80%{
+  background-image:url(/media/wn4.png);
+  }
+  90%{
+  background-image:url(/media/wn2.png);
+  }
+  100%{
+  background-image:url(/media/wn1.png);
+  }
+}
 
 
 .h-p-header{
@@ -99,18 +134,19 @@ body{
   position:fixed;
   display:block;
   top:0;
+  background:#00f;
   left:0;
   z-index: 2222;
-}
-.menu-overlay{
   z-index: 2000;
-  background:$black;
   opacity:0;
-  transition:opacity 125ms;
+  animation:bing 125ms;
+}
+@keyframes bing{
+  from{opacity:1;}
+  to{opacity:0;}
 }
 .menu:hover{
   .menu-overlay{
-    background:#00f;
     opacity:.9;
     transition:opacity 125ms;
   }
@@ -396,29 +432,6 @@ body{
         }
       }
     }
-  }
-}
-$bg-grain-01: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100);
-$bg-grain-02: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=65&opacity=100);
-$bg-grain-03: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=66&opacity=100);
-$bg-grain-04: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=67&opacity=100);
-
-
-@keyframes grain{
-  0%{
-    background-image:$bg-grain-01;
-  }
-  25%{
-    background-image:$bg-grain-02;
-  }
-  50%{
-    background-image:$bg-grain-03;
-  }
-  75%{
-    background-image:$bg-grain-04;
-  }
-  100%{
-    background-image:$bg-grain-01;
   }
 }
 
