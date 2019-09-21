@@ -36,6 +36,30 @@ acf_add_local_field_group(array(
 			'save_other_choice' => 0,
 		),
 		array(
+			'key' => 'field_website_url',
+			'label' => 'Website Url',
+			'name' => 'website_url',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'field_5d629dbe3b824',
+						'operator' => '==',
+						'value' => 'Website',
+					),
+				),
+			),
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+		),
+		array(
 			'key' => 'field_5d629de13b825',
 			'label' => 'Video File (mp4)',
 			'name' => 'video_file_mp4',
