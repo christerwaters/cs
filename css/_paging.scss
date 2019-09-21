@@ -46,11 +46,13 @@
   .p-wrap#home{
     display:block;
     height:auto;
+    margin: auto;
     overflow:auto;
     opacity:1;
   }
 }
 .p-open.p-kontakt{
+  #home,
   .p-wrap{
     display:none;
     height:0;
@@ -62,11 +64,13 @@
   .p-wrap#kontakt{
     display:block;
     height:auto;
+    margin: auto;
     overflow:auto;
     opacity:1;
   }
 }
 .p-open.p-team{
+  #home,
   .p-wrap{
     display:none;
     height:0;
@@ -78,11 +82,13 @@
   .p-wrap#team{
     display:block;
     height:auto;
+    margin: auto;
     overflow:auto;
     opacity:1;
   }
 }
 .p-open.p-om-oss{
+  #home,
   .p-wrap{
     display:none;
     height:0;
@@ -94,11 +100,13 @@
   .p-wrap#om-oss{
     display:block;
     height:auto;
+    margin: auto;
     overflow:auto;
     opacity:1;
   }
 }
 .p-open.p-events{
+  #home,
   .p-wrap{
     display:none;
     height:0;
@@ -110,6 +118,7 @@
   .p-wrap#events{
     display:block;
     height:auto;
+    margin: auto;
     overflow:auto;
     opacity:1;
   }
