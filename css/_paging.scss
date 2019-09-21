@@ -27,6 +27,14 @@
 .p-wrap{
   display:none;
 }
+.p-open.p-home {
+  .p-wrap{
+    display:none;
+  }
+  .p-wrap#home{
+    display:block;
+  }
+}
 .p-open.p-team .p-wrap#team{
   display:block;
 }
