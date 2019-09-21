@@ -24,6 +24,16 @@
     }
   }
 }
+.p-open{
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+}
 .p-open.p-home {
   .p-wrap{
     display:none;
@@ -37,16 +47,58 @@
     display:block;
   }
 }
-.p-open.p-team .p-wrap#team{
-  display:block;
+.p-open.p-kontakt{
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+  .p-wrap#kontakt{
+    display:block;
+  }
 }
-.p-open.p-home #home{
-  display:block;
+.p-open.p-team{
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+  .p-wrap#team{
+    display:block;
+  }
+}
+.p-open.p-om-oss{
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+  .p-wrap#om-oss{
+    display:block;
+  }
+}
+.p-open.p-events{
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+  .p-wrap#events{
+    display:block;
+  }
 }
 .p-wrap#home{
   padding-top: 44vw;
-}
-
-.p-wrap{
-  display:none;
 }
