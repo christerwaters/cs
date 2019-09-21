@@ -37,8 +37,10 @@ $lg-scrn: 75em;
 
 $cb:cubic-bezier(.24,.99,.75,1.01);
 body{
+
   overflow-x:hidden;
   background:#fff;
+  animation: grain 700ms infinite;
 }
 
 
@@ -89,7 +91,7 @@ body{
 }
 
 
-.menu-overlay,.grain{
+.menu-overlay{
   pointer-events:none;
   background-repeat:repeat;
   width:100vw;
@@ -99,12 +101,6 @@ body{
   top:0;
   left:0;
   z-index: 2222;
-}
-.grain{
-  mix-blend-mode: multiply;
-  animation: grain 700ms infinite;
-  opacity:.05;
-  image-rendering: pixelated;
 }
 .menu-overlay{
   z-index: 2000;
@@ -400,10 +396,10 @@ body{
     }
   }
 }
-$bg-grain-01: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100);
-$bg-grain-02: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=65&opacity=100);
-$bg-grain-03: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=66&opacity=100);
-$bg-grain-04: url(http://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=67&opacity=100);
+$bg-grain-01: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=64&opacity=100);
+$bg-grain-02: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=65&opacity=100);
+$bg-grain-03: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=66&opacity=100);
+$bg-grain-04: url(https://api.thumbr.it/whitenoise-80x80.png?background=ffffff00&noise=000000&density=67&opacity=100);
 
 
 @keyframes grain{
