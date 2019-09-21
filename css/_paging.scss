@@ -24,9 +24,6 @@
     }
   }
 }
-.p-wrap{
-  display:none;
-}
 .p-open.p-home {
   .p-wrap{
     display:none;
@@ -38,12 +35,13 @@
 .p-open.p-team .p-wrap#team{
   display:block;
 }
-#home{
-  display:none;
-}
 .p-open.p-home #home{
   display:block;
 }
 .p-wrap#home{
   padding-top: 44vw;
+}
+
+.p-wrap{
+  display:none;
 }
