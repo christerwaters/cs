@@ -39,7 +39,6 @@ $cb:cubic-bezier(.24,.99,.75,1.01);
 body{
   overflow-x:hidden;
   background:#fff;
-  animation: grain 1100ms infinite;
 }
 
 @keyframes grain{
@@ -290,7 +289,6 @@ body{
         position: absolute;
         top:50%;
         transform: translateY(-50%);
-        opacity:1;
         right:0;
         .some{
           position:absolute;
@@ -343,18 +341,22 @@ body{
             background-color:#ff0000;
           }
         }
-        .plyr,
-        img{
+        .plyr{
+          animation: grain 1100ms infinite;
           background: transparent;
           filter: grayscale(50%);
           display: block;
           box-sizing: border-box;
           margin:auto;
-          opacity:.8;
+          opacity:1;
           width:100%;
           transform:translateY(3vw);
           box-shadow: 0px 4px 15px rgba(0,0,0,.15);
           transition:opacity 800ms $cb, filter 800ms $cb, box-shadow 800ms $cb, transform 800ms $cb;
+          .video-wrapper{
+            opacity:.7;
+            transition:opacity .5s $cb;
+          }
         }
       }
       h1,h2{
@@ -394,16 +396,16 @@ body{
           opacity:1;
           transition:opacity 400ms $cb;
         }
-        .plyr,
-        img{
+        .plyr{
           transform:translateY(0vw);
           filter: grayscale(0%);
           mix-blend-mode:normal;
-          opacity:1;
           width:100%;
           box-shadow: 0px 4px 20px rgba(0,0,0,.2);
-          transition:transform 500ms $cb,opacity 500ms $cb,filter 500ms $cb,box-shadow 500ms $cb;
-          &:hover{
+          transition:transform 500ms $cb,filter 500ms $cb,box-shadow 500ms $cb;
+          .video-wrapper{
+            opacity:1;
+            transition:opacity .5s $cb;
           }
         }
       }
