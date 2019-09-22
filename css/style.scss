@@ -378,7 +378,6 @@ body{
           }
         }
         .plyr{
-          animation: grain 1100ms infinite;
           background: transparent;
           filter: grayscale(50%);
           display: block;
@@ -389,8 +388,10 @@ body{
           transform:translateY(3vw);
           box-shadow: 0px 4px 15px rgba(0,0,0,.15);
           transition:opacity 800ms $cb, filter 800ms $cb, box-shadow 800ms $cb, transform 800ms $cb;
+          animation: grain 1100ms infinite;
           .video-wrapper{
-            opacity:.7;
+            background:transparent;
+            opacity:.5;
             transition:opacity .5s $cb;
           }
         }
