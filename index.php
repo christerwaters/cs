@@ -206,7 +206,7 @@
           <source src="<?php echo $video_mp4;?>" type="video/mp4" />
         </video>
       </div>
-      <? }; else ?>
+      <? }; ?>
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
         <!--googleoff: index-->
