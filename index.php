@@ -199,7 +199,7 @@
   <div class="p-wrap" id="<?php echo $post_slug;?>">
   <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
-      <div class="featured-media tilt">
+      <div class="featured-media tilt" data-tilt>
         <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
           <source src="<?php echo $video_mp4;?>" type="video/mp4" />
         </video>
