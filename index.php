@@ -199,11 +199,14 @@
   <div class="p-wrap" id="<?php echo $post_slug;?>">
   <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
+
+      <?php if ( $select_format_type == ('Video')) {?>
       <div class="featured-media tilt" data-tilt>
         <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
           <source src="<?php echo $video_mp4;?>" type="video/mp4" />
         </video>
       </div>
+      <? }; else ?>
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
         <!--googleoff: index-->
