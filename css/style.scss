@@ -547,7 +547,7 @@ $m-100: 100%;
 .core {
   margin: 7rem 1.5rem 0 1.5rem;
   .team-member{
-    width:50%;
+    width:33.333333%;
   }
   h2{
     font-size:5rem;
@@ -628,7 +628,7 @@ $m-100: 100%;
       z-index:200;
       display:block;
       opacity:1;
-      mix-blend-mode:multiply;
+      mix-blend-mode: difference;
       transition:margin-left 500ms;
       margin-left: 0%;
       filter:grayscale(100%) contrast(130%) brightness(130%);
@@ -659,7 +659,6 @@ $m-100: 100%;
         transition:opacity 500ms,margin-right 500ms;
       }
       img{
-        mix-blend-mode:difference;
         opacity:1;
         margin-left: -150%;
         transition:margin-left 500ms;
