@@ -97,14 +97,3 @@ $('.word').each(function (index) {
     });
 
 });
-
-
-
-$('.tilt').universalTilt({
-  settings: {
-    base: 'window',
-  },
-  callbacks: {
-    // callbacks...
-  }
-});
