@@ -196,8 +196,7 @@
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
   ?>
-  <div class="p-wrap" id="<?php echo $post_slug;?>">
-  <section class="portfolio-item <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
+  <section class="p-wrap <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
@@ -210,7 +209,6 @@
       </div>
     </div>
   </section>
-</div>
 
   <?php }; ?>
 
