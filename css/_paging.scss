@@ -106,7 +106,7 @@
   }
 }
 .p-open.p-events{
-  #home,
+  .portfolio-item,
   .p-wrap{
     display:none;
     height:0;
@@ -115,7 +115,8 @@
     padding:0;
     opacity:0;
   }
-  .p-wrap#events{
+  .p-wrap#home,
+  .portfolio-item.Event{
     display:block;
     height:auto;
     margin: auto;
