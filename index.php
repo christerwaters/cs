@@ -199,7 +199,7 @@
 
 
   ?>
-  <section class="p-wrap <?php echo $select_format_type?> <?php echo $cat[0]->cat_name;?>" id="<?php echo $post_slug;?>">
+  <section class="p-wrap <?php echo $select_format_type?> <?php echo $cat[0]->cat_name; echo $cat[1]->cat_name;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
