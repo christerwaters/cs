@@ -195,9 +195,13 @@
       $select_format_type = get_field('format_type',$page_data->ID);
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
-      $categories = get_the_category($page_data->ID);
+      $category_array = wp_get_post_categories($page_data->ID)
   ?>
-  <section class="p-wrap <?php echo $select_format_type?> <?php echo $categories;?>" id="<?php echo $post_slug;?>">
+  <section class="p-wrap <?php echo $select_format_type?>
+    <?php echo foreach ( $category_array as $categories ) {
+            echo $categories;
+      };?>
+      " id="<?php echo $post_slug;?>">
     <div class="inner">
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
