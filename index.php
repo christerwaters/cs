@@ -79,9 +79,9 @@
       $select_format_type = get_field('format_type',$page_data->ID);
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
-      $cat = get_the_category();
+      $category = get_the_category($page_data->ID);
   ?>
-  <section class="portfolio-item <?php echo $select_format_type;?> <?php echo $cat;?>" id="<?php echo $post_slug;?>">
+  <section class="portfolio-item <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <div class="featured-media tilt">
         <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
@@ -233,7 +233,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 
-<?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name;  ;}?>
+<?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name; echo '<style>.p-open.p-'.  $post_slug . ' .p-wrap#' . $post_slug . '{opacity:1;display:block;}</style>' ;}?>
 
 </body>
 </html>
