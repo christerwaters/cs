@@ -196,7 +196,7 @@
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
       $category = get_the_category($page_data->ID);
-      $cat = $category[0]M
+      $cat = $category[0];
 
 
   ?>
