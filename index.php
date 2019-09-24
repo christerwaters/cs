@@ -200,8 +200,7 @@
   <section class="p-wrap <?php echo $select_format_type?>
     <?php echo foreach ( $category_array as $categories ) {
             echo get_cat_name( $categories );
-        };?>
-      " id="<?php echo $post_slug;?>">
+        };?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <h1><?php echo $title; ?></h1>
       <!--noindex-->
