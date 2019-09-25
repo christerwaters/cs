@@ -232,6 +232,8 @@
 <script src="<?php bloginfo('template_directory'); ?>/core/js/url_handler.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/scrolled.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.js"></script>
+<script>var randomize = $(".team-member");</script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/rndm.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 
 <?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name; echo '<style>.p-open.p-'.  $post_slug . ' .p-wrap#' . $post_slug . '{opacity:1;display:block;}</style>' ;}?>
