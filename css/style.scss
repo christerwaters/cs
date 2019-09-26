@@ -313,7 +313,7 @@ body{
 .content{
   margin:9rem auto;
   width:100%;
-  section{
+  section.portfolio-item{
     padding:2rem 1.5rem;
     .inner{
       width:100%;
@@ -426,7 +426,7 @@ body{
       }
     }
   }
-  section{
+  section.portfolio-item{
     .inner{
       .featured-media.visible{
         margin-top:0px;
@@ -468,7 +468,7 @@ body{
   .content{
     max-width:1050px;
     width:100%;
-    section{
+    section.portfolio-item{
       .inner{
         h1,h2{
           font-size: 5.2rem;
