@@ -232,7 +232,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/core/js/url_handler.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/scrolled.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.js"></script>
-<script>var randomize = $(".team-member");</script>
+<script>var randomize = $(".crew .team-member");</script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/rndm.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 
