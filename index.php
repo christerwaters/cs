@@ -52,9 +52,8 @@
           <span style="
                        width:35vw;
                        height:35vw;
-                       border-left:1vw #f90 solid;
-                       border-top:1vw #f90 solid;
-                       border-bottom:1vw #f90 solid;
+                       border:1vw #f90 solid;
+                       border-right:1vw transparent solid;
                        display:block;
                        margin-left:20vw;
                        position:absolute;
@@ -90,6 +89,7 @@
 
           <span style="width:35vw;
                        height:35vw;
+                       border:1vw transparent solid;
                        border-right:1vw #f90 solid;
                        display:block;
                        margin-left:20vw;
