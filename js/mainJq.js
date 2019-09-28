@@ -1,4 +1,8 @@
 
+$( document ).ready(function() {
+  console.log("ready")
+  $(".wrap-loader").removeClass( "unloaded" );
+});
 $(".team-member").click(function(){
   if ($(this).hasClass("active")){
     $(this).removeClass("active");
@@ -9,9 +13,6 @@ $(".team-member").click(function(){
 });
 
 
-$( document ).ready(function() {
-  $("*").removeClass( "unloaded" );
-});
 
 $.fn.visible = function(partial) {
 
