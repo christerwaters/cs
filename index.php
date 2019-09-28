@@ -223,7 +223,7 @@
     <!-- -->
     </div>
     <div class="crew">
-      <h2> Crew </h2>
+      <h2> Crew </h2><!--
 
       <?php
       $users = get_users( array( 'fields' => array( 'ID' ) ) );
@@ -240,7 +240,7 @@
             $email = get_field('hr_email', $acfId, true);
             ?>
             <?php if ($status == ('Freelancer')){?>
-                <div class="team-member">
+            --><div class="team-member">
                   <div class="featured-image">
                     <span class="bio">
                       <p><?php echo $bio ?></p>
@@ -253,11 +253,12 @@
                     <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
                     <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
                   </span>
-                </div>
+                </div><!--
           <?php };?>
             <?php
         }
         ?>
+        <!-- -->
     </div>
 </div>
 
