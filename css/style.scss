@@ -672,3 +672,10 @@ $m-100: 100%;
     }
   }
 }
+
+.wrap-loader{
+  opacity:0;
+  &.unloaded{
+    opacity:1;
+  }
+}
