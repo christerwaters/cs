@@ -676,6 +676,25 @@ $m-100: 100%;
 .wrap-loader{
   opacity:0;
   &.unloaded{
+    .mover{animation:mover 2s infinite;display:block;}
     opacity:1;
+  }
+}
+
+@keyframes mover{
+  0%{
+    transform:translate(2%,1%);
+  }
+  25%{
+    transform:translate(1.7%,1.2%);
+  }
+  50%{
+    transform:translate(1.5%,1.7%);
+  }
+  75%{
+    transform:translate(1.3%,1.2%);
+  }
+  100%{
+    transform:translate(2%,1%);
   }
 }
