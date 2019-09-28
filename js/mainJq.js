@@ -9,6 +9,10 @@ $(".team-member").click(function(){
 });
 
 
+$( document ).ready(function() {
+  $("*").removeClass( "unloaded" );
+});
+
 $.fn.visible = function(partial) {
 
   var $t = $(this),
