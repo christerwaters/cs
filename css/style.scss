@@ -329,7 +329,7 @@ body{
         background:transparent;
         position: absolute;
         top:50%;
-        transform: translateY(-50%),scale(.9);
+        transform: translateY(-50%);
         right:0;
         .some{
           position:absolute;
@@ -429,6 +429,7 @@ body{
   section.portfolio-item{
     .inner{
       .featured-media.visible{
+        top:50%;
         transform: translateY(-50%);
         opacity:1;
         .some{
