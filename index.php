@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> <?php $site_title = get_bloginfo(description); echo $site_title; ?> - <?php $site_name = get_bloginfo( 'name' ); echo $site_name; ?></title> <!-- Set the title of the page, this shows up in google etc. as well -->
+    <title> <?php $site_title = get_bloginfo('description'); echo $site_title; ?> - <?php $site_name = get_bloginfo( 'name' ); echo $site_name; ?></title> <!-- Set the title of the page, this shows up in google etc. as well -->
 
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-touch-icon.png">
@@ -308,7 +308,7 @@
 <script>
   var siteTitle = <?php echo $site_title;?>;
   var siteName = <?php echo $site_name;?>;
-  
+
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
