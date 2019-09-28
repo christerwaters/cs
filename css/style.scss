@@ -438,7 +438,7 @@ body{
           transition:opacity 400ms $cb;
         }
         .plyr{
-          transform:scale(.9);
+          transform:scale(1);
           filter: grayscale(0%);
           mix-blend-mode:normal;
           width:100%;
