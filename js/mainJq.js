@@ -13,6 +13,7 @@ $(".team-member").click(function(){
 
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
+  $(".team-member").removeClass("active");
   $(".wrap-loader").addClass("unloaded");
   setTimeout(
     function()
