@@ -4,9 +4,7 @@ $( document ).ready(function() {
   $(".wrap-loader").removeClass( "unloaded" );
 });
 $(".team-member").click(function(){
-  if ($(this).hasClass("active")){
-    $(this).removeClass("active");
-  }else {
+  if (!$(this).hasClass("active")){
     $(".team-member").removeClass("active");
     $(this).addClass("active");
   }
@@ -15,12 +13,12 @@ $(".team-member").click(function(){
 
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
-  $("body").addClass("unloaded");
+  $(".wrap-loader").addClass("unloaded");
   setTimeout(
     function()
     {
-    $("body").removeClass("unloaded");
-  }, 1000);
+    $(".wrap-loader").removeClass("unloaded");
+  }, 500);
 });
 
 
