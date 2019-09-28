@@ -32,6 +32,7 @@
     margin:0;
     padding:0;
     opacity:0;
+    box-sizing: border-box;
   }
 }
 .p-open.p-home {
@@ -47,9 +48,6 @@
     display:block;
     height:auto;
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    box-sizing: border-box;
     overflow:auto;
     opacity:1;
   }
@@ -68,9 +66,6 @@
     display:block;
     height:auto;
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    box-sizing: border-box;
     overflow:auto;
     opacity:1;
   }
@@ -89,9 +84,6 @@
     display:block;
     height:auto;
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    box-sizing: border-box;
     overflow:auto;
     opacity:1;
   }
@@ -110,14 +102,12 @@
     display:block;
     height:auto;
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    box-sizing: border-box;
     overflow:auto;
     opacity:1;
   }
 }
 .p-open.p-events{
+  #home,
   .portfolio-item,
   .p-wrap{
     display:none;
@@ -127,13 +117,14 @@
     padding:0;
     opacity:0;
   }
+  .p-wrap#home{
+    padding-top: 0vw;
+  }
   .p-wrap#home,
   .portfolio-item.Event{
     display:block;
     height:auto;
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     box-sizing: border-box;
     overflow:auto;
     opacity:1;
