@@ -675,9 +675,11 @@ $m-100: 100%;
 
 .wrap-loader{
   opacity:0;
+  transition:opacity 1s ease;
   &.unloaded{
     .mover{animation:mover 2s infinite;display:block;}
     opacity:1;
+    transition:opacity 1s ease;
   }
 }
 
