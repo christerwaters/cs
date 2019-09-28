@@ -673,6 +673,7 @@ $m-100: 100%;
 }
 
 .wrap-loader{
+  pointer-events: none;
   opacity:0;
   transition:opacity 1s 1s ease;
   &.unloaded{
