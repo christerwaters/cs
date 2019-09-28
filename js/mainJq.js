@@ -1,6 +1,7 @@
 
 $( document ).ready(function() {
-  console.log("ready")
+  console.log("ready");
+  document.title = siteName + " - " + siteTitle;
   $(".wrap-loader").removeClass( "unloaded" );
 });
 $(".team-member").click(function(){
