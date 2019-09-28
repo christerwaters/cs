@@ -1,8 +1,8 @@
 
 $( document ).ready(function() {
   console.log("ready");
-  document.title = siteName + " - " + siteTitle;
   $(".wrap-loader").removeClass( "unloaded" );
+  //document.title = siteName + " - " + siteTitle;
 });
 $(".team-member").click(function(){
   if (!$(this).hasClass("active")){
