@@ -13,6 +13,16 @@ $(".team-member").click(function(){
 });
 
 
+$("a").click(function(){
+  $("html, body").animate({ scrollTop: 0 }, ".25s");
+  $("body").addClass("unloaded");
+  setTimeout(
+    function()
+    {
+    $("body").removeClass("unloaded");
+  }, 1000);
+});
+
 
 $.fn.visible = function(partial) {
 
