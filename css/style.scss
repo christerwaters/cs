@@ -37,6 +37,7 @@ $ees:500ms;
 
 @import '../../core/css/reset';
 @import '../../core/css/plyr';
+@import '../../core/css/grid';
 @import 'forms';
 @import 'paging';
 
@@ -46,6 +47,37 @@ body{
   background:#fff;
   animation:grain-50 1100ms infinite;
 }
+
+.wrap-loader{
+  pointer-events: none;
+  opacity:0;
+  transition:opacity 1s 1s ease;
+  &.unloaded{
+    .mover{animation:mover 2s infinite;display:block;}
+    opacity:1;
+    transition:opacity 1s 1s ease;
+  }
+}
+
+@keyframes mover{
+  0%{
+    transform:translate(2%,1%);
+  }
+  25%{
+    transform:translate(1.7%,1.2%);
+  }
+  50%{
+    transform:translate(1.5%,1.7%);
+  }
+  75%{
+    transform:translate(1.3%,1.2%);
+  }
+  100%{
+    transform:translate(2%,1%);
+  }
+}
+
+
 
 @keyframes grain{
   0%{
@@ -669,34 +701,5 @@ $m-100: 100%;
         transition: opacity 100ms 500ms;
       }
     }
-  }
-}
-
-.wrap-loader{
-  pointer-events: none;
-  opacity:0;
-  transition:opacity 1s 1s ease;
-  &.unloaded{
-    .mover{animation:mover 2s infinite;display:block;}
-    opacity:1;
-    transition:opacity 1s 1s ease;
-  }
-}
-
-@keyframes mover{
-  0%{
-    transform:translate(2%,1%);
-  }
-  25%{
-    transform:translate(1.7%,1.2%);
-  }
-  50%{
-    transform:translate(1.5%,1.7%);
-  }
-  75%{
-    transform:translate(1.3%,1.2%);
-  }
-  100%{
-    transform:translate(2%,1%);
   }
 }
