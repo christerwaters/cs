@@ -282,7 +282,7 @@
 
   ?>
   <section class="p-wrap <?php echo $select_format_type?>" id="<?php echo $post_slug;?>">
-    <?php if ($select_format_type == "video"){?>
+    <?php if ($select_format_type == "Video"){?>
       <div class="inner">
         <div class="featured-media">
           <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
