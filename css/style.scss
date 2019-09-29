@@ -42,6 +42,20 @@ $ees:500ms;
 @import 'paging';
 
 
+
+$sizer:2rem;$h1:$sizer;
+$sizer:$sizer*.8;$h2:$sizer;
+$sizer:$sizer*.8;$h3:$sizer;
+$sizer:$sizer*.8;$h4:$sizer;
+$sizer:$sizer*.8;$h5:$sizer;
+$p:$h1/2;
+h1{font-size:$h1;}
+h2{font-size:$h2;}
+h3{font-size:$h3;}
+h4{font-size:$h4;}
+h5{font-size:$h5;}
+p{font-size:$p;}
+
 body{
   overflow-x:hidden;
   background:#fff;
