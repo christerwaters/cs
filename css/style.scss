@@ -485,6 +485,7 @@ body{
       }
     }
   }
+  section.p-wrap.Video,
   section.portfolio-item{
     .inner{
       .featured-media.visible{
@@ -526,6 +527,7 @@ body{
   .content{
     max-width:1050px;
     width:100%;
+    section.p-wrap.Video,
     section.portfolio-item{
       .inner{
         h1,h2{
