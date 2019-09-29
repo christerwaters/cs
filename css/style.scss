@@ -483,6 +483,7 @@ section.portfolio-item{
           filter: grayscale(0%);
           mix-blend-mode:normal;
           width:100%;
+          animation:none;
           box-shadow: 0px 4px 20px rgba(0,0,0,.2);
           transition:transform 500ms $cb,filter 500ms $cb,box-shadow 500ms $cb;
           .plyr__video-wrapper{
