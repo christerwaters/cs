@@ -44,23 +44,23 @@
                  width:100vw;
                  text-align:left;
                  height:12vw;">
-    <p class="citrus" style="font-family:'Times New Roman', serif;
+    <p style="font-family:'Times New Roman', serif;
               font-size:12vw;
               margin:auto;
               display:block;
               position:absolute;
               transform:translateY(-6vw);
               margin-left:15%;">
-      <span class="mover" style="animation-delay:.2s;">CITRUS</span>
+      <span class="citrus">CITRUS</span>
     </p>
-    <p class="studio" style="font-family:'Times New Roman', serif;
+    <p style="font-family:'Times New Roman', serif;
               font-size:12vw;
               margin:auto;
               display:block;
               position:absolute;
               transform:translateY(6vw);
               margin-left:40%;">
-      <span class="mover" style="animation-delay:1s;">
+      <span class="studio">
         STUDIO
       </span>
     </p>
