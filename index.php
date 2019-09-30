@@ -36,9 +36,6 @@
     <div class="loader-left">
       <?php include 'loader.php'?>
     </div>
-    <div class="loader-right">
-      <?php include 'loader.php'?>
-    </div>
 
 
 
