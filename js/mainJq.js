@@ -16,6 +16,7 @@ $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
   $(".team-member").removeClass("active");
   $(".wrap-loader").addClass("unloaded");
+  checkVisible();
   setTimeout(
     function()
     {
@@ -41,7 +42,6 @@ $.fn.visible = function(partial) {
 $(document).ready(function(e) {
   checkVisible();
 });
-
 $(window).scroll(function(e) {
   checkVisible();
 });
