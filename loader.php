@@ -3,78 +3,58 @@
   <!--googleoff: index-->
   <style>
   @media (min-width: 1000px) {
+    .wrap-loader p.pppp {transform:translateY(8rem);}
+    .wrap-loader p.ppp {transform:translateY(-8rem);}
     .citrus,.studio {
     font-size: 7rem; }
   }
   </style>
 <div style="position:fixed;
-              z-index:3000;
-    width: 100%;
+            background:#0000ff;
+            z-index:3000;
+            width: 100%;
               top:0;" class="wrap-loader unloaded">
-              <div style="
-              z-index:3000;
-              position: relative;
-              max-width: 1000px;
-              top:0;
-              margin: auto;
-
-">
   <div style="
-              position:relative;
-              min-height:100vh;
-              width:100vw;
-              z-index:2000;
-              background:#0000ff;
-              color:#fff;
-              text-align:center;">
-    <span style="
-                 width:35vw;
-                 height:35vw;
-                 border:1vw #f90 solid;
-                 border-right:1vw transparent solid;
-                 display:block;
-                 margin-left:20vw;
-                 position:absolute;
-              top: 50%;
-              transform: translateY(-50%);"></span>
-    <span style="display:block;
-                 position:absolute;
-                 top: 50%;
-                 transform: translateY(-50%);
-                 width:100vw;
-                 text-align:left;
-                 height:12vw;">
-    <p style="font-family:'Times New Roman', serif;
-              font-size:12vw;
-              margin:auto;
-              display:block;
-              position:absolute;
-              transform:translateY(-6vw);
-              margin-left:15%;">
-      <span class="citrus">CITRUS</span>
-    </p>
-    <p style="font-family:'Times New Roman', serif;
-              font-size:12vw;
-              margin:auto;
-              display:block;
-              position:absolute;
-              transform:translateY(6vw);
-              margin-left:40%;">
-      <span class="studio">
-        STUDIO
+  z-index:3000;
+  position: relative;
+  max-width: 1000px;
+  top:0;
+  margin: auto;">
+    <div style="
+                position:relative;
+                min-height:100vh;
+                width:100vw;
+                z-index:2000;
+                color:#fff;
+                text-align:center;">
+      <span style="display:block;
+                   position:absolute;
+                   top: 50%;
+                   transform: translateY(-50%);
+                   width:100vw;
+                   text-align:left;
+                   height:12vw;">
+        <p class="pppp" style="font-family:'Times New Roman', serif;
+                  font-size:12vw;
+                  margin:auto;
+                  display:block;
+                  position:absolute;
+                  transform:translateY(-6vw);
+                  margin-left:15%;">
+          <span class="citrus">CITRUS</span>
+        </p>
+        <p class="ppp" style="font-family:'Times New Roman', serif;
+                  font-size:12vw;
+                  margin:auto;
+                  display:block;
+                  position:absolute;
+                  transform:translateY(6vw);
+                  margin-left:40%;">
+          <span class="studio">
+            STUDIO
+          </span>
+        </p>
       </span>
-    </p>
-
-    <span style="width:35vw;
-                 height:35vw;
-                 border:1vw transparent solid;
-                 border-right:1vw #f90 solid;
-                 display:block;
-                 margin-left:20vw;
-                 position:absolute;
-                 top: 50%;
-                 transform: translateY(-50%);"></span>
-    </span>
     <div style="
         position: absolute;
         height: auto;
