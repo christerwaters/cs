@@ -477,6 +477,9 @@ section.portfolio-item{
           background:transparent;
           opacity:.5;
           transition:opacity .5s $cb;
+          .plyr__poster{
+            background-size: cover;
+          }
         }
         &.plyr--playing{
           transform:scale(1);
