@@ -3,10 +3,10 @@
   <!--googleoff: index-->
   <style>
   @media (min-width: 1000px) {
-    .wrap-loader p.pppp {transform:translateY(8rem) !important;}
-    .wrap-loader p.ppp {transform:translateY(-8rem) !important;}
+    .wrap-loader p.pppp {transform:translateY(-3.5rem) !important;}
+    .wrap-loader p.ppp {transform:translateY(3.5rem) !important;}
     .citrus,.studio {
-    font-size: 7rem; }
+    font-size: 7rem !important; }
   }
   </style>
 <div style="position:fixed;
