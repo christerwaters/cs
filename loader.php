@@ -3,11 +3,33 @@
   <!--googleoff: index-->
   <style>
   @media (min-width: 1000px) {
-    .wrap-loader p.pppp {transform:translateY(-3.5rem) !important;}
-    .wrap-loader p.ppp {transform:translateY(3.5rem) !important;}
+    .wrap-loader p.pppp {transform: translateY(-1.5rem)!important;}
+    .wrap-loader p.ppp {transform: translateY(5.5rem)!important;}
     .wrap-loader .loader-wrap-text{ height: 7rem !important;}
     .citrus,.studio {
     font-size: 7rem !important; }
+  }
+  
+  .loaderimg{
+    animation: loaderimage 500ms infinite;
+  }
+  keyframes loaderimage{
+    0%{
+      transform: translateY(0rem);
+    }
+    25%{
+      transform: translateY(2rem);
+    }
+    50%{
+      transform: translateY(0rem);
+    }
+    75%{
+      transform: translateY(-2rem);
+    }
+    100%{
+      transform: translateY(0rem);
+    }
+
   }
   </style>
 <div style="position:fixed;
@@ -61,7 +83,7 @@
         height: auto;
         width: 100%;top: 50%;
                     transform: translateY(-50%);mix-blend-mode:difference;
-    "><img style="
+    "><img class="loader-img" style="
                     width:44%;
                     max-width: 300px;
                     margin: auto;
