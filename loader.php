@@ -3,8 +3,8 @@
   <!--googleoff: index-->
   <style>
   @media (min-width: 1000px) {
-    .wrap-loader p.pppp {transform:translateY(8rem);}
-    .wrap-loader p.ppp {transform:translateY(-8rem);}
+    .wrap-loader p.pppp {transform:translateY(8rem) !important;}
+    .wrap-loader p.ppp {transform:translateY(-8rem) !important;}
     .citrus,.studio {
     font-size: 7rem; }
   }
@@ -23,7 +23,7 @@
     <div style="
                 position:relative;
                 min-height:100vh;
-                width:100vw;
+                width:100%;
                 z-index:2000;
                 color:#fff;
                 text-align:center;">
@@ -31,7 +31,7 @@
                    position:absolute;
                    top: 50%;
                    transform: translateY(-50%);
-                   width:100vw;
+                   width:100%;
                    text-align:left;
                    height:12vw;">
         <p class="pppp" style="font-family:'Times New Roman', serif;
