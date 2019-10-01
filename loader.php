@@ -5,6 +5,7 @@
   @media (min-width: 1000px) {
     .wrap-loader p.pppp {transform:translateY(-3.5rem) !important;}
     .wrap-loader p.ppp {transform:translateY(3.5rem) !important;}
+    .wrap-loader .loader-wrap-text{ height: 7rem !important;}
     .citrus,.studio {
     font-size: 7rem !important; }
   }
@@ -27,7 +28,7 @@
                 z-index:2000;
                 color:#fff;
                 text-align:center;">
-      <span style="display:block;
+      <span class="loader-text-wrap"style="display:block;
                    position:absolute;
                    top: 50%;
                    transform: translateY(-50%);
