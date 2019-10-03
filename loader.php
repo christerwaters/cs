@@ -9,27 +9,20 @@
     .citrus,.studio {
     font-size: 7rem !important; }
   }
-  
+
   .loaderimg{
-    animation: loaderimage 500ms infinite;
+    animation: ldimg 1.2ms infinite;
   }
-  keyframes loaderimage{
+  @keyframes ldimg{
     0%{
-      transform: translateY(0rem);
-    }
-    25%{
-      transform: translateY(2rem);
-    }
-    50%{
-      transform: translateY(0rem);
-    }
-    75%{
       transform: translateY(-2rem);
     }
-    100%{
-      transform: translateY(0rem);
+    50%{
+      transform: translateY(2rem);
     }
-
+    100%{
+      transform: translateY(-2rem);
+    }
   }
   </style>
 <div style="position:fixed;
@@ -83,7 +76,7 @@
         height: auto;
         width: 100%;top: 50%;
                     transform: translateY(-50%);mix-blend-mode:difference;
-    "><img class="loader-img" style="
+    "><img class="loaderimg" style="
                     width:44%;
                     max-width: 300px;
                     margin: auto;
