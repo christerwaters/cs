@@ -17,8 +17,14 @@
     0%{
       transform: translateY(-2rem);
     }
+    35%{
+      transform: translateY(1.5rem);
+    }
     50%{
       transform: translateY(2rem);
+    }
+    85%{
+      transform: translateY(-1.5rem);
     }
     100%{
       transform: translateY(-2rem);
