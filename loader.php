@@ -15,7 +15,7 @@
   }
 
   .loaderimg{
-    animation: ldimg 1.2ms infinite;
+    animation: ldimg 1.5s infinite;
   }
   @keyframes ldimg{
     0%{
