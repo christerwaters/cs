@@ -30,6 +30,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+
+
+
+    <?php include 'ar-head.php'?>
+    
   </head>
 
   <body class="p-open p-home">
