@@ -38,6 +38,7 @@
     </div>
 
 
+    <?php include 'ar.php'?>
 
     <div class="menu">
   <div class="menu-overlay"></div>
