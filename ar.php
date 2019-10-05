@@ -5,7 +5,6 @@
 <!-- add this script in order to load a large set of 3D model extensions-->
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
-
 <div class="p-wrap" id="ar">
   <!-- include A-Frame obviously -->
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
