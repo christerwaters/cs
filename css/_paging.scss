@@ -69,6 +69,27 @@
     opacity:1;
   }
 }
+.p-open.p-ar{
+  .menu,
+  .logotype,
+  #home,
+  .p-wrap{
+    display:none;
+    height:0;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    opacity:0;
+  }
+  .p-wrap#ar{
+    position:fixed;
+    display: block;
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+  }
+}
 .p-open.p-team{
   #home,
   .p-wrap{
