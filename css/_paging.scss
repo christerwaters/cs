@@ -70,8 +70,9 @@
   }
 }
 .p-open.p-ar{
+  background:#fff;
+  overflow:hidden;
   .menu,
-  .logotype,
   #home,
   .p-wrap{
     display:none;
@@ -82,12 +83,14 @@
     opacity:0;
   }
   .p-wrap#ar{
-    position:fixed;
+    position: fixed;
     display: block;
-    margin:0;
-    padding:0;
-    height:100vh;
-    width:100vw;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
   }
 }
 .p-open.p-team{
