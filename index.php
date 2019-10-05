@@ -33,7 +33,7 @@
 
 
 
-    <?php include 'ar-head.php'?>
+    <?php //include 'ar-head.php'?>
 
   </head>
 
@@ -43,7 +43,7 @@
     </div>
 
 
-    <?php include 'ar.php'?>
+    <?php //include 'ar.php'?>
 
     <div class="menu">
   <div class="menu-overlay"></div>
