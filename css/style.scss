@@ -202,6 +202,7 @@ body{
     z-index:22;
     margin:0 5vw;
     color:$white;
+    text-shadow: -1px -1px 0 $white, 0px -1px 0 $white, -1px 0px 0 $white, 1px 1px 0 $white;
     .word{
       font-family: $handwritten;
       z-index:22;
