@@ -27,9 +27,7 @@
     <meta property="og:url" content="https://wtrs.dev" />
     <meta property="og:title" content="Christer Waters - WTRS.dev - Freelance Designer & Developer" />
     <meta property="og:description" content="I build human-friendly websites, always optimized for search-engines and any device. I also create artworks in the form of still and moving imagry (video and photo)." />
-
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 
 
 
