@@ -3,12 +3,14 @@
   <!--googleoff: index-->
   <style>
   @media (min-width: 1000px) {
-    .wrap-loader p.pppp {transform: translateY(-1.5rem)!important;}
-    .wrap-loader p.ppp {transform: translateY(5.5rem)!important;}
-    .wrap-loader.unloaded p.pppp {transform: translateX(0vw)!important;}
-    .wrap-loader.unloaded p.ppp {transform: translateX(0vw)!important;}
-    .wrap-loader p.pppp {transform: translateX(-100vw)!important;transition:transform 200ms;}
-    .wrap-loader p.ppp {transform: translateX(100vw)!important;transition:transform 200ms;}
+    .wrap-loader.unloaded p.pppp {transform: translate(0,-1.5rem)!important;}
+    .wrap-loader.unloaded p.ppp {transform: translate(0,5.5rem)!important;}
+    .wrap-loader p.pppp {transform: translate(-100vw,-1.5rem)!important;}
+    .wrap-loader p.ppp {transform: translate(100vw,5.5rem)!important;}
+    .wrap-loader.unloaded p.pppp {transform: translate(0vw,-6vw)!important;}
+    .wrap-loader.unloaded p.ppp {transform: translate(0vw,6vw)!important;}
+    .wrap-loader p.pppp {transform: translate(-100vw,-6vw)!important;transition:transform 200ms;}
+    .wrap-loader p.ppp {transform: translate(100vw,6vw)!important;transition:transform 200ms;}
     .wrap-loader .loader-wrap-text{ height: 7rem !important;}
     .citrus,.studio {
     font-size: 7rem !important; }
