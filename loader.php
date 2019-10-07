@@ -7,9 +7,9 @@
     .wrap-loader.unloaded p.ppp {transform: translate(0,5.5rem)!important;}
     .wrap-loader p.pppp {transform: translate(-100vw,-1.5rem)!important;}
     .wrap-loader p.ppp {transform: translate(100vw,5.5rem)!important;}
-    .wrap-loader.unloaded p.pppp {transform: translate(0vw,-6vw)!important;}
+    .wrap-loader.unloaded p.pppp {transform: translate(0vw,0vw)!important;}
     .wrap-loader.unloaded p.ppp {transform: translate(0vw,6vw)!important;}
-    .wrap-loader p.pppp {transform: translate(-100vw,-6vw)!important;transition:transform 200ms;}
+    .wrap-loader p.pppp {transform: translate(-100vw,0vw)!important;transition:transform 200ms;}
     .wrap-loader p.ppp {transform: translate(100vw,6vw)!important;transition:transform 200ms;}
     .wrap-loader .loader-wrap-text{ height: 7rem !important;}
     .citrus,.studio {
