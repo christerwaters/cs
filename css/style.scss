@@ -221,7 +221,7 @@ body{
     }
     @for $i from 1 through 90 {
       .word :nth-child(#{$i}){
-        transform:rotate(-10 + (random(20))+deg);
+        transform:rotate(-20 + (random(40))+deg);
         margin-right:((-2+random(4))/10)+vw;
         margin-left:((-2+random(4))/10)+vw;
         font-size:4+(random(100)/100)+vw;
