@@ -783,6 +783,7 @@ $m-100: 100%;
     }
     &.active{
       .featured-image{
+        padding-left: 0% !important;
         img{
           margin-left: 100% !important;
         }
