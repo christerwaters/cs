@@ -770,3 +770,16 @@ $m-100: 100%;
     }
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .core .team-member{
+    width:100%;
+    .featured-image{
+      width:50%;
+    }
+    .about{
+      margin: 20% 0 20% 60%;
+      text-align: left;
+    }
+  }
+}
