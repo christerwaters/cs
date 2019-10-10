@@ -17,10 +17,12 @@ $("a").click(function(){
   $(".team-member").removeClass("active");
   $(".wrap-loader").addClass("unloaded");
   checkVisible();
+  $('.menu-overlay').css('opacity', '0');
   setTimeout(
     function()
     {
     $(".wrap-loader").removeClass("unloaded");
+    $('.menu-overlay').css('opacity', '');
   }, 500);
 });
 
