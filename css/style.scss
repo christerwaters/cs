@@ -771,7 +771,7 @@ $m-100: 100%;
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 777px) {
   .core .team-member{
     width:100% !important;
     .featured-image{
@@ -798,6 +798,13 @@ $m-100: 100%;
           margin-left: 100% !important;
         }
       }
+    }
+  }
+  .crew .team-member{
+    width: 45% !important;
+    margin: 2.5% !important;
+    .featured-image{
+      border-radius: 50% !important;
     }
   }
 }
