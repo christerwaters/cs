@@ -4,7 +4,7 @@ $( document ).ready(function() {
   $(".wrap-loader").removeClass( "unloaded" );
   //document.title = siteName + " - " + siteTitle;
 });
-$(".team-member").click(function(){
+$(".core.team-member").click(function(){
   if (!$(this).hasClass("active")){
     $(".team-member").removeClass("active");
     $(this).addClass("active");
