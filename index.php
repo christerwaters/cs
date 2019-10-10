@@ -166,22 +166,15 @@
             $title = get_field('hr_title', $acfId, true);
             $status = get_field('hr_employment_status', $acfId, true);
             $pic = get_field('hr_profile_picture', $acfId, true);
-            $bio = get_field('hr_bio', $acfId, true);
-            $email = get_field('hr_email', $acfId, true);
             ?>
             <?php if ($status == ('Freelancer')){?>
             --><div class="team-member">
                   <div class="featured-image">
-                    <span class="bio">
-                      <p><?php echo $bio ?></p>
-                    </span>
-                    <span class="more">les mer</span>
                     <img src="<?php echo $pic ?>">
                   </div>
                   <span class="about">
                     <span class="title"><?php echo $title ?></span>
                     <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
-                    <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
                   </span>
                 </div><!--
           <?php };?>
