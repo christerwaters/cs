@@ -245,19 +245,11 @@ body{
   z-index: 2222;
   z-index: 2000;
   opacity:0;
-  animation:bing 125ms;
-}
-@keyframes bing{
-  from{opacity:1;}
-  to{opacity:0;}
-}
-.menu:hover{
-  .menu-overlay{
+  &.menu-hover{
     opacity:.9;
     transition:opacity 125ms;
   }
 }
-
 
 .menu{
   position:fixed;
