@@ -17,12 +17,17 @@ $("a").click(function(){
   $(".team-member").removeClass("active");
   $(".wrap-loader").addClass("unloaded");
   checkVisible();
-  $('.menu-overlay').css('opacity', '0');
+  $('.menu-overlay').css('opacity', '.9');
+  setTimeout(
+
+      function()
+      {
+    $('.menu-overlay').css('opacity', '');
+  }, 200);
   setTimeout(
     function()
     {
     $(".wrap-loader").removeClass("unloaded");
-    $('.menu-overlay').css('opacity', '');
   }, 500);
 });
 
@@ -114,3 +119,11 @@ $('.word').each(function (index) {
     });
 
 });
+
+
+
+
+$('.menu-hover-trigger').hover(
+       function(){ $('menu-overlay').addClass('menu-hover') },
+       function(){ $('menu-overlay').removeClass('menu-hover') }
+)
