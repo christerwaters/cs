@@ -238,8 +238,8 @@
 
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.jq.js"></script>
 <script>
   const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
 </script>
