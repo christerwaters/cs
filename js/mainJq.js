@@ -16,7 +16,7 @@ $(document).ready(function(){
           $(this).removeClass('md');
           $(this).addClass('sm');
         }
-      })
+      };
     });
 });
 
