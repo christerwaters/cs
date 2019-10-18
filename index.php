@@ -233,8 +233,8 @@
 <!--<div class="grain"></div>
 -->
 <script>
-  var siteTitle = <?php echo $site_title;?>;
-  var siteName = <?php echo $site_name;?>;
+  var siteTitle = "<?php echo $site_title;?>";
+  var siteName = "<?php echo $site_name;?>";
 
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
