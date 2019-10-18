@@ -76,8 +76,7 @@
     <div class="line05">å samarbeide.</div>
   </div>
 </div>
-
-<div class="content p-wrap" id="home">
+<div class="content p-wrap posts" id="home">
   <?php
   $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
   $portfolio_items = get_posts( $args );
@@ -92,6 +91,17 @@
       $website_url = get_field('website_url',$page_data->ID);
       $category = get_the_category($page_data->ID);
   ?>
+
+  <div class="post-wrap">
+    <div class="post <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>" data-tilt>
+      <div class="featured">
+          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+            <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+          </video>
+      </div>
+      <h2><?php echo $title; ?></h2>
+    </div>
+  </div>
   <section class="portfolio-item <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>">
     <div class="inner">
       <div class="featured-media">
@@ -243,6 +253,7 @@
 
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
 <script>
   const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
