@@ -39,6 +39,7 @@ $ees:500ms;
 @import '../../core/css/plyr';
 @import '../../core/css/grid';
 @import 'forms';
+@import 'posts';
 @import 'paging';
 
 
@@ -189,10 +190,9 @@ body{
   top:0;
   color:$white;
   width:100vw;
-  background:$primary;
+  background:transparent;
   position:absolute;
   padding:8vw 0;
-  color:$white;
   font-family: $handwritten;
   font-size:5vw;
   text-align:center;
@@ -201,18 +201,16 @@ body{
     font-family: $handwritten;
     z-index:22;
     margin:0 5vw;
-    color:$white;
-    text-shadow: -1px -1px 0 $white, 0px -1px 0 $white, -1px 0px 0 $white, 1px 1px 0 $white;
+    color:$primary;
     .word{
       font-family: $handwritten;
       z-index:22;
       display:inline-block;
       margin-right:2vw;
-      color:$white;
       span{
         font-family: $handwritten;
         display:inline-block;
-        color:$white;
+        color:$primary;
       }
       #å,
       #i{
