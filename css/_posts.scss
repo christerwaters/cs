@@ -1,0 +1,139 @@
+
+$sm: 40%;
+$md: 60%;
+$margins: 10%;
+
+body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+@mixin flexit($flx){
+  -ms-flex-preferred-size: $flx;
+  flex-basis: $flx;
+  max-width: $flx;
+}
+
+.posts{
+  width:100%;
+  max-width:1250px;
+  margin:auto;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  .post-wrap{
+    margin: 14% auto;
+    &.only-text{
+      .featured{
+        display:none;
+      }
+    }
+    &.only-picture{
+      h2{
+        display:none;
+      }
+    }
+    .post {
+      h2,
+      .featured{
+        margin:0 2vw;
+      }
+      .featured{
+        transition:box-shadow 50ms ease-out;
+        box-shadow:0px 5px 19px rgba(#000,.5);
+        background:#00f;
+        img{
+          width:100%;
+          opacity:0;
+        }
+      }
+      h2{
+        font-family:'Times New Roman';
+        color:#00f;
+        font-weight:400;
+        text-shadow:0px 5px 19px rgba(#000,.5);
+        transition:text-shadow 150ms ease-out;
+        margin-top:1.5rem;
+      }
+      &:hover{
+        h2{
+          text-shadow:0px 5px 15px rgba(#000,.5);
+          transition:text-shadow 50ms ease-in;
+        }
+        .featured{
+          box-shadow:0px 5px 15px rgba(#000,.4);
+          transition:box-shadow 50ms ease-in;
+        }
+      }
+    }
+    &.sm{
+      @include flexit($sm);
+      &.margin-right{
+        $sm: $sm - $margins;
+        @include flexit($sm);
+        margin-right:$margins;
+      }
+      &.margin-left{
+        $sm: $sm - $margins;
+        @include flexit($sm);
+        margin-left:$margins;
+      }
+    }
+    &.md{
+      @include flexit($md);
+      &.margin-right{
+        $md: $md - $margins;
+        @include flexit($md);
+        margin-right:$margins;
+      }
+      &.margin-left{
+        $md: $md - $margins;
+        @include flexit($md);
+        margin-left:$margins;
+      }
+    }
+    &.pull-sm{
+      margin-top:15%;
+      .post{
+        margin-top:-15%;
+      }
+    }
+    &.push-sm{
+      .post{
+        margin-top:15%;
+      }
+    }
+    &.pull-md{
+      margin-top:30%;
+      .post{
+        margin-top:-30%;
+      }
+    }
+    &.push-md{
+      .post{
+        margin-top:30%;
+      }
+    }
+    &.pull-lg{
+      margin-top:40%;
+      .post{
+        margin-top:-40%;
+      }
+    }
+    &.push-lg{
+      .post{
+        margin-top:40%;
+      }
+    }
+  }
+}
