@@ -95,7 +95,7 @@
   <div class="post-wrap">
     <div class="post <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
-          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+          <video poster="<?php echo $image_full;?>" class="js-player" loop>
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
           </video>
       </div>
