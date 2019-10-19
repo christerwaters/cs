@@ -5,7 +5,6 @@ add_theme_support( 'post-formats', array( 'video', 'link', 'image' ) ); // add c
 
 if( function_exists('acf_add_local_field_group') ):
 
-define('WPCF7_LOAD_JS', false);
 
 acf_add_local_field_group(array(
 	'key' => 'group_5d629db34eec4',
