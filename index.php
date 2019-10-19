@@ -75,7 +75,7 @@
     <div class="line05">å samarbeide.</div>
   </div>
 </div>
-<div class="content p-wrap posts" id="home">
+<div class="content p-wrap posts" id="home"><!--
   <?php
   $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
   $portfolio_items = get_posts( $args );
@@ -91,7 +91,7 @@
       $category = get_the_category($page_data->ID);
   ?>
 
-  <div class="post-wrap">
+--><div class="post-wrap">
     <div class="post <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
@@ -100,9 +100,7 @@
       </div>
       <h2><?php echo $title; ?></h2>
     </div>
-  </div>
-
-  <?php }; ?>
+  </div><!--<?php }; ?><!-- -->
 </div>
 <div class="p-wrap" id="team">
 
