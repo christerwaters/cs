@@ -71,11 +71,6 @@ p{font-size:$p;line-height:$p*1.5;}
     transform:translateY(-50%);
   }
 }
-
-
-
-
-
 body{
   overflow-x:hidden;
   background:url(../media/wn.gif);
@@ -86,9 +81,12 @@ body{
   opacity:0;
   transition:opacity 1s 1s ease;
   &.unloaded{
-    .mover{animation:mover 2s infinite;display:block;}
     opacity:1;
     transition:opacity 1s 1s ease;
+    .mover{
+      animation:mover 2s infinite;
+      display:block;
+    }
   }
 }
 
@@ -109,80 +107,6 @@ body{
     transform:translate(2%,1%);
   }
 }
-
-
-
-@keyframes grain{
-  0%{
-    background-image:url(/wp-content/themes/cs/media/wn1.png);
-  }
-  10%{
-    background-image:url(/wp-content/themes/cs/media/wn2.png);
-  }
-  20%{
-    background-image:url(/wp-content/themes/cs/media/wn3.png);
-  }
-  30%{
-    background-image:url(/wp-content/themes/cs/media/wn4.png);
-  }
-  40%{
-    background-image:url(/wp-content/themes/cs/media/wn6.png);
-  }
-  50%{
-    background-image:url(/wp-content/themes/cs/media/wn7.png);
-  }
-  60%{
-    background-image:url(/wp-content/themes/cs/media/wn8.png);
-  }
-  70%{
-    background-image:url(/wp-content/themes/cs/media/wn6.png);
-  }
-  80%{
-    background-image:url(/wp-content/themes/cs/media/wn4.png);
-  }
-  90%{
-    background-image:url(/wp-content/themes/cs/media/wn2.png);
-  }
-  100%{
-    background-image:url(/wp-content/themes/cs/media/wn1.png);
-  }
-}
-@keyframes grain-50{
-  0%{
-    background-image:url(/wp-content/themes/cs/media/wn1-50.png);
-  }
-  10%{
-    background-image:url(/wp-content/themes/cs/media/wn2-50.png);
-  }
-  20%{
-    background-image:url(/wp-content/themes/cs/media/wn3-50.png);
-  }
-  30%{
-    background-image:url(/wp-content/themes/cs/media/wn4-50.png);
-  }
-  40%{
-    background-image:url(/wp-content/themes/cs/media/wn6-50.png);
-  }
-  50%{
-    background-image:url(/wp-content/themes/cs/media/wn7-50.png);
-  }
-  60%{
-    background-image:url(/wp-content/themes/cs/media/wn8-50.png);
-  }
-  70%{
-    background-image:url(/wp-content/themes/cs/media/wn6-50.png);
-  }
-  80%{
-    background-image:url(/wp-content/themes/cs/media/wn4-50.png);
-  }
-  90%{
-    background-image:url(/wp-content/themes/cs/media/wn2-50.png);
-  }
-  100%{
-    background-image:url(/wp-content/themes/cs/media/wn1-50.png);
-  }
-}
-
 
 .h-p-header{
   z-index:250;
