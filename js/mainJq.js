@@ -141,6 +141,12 @@ $('.word').each(function (index) {
 
 });
 
+var wpcf7Elm = document.querySelector( '.wpcf7' );
+
+wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
+  history.pushState('data', '', window.location.origin + "/om-oss");
+  $("body").attr('class', 'p-open p-om-oss kontaktet');
+}, false );
 
 
 
