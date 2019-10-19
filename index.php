@@ -53,7 +53,6 @@
       <div class="container">
         <nav>
           <ul class="menu-hover-trigger">
-            <li><a href="<?php echo get_site_url();?>/kontakt" class="underline"><span>Kontakt</span></a></li>
             <li><a href="<?php echo get_site_url();?>/team" class="underline"><span>Team</span></a></li>
             <li><a href="<?php echo get_site_url();?>/om-oss" class="underline"><span>Om oss</span></a></li>
             <li><a href="<?php echo get_site_url();?>/events" class="underline"><span>Events</span></a></li>
@@ -203,7 +202,7 @@
     <?php if ($select_format_type == ('Video')){?>
       <div class="inner">
         <div class="featured-media">
-          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
+          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls tilt>
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
           </video>
         </div>
