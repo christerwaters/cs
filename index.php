@@ -88,11 +88,10 @@
       $select_format_type = get_field('format_type',$page_data->ID);
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
-      $category = get_the_category($page_data->ID);
   ?>
 
 --><div class="post-wrap">
-    <div class="post <?php echo $select_format_type;?> <?php echo $category[0]->cat_name;?>" id="<?php echo $post_slug;?>" data-tilt>
+    <div class="post <?php echo $select_format_type;?>" id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
@@ -100,7 +99,9 @@
       </div>
       <h2><?php echo $title; ?></h2>
     </div>
-  </div><!--<?php }; ?><!-- -->
+  </div><!--
+  <?php }; ?>
+  <!-- -->
 </div>
 <div class="p-wrap" id="team">
 
