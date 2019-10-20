@@ -2,7 +2,6 @@
 .p-om-oss,
 .p-team{
   .content{
-
     display: none;
     transition: display 0s 500ms;
   }
@@ -298,10 +297,10 @@ section.p-wrap.Video{
     h1{
       pointer-events : none;
       z-index:230;
-      -webkit-text-stroke: 1px #F90;
+      -webkit-text-stroke: 1px $primary;
     }
     .text-fill{
-      color:#F90;
+      color:$primary;
       z-index:200;
     }
   }
@@ -312,11 +311,6 @@ section.p-wrap.Video{
       top:50%;
       transform: translateY(-50%);
       opacity:1;
-      .some{
-        margin-bottom:-1.8rem;
-        opacity:1;
-        transition:opacity 400ms $cb;
-      }
       .plyr{
         transform:scale(1);
         filter: grayscale(0%);
