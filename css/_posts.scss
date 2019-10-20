@@ -3,11 +3,6 @@ $sm: 40%;
 $md: 60%;
 $margins: 10%;
 
-body{
-  max-width:100%;
-  overflow-x:hidden;
-}
-
 @mixin flexit($flx){
   -ms-flex-preferred-size: $flx;
   flex-basis: $flx;
