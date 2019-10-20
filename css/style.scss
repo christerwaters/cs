@@ -73,7 +73,7 @@ p{font-size:$p;line-height:$p*1.5;}
 }
 body{
   overflow-x:hidden;
-  background:url(../media/wn.gif);
+  background:#fff;
 }
 
 .wrap-loader{
@@ -173,7 +173,7 @@ body{
 }
 
 .menu{
-  position:fixed;
+  position:absolute;
   width:100%;
   display:block;
   top:0;
