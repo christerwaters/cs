@@ -12,7 +12,7 @@ $margins: 10%;
 .p-open.p-home .content.p-wrap.posts#home,
 .posts{
   width:100%;
-  max-width:1250px;
+  max-width:$max-page-width;
   margin:auto;
   box-sizing: border-box;
   display: -webkit-box;
