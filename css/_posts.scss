@@ -78,6 +78,10 @@ $margins: 10%;
         @include flexit($sm);
         margin-left:$margins;
       }
+      &.margin-lg-left{
+        @include flexit($sm);
+        margin-left:$margins;
+      }
     }
     &.md{
       @include flexit($md);
@@ -88,6 +92,10 @@ $margins: 10%;
       }
       &.margin-left{
         $md: $md - $margins;
+        @include flexit($md);
+        margin-left:$margins;
+      }
+      &.margin-lg-left{
         @include flexit($md);
         margin-left:$margins;
       }
