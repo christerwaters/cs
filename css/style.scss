@@ -307,7 +307,7 @@ body{
   width:100%;
 }
 @media only screen and (min-width: 1050px) {
-  .footer,
+
   .menu{
     max-width:1050px;
     width:100%;
@@ -351,35 +351,6 @@ $m-100: 100%;
   -ms-flex-preferred-size: $flx;
   flex-basis: $flx;
   max-width: $flx;
-}
-.footer{
-  background:#00f;
-  color:#f90;
-  padding:3rem;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  .col{ @include flexit($m-33);}
-
-  a{
-    border-bottom:2px solid #f90;
-    &:hover{
-      color:brighten(#f90,20%);
-    }
-  }
-  .dev-by-wtrs{
-    text-align:center;
-  }
 }
 
 
@@ -571,6 +542,7 @@ $m-100: 100%;
   width: 100%;
   position:fixed;
   bottom:1rem;
+  margin:auto;
   .contact-btn{
     left:0;
     position:absolute;
