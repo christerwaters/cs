@@ -8,7 +8,9 @@ $margins: 10%;
   flex-basis: $flx;
   max-width: $flx;
 }
-.content.p-wrap.posts#home{
+.p-open.p-events .content.p-wrap.posts#home,
+.p-open.p-home .content.p-wrap.posts#home,
+.posts{
   width:100%;
   max-width:1250px;
   margin:auto;
