@@ -4,7 +4,7 @@ $(document).ready(function(){
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
       var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
-      var classes = ["nomargin","nomargin","nomargin","nomargin","margin-left","margin-right"];
+      var classes = ["nomargin","nomargin","nomargin","nomargin","margin-left","margin-right","margin-lg-left"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
       var thisLeft = $(this).position().left;
