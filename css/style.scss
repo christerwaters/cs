@@ -15,6 +15,7 @@ $plyr-color: $primary;
 $core_font-family-01: $serif;
 $core_font-family-02: $serif;
 $core_font-family-03: $serif;
+$max-page-width: 1050px;
 
 $bw: 3px;
 $sitewidth: 98rem;
@@ -358,7 +359,7 @@ $m-100: 100%;
 
 
 .p-wrap{
-  max-width:1050px;
+  max-width:$max-page-width;
   display:block;
   margin:auto;
   width:100%;
@@ -537,21 +538,26 @@ $m-100: 100%;
 
 
 .footer{
-  max-width: 1050px;
   width: 100%;
   position:fixed;
   bottom:1rem;
   margin:auto;
-  .contact-btn{
-    left:0;
-    position:absolute;
-    font-family:$serif;
-    color:#000;
-  }
-  .copyright{
-    right:0;
-    position:absolute;
-    font-family:$serif;
-    color:#000;
+  .footer-inner{
+    width:100%;
+    max-width:$max-page-width;
+    margin:auto;
+    .contact-btn{
+      left:0;
+    }
+    .copyright{
+      right:0;
+    }
+    .contact-btn,
+    .copyright{
+      bottom:1rem;
+      position:absolute;
+      font-family:$serif;
+      color:#000;
+    }
   }
 }
