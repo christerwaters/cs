@@ -92,8 +92,8 @@
       $category_detail=get_the_category($page_data->ID);
 
   ?>--><div class="post-wrap">
-    <div class="post <?php echo $select_format_type; foreach($category_detail as $cd){
-    echo $cd->cat_name;
+    <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){
+    echo $cd->cat_name; echo " ";
     } ?> " id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
