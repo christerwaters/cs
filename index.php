@@ -223,14 +223,9 @@
 
   <?php }; ?>
 
-
-
-
-<div class="contact-form">
-
-</div>
-<!--<div class="grain"></div>
--->
+<div class="footer">
+  <div class="contact-btn">KONTAKT</div>
+  <div class="copyright">C Citrus Studios</div>
 <script>
   var siteTitle = "<?php echo $site_title;?>";
   var siteName = "<?php echo $site_name;?>";
