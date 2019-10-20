@@ -89,8 +89,12 @@
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
       $cat = get_the_category($page_data->ID);
+      $category_detail=get_the_category($page_data->ID);
+
   ?>--><div class="post-wrap">
-    <div class="post <?php echo $select_format_type; echo $cat[0]->cat_name;; ?> " id="<?php echo $post_slug;?>" data-tilt>
+    <div class="post <?php echo $select_format_type; foreach($category_detail as $cd){
+    echo $cd->cat_name;
+    } ?> " id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
