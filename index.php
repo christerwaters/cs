@@ -224,8 +224,10 @@
   <?php }; ?>
 
 <div class="footer">
-  <div class="contact-btn">KONTAKT</div>
-  <div class="copyright">C Citrus Studios</div>
+  <div class="footer-inner">
+    <div class="contact-btn">KONTAKT</div>
+    <div class="copyright">C Citrus Studios</div>
+  </div>
 <script>
   var siteTitle = "<?php echo $site_title;?>";
   var siteName = "<?php echo $site_name;?>";
