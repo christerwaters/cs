@@ -543,6 +543,7 @@ $m-100: 100%;
   bottom:1rem;
   margin:auto;
   .footer-inner{
+    min-width:100%;
     width:100%;
     max-width:$max-page-width;
     margin:auto;
