@@ -559,3 +559,28 @@ $m-100: 100%;
     }
   }
 }
+
+
+
+
+/**** Footer ****/
+
+
+.footer{
+  max-width: 1050px;
+  width: 100%;
+  position:fixed;
+  bottom:1rem;
+  .contact-btn{
+    left:0;
+    position:absolute;
+    font-family:$serif;
+    color:#000;
+  }
+  .copyright{
+    right:0;
+    position:absolute;
+    font-family:$serif;
+    color:#000;
+  }
+}
