@@ -50,6 +50,7 @@ $(".core .team-member").click(function(){
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
   $(".team-member").removeClass("active");
+  $('.posts').isotope( 'reLayout' );
   $('.js-player').each(function() {
     $(this).get(0).pause();
   });
