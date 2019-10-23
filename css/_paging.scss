@@ -68,38 +68,6 @@
     opacity:1;
   }
 }
-.p-open.p-ar{
-  background:#fff;
-  overflow:hidden;
-  margin:0px;
-  padding:0px;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  animation:none;
-  .menu,
-  .menu,
-  #home,
-  .p-wrap{
-    display:none;
-    height:0;
-    overflow:hidden;
-    margin:0;
-    padding:0;
-    opacity:0;
-  }
-  a-scene{
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-width: 100vw;
-  }
-}
 .p-open.p-team{
   #home,
   .p-wrap{
