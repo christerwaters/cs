@@ -540,7 +540,7 @@ $m-100: 100%;
   font-size:1.2rem;
   width:100%;
   position:fixed;
-  bottom:1rem;
+  bottom: 1.5rem;
   .foot-inner{
     max-width:1100px;
     margin:auto;
@@ -549,8 +549,12 @@ $m-100: 100%;
       width:50%;
       display:inline-block;
     }
+    .foot-left{
+      padding-left:1.5rem;
+    }
     .foot-right{
       text-align:right;
+      padding-right:1.5rem;
       .contact-btn{
         background:#00f;
         color:#fff;
