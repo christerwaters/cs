@@ -142,14 +142,14 @@ $margins: 10%;
 
 .p-open.p-events .content.p-wrap.posts#home{
   .post-wrap.Event{
-    display:block !important;
+    display:inline-block;
   }
 }
 
 
 .p-open.p-home .content.p-wrap.posts#home{
   .post-wrap.Featured{
-    display:block !important;
+    display:inline-block;
   }
 }
 
