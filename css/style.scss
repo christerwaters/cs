@@ -548,13 +548,14 @@ $m-100: 100%;
     .foot-left{
       width:50%;
       display:inline-block;
+      box-sizing: border-box;
     }
     .foot-left{
-      padding-left:1.5rem;
+      margin-left:1.5rem;
     }
     .foot-right{
       text-align:right;
-      padding-right:1.5rem;
+      margin-right:1.5rem;
       .contact-btn{
         background:#00f;
         color:#fff;
