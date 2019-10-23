@@ -152,3 +152,80 @@ $margins: 10%;
     display:block !important;
   }
 }
+
+
+@media only screen and (max-width: 777px) {
+  $sm: 100%;
+  $md: 100%;
+  .posts{
+    .post-wrap{
+      &.sm{
+        @include flexit($sm);
+        &.margin-right{
+          $sm: $sm - $margins;
+          @include flexit($sm);
+          margin-right:$margins;
+        }
+        &.margin-left{
+          $sm: $sm - $margins;
+          @include flexit($sm);
+          margin-left:$margins;
+        }
+        &.margin-lg-left{
+          @include flexit($sm);
+          margin-left:$margins;
+        }
+      }
+      &.md{
+        @include flexit($md);
+        &.margin-right{
+          $md: $md - $margins;
+          @include flexit($md);
+          margin-right:$margins;
+        }
+        &.margin-left{
+          $md: $md - $margins;
+          @include flexit($md);
+          margin-left:$margins;
+        }
+        &.margin-lg-left{
+          @include flexit($md);
+          margin-left:$margins;
+        }
+      }
+      &.pull-sm{
+        margin-top:0%;
+        .post{
+          margin-top:0%;
+        }
+      }
+      &.push-sm{
+        .post{
+          margin-top:0%;
+        }
+      }
+      &.pull-md{
+        margin-top:0%;
+        .post{
+          margin-top:0%;
+        }
+      }
+      &.push-md{
+        .post{
+          margin-top:0%;
+        }
+      }
+      &.pull-lg{
+        margin-top:0%;
+        .post{
+          margin-top:0%;
+        }
+      }
+      &.push-lg{
+        .post{
+          margin-top:0%;
+        }
+      }
+    }
+  }
+}
