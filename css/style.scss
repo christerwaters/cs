@@ -562,18 +562,23 @@ $m-100: 100%;
       box-sizing: border-box;
     }
     .foot-left{
-      padding-left:1.5rem;
+      .foot-inner{
+        padding-left:1.5rem;
+      }
     }
     .foot-right{
       text-align:right;
       padding-right:1.5rem;
-      .contact-btn{
-        background:#00f;
-        color:#fff;
-        padding:.5rem 1rem;
-        a{
+      .foot-inner{
+        padding-right:1.5rem;
+        .contact-btn{
+          background:#00f;
           color:#fff;
-          text-decoration:none;
+          padding:.5rem 1rem;
+          a{
+            color:#fff;
+            text-decoration:none;
+          }
         }
       }
     }
