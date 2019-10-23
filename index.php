@@ -74,7 +74,7 @@
     <div class="line04">å konkurrere, men </div>
     <div class="line05">å samarbeide.</div>
   </div>
-  <video autoplay muted>
+  <video autoplay muted loop>
     <source src="http://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
 </video>
 </div>
