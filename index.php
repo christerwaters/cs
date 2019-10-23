@@ -82,7 +82,7 @@
   <h2>Vi driver også med eventer</h2>
   <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
 </div>
-<div class="content p-wrap posts" id="home"><!--
+<div class="content p-wrap posts isotope-grid" id="home"><!--
   <?php
   $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
   $portfolio_items = get_posts( $args );
