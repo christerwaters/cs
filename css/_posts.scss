@@ -8,6 +8,23 @@ $margins: 10%;
   flex-basis: $flx;
   max-width: $flx;
 }
+
+.p-open.p-events .content.p-wrap.posts#home{
+  .post-wrap.Event{
+    display:inline-block;
+  }
+}
+
+.p-open.p-home .content.p-wrap.posts#home{
+  .post-wrap.Featured{
+    display:inline-block;
+  }
+}.p-open.p-home .content.p-wrap.posts#home{
+  .post-wrap.Featured{
+    display:inline-block;
+  }
+}
+
 .p-open.p-events .content.p-wrap.posts#home,
 .p-open.p-home .content.p-wrap.posts#home,
 .posts{
@@ -28,7 +45,8 @@ $margins: 10%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   .post-wrap{
-    margin: 14% auto;
+    display:none;
+    margin: 14% 0;
     &.only-text{
       .featured{
         display:none;
