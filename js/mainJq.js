@@ -53,6 +53,12 @@ $("a").click(function(){
 });
 
 
+$('.menu-hover-trigger').hover(
+       function(){ $('menu-overlay').addClass('menu-hover') },
+       function(){ $('menu-overlay').removeClass('menu-hover') }
+);
+
+
 $.fn.visible = function(partial) {
 
   var $t = $(this),
@@ -140,17 +146,3 @@ $('.word').each(function (index) {
     });
 
 });
-
-var wpcf7Elm = document.querySelector( '.wpcf7' );
-
-wpcf7Elm.addEventListener( 'wpcf7submit', function( event ) {
-  history.pushState('data', '', window.location.origin + "/om-oss");
-  $("body").attr('class', 'p-open p-om-oss kontaktet');
-}, false );
-
-
-
-$('.menu-hover-trigger').hover(
-       function(){ $('menu-overlay').addClass('menu-hover') },
-       function(){ $('menu-overlay').removeClass('menu-hover') }
-)
