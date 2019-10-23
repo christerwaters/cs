@@ -535,30 +535,31 @@ $m-100: 100%;
 
 
 /**** Footer ****/
-
-
-.footer{
-  width: 100%;
+.foot{
+  font-family:'Times New Roman', serif;
+  font-size:1.2rem;
+  width:100%;
   position:fixed;
   bottom:1rem;
-  margin:auto;
-  .footer-inner{
-    min-width:100%;
-    width:100%;
-    max-width:$max-page-width;
+  .foot-inner{
+    max-width:1100px;
     margin:auto;
-    .contact-btn{
-      left:0;
+    .foot-right,
+    .foot-left{
+      width:50%;
+      display:inline-block;
     }
-    .copyright{
-      right:0;
-    }
-    .contact-btn,
-    .copyright{
-      bottom:1rem;
-      position:absolute;
-      font-family:$serif;
-      color:#000;
+    .foot-right{
+      text-align:right;
+      .contact-btn{
+        background:#00f;
+        color:#fff;
+        padding:.5rem 1rem;
+        a{
+          color:#fff;
+          text-decoration:none;
+        }
+      }
     }
   }
 }
