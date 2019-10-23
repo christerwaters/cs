@@ -54,8 +54,8 @@ $("a").click(function(){
 
 
 $('.menu-hover-trigger').hover(
-       function(){ $('menu-overlay').addClass('menu-hover') },
-       function(){ $('menu-overlay').removeClass('menu-hover') }
+       function(){ $('.menu-overlay').addClass('menu-hover') },
+       function(){ $('.menu-overlay').removeClass('menu-hover') }
 );
 
 
