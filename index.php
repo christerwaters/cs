@@ -78,6 +78,10 @@
     <source src="http://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
 </video>
 </div>
+<div class="p-wrap" id="events">
+  <h2>Vi driver også med eventer</h2>
+  <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
+</div>
 <div class="content p-wrap posts" id="home"><!--
   <?php
   $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
@@ -257,6 +261,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/core/js/rndm.js"></script>
 <script>var randomize = $(".crew .team-member");</script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/rndm.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/isotope.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/url_handler.js"></script>
 
