@@ -209,11 +209,16 @@
   <div class="foot">
     <div class="foot-inner">
       <div class="foot-left">
-        © Citrus Studio
-      </div><div class="foot-right">
-        <span class="contact-btn">
-          <a href="<?php echo get_site_url();?>/om-oss#kontakt"> Kontakt Oss</a>
-        </span>
+        <div class="foot-inner-left">
+          © Citrus Studio
+        </div>
+      </div>
+      <div class="foot-right">
+        <div class="foot-inner-right">
+          <span class="contact-btn">
+            <a href="<?php echo get_site_url();?>/om-oss#kontakt"> Kontakt Oss</a>
+          </span>
+        </div>
       </div>
     </div>
   </div>
