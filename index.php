@@ -95,6 +95,7 @@
       $select_format_type = get_field('format_type',$page_data->ID);
       $video_mp4 = get_field('video_file_mp4',$page_data->ID);
       $website_url = get_field('website_url',$page_data->ID);
+      $client = get_field('client',$page_data->ID);
       $cat = get_the_category($page_data->ID);
       $category_detail=get_the_category($page_data->ID);
       $post_url = esc_url( get_permalink($page_data->ID) );
@@ -109,7 +110,7 @@
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
           </video>
       </div>
-      <h2><?php echo $title; ?></h2>
+      <h2><span class="client"><?php echo $client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
     </div>
   </a>
   </div><?php }; ?>
