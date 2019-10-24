@@ -16,18 +16,22 @@
       box-sizing: border-box;
     }
     .foot-left{
-      left:1.5rem;
+      .foot-inner-left{
+        margin-left:1.5rem;
+      }
     }
     .foot-right{
       text-align:right;
-      right:1.5rem;
-      .contact-btn{
-        background:#00f;
-        color:#fff;
-        padding:.5rem 1rem;
-        a{
+      .foot-inner-right{
+        margin-right:1.5rem;
+        .contact-btn{
+          background:#00f;
           color:#fff;
-          text-decoration:none;
+          padding:.5rem 1rem;
+          a{
+            color:#fff;
+            text-decoration:none;
+          }
         }
       }
     }
