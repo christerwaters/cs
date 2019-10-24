@@ -102,7 +102,7 @@
 
   ?><div class="post-wrap <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>" id="<?php echo $post_slug;?>">
     <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
-      <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" <?php if ($select_format_type != ('Text')){ echo 'data-tilt'};?>>
+      <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" <?php if ($select_format_type != ('Text')){?> data-tilt <?php};?>>
       <div class="featured">
         <?php if ($select_format_type == ('Video')){?>
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
