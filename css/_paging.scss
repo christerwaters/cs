@@ -29,6 +29,16 @@
     box-sizing: border-box;
   }
 }
+.p-open.p-work-manen .p-wrap.posts#Events{
+  display:block;
+  height:auto;
+  margin:auto;
+  width:100%;
+  max-width:$max-page-width;
+  .post-wrap#Manen{
+    display:block;
+  }
+}
 .p-open.p-home {
   .p-wrap{
     display:none;
