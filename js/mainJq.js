@@ -53,18 +53,21 @@ $("a").click(function(){
       function()
       {
         $('body').addClass('.start-page-transition');
+        console.log("start");
   }, 200);
   setTimeout(
       function()
       {
         $('body').removeClass('.start-page-transition');
         $('body').addClass('.middle-page-transition');
+        console.log("middle");
   }, 400);
   setTimeout(
       function()
       {
         $('body').removeClass('.middle-page-transition');
         $('body').addClass('.end-page-transition');
+        console.log("end");
   }, 600);
 });
 
