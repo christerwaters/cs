@@ -102,13 +102,15 @@
 
   ?><div class="post-wrap <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>">
     <a href="<?php echo $post_url;?>" title="<?php echo $title;?>">
-      <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){
-    echo $cd->cat_name; echo " ";
-    } ?> " id="<?php echo $post_slug;?>" data-tilt>
+      <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" data-tilt>
       <div class="featured">
+        <?php if ($select_format_type == ('Video')){?>
           <video poster="<?php echo $image_full;?>" class="js-player" loop>
             <source src="<?php echo $video_mp4;?>" type="video/mp4" />
           </video>
+        <?php }; if ($select_format_type == ('Image')){ ?>
+          <img src="<?php echo $image_full;?>">
+        <?php }; ?>
       </div>
       <h2><span class="client"><?php echo $client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
     </div>
