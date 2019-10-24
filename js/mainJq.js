@@ -22,11 +22,10 @@ $(document).ready(function(){
     });
 });
 
-$('.isotope-grid').isotope({
-  // options
-  itemSelector: '.post-wrap',
-  layoutMode: 'fitRows'
-});
+//$('.isotope-grid').isotope({
+//  itemSelector: '.post-wrap',
+//  layoutMode: 'fitRows'
+//});
 
 
 $('.post').tilt({
