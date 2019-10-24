@@ -1,0 +1,40 @@
+
+/**** Footer ****/
+.foot{
+  font-family:'Times New Roman', serif;
+  font-size:1.2rem;
+  width:100%;
+  position:fixed;
+  bottom: 1.5rem;
+  .foot-inner{
+    max-width:1100px;
+    margin:auto;
+    .foot-right,
+    .foot-left{
+      width:50%;
+      display:inline-block;
+      box-sizing: border-box;
+    }
+    .foot-left{
+      .foot-inner{
+        padding-left:1.5rem;
+      }
+    }
+    .foot-right{
+      text-align:right;
+      padding-right:1.5rem;
+      .foot-inner{
+        padding-right:1.5rem;
+        .contact-btn{
+          background:#00f;
+          color:#fff;
+          padding:.5rem 1rem;
+          a{
+            color:#fff;
+            text-decoration:none;
+          }
+        }
+      }
+    }
+  }
+}
