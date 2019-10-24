@@ -112,12 +112,16 @@
   </div><!--<?php }; ?><!-- -->
 </div>
 <div class="p-wrap" id="team">
-
   <div class="core">
-    <h2> Ledelsen </h2><!--
-  <?php
-  $users = get_users( array( 'fields' => array( 'ID' ) ) );
-  foreach($users as $user){
+    <h2> Ledelsen </h2>
+    <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
+  </div>
+  <div class="crew">
+    <h2> Crew </h2><!--
+
+    <?php
+    $users = get_users( array( 'fields' => array( 'ID' ) ) );
+    foreach($users as $user){
           $acfI = $user->ID;
           $acfId= 'user_' . $acfI;
           //print_r(get_user_meta ( $user->ID));
@@ -126,64 +130,23 @@
           $title = get_field('hr_title', $acfId, true);
           $status = get_field('hr_employment_status', $acfId, true);
           $pic = get_field('hr_profile_picture', $acfId, true);
-          $bio = get_field('hr_bio', $acfId, true);
-          $email = get_field('hr_email', $acfId, true);
           ?>
-          <?php if ($status == ('Full-time')){?>
-
-
-
+          <?php if ($status == ('Freelancer')){?>
           --><div class="team-member">
                 <div class="featured-image">
-                  <span class="bio">
-                    <p><?php echo $bio ?></p>
-                  </span>
-                  <span class="more">les mer</span>
                   <img src="<?php echo $pic ?>">
                 </div>
                 <span class="about">
                   <span class="title"><?php echo $title ?></span>
                   <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
-                  <a href="mailto:<?php echo $email ?>" id="mail"><?php echo $email ?></a>
                 </span>
               </div><!--
         <?php };?>
           <?php
       }
       ?>
-    <!-- -->
-    </div>
-    <div class="crew">
-      <h2> Crew </h2><!--
-
-      <?php
-      $users = get_users( array( 'fields' => array( 'ID' ) ) );
-      foreach($users as $user){
-            $acfI = $user->ID;
-            $acfId= 'user_' . $acfI;
-            //print_r(get_user_meta ( $user->ID));
-            $firstname = get_user_meta ($user->ID, 'first_name', true);
-            $lastname = get_user_meta ($user->ID, 'last_name', true);
-            $title = get_field('hr_title', $acfId, true);
-            $status = get_field('hr_employment_status', $acfId, true);
-            $pic = get_field('hr_profile_picture', $acfId, true);
-            ?>
-            <?php if ($status == ('Freelancer')){?>
-            --><div class="team-member">
-                  <div class="featured-image">
-                    <img src="<?php echo $pic ?>">
-                  </div>
-                  <span class="about">
-                    <span class="title"><?php echo $title ?></span>
-                    <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
-                  </span>
-                </div><!--
-          <?php };?>
-            <?php
-        }
-        ?>
-        <!-- -->
-    </div>
+      <!-- -->
+  </div>
 </div>
 
 <!--  GET ALL THE PAGES -->
