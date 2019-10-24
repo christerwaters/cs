@@ -86,6 +86,9 @@ $margins: 10%;
         margin-left:$margins;
       }
     }
+    &.no-js{
+      @include flexit(50%);
+    }
     &.md{
       @include flexit($md);
       &.margin-right{
