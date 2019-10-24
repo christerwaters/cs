@@ -49,14 +49,23 @@ $(".core .team-member").click(function(){
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
   $(".team-member").removeClass("active");
-  checkVisible();
-  $('.menu-overlay').css('opacity', '.9');
   setTimeout(
-
       function()
       {
-    $('.menu-overlay').css('opacity', '');
+        $('body').addClass('.start-page-transition');
   }, 200);
+  setTimeout(
+      function()
+      {
+        $('body').removeClass('.start-page-transition');
+        $('body').addClass('.middle-page-transition');
+  }, 400);
+  setTimeout(
+      function()
+      {
+        $('body').removeClass('.middle-page-transition');
+        $('body').addClass('.end-page-transition');
+  }, 600);
 });
 
 
