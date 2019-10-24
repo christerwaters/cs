@@ -29,18 +29,20 @@
     box-sizing: border-box;
   }
 }
-.p-open.p-work-manen .content.p-wrap.posts#home{
+.p-open.p-work-manen{
   .h-p-header{
     display:none;
   }
-  display:block;
-  height:auto;
-  opacity:1;
-  margin:auto;
-  width:100%;
-  max-width:$max-page-width;
-  .post-wrap#Manen{
+  .content.p-wrap.posts#home{
     display:block;
+    height:auto;
+    opacity:1;
+    margin:auto;
+    width:100%;
+    max-width:$max-page-width;
+    .post-wrap#Manen{
+      display:block;
+    }
   }
 }
 .p-open.p-home {
