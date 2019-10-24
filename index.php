@@ -146,6 +146,15 @@
       }
       ?>
       <!-- -->
+      <div class="join-us">
+        <div class="featured-image">
+          <img src="<?php bloginfo('template_directory'); ?>/media/join.jpg">
+        </div>
+        <span class="about">
+          <span class="title">Det du liker</span>
+          <span class="name">Ditt navn</span>
+        </span>
+      </div>
   </div>
 </div>
 
