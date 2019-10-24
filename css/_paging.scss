@@ -29,23 +29,6 @@
     box-sizing: border-box;
   }
 }
-.p-open.p-work-manen{
-  .h-p-header{
-    display:none;
-  }
-  .content.p-wrap.posts#home{
-    display:block;
-    height:auto;
-    opacity:1;
-    padding-top:0;
-    margin:auto;
-    width:100%;
-    max-width:$max-page-width;
-    .post-wrap#manen{
-      display:block;
-    }
-  }
-}
 .p-open.p-home {
   .p-wrap{
     display:none;
