@@ -82,7 +82,7 @@
   <h2>Vi driver også med eventer</h2>
   <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
 </div>
-<div class="content p-wrap posts" id="home"><!--
+<div class="content p-wrap posts" id="home">
   <?php
   $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
   $portfolio_items = get_posts( $args );
@@ -99,7 +99,8 @@
       $category_detail=get_the_category($page_data->ID);
       $post_url = esc_url( get_permalink($page_data->ID) );
 
-  ?>--><div class="post-wrap <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>">
+  ?>
+  <div class="post-wrap <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>">
     <a href="<?php echo $post_url;?>" title="<?php echo $title;?>">
       <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){
     echo $cd->cat_name; echo " ";
@@ -112,7 +113,8 @@
       <h2><?php echo $title; ?></h2>
     </div>
   </a>
-  </div><!--<?php }; ?><!-- -->
+  </div>
+<?php }; ?>
 </div>
 <div class="p-wrap" id="team">
   <div class="core">
