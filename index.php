@@ -238,6 +238,6 @@
 
 <?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name; echo '<style>.p-open.p-'.  $post_slug . ' .p-wrap#' . $post_slug . '{opacity:1;display:block;}</style>' ;}?>
 
-
+<?php include 'paging.php'?>
 </body>
 </html>
