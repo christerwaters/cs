@@ -16,7 +16,7 @@ foreach ($portfolio_items as $page_data) {
   width:100%;
   max-width:1100px;
 }
-.p-open.p-work-manen .post-wrap#<?php echo $post_slug;?>{
+.p-open.p-work-<?php echo $post_slug;?> .post-wrap#<?php echo $post_slug;?>{
   display:block;
 }
 <?php }; ?>
