@@ -48,7 +48,6 @@ $(".core .team-member").click(function(){
 
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
-  $(".team-member").removeClass("active");
   setTimeout(
       function()
       {
