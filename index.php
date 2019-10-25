@@ -66,8 +66,8 @@
 
 
 
-<div class="h-p-header" id="home">
-  <div class="text">
+<div class="h-p-header p-inner" id="home">
+  <div class="text p-item">
     <div class="line01">vi ønsker å redefinere</div>
     <div class="line02">forholdet mellom kreative</div>
     <div class="line03">aktører. vi ønsker ikke </div>
@@ -83,46 +83,48 @@
   <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
 </div>
 <div class="content p-wrap posts" id="home">
-  <?php
-  $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
-  $portfolio_items = get_posts( $args );
-  foreach ($portfolio_items as $page_data) {
-      $content = apply_filters('the_content', $page_data->post_content);
-      $title = $page_data->post_title;
-      $post_slug = $page_data->post_name;
-      $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
-      $image_full = $imageid_full['0'];
-      $select_format_type = get_field('format_type',$page_data->ID);
-      $video_mp4 = get_field('video_file_mp4',$page_data->ID);
-      $website_url = get_field('website_url',$page_data->ID);
-      $client = get_field('client',$page_data->ID);
-      $cat = get_the_category($page_data->ID);
-      $category_detail=get_the_category($page_data->ID);
-      $post_url = esc_url( get_permalink($page_data->ID) );
+  <div class="p-inner">
+    <?php
+    $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
+    $portfolio_items = get_posts( $args );
+    foreach ($portfolio_items as $page_data) {
+        $content = apply_filters('the_content', $page_data->post_content);
+        $title = $page_data->post_title;
+        $post_slug = $page_data->post_name;
+        $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
+        $image_full = $imageid_full['0'];
+        $select_format_type = get_field('format_type',$page_data->ID);
+        $video_mp4 = get_field('video_file_mp4',$page_data->ID);
+        $website_url = get_field('website_url',$page_data->ID);
+        $client = get_field('client',$page_data->ID);
+        $cat = get_the_category($page_data->ID);
+        $category_detail=get_the_category($page_data->ID);
+        $post_url = esc_url( get_permalink($page_data->ID) );
 
-  ?><div class="post-wrap <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>" id="<?php echo $post_slug;?>">
-    <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
-      <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" data-tilt>
-      <div class="featured">
-        <?php if ($select_format_type == ('Video')){?>
-          <video poster="<?php echo $image_full;?>" class="js-player" loop>
-            <source src="<?php echo $video_mp4;?>" type="video/mp4" />
-          </video>
-        <?php }; if ($select_format_type == ('Image')){ ?>
-          <img src="<?php echo $image_full;?>">
-        <?php }; ?>
+    ?><div class="post-wrap p-item <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>" id="<?php echo $post_slug;?>">
+      <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
+        <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" data-tilt>
+        <div class="featured">
+          <?php if ($select_format_type == ('Video')){?>
+            <video poster="<?php echo $image_full;?>" class="js-player" loop>
+              <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+            </video>
+          <?php }; if ($select_format_type == ('Image')){ ?>
+            <img src="<?php echo $image_full;?>">
+          <?php }; ?>
+        </div>
+        <h2><span class="client"><?php echo $client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
       </div>
-      <h2><span class="client"><?php echo $client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
-    </div>
-  </a>
-  </div><?php }; ?>
+    </a>
+    </div><?php }; ?>
+  </div>
 </div>
 <div class="p-wrap" id="team">
   <div class="core">
     <h2> Ledelsen </h2>
     <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
   </div>
-  <div class="crew">
+  <div class="p-inner crew">
     <h2> Crew </h2><!--
 
     <?php
@@ -138,7 +140,7 @@
           $pic = get_field('hr_profile_picture', $acfId, true);
           ?>
           <?php if ($status == ('Freelancer')){?>
-          --><div class="team-member">
+          --><div class="team-member p-item">
                 <div class="featured-image">
                   <img src="<?php echo $pic ?>">
                 </div>
