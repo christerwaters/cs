@@ -19,5 +19,12 @@ foreach ($portfolio_items as $page_data) {
 .p-open.p-work-<?php echo $post_slug;?> .post-wrap#<?php echo $post_slug;?>{
   display:block;
 }
+.p-open.p-<?php echo $post_slug;?> .p-wrap#<?php echo $post_slug;?>{
+  display:block;
+  height:auto;
+  margin: auto;
+  overflow:auto;
+  opacity:1;
+}
 <?php }; ?>
 </style>
