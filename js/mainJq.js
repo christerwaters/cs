@@ -51,6 +51,9 @@ $("a").click(function(){
   setTimeout(
       function()
       {
+        $('body').removeClass('start-page-transition');
+        $('body').removeClass('middle-page-transition');
+        $('body').removeClass('end-page-transition');
         $('body').addClass('start-page-transition');
         console.log("start");
   }, 200);
