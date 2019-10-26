@@ -82,8 +82,7 @@
   <h2>Vi driver også med eventer</h2>
   <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
 </div>
-<div class="content p-wrap posts" id="home">
-  <div class="p-inner">
+<div class="posts">
     <?php
     $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
     $portfolio_items = get_posts( $args );
@@ -101,9 +100,12 @@
         $category_detail=get_the_category($page_data->ID);
         $post_url = esc_url( get_permalink($page_data->ID) );
 
-    ?><div class="post-wrap p-item <?php foreach($category_detail as $cd){  echo $cd->cat_name; echo " ";} ?>" id="<?php echo $post_slug;?>">
+    ?><div class="post-wrap p-wrap <?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>" id="<?php echo $post_slug;?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
-        <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> " id="<?php echo $post_slug;?>" data-tilt>
+        <div class="post <?php echo $select_format_type; echo " "; foreach($category_detail as $cd){echo $cd->cat_name; echo " ";} ?> "
+            item-title="<?php echo $post_slug;?>"
+            item-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
+            id="<?php echo $post_slug;?>" data-tilt>
         <div class="featured">
           <?php if ($select_format_type == ('Video')){?>
             <video poster="<?php echo $image_full;?>" class="js-player" loop>
@@ -117,7 +119,6 @@
       </div>
     </a>
     </div><?php }; ?>
-  </div>
 </div>
 <div class="p-wrap" id="team">
   <div class="core">
