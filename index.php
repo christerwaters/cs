@@ -120,7 +120,7 @@
     </a>
     </div><?php }; ?>
 </div>
-<div class="p-wrap" id="team">
+<div class="p-wrap" id="team" item-title="team">
   <div class="core">
     <h2> Ledelsen </h2>
     <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
@@ -186,7 +186,7 @@
 
 
   ?>
-  <section class="p-wrap <?php echo $select_format_type?>" id="<?php echo $post_slug;?>">
+  <section item-title="<?php echo $post_slug;?>" class="p-wrap <?php echo $select_format_type?>" id="<?php echo $post_slug;?>">
     <?php if ($select_format_type == ('Video')){?>
       <div class="inner">
         <div class="featured-media">
