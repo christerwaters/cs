@@ -229,14 +229,15 @@
 </script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/jq.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/plyr.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.jq.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/tilt.js"></script>
 <script>
   const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
 </script>
 <script>var randomize = $(".crew .team-member");</script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/rndm.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/mainJq.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/core/js/url_handler.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/core/js/paging.js"></script>
 
 <?php $pages = get_pages();foreach ($pages as $page_data) {$post_slug = $page_data->post_name; echo '<style>.p-open.p-'.  $post_slug . ' .p-wrap#' . $post_slug . '{opacity:1;display:block;}</style>' ;}?>
 
