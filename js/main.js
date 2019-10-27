@@ -48,29 +48,6 @@ $(".core .team-member").click(function(){
 
 $("a").click(function(){
   $("html, body").animate({ scrollTop: 0 }, ".25s");
-  setTimeout(
-      function()
-      {
-        $('body').removeClass('start-page-transition');
-        $('body').removeClass('middle-page-transition');
-        $('body').removeClass('end-page-transition');
-        $('body').addClass('start-page-transition');
-        console.log("start");
-  }, 200);
-  setTimeout(
-      function()
-      {
-        $('body').removeClass('start-page-transition');
-        $('body').addClass('middle-page-transition');
-        console.log("middle");
-  }, 400);
-  setTimeout(
-      function()
-      {
-        $('body').removeClass('middle-page-transition');
-        $('body').addClass('end-page-transition');
-        console.log("end");
-  }, 600);
 });
 
 
