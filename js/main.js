@@ -1,24 +1,9 @@
 $(document).ready(function(){
     $(".post-wrap").each(function(){
-
-      $(this).removeClass("no-js");
       var classes = ["sm","md"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
-      //var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
-      //$(this).addClass(classes[~~(Math.random()*classes.length)]);
-      //var classes = ["nomargin","nomargin","nomargin","nomargin","margin-left","margin-right","margin-lg-left"];
-      //$(this).addClass(classes[~~(Math.random()*classes.length)]);
-      //$(this).addClass(classes[~~(Math.random()*classes.length)]);
-      //var thisLeft = $(this).position().left;
-      //var thisWidth = ($(this) / $(".posts").width()) * 100;
-      //console.log(thisLeft);
-      //console.log(thisWidth);
-      //if($(".md").next().is('.md')) {
-      //  if($(".md").next().next().is('.md')) {
-      //    $(this).removeClass('md');
-      //    $(this).addClass('sm');
-      //  }
-      //};
+      var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
+      $(this).addClass(classes[~~(Math.random()*classes.length)]);
     });
 });
 
@@ -44,10 +29,6 @@ $(".core .team-member").click(function(){
     $(".team-member").removeClass("active");
     $(this).addClass("active");
   }
-});
-
-$("a").click(function(){
-  $("html, body").animate({ scrollTop: 0 }, ".25s");
 });
 
 
