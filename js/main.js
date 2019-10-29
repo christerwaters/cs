@@ -1,16 +1,11 @@
 $(document).ready(function(){
-    $(".post-wrap").each(function(){
+    $(".entry-wrap").each(function(){
       var classes = ["sm","md"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
       var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
     });
 });
-
-//$('.isotope-grid').isotope({
-//  itemSelector: '.post-wrap',
-//  layoutMode: 'fitRows'
-//});
 
 
 $('.post').tilt({
@@ -22,13 +17,6 @@ $(document).ready(function() {
   setTimeout(function(){
     $(".wrap-loader").removeClass( "unloaded" );
   }, 500);
-});
-
-$(".core .team-member").click(function(){
-  if (!$(this).hasClass("active")){
-    $(".team-member").removeClass("active");
-    $(this).addClass("active");
-  }
 });
 
 
