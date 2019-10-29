@@ -88,11 +88,10 @@
         $website_url = get_field('website_url',$entry->ID);
         $wtrs_entry_client = get_field('wtrs_entry_client',$entry->ID);
         $wtrs_entry_show_on = get_field('wtrs_entry_show_on',$entry->ID);
-        $cat = get_the_category($entry->ID);
         $category_detail=get_the_category($entry->ID);
         $post_url = esc_url( get_permalink($entry->ID) );
 
-    ?><div class="entry-wrap <?php echo $wtrs_entry_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
+    ?><div class="entry-wrap <?php echo $wtrs_entry_type; foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             id="<?php echo $post_slug;?>"
             data-wtrs-title="<?php echo $post_slug;?>"
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
