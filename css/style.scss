@@ -115,6 +115,9 @@ body{
 }
 
 .h-p-header{
+  display:none;
+}
+.h-p-header.show-on-current-page{
   z-index:250;
   top:0;
   color:$white;
