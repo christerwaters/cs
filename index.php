@@ -83,30 +83,30 @@
         $post_slug = $entry->post_name;
         $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($entry->ID), 'full' );
         $image_full = $imageid_full['0'];
-        $select_format_type = get_field('format_type',$entry->ID);
-        $video_mp4 = get_field('video_file_mp4',$entry->ID);
+        $wtrs_entry_type = get_field('wtrs_entry_type',$entry->ID);
+        $wtrs_entry_type_video_file_mp4 = get_field('wtrs_entry_type_video_file_mp4',$entry->ID);
         $website_url = get_field('website_url',$entry->ID);
-        $client = get_field('client',$entry->ID);
+        $wtrs_entry_client = get_field('wtrs_entry_client',$entry->ID);
         $cat = get_the_category($entry->ID);
         $category_detail=get_the_category($entry->ID);
         $post_url = esc_url( get_permalink($entry->ID) );
 
-    ?><div class="entry-wrap <?php echo $select_format_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
+    ?><div class="entry-wrap <?php echo $wtrs_entry_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
             id="<?php echo $post_slug;?>"
             data-wtrs-title="<?php echo $post_slug;?>"
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
         <div class="entry" data-tilt>
         <div class="featured">
-          <?php if ($select_format_type == ('Video')){?>
+          <?php if ($wtrs_entry_type == ('Video')){?>
             <video poster="<?php echo $image_full;?>" class="js-player" loop>
-              <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+              <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
             </video>
-          <?php }; if ($select_format_type == ('Image')){ ?>
+          <?php }; if ($wtrs_entry_type == ('Image')){ ?>
             <img src="<?php echo $image_full;?>">
           <?php }; ?>
         </div>
-        <h2><span class="client"><?php echo $client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
+        <h2><span class="client"><?php echo $wtrs_entry_client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
       </div>
     </a>
     </div><?php }; ?>
