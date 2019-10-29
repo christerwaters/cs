@@ -9,9 +9,7 @@ $margins: 10%;
   max-width: $flx;
 }
 
-.p-open.p-events .content.p-wrap.posts#home,
-.p-open.p-home .content.p-wrap.posts#home,
-.posts{
+.entries{
   width:100%;
   max-width:$max-page-width;
   margin:auto;
@@ -28,7 +26,7 @@ $margins: 10%;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  .post-wrap{
+  .entry-wrap{
     position: relative;
     display:none;
     margin: 14% 0;
@@ -42,12 +40,12 @@ $margins: 10%;
         display:none;
       }
     }
-    .post {
+    .entry {
       h2,
-      .featured{
+      .featured-media{
         margin:0 2vw;
       }
-      .featured{
+      .featured-media{
         transition:box-shadow 50ms ease-out;
         box-shadow:0px 5px 19px rgba(#000,.5);
         background:#00f;
@@ -63,7 +61,7 @@ $margins: 10%;
         margin-top:1.5rem;
       }
       &:hover{
-        .featured{
+        .featured-media{
           box-shadow:0px 5px 15px rgba(#000,.4);
           transition:box-shadow 50ms ease-in;
         }
@@ -108,34 +106,34 @@ $margins: 10%;
     }
     &.pull-sm{
       margin-top:15%;
-      .post{
+      .entry{
         margin-top:-15%;
       }
     }
     &.push-sm{
-      .post{
+      .entry{
         margin-top:15%;
       }
     }
     &.pull-md{
       margin-top:30%;
-      .post{
+      .entry{
         margin-top:-30%;
       }
     }
     &.push-md{
-      .post{
+      .entry{
         margin-top:30%;
       }
     }
     &.pull-lg{
       margin-top:40%;
-      .post{
+      .entry{
         margin-top:-40%;
       }
     }
     &.push-lg{
-      .post{
+      .entry{
         margin-top:40%;
       }
     }
@@ -143,26 +141,11 @@ $margins: 10%;
 }
 
 
-
-.p-open.p-events .content.p-wrap.posts#home{
-  .post-wrap.Event{
-    display:inline-block;
-  }
-}
-
-
-.p-open.p-home .content.p-wrap.posts#home{
-  .post-wrap.Featured{
-    display:inline-block;
-  }
-}
-
-
 @media only screen and (max-width: 777px) {
   $sm: 100%;
   $md: 100%;
-  .posts{
-    .post-wrap{
+  .entries{
+    .entry-wrap{
       &.sm{
         @include flexit($sm);
         &.margin-right{
@@ -199,34 +182,34 @@ $margins: 10%;
       }
       &.pull-sm{
         margin-top:0%;
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
       &.push-sm{
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
       &.pull-md{
         margin-top:0%;
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
       &.push-md{
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
       &.pull-lg{
         margin-top:0%;
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
       &.push-lg{
-        .post{
+        .entry{
           margin-top:0%;
         }
       }
