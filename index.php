@@ -98,12 +98,12 @@
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
         <div class="entry" data-tilt>
-        <div class="featured">
-          <?php if ($wtrs_entry_type == ('Video')){?>
+        <div class="featured-media">
+          <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
             <video poster="<?php echo $image_full;?>" class="js-player" loop>
               <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
             </video>
-          <?php }; if ($wtrs_entry_type == ('Image')){ ?>
+          <?php }; if ($wtrs_entry_type == ('wtrs_entry_type_image')){ ?>
             <img src="<?php echo $image_full;?>">
           <?php }; ?>
         </div>
