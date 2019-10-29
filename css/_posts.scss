@@ -28,7 +28,7 @@ $margins: 10%;
   flex-wrap: wrap;
   .entry-wrap{
     position: relative;
-    display:none;
+    display:inline-block;
     margin: 14% 0;
     &.only-text{
       .featured-media{
