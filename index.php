@@ -75,7 +75,7 @@
 </div>
 <div class="site-wrap">
     <?php
-    $args = array('post_type' => 'entry'); //declares that we will only be querying the portfolio post type
+    $args = array('post_type' => 'Entries'); //declares that we will only be querying the portfolio post type
     $entries = get_posts( $args );
     foreach ($entries as $entry) {
         $content = apply_filters('the_content', $entry->post_content);
