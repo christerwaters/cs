@@ -73,7 +73,7 @@
     <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
   </video>
 </div>
-<div class="site-wrap">
+<div class="entries">
     <?php
     $args = array('post_type' => 'Entries'); //declares that we will only be querying the portfolio post type
     $entries = get_posts( $args );
@@ -94,7 +94,7 @@
     ?><div class="entry-wrap <?php echo $wtrs_entry_type; foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             id="<?php echo $post_slug;?>"
             data-wtrs-title="<?php echo $post_slug;?>"
-            data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
+            data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
         <div class="entry" data-tilt>
