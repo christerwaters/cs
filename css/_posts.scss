@@ -26,9 +26,12 @@ $margins: 10%;
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  .entry-wrap.show-in-directory{
+    display:inline-block;
+  }
   .entry-wrap{
     position: relative;
-    display:inline-block;
+    display:none;
     margin: 14% 0;
     &.only-text{
       .featured-media{
