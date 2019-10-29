@@ -61,13 +61,8 @@
       </div>
     </div>
 
-
-
-
-
-
-<div class="h-p-header p-inner" id="home">
-  <div class="text p-item">
+<div class="h-p-header" id="home" data-wtrs-show-on="home">
+  <div class="text">
     <div class="line01">vi ønsker å redefinere</div>
     <div class="line02">forholdet mellom kreative</div>
     <div class="line03">aktører. vi ønsker ikke </div>
@@ -76,36 +71,32 @@
   </div>
   <video autoplay muted loop>
     <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
-</video>
+  </video>
 </div>
-<div class="p-wrap" id="events">
-  <h2>Vi driver også med eventer</h2>
-  <p>Vi gjør mer en å bare lage kuuule musikkvideoer, vi hjelper deg også med å </p>
-</div>
-<div class="posts">
+<div class="site-wrap">
     <?php
     $args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
-    $portfolio_items = get_posts( $args );
-    foreach ($portfolio_items as $page_data) {
-        $content = apply_filters('the_content', $page_data->post_content);
-        $title = $page_data->post_title;
-        $post_slug = $page_data->post_name;
-        $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
+    $entries = get_posts( $args );
+    foreach ($entries as $entry) {
+        $content = apply_filters('the_content', $entry->post_content);
+        $title = $entry->post_title;
+        $post_slug = $entry->post_name;
+        $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($entry->ID), 'full' );
         $image_full = $imageid_full['0'];
-        $select_format_type = get_field('format_type',$page_data->ID);
-        $video_mp4 = get_field('video_file_mp4',$page_data->ID);
-        $website_url = get_field('website_url',$page_data->ID);
-        $client = get_field('client',$page_data->ID);
-        $cat = get_the_category($page_data->ID);
-        $category_detail=get_the_category($page_data->ID);
-        $post_url = esc_url( get_permalink($page_data->ID) );
+        $select_format_type = get_field('format_type',$entry->ID);
+        $video_mp4 = get_field('video_file_mp4',$entry->ID);
+        $website_url = get_field('website_url',$entry->ID);
+        $client = get_field('client',$entry->ID);
+        $cat = get_the_category($entry->ID);
+        $category_detail=get_the_category($entry->ID);
+        $post_url = esc_url( get_permalink($entry->ID) );
 
-    ?><div  class="post-wrap p-wrap <?php echo $select_format_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
+    ?><div class="entry-wrap <?php echo $select_format_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
             id="<?php echo $post_slug;?>"
             data-wtrs-title="<?php echo $post_slug;?>"
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
-        <div class="post" data-tilt>
+        <div class="entry" data-tilt>
         <div class="featured">
           <?php if ($select_format_type == ('Video')){?>
             <video poster="<?php echo $image_full;?>" class="js-player" loop>
@@ -119,98 +110,52 @@
       </div>
     </a>
     </div><?php }; ?>
-</div>
-<div class="p-wrap" id="team" item-title="team">
-  <div class="core">
-    <h2> Ledelsen </h2>
-    <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
-  </div>
-  <div class="p-inner crew">
-    <h2> Crew </h2><!--
+    <div class="entry" data-wtrs-title="team" data-wtrs-categories="" data-wtrs-show-on="team">
+        <div class="core">
+          <h2> Ledelsen </h2>
+          <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
+        </div>
+        <div class="p-inner crew">
+          <h2> Crew </h2><!--
 
-    <?php
-    $users = get_users( array( 'fields' => array( 'ID' ) ) );
-    foreach($users as $user){
-          $acfI = $user->ID;
-          $acfId= 'user_' . $acfI;
-          //print_r(get_user_meta ( $user->ID));
-          $firstname = get_user_meta ($user->ID, 'first_name', true);
-          $lastname = get_user_meta ($user->ID, 'last_name', true);
-          $title = get_field('hr_title', $acfId, true);
-          $status = get_field('hr_employment_status', $acfId, true);
-          $pic = get_field('hr_profile_picture', $acfId, true);
-          ?>
-          <?php if ($status == ('Freelancer')){?>
-          --><div class="team-member p-item">
-                <div class="featured-image">
-                  <img src="<?php echo $pic ?>">
-                </div>
-                <span class="about">
-                  <span class="title"><?php echo $title ?></span>
-                  <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
-                </span>
-              </div><!--
-        <?php };?>
           <?php
-      }
-      ?>
-      <!-- -->
-      <div class="join-us">
-        <div class="featured-image">
-          <img src="<?php bloginfo('template_directory'); ?>/media/join.jpg">
+          $users = get_users( array( 'fields' => array( 'ID' ) ) );
+          foreach($users as $user){
+                $acfI = $user->ID;
+                $acfId= 'user_' . $acfI;
+                //print_r(get_user_meta ( $user->ID));
+                $firstname = get_user_meta ($user->ID, 'first_name', true);
+                $lastname = get_user_meta ($user->ID, 'last_name', true);
+                $title = get_field('hr_title', $acfId, true);
+                $status = get_field('hr_employment_status', $acfId, true);
+                $pic = get_field('hr_profile_picture', $acfId, true);
+                ?>
+                <?php if ($status == ('Freelancer')){?>
+                --><div class="team-member p-item">
+                      <div class="featured-image">
+                        <img src="<?php echo $pic ?>">
+                      </div>
+                      <span class="about">
+                        <span class="title"><?php echo $title ?></span>
+                        <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
+                      </span>
+                    </div><!--
+              <?php };?>
+                <?php
+            }
+            ?>
+          <!-- -->
+          <div class="join-us">
+            <div class="featured-image">
+              <img src="<?php bloginfo('template_directory'); ?>/media/join.jpg">
+            </div>
+            <span class="about">
+              <span class="title">Det du liker</span>
+              <span class="name">Ditt navn</span>
+            </span>
+          </div>
         </div>
-        <span class="about">
-          <span class="title">Det du liker</span>
-          <span class="name">Ditt navn</span>
-        </span>
-      </div>
-  </div>
-</div>
-
-<!--  GET ALL THE PAGES -->
-
-
-
-  <?php
-  $args = array('post_type' => 'page'); //declares that we will only be querying the portfolio post type
-  $portfolio_items = get_posts( $args );
-  foreach ($portfolio_items as $page_data) {
-      $content = apply_filters('the_content', $page_data->post_content);
-      $title = $page_data->post_title;
-      $post_slug = $page_data->post_name;
-      $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
-      $image_full = $imageid_full['0'];
-      $select_format_type = get_field('format_type',$page_data->ID);
-      $video_mp4 = get_field('video_file_mp4',$page_data->ID);
-      $website_url = get_field('website_url',$page_data->ID);
-
-
-  ?>
-  <section item-title="<?php echo $post_slug;?>" class="p-wrap <?php echo $select_format_type?>" id="<?php echo $post_slug;?>">
-    <?php if ($select_format_type == ('Video')){?>
-      <div class="inner">
-        <div class="featured-media">
-          <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls tilt>
-            <source src="<?php echo $video_mp4;?>" type="video/mp4" />
-          </video>
-        </div>
-        <h1><?php echo $title; ?></h1>
-        <!--noindex-->
-          <!--googleoff: index-->
-            <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
-          <!--googleon: index-->
-        <!--/noindex-->
-      </div>
-    <?php } else {?>
-      <h1><?php echo $title; ?></h1>
-    <?php };?>
-      <div class="text">
-        <?php echo $content;?>
-      </div>
-  </section>
-
-  <?php }; ?>
-
+    </div>
   <div class="foot">
     <div class="foot-inner">
       <div class="foot-left">
