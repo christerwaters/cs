@@ -102,8 +102,8 @@
 
     ?><div  class="post-wrap p-wrap <?php echo $select_format_type; foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>"
             id="<?php echo $post_slug;?>"
-            item-title="<?php echo $post_slug;?>"
-            item-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>">
+            data-wtrs-title="<?php echo $post_slug;?>"
+            data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->cat_name; echo " ";} ?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
         <div class="post" data-tilt>
         <div class="featured">
