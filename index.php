@@ -87,7 +87,7 @@
         $wtrs_entry_type_video_file_mp4 = get_field('wtrs_entry_type_video_file_mp4',$entry->ID);
         $website_url = get_field('website_url',$entry->ID);
         $wtrs_entry_client = get_field('wtrs_entry_client',$entry->ID);
-        $wtrs_entry_show_on = get_field('wtrs_entry_show_on',$entry->ID);
+        $wtrs_entry_show_on = strtolower(get_field('wtrs_entry_show_on',$entry->ID));
         $category_detail=get_the_category($entry->ID);
         $post_url = esc_url( get_permalink($entry->ID) );
 
