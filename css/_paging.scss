@@ -10,5 +10,8 @@
   &.current{
     width:100%;
     display:block;
+    .entry-content{
+      display:block;
+    }
   }
 }
