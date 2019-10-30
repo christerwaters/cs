@@ -5,3 +5,10 @@
   display:none;
   width:100%;
 }
+
+.entry-wrap{
+  &.current{
+    width:100%;
+    display:block;
+  }
+}
