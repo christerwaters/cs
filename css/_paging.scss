@@ -8,7 +8,9 @@
 
 .entry-wrap{
   &.current{
-    width:100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
     display:block;
     .entry-content{
       display:block;
