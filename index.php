@@ -157,6 +157,7 @@
           </div>
         </div>
     </div>
+</div>
   <div class="foot">
     <div class="foot-inner">
       <div class="foot-left">
