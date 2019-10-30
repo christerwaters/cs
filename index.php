@@ -108,6 +108,7 @@
           <?php }; ?>
         </div>
         <h2><span class="client"><?php echo $wtrs_entry_client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
+<div class="entry-content"><?php echo $content; ?></div>
       </div>
     </a>
     </div><?php }; ?>
