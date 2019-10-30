@@ -29,6 +29,9 @@ $margins: 10%;
   .entry-wrap.show-in-directory{
     display:inline-block;
   }
+  .entry-wrap.show-on-current-page{
+    display:inline-block;
+  }
   .entry-wrap{
     position: relative;
     display:none;
