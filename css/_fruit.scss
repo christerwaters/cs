@@ -2,14 +2,15 @@
   pointer-events: none;
   position: fixed;
   img{
-    width: 20vw;
     pointer-events: none;
     opacity:.5;
   }
   .fruit-left{
-    margin-left:-10vw;
+    width: 20vw;
+    transform:translate(-10vw,20vh);
   }
   .fruit-right{
-    margin-right:-10vw;
+    width: 20vw;
+    transform:translate(10vw,20vh);
   }
 }
