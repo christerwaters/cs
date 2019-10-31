@@ -9,7 +9,6 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop() / 10 % Math.PI;
-  var scroller = scroller/10;
   $('.fruit img').css({ transform: 'rotate(' + scroller + 'rad)' });
   $('.fruit img').css({ transform: 'rotate(-' + scroller + 'rad)' });
 });
