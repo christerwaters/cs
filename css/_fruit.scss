@@ -4,13 +4,6 @@
   img{
     pointer-events: none;
     opacity:.5;
-  }
-  .fruit-left img{
-    width: 20vw;
-    transform:translate(-10vw,20vh);
-  }
-  .fruit-right img{
-    width: 20vw;
-    transform:translate(10vw,20vh);
+    width:10vw;
   }
 }
