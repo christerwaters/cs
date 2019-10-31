@@ -1,7 +1,15 @@
 .fruit{
+  pointer-events: none;
   position: fixed;
-  .fruit-left{
+  img{
     width: 20vw;
+    pointer-events: none;
+    opacity:.5;
+  }
+  .fruit-left{
+    transform: translate(-10vw, 235px);
+  }
+  .fruit-right{
     transform: translate(-10vw, 235px);
   }
 }
