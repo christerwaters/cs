@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
-  var vhscroller = scroller/10+100;
+  var vhscroller = 100-(scroller/10);
   $('.fruit-left').css({ transform: 'translate(-5vw, ' + vhscroller + 'vh) rotate(' + scroller*.8 + 'deg)' });
   $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + scroller*.8 + 'deg)' });
 });
