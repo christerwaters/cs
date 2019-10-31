@@ -13,6 +13,12 @@ $(window).scroll(function() {
   if (vhscroller > 200){
     var vhscroller = (scroller/8)-200;
   }
+  if (vhscroller > 300){
+    var vhscroller = (scroller/8)-300;
+  }
+  if (vhscroller > 400){
+    var vhscroller = (scroller/8)-400;
+  }
   var rotscroller = scroller*.4;
   $('.fruit-left').css({ transform: 'translate(-5vw, -' + vhscroller + 'vh) rotate(' + rotscroller + 'deg)' });
   $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + rotscroller + 'deg)' });
