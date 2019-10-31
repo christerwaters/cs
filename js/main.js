@@ -12,6 +12,9 @@ $('.show-in-directory .tilted').tilt({
   perspective: 1500,
   scale: 1.05,
 });
+$('.current .tilted').tilt({
+  maxTilt: 0
+});
 
 $(document).ready(function() {
   setTimeout(function(){
