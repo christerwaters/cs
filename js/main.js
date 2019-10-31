@@ -8,8 +8,9 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function() {
-  var scroll = $(window).scrollTop();
-  $('.fruit *').css('transform: rotate(' + scroll + 'deg)');
+  var scroller = $(window).scrollTop();
+  console.log(scroller);
+  $('.fruit img').css('transform: rotate(' + scroller + 'deg);');
 });
 $('.show-in-directory .tilted').tilt({
   perspective: 1500,
