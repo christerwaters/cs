@@ -27,7 +27,9 @@
 
 
 
-
+.p-wrap[data-wtrs-show-on='om-oss']{
+  display:none;
+}
 .p-wrap.show-on-current-page[data-wtrs-show-on='om-oss']{
   padding:2rem 1.5rem;
   .inner{
@@ -155,6 +157,7 @@
   }
 }
 .p-wrap.show-on-current-page[data-wtrs-show-on='om-oss']{
+  display:block;
   .inner{
     .featured-media.visible{
       top:50%;
