@@ -9,8 +9,9 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
-  $('.fruit-left').css({ transform: 'translate(-5vw, ' + (100-scroller) + 'vh) rotate(' + scroller*.8 + 'deg)' });
-  $('.fruit-right').css({ transform: 'translate(5vw, ' + (100-scroller) + 'vh) rotate(-' + scroller*.8 + 'deg)' });
+  var vhscroller = scroller/10+100;
+  $('.fruit-left').css({ transform: 'translate(-5vw, ' + vhscroller + 'vh) rotate(' + scroller*.8 + 'deg)' });
+  $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + scroller*.8 + 'deg)' });
 });
 
 $('.tilted').tilt({
