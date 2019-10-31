@@ -9,8 +9,8 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
-  $('.fruit .fruit-left').css({ transform: 'rotate(' + scroller + 'deg)' });
-  $('.fruit .fruit-right').css({ transform: 'rotate(-' + scroller + 'deg)' });
+  $('.fruit .fruit-left').css({ transform: 'translate(-10vw, 20vh) rotate(' + scroller*.8 + 'deg)' });
+  $('.fruit .fruit-right').css({ transform: 'translate(10vw, 20vh) rotate(-' + scroller*.8 + 'deg)' });
 });
 $('.show-in-directory .tilted').tilt({
   perspective: 1500,
