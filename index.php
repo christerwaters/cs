@@ -97,7 +97,7 @@
             data-wtrs-title="<?php echo $post_slug;?>"
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
-      <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
+      <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
         <div class="entry <?php if ($wtrs_tilted){ echo "tilted";}; ?>" <?php if ($wtrs_tilted){ echo "data-tilt";}; ?>>
         <div class="featured-media">
           <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
