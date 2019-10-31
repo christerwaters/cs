@@ -36,6 +36,9 @@
   </head>
 
   <body class="p-open p-home">
+    <div class="fruit" data-wtrs-show-on="home">
+      <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" class="fruit-left">
+    </div>
     <div class="loader-left">
       <?php include 'loader.php'?>
     </div>
