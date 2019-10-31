@@ -168,5 +168,5 @@ acf_add_local_field_group(array(
 
 endif;
 
-require get_template_directory() . 'gutenberg.php';
+require get_template_directory() . '/gutenberg.php';
 ?>
