@@ -76,16 +76,11 @@
 <section item-title="" class="p-wrap" data-wtrs-show-on="om-oss">
     <div class="inner">
       <div class="featured-media">
-        <video poster="<?php echo $image_full;?>" class="js-player" playsinline controls>
-          <source src="<?php echo $video_mp4;?>" type="video/mp4" />
+        <video poster="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/Citrus_051.jpg" class="js-player" playsinline controls>
+          <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/citrus.mp4" type="video/mp4" />
         </video>
       </div>
       <h1>Om Citrus Studio</h1>
-      <!--noindex-->
-        <!--googleoff: index-->
-          <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
-        <!--googleon: index-->
-      <!--/noindex-->
     </div>
   </section>
 <div class="entries">
