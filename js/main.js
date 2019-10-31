@@ -113,3 +113,9 @@ $('.word').each(function (index) {
     });
 
 });
+
+
+
+$('.current a.page-anchor').click(function(){
+  event.preventDefault(); // make it not reload the page
+});
