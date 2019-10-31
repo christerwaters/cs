@@ -31,6 +31,11 @@ $margins: 10%;
   }
   .entry-wrap.show-on-current-page{
     display:inline-block;
+    .entry{
+      .content{
+        display:none;
+      }
+    }
   }
   .entry-wrap{
     position: relative;
