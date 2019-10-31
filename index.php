@@ -87,6 +87,7 @@
         $wtrs_entry_type_video_file_mp4 = get_field('wtrs_entry_type_video_file_mp4',$entry->ID);
         $website_url = get_field('website_url',$entry->ID);
         $wtrs_entry_client = get_field('wtrs_entry_client',$entry->ID);
+        $wtrs_tilted = get_field('wtrs_tilted',$entry->ID);
         $wtrs_entry_show_on = strtolower(get_field('wtrs_entry_show_on',$entry->ID));
         $category_detail=get_the_category($entry->ID);
         $post_url = esc_url( get_permalink($entry->ID) );
@@ -97,7 +98,7 @@
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
       <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" >
-        <div class="entry" data-tilt>
+        <div class="entry <?php echo if ($wtrs_tilted){ echo "tilted"}; ?>" <?php echo if ($wtrs_tilted){ echo "data-tilt"}; ?>>
         <div class="featured-media">
           <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
             <video poster="<?php echo $image_full;?>" class="js-player" loop>
