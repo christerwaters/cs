@@ -133,7 +133,7 @@
         }
       }
     }
-    h1,h2{
+    h1{
       position:absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -151,10 +151,6 @@
       pointer-events : none;
       z-index:230;
       -webkit-text-stroke: 1px #F90;
-    }
-    .text-fill{
-      color:#F90;
-      z-index:200;
     }
   }
 }
@@ -182,7 +178,7 @@
         }
       }
     }
-    h1.visible,h2.visible{
+    h1.visible{
       margin-top:0;
       transition:margin-top 700ms $cb;
     }
