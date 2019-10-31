@@ -12,12 +12,11 @@ $(window).scroll(function() {
   $('.fruit .fruit-left').css({ transform: 'translate(-10vw, 20vh) rotate(' + scroller*.8 + 'deg)' });
   $('.fruit .fruit-right').css({ transform: 'translate(10vw, 20vh) rotate(-' + scroller*.8 + 'deg)' });
 });
-$('.show-in-directory .tilted').tilt({
+
+$('.tilted').tilt({
   perspective: 1500,
   scale: 1.05,
-});
-$('.current .tilted').tilt({
-  maxTilt: 0
+  maxTilt: 10
 });
 
 $(document).ready(function() {
