@@ -23,3 +23,168 @@
     }
   }
 }
+
+
+
+
+
+.entry[data-wtrs-show-on='om-oss']{
+  padding:2rem 1.5rem;
+  .inner{
+    width:100%;
+    height: 60vw;
+    max-height:80vh;
+    position:relative;
+    .featured-media{
+      z-index:222;
+      width:70%;
+      max-width:700px;
+      height:auto;
+      display:block;
+      background:transparent;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      right:0;
+      .some{
+        position:absolute;
+        z-index:220;
+        font-size:.7rem;
+        bottom:0;
+        right:0;
+        opacity:0;
+        transition:opacity 400ms $cb;
+        margin-bottom:-1.4rem;
+        span{
+          padding:.2rem .5rem .3rem .5rem;
+          box-shadow: 0px 4px 15px rgba(0,0,0,.15);
+          margin:.5rem 0 0 .5rem;
+          border-radius:4px;
+          transition:opacity 400ms $cb, margin-top 200ms $cb;
+          &:hover{
+            margin-top:-2px;
+          }
+        }
+        .tags{
+          $tag-size:.55rem;
+          width:$tag-size;
+          height:$tag-size;
+          display:inline-block;
+          margin:0;
+          margin-left:.5rem;
+          padding:0;
+          border:$tag-size*.7 solid lighten(#00f,20%);
+          background:darken(#00f,20%);
+          border-bottom:$tag-size*.7 solid transparent;
+          border-radius:50%;
+          margin-bottom:-$tag-size*.9;
+        }
+        .twitter{
+          background:#1da1f2;
+          color:darken(#fff,5%);
+        }
+        .instagram{
+          background: #f09433;
+          background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+          background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+          background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+          color:#fff;
+
+        }
+        .youtube{
+          color:#fff;
+          background-color:#ff0000;
+        }
+      }
+      .plyr{
+        background: transparent;
+        filter: grayscale(50%);
+        display: block;
+        box-sizing: border-box;
+        margin:auto;
+        opacity:1;
+        width:100%;
+        transform:scale(.9);
+        box-shadow: 0px 4px 15px rgba(0,0,0,.15);
+        transition:opacity 800ms $cb, filter 800ms $cb, box-shadow 800ms $cb, transform 800ms $cb;
+        animation: grain 1100ms infinite;
+        .plyr__video-wrapper{
+          background:transparent;
+          opacity:.5;
+          transition:opacity .5s $cb;
+          .plyr__poster{
+            background-size: cover;
+          }
+        }
+        &.plyr--playing{
+          transform:scale(1);
+          filter: grayscale(0%);
+          mix-blend-mode:normal;
+          width:100%;
+          background:#000;
+          animation:none;
+          box-shadow: 0px 4px 20px rgba(0,0,0,.2);
+          transition:transform 500ms $cb,filter 500ms $cb,box-shadow 500ms $cb;
+          .plyr__video-wrapper{
+            opacity:1;
+            transition:opacity .5s $cb;
+          }
+        }
+      }
+    }
+    h1,h2{
+      position:absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size:8vw;
+      font-family:Times New Roman, sans-serif !important;
+      line-height:8vw;
+      font-weight:900 !important;
+      margin:0;
+      padding:0;
+      color:transparent;
+      margin-top:-2vw;
+      transition:margin-top 800ms 200ms;
+    }
+    h1{
+      pointer-events : none;
+      z-index:230;
+      -webkit-text-stroke: 1px #F90;
+    }
+    .text-fill{
+      color:#F90;
+      z-index:200;
+    }
+  }
+}
+.entry[data-wtrs-show-on='om-oss']{
+  .inner{
+    .featured-media.visible{
+      top:50%;
+      transform: translateY(-50%);
+      opacity:1;
+      .some{
+        margin-bottom:-1.8rem;
+        opacity:1;
+        transition:opacity 400ms $cb;
+      }
+      .plyr{
+        transform:scale(1);
+        filter: grayscale(0%);
+        mix-blend-mode:normal;
+        width:100%;
+        box-shadow: 0px 4px 20px rgba(0,0,0,.2);
+        transition:transform 500ms $cb,filter 500ms $cb,box-shadow 500ms $cb;
+        .plyr__video-wrapper{
+          opacity:1;
+          transition:opacity .5s $cb;
+        }
+      }
+    }
+    h1.visible,h2.visible{
+      margin-top:0;
+      transition:margin-top 700ms $cb;
+    }
+  }
+}
