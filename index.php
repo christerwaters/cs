@@ -80,7 +80,7 @@
           <source src="<?php echo $video_mp4;?>" type="video/mp4" />
         </video>
       </div>
-      <h1>Om Citrus</h1>
+      <h1>Om Citrus Studio</h1>
       <!--noindex-->
         <!--googleoff: index-->
           <h2 class="text-fill center robots-nocontent"><?php echo $title; ?></h2>
