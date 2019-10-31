@@ -10,8 +10,9 @@ $(document).ready(function(){
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
   var vhscroller = 100-(scroller/10);
-  $('.fruit-left').css({ transform: 'translate(-5vw, ' + vhscroller + 'vh) rotate(' + scroller*.8 + 'deg)' });
-  $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + scroller*.8 + 'deg)' });
+  var rotscroller = scroller*.4;
+  $('.fruit-left').css({ transform: 'translate(-5vw, ' + vhscroller + 'vh) rotate(' + rotscroller + 'deg)' });
+  $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + rotscroller + 'deg)' });
 });
 
 $('.tilted').tilt({
