@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 
-$('.entry').tilt({
+$('.tilted').tilt({
   perspective: 1500,
   scale: 1.05,
 });
