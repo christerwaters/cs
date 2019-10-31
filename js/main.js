@@ -7,7 +7,10 @@ $(document).ready(function(){
     });
 });
 
-
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  $('.fruit *').css('transform: rotate(' + scroll + 'deg)');
+});
 $('.show-in-directory .tilted').tilt({
   perspective: 1500,
   scale: 1.05,
