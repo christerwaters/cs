@@ -68,7 +68,9 @@ p{font-size:$p;line-height:$p*1.5;}
     margin-bottom:$h1;
   }
 }
-
+.current a.page-anchor:hover{
+  cursor:default;
+}
 .wp-block-column.col-xs-4{
   position:relative;
   .wp-block-image{
