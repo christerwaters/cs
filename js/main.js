@@ -12,7 +12,7 @@ $(window).scroll(function() {
   var vhscroller = scroller*.4;
   var rotscroller = scroller*.4;
   $('.fruit-wrap').css({ transform: 'translate(0, ' + vhscroller + 'vh)'});
-  $('.fruit-left#one img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
+  $('.fruit img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
 });
 
 $('.tilted').tilt({
