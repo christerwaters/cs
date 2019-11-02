@@ -40,6 +40,9 @@
       <div class="fruit fruit-left" id="one">
         <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
       </div>
+      <div class="fruit fruit-right" id="two">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-02.png" >
+      </div>
     </div>
     <div class="loader-left">
       <?php include 'loader.php'?>
