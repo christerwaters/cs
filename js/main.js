@@ -11,7 +11,7 @@ $(window).scroll(function() {
   var scroller = $(window).scrollTop();
   var vhscroller = scroller*.4;
   var rotscroller = scroller*.4;
-  $('.fruit-wrap').css({ transform: 'translate(0, ' + vhscroller + 'vh)'});
+  $('.fruit-wrap').css({ transform: 'translate(0, -' + vhscroller + 'vh)'});
   $('.fruit img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
 });
 
