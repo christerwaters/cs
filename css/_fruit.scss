@@ -1,7 +1,6 @@
 .fruits{
   pointer-events: none;
   position: fixed;
-  transition:transform 100ms ease-in;
   $fruit-size:10vw;
   $fruit-offset--left:100vh;
   $fruit-offset--right:150vh;
