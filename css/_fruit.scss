@@ -1,13 +1,24 @@
-.fruit{
+.fruit-wrap{
   pointer-events: none;
   position: fixed;
-  .fruit-left{
+  $fruit-size:10vw;
+  $fruit-offset--left:100vh;
+  $fruit-offset--right:150vh;
+  .fruit{
+    width:$fruit-size;
     position: absolute;
-    width:10vw;
-    transform:translate(-5vw, 100vh);
   }
-  .fruit-right{
-    transform:translate(5vw, 0);
+  .fruit.fruit-left#one{
+    transform:translate(-$fruit-size/2, $fruit-offset--left);
+  }
+  .fruit.fruit-right#one{
+    transform:translate($fruit-size/2, $fruit-offset--right);
+  }
+  .fruit.fruit-left#two{
+    transform:translate(-$fruit-size/2, $fruit-offset--left*2);
+  }
+  .fruit.fruit-right#two{
+    transform:translate($fruit-size/2, $fruit-offset--right*2);
   }
   img{
     pointer-events: none;
