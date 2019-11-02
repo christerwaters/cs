@@ -70,6 +70,12 @@ $margins: 10%;
         color:#00f;
         font-weight:400;
         margin-top:1.5rem;
+        .client{
+          width: 100%;
+          display: block;
+          line-height: 1rem;
+          font-size: 1.4rem;
+        }
       }
       &:hover{
         .featured-media{
