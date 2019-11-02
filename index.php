@@ -37,7 +37,7 @@
 
   <body class="p-open p-home">
     <div class="fruit-wrap" data-wtrs-show-on="home">
-      <div class="fruit fruit-left">
+      <div class="fruit fruit-left" id="one">
         <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
       </div>
     </div>
