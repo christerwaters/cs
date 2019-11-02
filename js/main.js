@@ -11,8 +11,7 @@ $(window).scroll(function() {
   var scroller = $(window).scrollTop();
   var vhscroller = 200-scroller*.4;
   var rotscroller = scroller*.4;
-  $('.fruit-left').css({ transform: 'translate(-5vw, ' + vhscroller + 'vh) rotate(' + rotscroller + 'deg)' });
-  $('.fruit-right').css({ transform: 'translate(5vw, ' + vhscroller + 'vh) rotate(-' + rotscroller + 'deg)' });
+  $('.fruit').css({ transform: 'translate(0, ' + vhscroller + 'vh) rotate(' + rotscroller + 'deg)' });
 });
 
 $('.tilted').tilt({
