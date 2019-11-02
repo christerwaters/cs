@@ -13,6 +13,7 @@
       max-width: 100%;
       display:block;
       .entry{
+        .featured-media,
         h2{
           margin:0;
         }
@@ -181,6 +182,7 @@
         }
       }
     }
+
     h1.visible{
       margin-top:0;
       transition:margin-top 700ms $cb;
