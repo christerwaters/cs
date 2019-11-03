@@ -57,8 +57,8 @@ $margins: 10%;
         }
       }
     }
-    @import 'posts--current';
-    @import 'posts--show-in-directory';
-    @import 'posts--show-on-page';
+    @import 'entries--current';
+    @import 'entries--show-in-directory';
+    @import 'entries--show-on-page';
   }
 }
