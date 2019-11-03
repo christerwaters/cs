@@ -41,15 +41,15 @@
     transform:translate($fruit-size/2, $fruit-offset--right*3) scale(1.3);
   }
   .fruit.fruit-left#four{
-    transform:translate(-$fruit-size/2, $fruit-offset--left*3) scale(1.2);
+    transform:translate(-$fruit-size/2, $fruit-offset--left*4) scale(1.2);
   }
   .fruit.fruit-right#four{
-    transform:translate($fruit-size/2, $fruit-offset--right*3) scale(1.2);
+    transform:translate($fruit-size/2, $fruit-offset--right*4) scale(1.2);
   }
   .fruit.fruit-left#five{
-    transform:translate(-$fruit-size/2, $fruit-offset--left*3) scale(1);
+    transform:translate(-$fruit-size/2, $fruit-offset--left*5) scale(1);
   }
   .fruit.fruit-right#five{
-    transform:translate($fruit-size/2, $fruit-offset--right*3) scale(1.1);
+    transform:translate($fruit-size/2, $fruit-offset--right*5) scale(1.1);
   }
 }
