@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".entry-wrap").each(function(){
-      var classes = ["sm","md"];
+      var classes = ["xs","sm","md","lg"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
       var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
