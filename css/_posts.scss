@@ -183,6 +183,9 @@ $margins: 10%;
   $md: 100%;
   .entries{
     .entry-wrap{
+      .entry{
+        margin:3rem  1.5rem 1.5rem 1.5rem
+      }
       &.sm{
         @include flexit($sm);
         &.margin-right{
