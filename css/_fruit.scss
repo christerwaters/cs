@@ -17,6 +17,7 @@
     img{
       pointer-events: none;
       opacity:.5;
+      transition:transform 20ms;
       width:10vw;
       top:100vh;
     }
