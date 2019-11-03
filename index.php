@@ -152,7 +152,8 @@
       </div>
     </a>
     </div><?php }; ?>
-    <div class="entry" data-wtrs-title="team" data-wtrs-categories="" data-wtrs-show-on="team">
+    <div class="entry-wrap" data-wtrs-title="team" data-wtrs-categories="" data-wtrs-show-on="team">
+    <div class="entry">
         <div class="core">
           <h2> Ledelsen </h2>
           <img src="<?php bloginfo('template_directory'); ?>/media/ledelsen.jpg">
