@@ -1,23 +1,20 @@
 /*
-Error: File to import not found or unreadable: posts--show-on-page.
+Error: File to import not found or unreadable: entries--show-on-page.
        Load path: /Users/namename/Documents/GitHub/cs/css
-        on line 15 of /Users/namename/Documents/GitHub/cs/css/_posts.scss
+        on line 62 of /Users/namename/Documents/GitHub/cs/css/_entries.scss
         from line 43 of /Users/namename/Documents/GitHub/cs/css/style.scss
 
-10: }
-11: .entries{
-12:   .post-wrap{
-13:     @import 'posts--current';
-14:     @import 'posts--show-in-directory';
-15:     @import 'posts--show-on-page';
-16:   }
-17: }
-18: .entries{
-19:   width:100%;
-20:   max-width:$max-page-width;
+57:         }
+58:       }
+59:     }
+60:     @import 'entries--current';
+61:     @import 'entries--show-in-directory';
+62:     @import 'entries--show-on-page';
+63:   }
+64: }
 
 Backtrace:
-/Users/namename/Documents/GitHub/cs/css/_posts.scss:15
+/Users/namename/Documents/GitHub/cs/css/_entries.scss:62
 /Users/namename/Documents/GitHub/cs/css/style.scss:43
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
@@ -84,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: posts--show-on-page.\A        Load path: /Users/namename/Documents/GitHub/cs/css\A         on line 15 of /Users/namename/Documents/GitHub/cs/css/_posts.scss\A         from line 43 of /Users/namename/Documents/GitHub/cs/css/style.scss\A \A 10: }\A 11: .entries{\A 12:   .post-wrap{\A 13:     @import 'posts--current';\A 14:     @import 'posts--show-in-directory';\A 15:     @import 'posts--show-on-page';\A 16:   }\A 17: }\A 18: .entries{\A 19:   width:100%;\A 20:   max-width:$max-page-width;"; }
+  content: "Error: File to import not found or unreadable: entries--show-on-page.\A        Load path: /Users/namename/Documents/GitHub/cs/css\A         on line 62 of /Users/namename/Documents/GitHub/cs/css/_entries.scss\A         from line 43 of /Users/namename/Documents/GitHub/cs/css/style.scss\A \A 57:         }\A 58:       }\A 59:     }\A 60:     @import 'entries--current';\A 61:     @import 'entries--show-in-directory';\A 62:     @import 'entries--show-on-page';\A 63:   }\A 64: }"; }
