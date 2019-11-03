@@ -9,9 +9,9 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
-  var vhscroller = Math.floor(scroller*.2);
+  var vhscroller = Math.floor(scroller*2);
   var rotscroller = Math.floor(scroller*.4);
-  $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'vh)'});
+  $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'px)'});
   $('.fruit-left img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
   $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
 });
