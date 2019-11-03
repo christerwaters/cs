@@ -13,7 +13,7 @@ $margins: 10%;
 .entries{
   width:100%;
   max-width:$max-page-width;
-  margin:auto;
+  margin:auto auto 4rem auto;
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
