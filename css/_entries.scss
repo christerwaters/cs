@@ -64,15 +64,7 @@ $margins: 10%;
     @import 'entries--show-on-current-page';
   }
 }
-.xs{
-  @include flexit($xs);
-}
-.sm{
-  @include flexit($sm);
-}
-.md{
-  @include flexit($md);
-}
-.lg{
-  @include flexit($md);
-}
+.xs{@include flexit($xs);}
+.sm{@include flexit($sm);}
+.md{@include flexit($md);}
+.lg{@include flexit($lg);}
