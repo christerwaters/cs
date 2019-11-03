@@ -1,6 +1,8 @@
 
+$xs: 33.33333%;
 $sm: 40%;
-$md: 60%;
+$md: 50%;
+$lg: 60%;
 $margins: 10%;
 
 @mixin flexit($flx){
@@ -61,4 +63,16 @@ $margins: 10%;
     @import 'entries--show-in-directory';
     @import 'entries--show-on-current-page';
   }
+}
+.xs{
+  @include flexit($xs);
+}
+.sm{
+  @include flexit($sm);
+}
+.md{
+  @include flexit($md);
+}
+.lg{
+  @include flexit($md);
 }
