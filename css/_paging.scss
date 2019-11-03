@@ -3,26 +3,6 @@
   display:none;
   width:100%;
 }
-.entries{
-  .entry-wrap{
-    &.current{
-      -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-      max-width: 100%;
-      display:block;
-      .entry{
-        .featured-media,
-        h2{
-          margin:0;
-        }
-        .entry-content{
-          display:block;
-        }
-      }
-    }
-  }
-}
-
 
 
 
