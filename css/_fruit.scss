@@ -1,12 +1,18 @@
 .fruits{
   pointer-events: none;
   position: fixed;
+  width: 100%;
+  height:9000vh;
   $fruit-size:10vw;
   $fruit-offset--left:100vh;
   $fruit-offset--right:150vh;
   .fruit{
     width:$fruit-size;
     position: absolute;
+    .fruit-right{
+      float: right;
+      right: 0;
+    }
     img{
       pointer-events: none;
       opacity:.5;
