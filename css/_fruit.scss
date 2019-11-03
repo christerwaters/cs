@@ -9,6 +9,7 @@
   .fruit{
     width:$fruit-size;
     position: absolute;
+    transition:transform 20ms;
     &.fruit-right{
       float: right;
       right: 0;
