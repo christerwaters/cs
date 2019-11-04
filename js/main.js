@@ -19,6 +19,7 @@ $(window).scroll(function() {
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop();
     if( offset<=100 ){
+      //$(".featured-media").removeClass('scrolled100');
     }else {
       $(".featured-media").addClass('scrolled100');
     }
