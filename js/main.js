@@ -19,10 +19,10 @@ $(window).scroll(function() {
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop()
     ;
-    if( offset<=50 ){
-      $(".featured-media").removeClass('scrolled50');
+    if( offset<=20 ){
+      $(".featured-media").removeClass('scrolled20');
     }else {
-      $(".featured-media").addClass('scrolled50');
+      $(".featured-media").addClass('scrolled20');
     }
 
 });
