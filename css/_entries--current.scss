@@ -15,9 +15,15 @@
     .featured-media{
       position: relative;
       width: 100%;
-      margin-left: 0;
+      max-width:100%;
+      transition: max-width 200ms;
+      margin:auto;
       left: 0;
       top: 0;
+      &.scrolled20{
+        max-width: $max-page-width;
+        transition: max-width 200ms;
+      }
     }
     .entry-content{
       width: 100%;
