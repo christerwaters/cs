@@ -16,6 +16,18 @@ $(window).scroll(function() {
   $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
 });
 
+$(window).bind('scroll', function(){
+    var offset = $(document).scrollTop()
+    ;
+    if( offset<=50 ){
+      $("body").removeClass('scrolled50');
+    }else {
+      $("body").addClass('scrolled50');
+    }
+
+});
+
+
 $('.tilted').tilt({
   perspective: 1500,
   scale: 1.05,
