@@ -4,7 +4,15 @@ $sm: 40%;
 $md: 50%;
 $lg: 60%;
 $margins: 10%;
-
+.entries{
+  width:100%;
+  max-width:100%;
+  transition: max-width 200ms ease-in;
+  &.scrolled50{
+    max-width:$max-page-width;
+    transition: max-width 200ms ease-in;
+  }
+}
 .entries{
   width:100%;
   max-width:$max-page-width;
