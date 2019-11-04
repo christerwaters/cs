@@ -123,7 +123,7 @@
         $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($entry->ID), 'full' );
         $image_full = $imageid_full['0'];
         $imageid_thumb = wp_get_attachment_image_src( get_post_thumbnail_id($entry->ID), 'thumbnail' );
-        $image_thumb = $imageid_thumbnail['0'];
+        $image_thumb = $imageid_thumb['0'];
         $wtrs_entry_type = get_field('wtrs_entry_type',$entry->ID);
         $wtrs_entry_type_video_file_mp4 = get_field('wtrs_entry_type_video_file_mp4',$entry->ID);
         $website_url = get_field('website_url',$entry->ID);
