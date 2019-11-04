@@ -28,9 +28,14 @@ $(window).bind('scroll', function(){
 });
 
 
-$('.tilted').tilt({
+$('.show-in-directory .tilted').tilt({
   perspective: 1500,
   scale: 1.05,
+  maxTilt: 10
+});
+$('.current .tilted').tilt({
+  perspective: 1500,
+  scale: 1.00,
   maxTilt: 10
 });
 
