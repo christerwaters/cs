@@ -24,7 +24,6 @@ $(window).bind('scroll', function(){
     }else {
       $(".featured-media").addClass('scrolled100');
     }
-
 });
 
 
