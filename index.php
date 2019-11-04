@@ -138,21 +138,26 @@
             data-wtrs-title="<?php echo $post_slug;?>"
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
-      <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
         <div class="entry">
-        <div class="featured-media <?php if ($wtrs_tilted){ echo "tilted";}; ?>" <?php if ($wtrs_tilted){ echo "data-tilt";}; ?>>
-          <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
-            <video poster="<?php echo $image_full;?>" class="js-player" loop>
-              <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
-            </video>
-          <?php }; if ($wtrs_entry_type == ('wtrs_entry_type_image')){ ?>
-            <img src="<?php echo $image_thumb;?>" data-image-high="<?php echo $image_full;?>">
-          <?php }; ?>
+          <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
+            <div class="featured-media <?php if ($wtrs_tilted){ echo "tilted";}; ?>" <?php if ($wtrs_tilted){ echo "data-tilt";}; ?>>
+              <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
+                <video poster="<?php echo $image_full;?>" class="js-player" loop>
+                  <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
+                </video>
+              <?php }; if ($wtrs_entry_type == ('wtrs_entry_type_image')){ ?>
+                <img src="<?php echo $image_thumb;?>" data-image-high="<?php echo $image_full;?>">
+              <?php }; ?>
+            </div>
+          </a>
+          <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
+            <h2>
+              <span class="client"><?php echo $wtrs_entry_client; ?></span>
+              <span class="title"><?php echo $title; ?></span>
+            </h2>
+          </a>
+          <div class="entry-content"><?php echo $content; ?></div>
         </div>
-        <h2><span class="client"><?php echo $wtrs_entry_client; ?></span> <span class="title"><?php echo $title; ?></span></h2>
-<div class="entry-content"><?php echo $content; ?></div>
-      </div>
-    </a>
     </div><?php }; ?>
     <div class="entry-wrap" data-wtrs-title="team" data-wtrs-categories="" data-wtrs-show-on="team">
     <div class="entry">
