@@ -151,7 +151,7 @@
             </div>
           </a>
           <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
-            <h2>
+            <h2 class="entry-title">
               <span class="client"><?php echo $wtrs_entry_client; ?></span>
               <span class="title"><?php echo $title; ?></span>
             </h2>
