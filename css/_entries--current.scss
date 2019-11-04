@@ -7,7 +7,10 @@
     h2{
       margin:3rem 0;
       width: 100%;
+    }
+    .entry-title{
       max-width: $max-page-width;
+      margin: auto;
     }
     .featured-media{
       position: relative;
@@ -19,6 +22,7 @@
     .entry-content{
       width: 100%;
       max-width: $max-page-width;
+      margin: auto;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
       display: -webkit-box;
