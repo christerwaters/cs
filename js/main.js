@@ -18,13 +18,13 @@ $(window).scroll(function() {
 
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop();
-    if( offset<=100 ){
+    if( offset<=50 ){
     } else {
-      $(".featured-media").addClass('scrolled100');
+      $(".featured-media").addClass('scrolled50');
     }
     if(offset === 0) {
       setTimeout(function(){
-        $(".featured-media").removeClass('scrolled100');
+        $(".featured-media").removeClass('scrolled50');
       }, 100);
     }
 });
