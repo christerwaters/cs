@@ -5,8 +5,14 @@ $md: 50%;
 $lg: 60%;
 $margins: 10%;
 .entries{
-  width:100%;
-  max-width:$max-page-width;
+  &.directory{
+    width: 100%;
+    max-width: $max-page-width;
+  }
+  &.page{
+    width: 100%;
+    max-width: 100%;
+  }
   margin:auto auto 4rem auto;
   box-sizing: border-box;
   display: -webkit-box;
