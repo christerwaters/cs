@@ -17,13 +17,9 @@ $(window).scroll(function() {
 });
 
 $(window).bind('scroll', function(){
-    var offset = $(document).scrollTop()
-    ;
-    if ( offset = 0){
-      $(".featured-media").removeClass('scrolled100');
-    } else if( offset<=100 ){
-
-    } else {
+    var offset = $(document).scrollTop();
+    if( offset<=100 ){
+    }else {
       $(".featured-media").addClass('scrolled100');
     }
 });
