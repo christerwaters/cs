@@ -3,7 +3,7 @@
   display:inline-block;
   @include flexit(100%);
   .entry{
-    margin:3rem  1.5rem 1.5rem 1.5rem;
+    margin:6rem  1.5rem 1.5rem 1.5rem;
     h2{
       margin:3rem 0;
       width: 100%;
@@ -21,7 +21,7 @@
       margin:auto;
       left: 0;
       top: 0;
-      &.scrolled50{
+      &.scrolled100{
         max-width: $max-page-width;
         transition: max-width 200ms;
       }
