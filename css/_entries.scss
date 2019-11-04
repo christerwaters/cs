@@ -46,7 +46,7 @@ $margins: 10%;
           width:100%;
         }
       }
-      h2{
+      .entry-title{
         font-family:'Times New Roman';
         color:#00f;
         font-weight:400;
@@ -57,7 +57,7 @@ $margins: 10%;
           width: 100%;
           display: block;
           line-height: 1rem;
-          font-size: 50%;
+          font-size:50%;
         }
       }
     }
