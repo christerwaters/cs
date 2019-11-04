@@ -21,7 +21,7 @@
       margin:auto;
       left: 0;
       top: 0;
-      &.scrolled100{
+      &.scrolled50{
         max-width: $max-page-width;
         transition: max-width 200ms;
       }
