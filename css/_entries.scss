@@ -6,14 +6,7 @@ $lg: 60%;
 $margins: 10%;
 .entries{
   width:100%;
-  max-width:100%;
-  transition: max-width 200ms ease-in;
-  &.scrolled50{
-    max-width:$max-page-width;
-    transition: max-width 200ms ease-in;
-  }
-}
-.entries{
+  max-width:$max-page-width;
   margin:auto auto 4rem auto;
   box-sizing: border-box;
   display: -webkit-box;
