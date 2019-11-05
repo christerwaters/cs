@@ -68,7 +68,7 @@
     <div class="loader-left">
       <?php include 'loader.php'?>
     </div>
-    
+
     <div class="menu">
       <div class="menu-overlay"></div>
       <div class="logotype menu-hover-trigger">
@@ -90,7 +90,7 @@
 <div class="h-p-header" id="home" data-wtrs-show-on="home">
   <div class="text">
     <p class="header-text">
-      VI SKAL FORANDRE HVORDAN
+      UTTRYKK FOR DEN NESTE GENERASJONEN
     </p>
   </div>
   <video autoplay muted loop>
