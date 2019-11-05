@@ -201,6 +201,21 @@ body{
       text-align: center;
       animation: flipper 800ms infinite;
     }
+    .line01{
+      animation-delay: 300ms;
+    }
+    .line02{
+      animation-delay: 400ms;
+    }
+    .line03{
+      animation-delay: 500ms;
+    }
+    .line04{
+      animation-delay: 700ms;
+    }
+    .line05{
+      animation-delay: 800ms;
+    }
     @keyframes flipper{
       0{display:none;}
       83.3333335{display:block;}
