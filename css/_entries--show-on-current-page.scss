@@ -2,9 +2,13 @@
 &.show-on-current-page{
   display:inline-block;
   .entry{
-    border: 2rem #dff solid;
-    background: #dff;
-    h2,
+      border: 2rem $primary solid;
+      background: $primary;
+      margin: 1.5rem;
+    .entry-title{
+      color:#fff;
+    }
+    .entry-title,
     .featured-media{
       margin:1.5rem 2vw 0 2vw;
       .plyr__controls{
@@ -22,7 +26,7 @@
       }
     }
     &.only-picture{
-      h2{
+      .entry-title{
         display:none;
       }
     }
