@@ -14,7 +14,7 @@
   display:inline-block;
   @include flexit(100%);
   .entry{
-    animation:entry 200ms ease-in;
+    animation:entry 200ms 100ms ease-in;
     margin:7rem  1.5rem 1.5rem 1.5rem;
     h2{
       margin:3rem 0;
@@ -28,13 +28,13 @@
       position: relative;
       width: 100%;
       max-width:100%;
-      transition: max-width 200ms;
+      transition: max-width 200ms 200ms;
       margin:auto;
       left: 0;
       top: 0;
       &.scrolled50{
         max-width: $max-page-width;
-        transition: max-width 200ms;
+        transition: max-width 200ms 200ms;
       }
     }
     .entry-content{
