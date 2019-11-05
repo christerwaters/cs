@@ -218,7 +218,7 @@
 </div>
 <div class="get-subscribers" id="home" data-wtrs-show-on="home">
   <div class="form-wrap">
-    Hold deg informert
+    <h2>Hold deg informert</h2>
     <?php echo do_shortcode( '[contact-form-7 id="268" title="Subscribe"]' );?>
   </div>
 </div>
