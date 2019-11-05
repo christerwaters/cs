@@ -160,3 +160,23 @@
     }
   }
 }
+
+
+
+.get-subscribers{
+  width: 100%;
+  background: #00f;
+  padding: 3rem 0;
+  color:#fff;
+  .form-wrap{
+    max-width:$max-page-width;
+    width:100%;
+    h2{
+      font-size:3rem;
+    }
+    input{
+      background:transparent;
+      border-color:$primary;
+    }
+  }
+}
