@@ -194,9 +194,9 @@ body{
     margin:0 5vw;
     color:$primary;
     @keyframes flipper{
-      0%{display:none;}
-      83.333335%{display:block;}
-      100%{display:none;}
+      0%{opacity:0;}
+      83.333335%{opacity:1;}
+      100%{opacity:0;}
     }
     $timing-speed:250ms;
     .line01,.line02,.line03,
