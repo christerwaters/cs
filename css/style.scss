@@ -193,6 +193,11 @@ body{
     width:90vw;
     margin:0 5vw;
     color:$primary;
+    @keyframes flipper{
+      0%{display:none;}
+      83.333335%{display:block;}
+      100%{display:none;}
+    }
     .line01,.line02,.line03,
     .line04,.line04,.line05{
       height: 6vw;
@@ -215,11 +220,6 @@ body{
     }
     .line05{
       animation-delay: 800ms;
-    }
-    @keyframes flipper{
-      0%{display:none;}
-      83.333335%{display:block;}
-      100%{display:none;}
     }
     .word{
       font-family: $handwritten;
