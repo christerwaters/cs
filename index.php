@@ -68,10 +68,7 @@
     <div class="loader-left">
       <?php include 'loader.php'?>
     </div>
-
-
-    <?php //include 'ar.php'?>
-
+    
     <div class="menu">
       <div class="menu-overlay"></div>
       <div class="logotype menu-hover-trigger">
