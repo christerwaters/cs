@@ -169,7 +169,7 @@ body{
   top:0;
   color:$white;
   width:100vw;
-  height: 29vw;
+  height: 7vw;
   overflow: hidden;
   display:block;
   background:transparent;
@@ -179,13 +179,6 @@ body{
   font-size:5vw;
   text-align:center;
   text-transform:uppercase;
-  video{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-  }
   .text{
     position: absolute;
     font-family: $handwritten;
