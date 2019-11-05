@@ -217,9 +217,9 @@ body{
       animation-delay: 800ms;
     }
     @keyframes flipper{
-      0{display:none;}
-      83.3333335{display:block;}
-      100{display:none;}
+      0%{display:none;}
+      83.333335%{display:block;}
+      100%{display:none;}
     }
     .word{
       font-family: $handwritten;
