@@ -198,28 +198,29 @@ body{
       83.333335%{display:block;}
       100%{display:none;}
     }
+    $timing-speed:250ms;
     .line01,.line02,.line03,
     .line04,.line04,.line05{
       height: 6vw;
       position: absolute;
       width: 100%;
       text-align: center;
-      animation: flipper 800ms infinite;
+      animation: flipper $timing-speed*6 infinite step-end;
     }
     .line01{
-      animation-delay: 300ms;
+      animation-delay: $timing-speed;
     }
     .line02{
-      animation-delay: 400ms;
+      animation-delay: $timing-speed*2;
     }
     .line03{
-      animation-delay: 500ms;
+      animation-delay: $timing-speed*3;
     }
     .line04{
-      animation-delay: 700ms;
+      animation-delay: $timing-speed*4;
     }
     .line05{
-      animation-delay: 800ms;
+      animation-delay: $timing-speed*5;
     }
     .word{
       font-family: $handwritten;
