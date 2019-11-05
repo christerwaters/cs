@@ -29,27 +29,27 @@
     transform:translate($fruit-size/2, $fruit-offset+50vh);
   }
   .fruit.fruit-left#two{
-    transform:translate(-$fruit-size/2, ($fruit-offset*2.2)) scale(1.1);
+    transform:translate(-$fruit-size/2, ($fruit-offset*2.2)+50vh) scale(1.1);
   }
   .fruit.fruit-right#two{
-    transform:translate($fruit-size/2, ($fruit-offset*2.1)+50vh) scale(1.6);
+    transform:translate($fruit-size/2, ($fruit-offset*2.1)+50vh+50vh) scale(1.6);
   }
   .fruit.fruit-left#three{
-    transform:translate(-$fruit-size/2, ($fruit-offset*3.2)) scale(1.2);
+    transform:translate(-$fruit-size/2, ($fruit-offset*3.2)+50vh) scale(1.2);
   }
   .fruit.fruit-right#three{
-    transform:translate($fruit-size/2, ($fruit-offset*3.21)+50vh) scale(1.8);
+    transform:translate($fruit-size/2, ($fruit-offset*3.21)+50vh+50vh) scale(1.8);
   }
   .fruit.fruit-left#four{
-    transform:translate(-$fruit-size/2, ($fruit-offset*4.03)) scale(1.7);
+    transform:translate(-$fruit-size/2, ($fruit-offset*4.03)+50vh) scale(1.7);
   }
   .fruit.fruit-right#four{
-    transform:translate($fruit-size/2, ($fruit-offset*4.1)+50vh) scale(1.1);
+    transform:translate($fruit-size/2, ($fruit-offset*4.1)+50vh+50vh) scale(1.1);
   }
   .fruit.fruit-left#five{
-    transform:translate(-$fruit-size/2, ($fruit-offset*5.3)) scale(1);
+    transform:translate(-$fruit-size/2, ($fruit-offset*5.3)+50vh) scale(1);
   }
   .fruit.fruit-right#five{
-    transform:translate($fruit-size/2, ($fruit-offset*5)+50vh) scale(1.1);
+    transform:translate($fruit-size/2, ($fruit-offset*5)+50vh+50vh) scale(1.1);
   }
 }
