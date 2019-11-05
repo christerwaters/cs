@@ -2,13 +2,13 @@
 &.show-on-current-page{
   display:inline-block;
   .entry{
-      border: 2rem $primary solid;
-      background: $primary;
+      box-shadow:0px 5px 19px rgba(#000,.3);
+      border: 2rem #fff solid;
+      background: #fff;
       margin: 1.5rem;
     .entry-title{
-      color:#fff;
+      color:#000;
     }
-    .entry-title,
     .featured-media{
       .plyr__controls{
         display: none;
