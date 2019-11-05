@@ -92,11 +92,9 @@
 
 <div class="h-p-header" id="home" data-wtrs-show-on="home">
   <div class="text">
-    <div class="line01">vi ønsker å redefinere</div>
-    <div class="line02">forholdet mellom kreative</div>
-    <div class="line03">aktører. vi ønsker ikke </div>
-    <div class="line04">å konkurrere, men </div>
-    <div class="line05">å samarbeide.</div>
+    <p class="header-text">
+      VI SKAL FORANDRE HVORDAN
+    </p>
   </div>
   <video autoplay muted loop>
     <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
@@ -208,6 +206,7 @@
     </div>
 </div>
 
+</div>
 <div class="h-p-header" id="home" data-wtrs-show-on="home">
   <div class="text">
     <div class="line01">vi ønsker å redefinere</div>
@@ -219,7 +218,6 @@
   <video autoplay muted loop>
     <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
   </video>
-</div>
 </div>
   <div class="foot">
     <div class="foot-inner">
