@@ -3,7 +3,7 @@
   position: fixed;
   width: 100%;
   height:9000vh;
-  $fruit-size:30vw;
+  $fruit-size:20vw;
   $fruit-offset:100vh;
   .fruit{
     width:$fruit-size;
@@ -31,19 +31,19 @@
     transform:translate(-$fruit-size/2, ($fruit-offset*2)) scale(1.1);
   }
   .fruit.fruit-right#two{
-    transform:translate($fruit-size/2, ($fruit-offset*2)+50vh) scale(1.3);
+    transform:translate($fruit-size/2, ($fruit-offset*2)+50vh) scale(1.6);
   }
   .fruit.fruit-left#three{
-    transform:translate(-$fruit-size/2, ($fruit-offset*3)) scale(1.1);
+    transform:translate(-$fruit-size/2, ($fruit-offset*3)) scale(1.2);
   }
   .fruit.fruit-right#three{
-    transform:translate($fruit-size/2, ($fruit-offset*3)+50vh) scale(1.3);
+    transform:translate($fruit-size/2, ($fruit-offset*3)+50vh) scale(1.8);
   }
   .fruit.fruit-left#four{
-    transform:translate(-$fruit-size/2, ($fruit-offset*4)) scale(1.2);
+    transform:translate(-$fruit-size/2, ($fruit-offset*4)) scale(1.7);
   }
   .fruit.fruit-right#four{
-    transform:translate($fruit-size/2, ($fruit-offset*4)+50vh) scale(1.2);
+    transform:translate($fruit-size/2, (($fruit-offset*4)+50vh)*1.23) scale(1.1);
   }
   .fruit.fruit-left#five{
     transform:translate(-$fruit-size/2, ($fruit-offset*5)) scale(1);
