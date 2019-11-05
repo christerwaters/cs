@@ -128,6 +128,7 @@
     }
   }
 }
+
 .p-wrap.show-on-current-page[data-wtrs-show-on='om-oss']{
   display:block;
   .inner{
@@ -139,6 +140,9 @@
         margin-bottom:-1.8rem;
         opacity:1;
         transition:opacity 400ms $cb;
+      }
+      .entry-title{
+        display:none;
       }
       .plyr{
         transform:scale(1);
