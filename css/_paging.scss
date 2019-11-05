@@ -176,6 +176,8 @@
     max-width:$max-page-width;
     width:100%;
     margin:auto;
+    padding: 1rem;
+    box-sizing: border-box;
     h2{
       font-size:3rem;
       text-align: center;
