@@ -2,19 +2,13 @@
 &.show-on-current-page{
   display:inline-block;
   .entry{
+    border: 2rem #dff solid;
+    background: #dff;
     h2,
     .featured-media{
       margin:1.5rem 2vw 0 2vw;
       .plyr__controls{
         display: none;
-      }
-      &:after{
-        display:block;
-        position:absolute;
-        width:100%;
-        height:100%;
-        background:#ff9;
-        content:' ';
       }
     }
     .entry-content{
