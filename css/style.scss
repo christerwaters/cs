@@ -160,6 +160,62 @@ body{
         display:inline-block;
         color:$primary;
       }
+    }
+  }
+}
+
+.flipper.show-on-current-page{
+  z-index:250;
+  top:0;
+  color:$white;
+  width:100vw;
+  height: 29vw;
+  overflow: hidden;
+  display:block;
+  background:transparent;
+  position:relative;
+  padding: 7rem 0;
+  font-family: $handwritten;
+  font-size:5vw;
+  text-align:center;
+  text-transform:uppercase;
+  video{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  .text{
+    position: absolute;
+    font-family: $handwritten;
+    z-index:22;
+    width:90vw;
+    margin:0 5vw;
+    color:$primary;
+    .line01,.line02,.line03,
+    .line04,.line04,.line05{
+      height: 6vw;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      animation: flipper 800ms infinite;
+    }
+    @keyframes flipper{
+      0{display:none;}
+      83.3333335{display:block;}
+      100{display:none;}
+    }
+    .word{
+      font-family: $handwritten;
+      z-index:22;
+      display:inline-block;
+      margin-right:2vw;
+      span{
+        font-family: $handwritten;
+        display:inline-block;
+        color:$primary;
+      }
       #å,
       #i{
         text-transform:lowercase;
@@ -176,7 +232,6 @@ body{
     }
   }
 }
-
 .menu-overlay{
   pointer-events:none;
   background-repeat:repeat;
