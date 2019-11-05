@@ -1,6 +1,11 @@
 
 &.show-on-current-page{
   display:inline-block;
+  &.only-picture{
+    .entry{
+      border:0 transparent solid;
+    }
+  }
   .entry{
       box-shadow: 0px 5px 17px rgba(0,0,0,0.05);
       border: 2rem #fff solid;
