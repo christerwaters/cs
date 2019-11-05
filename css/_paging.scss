@@ -171,12 +171,14 @@
   .form-wrap{
     max-width:$max-page-width;
     width:100%;
+    margin:auto;
     h2{
       font-size:3rem;
     }
     input{
+      color:#fff;
       background:transparent;
-      border-color:$primary;
+      border-color:#fff;
     }
   }
 }
