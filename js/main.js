@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".entry-wrap").each(function(){
       var classes = ["sm","lg"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
-      var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg"];
+      var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg","push-right","centered"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
     });
 });
