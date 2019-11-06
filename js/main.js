@@ -5,6 +5,12 @@ $(document).ready(function(){
       var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg","push-right","centered"];
       $(this).addClass(classes[~~(Math.random()*classes.length)]);
     });
+    $(".random-layout").each(function(){
+      var classes = ["sm","lg"];
+      $(this).addClass(classes[~~(Math.random()*classes.length)]);
+      var classes = ["pull-sm","push-sm","pull-md","push-md","pull-lg","push-lg","push-right","centered"];
+      $(this).addClass(classes[~~(Math.random()*classes.length)]);
+    });
 });
 
 $(window).scroll(function() {
