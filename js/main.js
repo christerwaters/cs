@@ -14,6 +14,7 @@ $(window).scroll(function() {
   $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'px)'});
   $('.fruit-left img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
   $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
+  $('#kontakt').css({ transform: 'translate(-' + vhscroller + 'px, 0)'});
 });
 
 $(window).bind('scroll', function(){
