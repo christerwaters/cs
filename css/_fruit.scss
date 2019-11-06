@@ -4,6 +4,7 @@
   width: 100%;
   height:9000vh;
   z-index: -10;
+  will-change: transform;
   $fruit-size:20vw;
   $fruit-offset:100vh;
   .fruit{
@@ -20,6 +21,8 @@
       transition:transform 20ms;
       width:$fruit-size;
       top:100vh;
+      will-change: transform;
+
     }
   }
   .fruit.fruit-left#one{
