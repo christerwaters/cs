@@ -67,6 +67,25 @@ $margins: 10%;
     @import 'entries--show-on-current-page';
   }
 }
+h2#kontakt{
+  $dropped: 22rem;
+  $dropcolor: #000;
+  font-size: 4rem;
+  text-shadow: $dropped 0 $dropcolor  , $dropped*2 0 $dropcolor, $dropped*3 0 $dropcolor,
+               $dropped*4 0 $dropcolor, $dropped*5 0 $dropcolor, $dropped*6 0 $dropcolor,
+               $dropped*7 0 $dropcolor, $dropped*8 0 $dropcolor, $dropped*9 0 $dropcolor,
+               $dropped*10 0 $dropcolor, $dropped*11 0 $dropcolor, $dropped*12 0 $dropcolor,
+               $dropped*13 0 $dropcolor, $dropped*14 0 $dropcolor, $dropped*15 0 $dropcolor,
+               $dropped*16 0 $dropcolor, $dropped*17 0 $dropcolor, $dropped*18 0 $dropcolor,
+               $dropped*19 0 $dropcolor, $dropped*20 0 $dropcolor, $dropped*21 0 $dropcolor,
+               -$dropped 0 $dropcolor  , -$dropped*2 0 $dropcolor, -$dropped*3 0 $dropcolor,
+               -$dropped*4 0 $dropcolor, -$dropped*5 0 $dropcolor, -$dropped*6 0 $dropcolor,
+               -$dropped*7 0 $dropcolor, -$dropped*8 0 $dropcolor, -$dropped*9 0 $dropcolor,
+               -$dropped*10 0 $dropcolor, -$dropped*11 0 $dropcolor, -$dropped*12 0 $dropcolor,
+               -$dropped*13 0 $dropcolor, -$dropped*14 0 $dropcolor, -$dropped*15 0 $dropcolor,
+               -$dropped*16 0 $dropcolor, -$dropped*17 0 $dropcolor, -$dropped*18 0 $dropcolor,
+               -$dropped*19 0 $dropcolor, -$dropped*20 0 $dropcolor, -$dropped*21 0 $dropcolor;
+}
 .wp-block-image.middle{
   display: flex;
   flex-direction: column;
