@@ -47,39 +47,46 @@
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-
-      .pull-md{
-        margin-top:30%;
-        .entry{
-          margin-top:-30%;
-        }
+      div,
+      p{
+        display: block;
+        width: 100%;
       }
-      .push-md{
-        .entry{
+      .random-layout{
+        border:2rem #fff solid;
+        .pull-md{
           margin-top:30%;
+          .entry{
+            margin-top:-30%;
+          }
         }
-      }
-      .pull-lg{
-        margin-top:40%;
-        .entry{
-          margin-top:-40%;
+        .push-md{
+          .entry{
+            margin-top:30%;
+          }
         }
-      }
-      .push-lg{
-        .entry{
+        .pull-lg{
           margin-top:40%;
+          .entry{
+            margin-top:-40%;
+          }
         }
-      }
-      .centered{
-        margin-left:auto;
-        margin-right:auto;
-      }
-      .push-right{
-        .sm{
-          margin-left:100%-$sm;
+        .push-lg{
+          .entry{
+            margin-top:40%;
+          }
         }
-        .lg{
-          margin-left:100%-$lg;
+        .centered{
+          margin-left:auto;
+          margin-right:auto;
+        }
+        .push-right{
+          .sm{
+            margin-left:100%-$sm;
+          }
+          .lg{
+            margin-left:100%-$lg;
+          }
         }
       }
     }
