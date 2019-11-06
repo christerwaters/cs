@@ -4,11 +4,9 @@
   @include flexit(100%);
   .entry{
     margin:7rem  1.5rem 1.5rem 1.5rem;
-    h2{
+    .entry-title{
       margin:3rem 0;
       width: 100%;
-    }
-    .entry-title{
       max-width: $max-page-width;
       margin: 3rem auto;
     }
@@ -60,6 +58,9 @@
       p{
         display: block;
         width: 100%;
+      }
+      p{
+        margin-bottoM: 1.5rem;
       }
       .random-layout{
         border:2rem #fff solid;
