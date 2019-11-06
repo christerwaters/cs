@@ -85,6 +85,8 @@ h2#kontakt{
                -$dropped*13 0 $dropcolor, -$dropped*14 0 $dropcolor, -$dropped*15 0 $dropcolor,
                -$dropped*16 0 $dropcolor, -$dropped*17 0 $dropcolor, -$dropped*18 0 $dropcolor,
                -$dropped*19 0 $dropcolor, -$dropped*20 0 $dropcolor, -$dropped*21 0 $dropcolor;
+
+   will-change: transform;
 }
 .wp-block-image.middle{
   display: flex;
