@@ -47,6 +47,15 @@
       flex-direction: row;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      ul{
+        li{
+          list-style: disc;
+          margin-left: 2rem;
+          font-size: $font-size;
+          line-height: 1.875rem;
+        }
+      }
+      ul,
       div,
       p{
         display: block;
