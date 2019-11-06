@@ -67,6 +67,13 @@ $margins: 10%;
     @import 'entries--show-on-current-page';
   }
 }
+.wp-block-image.middle{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .xs{@include flexit($xs);}
 .sm{@include flexit($sm);}
 .md{@include flexit($md);}
