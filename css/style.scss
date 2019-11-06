@@ -16,6 +16,7 @@ $core_font-family-01: $serif;
 $core_font-family-02: $serif;
 $core_font-family-03: $serif;
 $max-page-width: 1050px;
+$font-size: 1.25rem;
 
 $bw: 3px;
 $sitewidth: 98rem;
@@ -595,7 +596,8 @@ section.p-wrap.Video{
 }
 
 .p-wrap{
-  max-width:$max-page-width;
-  margin:auto;
-  width:100%;
+  max-width: 100%;
+  margin: auto;
+  width: $max-page-width;
+  box-sizing: border-box;
 }
