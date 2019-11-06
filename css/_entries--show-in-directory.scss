@@ -71,4 +71,13 @@
       margin-top:40%;
     }
   }
+  &.centered{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  &.push-right{
+    &.sm{
+      margin-left:100%-$sm;
+    }
+  }
 }
