@@ -101,6 +101,11 @@ textarea:active{
   border-color:$focus;
   transition:all $ee $ees;
 }
+.wpcf7{
+  width:100%;
+  max-width:820px;
+  margin:auto;
+}
 .wpcf7-response-output.wpcf7-validation-errors,
 .wpcf7-not-valid-tip{
   display:none;
