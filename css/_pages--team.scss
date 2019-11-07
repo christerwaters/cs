@@ -1,0 +1,136 @@
+
+.crew{
+  h2{
+    font-size:5rem;
+  }
+  margin: 1.5rem;
+  .team-member{
+  }
+}
+.crew{
+  .join-us,
+  .team-member{
+    width:25%;
+    font-family:'Times New Roman';
+    .about{
+      bottom:0%;
+      display:block;
+      position:relative;
+      width:100%;
+      margin: 110% auto 0 auto;
+      text-align:center;
+      .name{
+        width:100%;
+        display:block;
+        font-weight:700;
+        font-size:1.5rem;
+      }
+      .title{
+        width:100%;
+        display:block;
+        font-weight:300;
+        font-size:1rem;
+      }
+    }
+    width:33.3333%;
+    overflow:hidden;
+    display:inline-block;
+    position:relative;
+    margin:0;
+    padding:2rem 0 0 0;
+    .featured-image{
+      padding-left:0%;
+      transition:padding-left 500ms;
+      width:100%;
+      overflow:hidden;
+      background-image: radial-gradient(lighten(#00f,10%) 20%, transparent 20%),
+        radial-gradient(lighten(#00f,10%) 20%, transparent 20%);
+      background-color: #00f;
+      background-position: 0 0, 15px 15px;
+      background-size: 5px 5px;
+      position:absolute;
+      z-index:200;
+      .more{
+        position:absolute;
+        right:0%;
+        margin:15px 25px;
+        bottom:0px;
+        color:#fff;
+        z-index:210;
+        opacity:1;
+        transition:opacity 500ms;
+        &::after{
+          margin-right:-8px;
+          margin-left:8px;
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          position: relative;
+          content: ' ';
+          transform: rotate(45deg);
+          border-top: 1px solid #fff;
+          border-right: 1px solid #fff;
+        }
+      }
+      img{
+        z-index:200;
+        display:block;
+        opacity:1;
+        mix-blend-mode: difference;
+        transition:margin-left 500ms;
+        margin-left: 0%;
+        filter:grayscale(100%) contrast(130%) brightness(130%);
+        width:100%;
+      }
+    }
+    .bio{
+      z-index:190;
+      width:100%;
+      display:block;
+      position:absolute;
+      margin-left: 0%;
+      width: 100%;
+      opacity:0;
+      p{
+        font-size: .8rem;
+        color: #fff;
+        margin: 2rem 0;
+      }
+    }
+    &.active{
+      .featured-image{
+        padding-left:200%;
+        transition:padding-left 500ms;
+        .more{
+          opacity:0;
+          margin-right:-100px;
+          transition:opacity 500ms,margin-right 500ms;
+        }
+        img{
+          opacity:1;
+          margin-left: -150%;
+          transition:margin-left 500ms;
+        }
+        .bio{
+          margin-left: -65%;
+          width: 30%;
+          opacity:1;
+          transition: opacity 100ms 500ms;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 777px) {
+  .crew .join-us,
+  .crew .team-member{
+    width:100% !important;
+    .featured-image{
+      width:50% !important;
+    }
+    .about{
+      margin: 20% 0 20% 60% !important;
+      text-align: left !important;
+    }
+  }
+}
