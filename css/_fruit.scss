@@ -24,6 +24,7 @@
       transition:transform 20ms;
       width:$fruit-size;
       will-change: transform;
+      animation: frootroot 500ms infinite;
     }
   }
   .fruit.fruit-left#one{
