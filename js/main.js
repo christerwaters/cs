@@ -13,15 +13,15 @@ $(document).ready(function(){
     });
 });
 
-$(window).scroll(function() {
-  var scroller = $(window).scrollTop();
-  var vhscroller = scroller*2;
-  var rotscroller = scroller*.4;
-  $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'px)'});
-  $('.fruit-left img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
-  $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
-  $('#kontakt').css({ transform: 'translate(-' + vhscroller + 'px, 0)'});
-});
+//$(window).scroll(function() {
+//  var scroller = $(window).scrollTop();
+//  var rotscroller = scroller*.4;
+//  var vhscroller = scroller*2;
+//  $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'px)'});
+//  $('.fruit-left img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
+//  $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
+//  $('#kontakt').css({ transform: 'translate(-' + vhscroller + 'px, 0)'});
+//});
 
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop();
