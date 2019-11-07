@@ -1,0 +1,120 @@
+
+.h-p-header.show-on-current-page{
+  display:block;
+}
+.h-p-header{
+  z-index:250;
+  top:0;
+  color:$white;
+  width:100vw;
+  height: 29vw;
+  overflow: hidden;
+  background:transparent;
+  position:relative;
+  padding: 7rem 0;
+  font-family: $handwritten;
+  font-size:5vw;
+  text-align:center;
+  text-transform:uppercase;
+  video{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  .text{
+    position: absolute;
+    font-family: $handwritten;
+    z-index:22;
+    width:90vw;
+    margin:0 5vw;
+    color:$primary;
+    .header-text{
+      font-size: 10vw;
+      line-height: 10vw;
+      text-align: left;
+      color: #fff;
+      font-family: arial;
+      font-weight: 700;
+    }
+  }
+}
+
+.flipper.show-on-current-page{
+  z-index:250;
+  top:0;
+  color:$white;
+  width:100vw;
+  height: 7vw;
+  overflow: hidden;
+  display:block;
+  background:transparent;
+  position:relative;
+  padding: 7rem 0;
+  font-family: $handwritten;
+  font-size:5vw;
+  text-align:center;
+  text-transform:uppercase;
+  .text{
+    position: absolute;
+    font-family: $handwritten;
+    z-index:22;
+    width:90vw;
+    margin:0 5vw;
+    color:$primary;
+    @keyframes flipper{
+      0%{opacity:0;}
+      83.333335%{opacity:1;}
+      100%{opacity:0;}
+    }
+    $timing-speed:250ms;
+    .line01,.line02,.line03,
+    .line04,.line04,.line05{
+      height: 6vw;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      animation: flipper $timing-speed*6 infinite step-end;
+    }
+    .line01{
+      animation-delay: $timing-speed;
+    }
+    .line02{
+      animation-delay: $timing-speed*2;
+    }
+    .line03{
+      animation-delay: $timing-speed*3;
+    }
+    .line04{
+      animation-delay: $timing-speed*4;
+    }
+    .line05{
+      animation-delay: $timing-speed*5;
+    }
+    .word{
+      font-family: $handwritten;
+      z-index:22;
+      display:inline-block;
+      margin-right:2vw;
+      span{
+        font-family: $handwritten;
+        display:inline-block;
+        color:$primary;
+      }
+      #å,
+      #i{
+        text-transform:lowercase;
+        font-size:120%;
+      }
+    }
+    @for $i from 1 through 90 {
+      .word :nth-child(#{$i}){
+        transform:rotate(-20 + (random(40))+deg);
+        margin-right:((-2+random(4))/10)+vw;
+        margin-left:((-2+random(4))/10)+vw;
+        font-size:4+(random(100)/100)+vw;
+      }
+    }
+  }
+}
