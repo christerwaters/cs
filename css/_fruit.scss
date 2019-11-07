@@ -2,57 +2,83 @@
   pointer-events: none;
   position: fixed;
   width: 100%;
-  height:9000vh;
   z-index: -10;
   will-change: transform;
   $fruit-size:20vw;
-  $fruit-offset:100vh;
   .fruit{
     width:$fruit-size;
     position: absolute;
     transition:transform 20ms;
+    animation: frootloop 1800ms infinite;
     &.fruit-right{
       float: right;
       right: 0;
+      transform:translateX($fruit-size/2);
+    }
+    &.fruit-left{
+      transform:translateX(-$fruit-size/2);
     }
     img{
       pointer-events: none;
-      opacity:.5;
+      opacity:1;
       transition:transform 20ms;
       width:$fruit-size;
-      top:100vh;
       will-change: transform;
-
     }
   }
   .fruit.fruit-left#one{
-    transform:translate(-$fruit-size/2, $fruit-offset);
+    animation-delay: 200ms;
   }
   .fruit.fruit-right#one{
-    transform:translate($fruit-size/2, $fruit-offset+50vh);
+    animation-delay: 400ms;
   }
   .fruit.fruit-left#two{
-    transform:translate(-$fruit-size/2, ($fruit-offset*2.7)) scale(1.1);
+    animation-delay: 450ms;
+    transform: scale(1.1);
   }
   .fruit.fruit-right#two{
-    transform:translate($fruit-size/2, ($fruit-offset*2.6)+50vh) scale(1.6);
+    animation-delay: 500ms;
+    transform:scale(1.6);
   }
   .fruit.fruit-left#three{
-    transform:translate(-$fruit-size/2, ($fruit-offset*4.3)) scale(1.2);
+    animation-delay: 350ms;
+    transform:scale(1.2);
   }
   .fruit.fruit-right#three{
-    transform:translate($fruit-size/2, ($fruit-offset*4.4)+50vh) scale(1.8);
+    animation-delay: 350ms;
+    transform:scale(1.8);
   }
   .fruit.fruit-left#four{
-    transform:translate(-$fruit-size/2, ($fruit-offset*5.2)) scale(1.7);
+    animation-delay: 350ms;
+    transform: scale(1.7);
   }
   .fruit.fruit-right#four{
-    transform:translate($fruit-size/2, ($fruit-offset*5.6)+50vh) scale(1.1);
+    animation-delay: 350ms;
+    transform:scale(1.1);
   }
   .fruit.fruit-left#five{
-    transform:translate(-$fruit-size/2, ($fruit-offset*7.1)) scale(1);
+    animation-delay: 350ms;
+    transform:scale(1);
   }
   .fruit.fruit-right#five{
-    transform:translate($fruit-size/2, ($fruit-offset*6)+50vh) scale(1.1);
+    animation-delay: 350ms;
+    transform:scale(1.1);
+  }
+}
+
+@keyframes frootloop{
+  from{
+    transform:translateY(150vh);
+  }
+  to{
+    transform:translateY(-150vh);
+  }
+}
+@keyframes frootroot{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
   }
 }
