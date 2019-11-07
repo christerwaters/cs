@@ -9,7 +9,7 @@
     width:$fruit-size;
     position: absolute;
     transition:transform 20ms;
-    animation: frootloop 4000ms infinite;
+    animation: frootloop 10s infinite;
     &.fruit-right{
       float: right;
       right: 0;
@@ -24,7 +24,7 @@
       transition:transform 20ms;
       width:$fruit-size;
       will-change: transform;
-      animation: frootroot 500ms infinite;
+      animation: frootroot 1s infinite linear;
     }
   }
   .fruit.fruit-left#one{
