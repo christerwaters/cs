@@ -22,16 +22,12 @@
     <meta name="msapplication-TileColor" content="#00f">
     <meta name="theme-color" content="#00f">
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@christerwaters" />
-    <meta name="twitter:creator" content="@christerwaters" />
-    <meta property="og:url" content="https://wtrs.dev" />
+    <meta name="twitter:site" content="@citrusstudio" />
+    <meta name="twitter:creator" content="@citrusstudio" />
+    <meta property="og:url" content="https://citrusstudio.no" />
     <meta property="og:title" content="Christer Waters - WTRS.dev - Freelance Designer & Developer" />
-    <meta property="og:description" content="I build human-friendly websites, always optimized for search-engines and any device. I also create artworks in the form of still and moving imagry (video and photo)." />
+    <meta property="og:description" content="<?php $site_title = get_bloginfo('description'); echo $site_title; ?>" />
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-
-
-
-    <?php //include 'ar-head.php'?>
 
   </head>
 
@@ -66,7 +62,7 @@
       </div>
     </div>
     <div class="loader-left">
-      <?php include 'loader.php'?>
+      <?php include 'intro.php'?>
     </div>
 
     <div class="menu">
@@ -134,17 +130,15 @@
             data-wtrs-categories="<?php foreach($category_detail as $cd){ echo " ";  echo $cd->slug; echo " ";} ?>"
             data-wtrs-show-on="<?php echo $wtrs_entry_show_on;?>">
         <div class="entry">
-          <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
-            <div class="featured-media <?php if ($wtrs_tilted){ echo "tilted";}; ?>" <?php if ($wtrs_tilted){ echo "data-tilt";}; ?>>
-              <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
-                <video poster="<?php echo $image_full;?>" class="js-player" loop>
-                  <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
-                </video>
-              <?php }; if ($wtrs_entry_type == ('wtrs_entry_type_image')){ ?>
-                <img src="<?php echo $image_thumb;?>" data-image-high="<?php echo $image_full;?>">
-              <?php }; ?>
-            </div>
-          </a>
+          <div class="featured-media <?php if ($wtrs_tilted){ echo "tilted";}; ?>" <?php if ($wtrs_tilted){ echo "data-tilt";}; ?>>
+            <?php if ($wtrs_entry_type == ('wtrs_entry_type_video')){?>
+              <video poster="<?php echo $image_full;?>" class="js-player" loop>
+                <source src="<?php echo $wtrs_entry_type_video_file_mp4;?>" type="video/mp4" />
+              </video>
+            <?php }; if ($wtrs_entry_type == ('wtrs_entry_type_image')){ ?>
+              <img src="<?php echo $image_thumb;?>" data-image-high="<?php echo $image_full;?>">
+            <?php }; ?>
+          </div>
           <a href="<?php echo $post_url;?>" title="<?php echo $title;?>" class="page-anchor">
             <h2 class="entry-title">
               <span class="client"><?php echo $wtrs_entry_client; ?></span>
