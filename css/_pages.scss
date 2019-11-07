@@ -1,0 +1,28 @@
+
+@import 'pages--home';
+@import 'pages--om-oss';
+@import 'pages--team';
+
+.get-subscribers{
+  width: 100%;
+  background: #00f;
+  padding: 3rem 0;
+  color:#fff;
+  .form-wrap{
+    max-width:$max-page-width;
+    width:100%;
+    margin:auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    h2{
+      font-size:3rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    input{
+      color:#fff;
+      background:transparent;
+      border-color:#fff;
+    }
+  }
+}
