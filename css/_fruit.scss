@@ -9,7 +9,7 @@
     width:$fruit-size;
     position: absolute;
     transition:transform 20ms;
-    animation: frootloop 1800ms infinite;
+    animation: frootloop 4000ms infinite;
     &.fruit-right{
       float: right;
       right: 0;
@@ -30,38 +30,38 @@
     animation-delay: 200ms;
   }
   .fruit.fruit-right#one{
-    animation-delay: 400ms;
+    animation-delay: 800ms;
   }
   .fruit.fruit-left#two{
-    animation-delay: 450ms;
+    animation-delay: 1200ms;
     transform: scale(1.1);
   }
   .fruit.fruit-right#two{
-    animation-delay: 500ms;
+    animation-delay: 1600ms;
     transform:scale(1.6);
   }
   .fruit.fruit-left#three{
-    animation-delay: 350ms;
+    animation-delay: 2000ms;
     transform:scale(1.2);
   }
   .fruit.fruit-right#three{
-    animation-delay: 350ms;
+    animation-delay: 2300ms;
     transform:scale(1.8);
   }
   .fruit.fruit-left#four{
-    animation-delay: 350ms;
+    animation-delay: 2900ms;
     transform: scale(1.7);
   }
   .fruit.fruit-right#four{
-    animation-delay: 350ms;
+    animation-delay: 4400ms;
     transform:scale(1.1);
   }
   .fruit.fruit-left#five{
-    animation-delay: 350ms;
+    animation-delay: 5000ms;
     transform:scale(1);
   }
   .fruit.fruit-right#five{
-    animation-delay: 350ms;
+    animation-delay: 6000ms;
     transform:scale(1.1);
   }
 }
