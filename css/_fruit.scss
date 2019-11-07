@@ -1,7 +1,8 @@
 .fruits{
   pointer-events: none;
   position: fixed;
-  width: 100%;
+  width: 120vw;
+  margin-left: -10vw;
   z-index: -10;
   will-change: transform;
   $fruit-size:20vw;
