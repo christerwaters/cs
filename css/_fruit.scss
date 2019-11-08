@@ -67,3 +67,20 @@
     transform:scale(1.1);
   }
 }
+
+@keyframes frootloop{
+  from{
+    transform:translateY(150vh);
+  }
+  to{
+    transform:translateY(-150vh);
+  }
+}
+@keyframes frootroot{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
