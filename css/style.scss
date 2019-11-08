@@ -1,7 +1,15 @@
 
+body.unloaded{
+  background:#00f;
+  .foot,
+  .menu{
+    opacity:0;
+  }
+}
 body{
   overflow-x:hidden;
   background:#fff;
+
 
 
 @import 'vars';
