@@ -10,13 +10,16 @@
   h2{
     font-size:5rem;
   }
-  margin: 1.5rem;
-  .team-member{
-  }
 }
 .crew{
   .join-us,
   .team-member{
+    width:33.3333%;
+    overflow:hidden;
+    display:inline-block;
+    position:relative;
+    margin:0;
+    padding:2rem 0 0 0;
     width:25%;
     font-family:'Times New Roman';
     .about{
@@ -39,12 +42,6 @@
         font-size:1rem;
       }
     }
-    width:33.3333%;
-    overflow:hidden;
-    display:inline-block;
-    position:relative;
-    margin:0;
-    padding:2rem 0 0 0;
     .featured-image{
       padding-left:0%;
       transition:padding-left 500ms;
