@@ -1,7 +1,7 @@
 @for $i from 1 through 100 {
   .intro-fruit--nr-#{$i}{
     $rndm: random(120);
-    $timer: #{$i}/2;
+    $timer: $i/2;
     animation:fruitshow 0s;
     animation-delay: $timer+s;
     transform:translate((-10 + $rndm)+vw,(-10 + $rndm)+vh);
@@ -16,8 +16,6 @@
   to{
     opacity:1;
   }
-}
-.intro-wrap{
 }
 .intro-fruit{
   opacity:0;
