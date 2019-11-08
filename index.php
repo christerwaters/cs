@@ -32,7 +32,7 @@
 
   </head>
 
-  <body class="p-open p-home">
+  <body class="unloaded">
     <?php include 'intro.php'?>
     <div class="fruits" data-wtrs-show-on="home">
       <div class="fruit fruit-left" id="one">
