@@ -123,10 +123,20 @@
 .entries .entry-wrap[data-wtrs-show-on="home"]{
   .entry{
     opacity:0;
+    transition:opacity 0s 1800ms;
     .title,
     .client,
     .featured-media{
       opacity:0;
+    }
+    .featured-media{
+      transition:opacity 0s 1200ms;
+    }
+    .client{
+      transition:opacity 0s 1400ms;
+    }
+    .title{
+      transition:opacity 0s 1600ms;
     }
     &.visible{
       opacity:1;
