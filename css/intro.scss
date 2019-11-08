@@ -9,21 +9,4 @@ body.unloaded{
   .menu .container{
     opacity:0;
   }
-  .menu{
-    height:100vw;
-    width:100%;
-    position: relative;
-  }
-  .logotype {
-    text-align: center;
-    min-width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    a{
-      span{
-        font-size:10vw;
-      }
-    }
-  }
 }
