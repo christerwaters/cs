@@ -7,6 +7,8 @@
     transform:translate(calc(-10+$rndm)+vw,calc(-10+$rndm)+vh);
   }
 }
+
+@import 'base64';
 @keyframes fruitshow{
   from{
     opacity:0;
