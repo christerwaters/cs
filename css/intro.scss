@@ -1,9 +1,9 @@
 @import 'base64';
 @keyframes fruitshow{
-  from{
+  0%{
     opacity:0;
   }
-  to{
+  100%{
     opacity:1;
   }
 }
@@ -13,7 +13,8 @@
     $rndm: random(120);
     $rndmh: random(120);
     $timer: $i/5;
-    animation:fruitshow 1s step-end $timer+s;
+    opacity:1;
+    transition: opacity 0s $timer+s;
     transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
   }
 }
