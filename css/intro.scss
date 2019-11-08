@@ -18,10 +18,6 @@
   }
 }
 .intro-wrap{
-  width:100%;
-  height:100%;
-  background:#00f;
-  display:block;
 }
 .intro-fruit{
   opacity:0;
@@ -29,6 +25,7 @@
   height:20vw;
   display:block;
   content:' ';
+  position: absolute;
 }
 .intro-fruit-1{
   background:$fruit01;
