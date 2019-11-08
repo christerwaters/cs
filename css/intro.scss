@@ -9,7 +9,7 @@
 }
 
 @for $i from 1 through 100 {
-  .intro-fruit--nr-#{$i}{
+  .intro-fruit.intro-fruit--nr-#{$i}{
     $rndm: random(120);
     $rndmh: random(120);
     $timer: $i/5;
