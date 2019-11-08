@@ -4,7 +4,8 @@
 <script>
 var introFruit = '';
 for (var i = 1; i <= 100; i ++) {
-  introFruit += '<div class="intro-fruit intro-fruit-'+ Math.floor(Math.random()*6+1) +' intro-fruit--nr-'+i+'"></div>';
+  var rndm = Math.floor(Math.random()*6+1);
+  introFruit += '<div class="intro-fruit intro-fruit-'+rndm+' intro-fruit--nr-'+i+'"></div>';
 }
 document.querySelector('.intro-wrap').innerHTML += introFruit;
 </script>
