@@ -1,5 +1,5 @@
 @import 'base64';
-@keyframes fruitshow{
+@keyframes frootyyy{
   0%{
     opacity:0;
   }
@@ -10,12 +10,15 @@
 
 @for $i from 1 through 100 {
   .intro-fruit.intro-fruit--nr-#{$i}{
-    $rndm: random(120);
-    $rndmh: random(120);
+    $rndm: random(24);
+    $rndmh: random(24);
     $timer: $i/5;
-    opacity:1;
-    transition: opacity 0s $timer+s;
-    transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
+    animation-name: frootyyy;
+    animation-duration: 1s;
+    animation-delay: $timer+s;
+    animation-iteration-count: 1;
+    animation-timing-function: step-end;
+    transform:translate((-10 + ($rndm*5))+vw,(-10 + ($rndmh*5))+vh);
   }
 }
 .intro-fruit{
