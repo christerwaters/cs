@@ -1,4 +1,9 @@
-
+.entry-wrap[data-wtrs-show-on='team']{
+  background:transparent;
+  .entry{
+    border:none;
+  }
+}
 .crew{
   h2{
     font-size:5rem;
