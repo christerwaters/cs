@@ -92,18 +92,11 @@ function checkVisible() {
       $(k).removeClass('visible');
     }
   });
-  $('h1').each(function(i, k) {
+  $('.entry').each(function(i, k) {
     if ($(this).visible()) {
       $(k).addClass('visible');
     } else {
-      //$(k).removeClass('visible');
-    }
-  });
-  $('h2').each(function(i, k) {
-    if ($(this).visible()) {
-      $(k).addClass('visible');
-    } else {
-      //$(k).removeClass('visible');
+      $(k).removeClass('visible');
     }
   });
 }
