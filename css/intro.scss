@@ -1,10 +1,11 @@
 @for $i from 1 through 100 {
   .intro-fruit--nr-#{$i}{
     $rndm: random(120);
-    $timer: $i/2;
+    $rndmh: random(120);
+    $timer: $i/3;
     animation:fruitshow 0s;
     animation-delay: $timer+s;
-    transform:translate((-10 + $rndm)+vw,(-10 + $rndm)+vh);
+    transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
   }
 }
 
