@@ -1,60 +1,11 @@
-@import 'base64';
-
-@keyframes frootloop{
-  from{
-    transform:translateY(150vh);
+body.unloaded{
+  background:#00f;
+  overflow: hidden;
+  .show-on-current-page,
+  .show-in-directory,
+  .current,
+  .foot,
+  .menu .container{
+    opacity:0;
   }
-  to{
-    transform:translateY(-150vh);
-  }
-}
-@keyframes frootroot{
-  from{
-    transform:rotate(0deg);
-  }
-  to{
-    transform:rotate(360deg);
-  }
-}
-
-
-@for $i from 1 through 100 {
-  .intro-fruit.intro-fruit--nr-#{$i}{
-    $rndm: random(24);
-    $rndmh: random(24);
-    $timer: $i/5;
-    animation-name: frootyyy;
-    animation-duration: 1s;
-    animation-delay: $timer+s;
-    animation-iteration-count: 1;
-    animation-timing-function: step-end;
-    transform:translate((-10 + ($rndm*5))+vw,(-10 + ($rndmh*5))+vh);
-  }
-}
-.intro-fruit{
-  width:20vw;
-  height:20vw;
-  display:block;
-  content:' ';
-  background-size: contain;
-  position: fixed;
-  opacity:0;
-}
-.intro-fruit-1{
-  background-image:$fruit01;
-}
-.intro-fruit-2{
-  background-image:$fruit02;
-}
-.intro-fruit-3{
-  background-image:$fruit03;
-}
-.intro-fruit-4{
-  background-image:$fruit01;
-}
-.intro-fruit-5{
-  background-image:$fruit03;
-}
-.intro-fruit-6{
-  background-image:$fruit02;
 }
