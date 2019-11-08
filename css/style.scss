@@ -1,4 +1,7 @@
 
+body{
+  overflow-x:hidden;
+  background:#fff;
 
 
 @import 'vars';
@@ -37,10 +40,6 @@ p{font-size:$p;line-height:$p*1.5;}
 }
 .current a.page-anchor:hover{
   cursor:default;
-}
-body{
-  overflow-x:hidden;
-  background:#fff;
 }
 
 @keyframes mover{
@@ -262,4 +261,6 @@ $m-100: 100%;
   margin: auto;
   width: $max-page-width;
   box-sizing: border-box;
+}
+
 }
