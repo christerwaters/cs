@@ -4,7 +4,7 @@
     $timer: #{$i}/2;
     animation:fruitshow 0s;
     animation-delay: $timer+s;
-    transform:translate(calc(-10+$rndm)+vw,calc(-10+$rndm)+vh);
+    transform:translate((-10 + $rndm)+vw,(-10 + $rndm)+vh);
   }
 }
 
