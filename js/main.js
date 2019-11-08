@@ -44,7 +44,7 @@ $('.tilted').tilt({
 
 $(document).ready(function() {
   setTimeout(function(){
-    $("body").removeClass( "unloaded" );
+  //  $("body").removeClass( "unloaded" );
   }, 1000);
   $('img').each(function() {
     $(this).attr("src", $(this).attr("data-image-full"));
