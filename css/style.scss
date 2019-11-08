@@ -1,8 +1,9 @@
 
 body.unloaded{
   background:#00f;
+  overflow: hidden;
   .foot,
-  .menu{
+  .menu .container{
     opacity:0;
   }
 }
