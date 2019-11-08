@@ -118,3 +118,32 @@
     }
   }
 }
+
+
+.entries .entry-wrap.show-on-current-page[data-wtrs-show-on="home"]{
+  .entry{
+    opacity:0;
+    .title,
+    .client,
+    .featured-media{
+      opacity:0;
+    }
+    &.visible{
+      opacity:1;
+      .title,
+      .client,
+      .featured-media{
+        opacity:1;
+      }
+      .featured-media{
+        transition:opacity 0s 200ms;
+      }
+      .client{
+        transition:opacity 0s 400ms;
+      }
+      .title{
+        transition:opacity 0s 600ms;
+      }
+    }
+  }
+}
