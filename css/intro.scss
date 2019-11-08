@@ -1,14 +1,3 @@
-@for $i from 1 through 100 {
-  .intro-fruit--nr-#{$i}{
-    $rndm: random(120);
-    $rndmh: random(120);
-    $timer: $i/3;
-    animation:fruitshow 0s;
-    animation-delay: $timer+s;
-    transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
-  }
-}
-
 @import 'base64';
 @keyframes fruitshow{
   from{
@@ -25,6 +14,17 @@
   content:' ';
   background-size: contain;
   position: fixed;
+  opacity:0;
+  @for $i from 1 through 100 {
+    .intro-fruit--nr-#{$i}{
+      $rndm: random(120);
+      $rndmh: random(120);
+      $timer: $i/3;
+      animation:fruitshow 0s;
+      animation-delay: $timer+s;
+      transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
+    }
+  }
 }
 .intro-fruit-1{
   background-image:$fruit01;
