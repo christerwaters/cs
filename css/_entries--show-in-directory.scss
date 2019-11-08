@@ -75,12 +75,14 @@
 
 
 .entry{
+  opacity:0;
   .title,
   .client,
   .featured-media{
     opacity:0;
   }
   &.visible{
+    opacity:1;
     .title,
     .client,
     .featured-media{
