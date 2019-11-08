@@ -72,3 +72,28 @@
     }
   }
 }
+
+
+.entry{
+  .title,
+  .client,
+  .featured-media{
+    opacity:0;
+  }
+  &.visible{
+    .title,
+    .client,
+    .featured-media{
+      opacity:1;
+    }
+    .featured-media{
+      transition:opacity 0s 200ms;
+    }
+    .client{
+      transition:opacity 0s 400ms;
+    }
+    .title{
+      transition:opacity 0s 600ms;
+    }
+  }
+}
