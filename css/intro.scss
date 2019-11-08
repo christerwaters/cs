@@ -24,7 +24,8 @@
   height:20vw;
   display:block;
   content:' ';
-  position: absolute;
+  background-size: contain;
+  position: fixed;
 }
 .intro-fruit-1{
   background-image:$fruit01;

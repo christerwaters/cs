@@ -2,6 +2,9 @@
 body.unloaded{
   background:#00f;
   overflow: hidden;
+  .show-on-current-page,
+  .show-in-directory,
+  .current,
   .foot,
   .menu .container{
     opacity:0;
