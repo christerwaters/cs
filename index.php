@@ -3,6 +3,7 @@
   <head>
     <title> <?php $site_title = get_bloginfo('description'); echo $site_title; ?> - <?php $site_name = get_bloginfo( 'name' ); echo $site_name; ?></title> <!-- Set the title of the page, this shows up in google etc. as well -->
 
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/intro.css"> <!-- stylesheet for this page -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory'); ?>/media/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory'); ?>/media/favicon/favicon-32x32.png">
