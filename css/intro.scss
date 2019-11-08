@@ -7,6 +7,16 @@
     opacity:1;
   }
 }
+
+@for $i from 1 through 100 {
+  .intro-fruit--nr-#{$i}{
+    $rndm: random(120);
+    $rndmh: random(120);
+    $timer: $i/5;
+    animation:fruitshow 1s step-end $timer+s;
+    transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
+  }
+}
 .intro-fruit{
   width:20vw;
   height:20vw;
@@ -15,17 +25,6 @@
   background-size: contain;
   position: fixed;
   opacity:0;
-  animation:fruitshow 0s;
-  animation-iteration-count: 1;
-  @for $i from 1 through 100 {
-    .intro-fruit--nr-#{$i}{
-      $rndm: random(120);
-      $rndmh: random(120);
-      $timer: $i/3;
-      animation-delay: $timer+s;
-      transform:translate((-10 + $rndm)+vw,(-10 + $rndmh)+vh);
-    }
-  }
 }
 .intro-fruit-1{
   background-image:$fruit01;
