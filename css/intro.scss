@@ -1,11 +1,22 @@
 body.unloaded{
   background:#00f;
   overflow: hidden;
+  .get-subscribers,
   .show-on-current-page,
   .show-in-directory,
   .current,
   .foot,
   .menu .container{
     opacity:0;
+  }
+  .menu{
+    height:100%;
+    width:100%;
+    position: relative;
+  }
+  .logotype {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
