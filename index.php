@@ -33,6 +33,7 @@
   </head>
 
   <body class="p-open p-home">
+    <?php include 'intro.php'?>
     <div class="fruits" data-wtrs-show-on="home">
       <div class="fruit fruit-left" id="one">
         <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
@@ -61,9 +62,6 @@
       <div class="fruit fruit-right" id="five">
         <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-02.png" >
       </div>
-    </div>
-    <div class="loader-left">
-      <?php include 'intro.php'?>
     </div>
 
     <div class="menu">
