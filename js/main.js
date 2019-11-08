@@ -96,6 +96,7 @@ function checkVisible() {
     if ($(this).visible()) {
       $(k).addClass('visible');
     } else {
+      $(k).removeClass('visible');
     }
   });
 }
