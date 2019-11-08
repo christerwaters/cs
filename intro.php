@@ -1,6 +1,8 @@
 
 <!--noindex-->
 <!--googleoff: index-->
+<div class="intro-wrap unloaded"></div>
+
 <script>
 var introFruit = '';
 for (var i = 1; i <= 100; i ++) {
@@ -9,7 +11,5 @@ for (var i = 1; i <= 100; i ++) {
 }
 document.querySelector('.intro-wrap').innerHTML += introFruit;
 </script>
-
-<div class="intro-wrap unloaded"></div>
 <!--googleon: index-->
 <!--/noindex-->
