@@ -43,20 +43,6 @@ body{
   background:#fff;
 }
 
-.wrap-loader{
-  pointer-events: none;
-  opacity:0;
-  transition:opacity 1s 1s ease;
-  &.unloaded{
-    opacity:1;
-    transition:opacity 1s 1s ease;
-    .mover{
-      animation:mover 2s infinite;
-      display:block;
-    }
-  }
-}
-
 @keyframes mover{
   0%{
     transform:translate(2%,1%);
