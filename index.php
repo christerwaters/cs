@@ -33,7 +33,7 @@
   </head>
 
   <body class="unloaded">
-    <?php include 'intro.php'; ?>
+    <?php include 'intro.php';?>
     <div class="fruits" data-wtrs-show-on="home">
       <div class="fruit fruit-left" id="one">
         <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
