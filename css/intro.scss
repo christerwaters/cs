@@ -12,9 +12,13 @@ body.unloaded{
   .fruits{
     opacity:1;
   }
+  .intro{
+    display: block;
+  }
 }
 
 .intro{
+  display: none;
   position: fixed;
   display: block;
   z-index: 3010;
@@ -38,6 +42,7 @@ body.unloaded{
       font-size:10vw;
       top: 50%;
       transform: translateY(-50%);
+      color:#fff;
     }
   }
   .fruit{

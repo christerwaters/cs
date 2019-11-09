@@ -11,7 +11,7 @@
     width:$fruit-size;
     position: absolute;
     transition:transform 20ms;
-    animation: frootloop 10s infinite;
+    animation: frootloop 10s infinite linear;
     &.fruit-right{
       float: right;
       right: 0;
