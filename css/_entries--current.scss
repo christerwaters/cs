@@ -13,18 +13,13 @@
     .featured-media{
       position: relative;
       width: 100%;
-      max-width:100%;
-      transition: max-width 200ms 200ms;
+      max-width: $max-page-width;
       margin:auto;
       left: 0;
       top: 0;
       img,
       .plyr{
         max-height: 92vh;
-      }
-      &.scrolled50{
-        max-width: $max-page-width;
-        transition: max-width 200ms 200ms;
       }
     }
     .entry-content{

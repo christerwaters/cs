@@ -23,20 +23,6 @@ $(window).scroll(function() {
   $('#kontakt').css({ transform: 'translate(-' + scroller*2 + 'px, 0)'});
 });
 
-$(window).bind('scroll', function(){
-    var offset = $(document).scrollTop();
-    if( offset<=50 ){
-    } else {
-      $(".featured-media").addClass('scrolled50');
-    }
-    if(offset === 0) {
-      setTimeout(function(){
-        $(".featured-media").removeClass('scrolled50');
-      }, 100);
-    }
-});
-
-
 $('.tilted').tilt({
   perspective: 1500,
   maxTilt: 10
