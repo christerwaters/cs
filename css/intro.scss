@@ -10,3 +10,92 @@ body.unloaded{
     opacity:0;
   }
 }
+
+.intro{
+  pointer-events: none;
+  position: fixed;
+  width: 120vw;
+  transform:translateY(-40vw);
+  margin-left: -10vw;
+  z-index: -10;
+  will-change: transform;
+  $fruit-size:20vw;
+  .intro--text-wrap{
+    width:100%;
+    min-width:100%;
+    height:100vh;
+    min-height:100%;
+    display: block;
+    position: relative;
+    .intro--text{
+      position: absolute;
+      display:block;
+      height:10vw;
+      font-size:10vw;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .fruit{
+    width:$fruit-size;
+    position: absolute;
+    transition:transform 20ms;
+    animation: frootloop 10s infinite;
+    img{
+      pointer-events: none;
+      opacity:1;
+      transition:transform 20ms;
+      width:$fruit-size;
+      will-change: transform;
+      animation: frootroot 1.5s infinite linear;
+    }
+  }
+  .fruit#one{
+
+    animation-delay: 200ms;
+  }
+  .fruit#two{
+    animation-delay: 200ms;
+  }
+  .fruit#three{
+    animation-delay: 200ms;
+  }
+  .fruit#four{
+    animation-delay: 400ms;
+  }
+  .fruit#five{
+    animation-delay: 200ms;
+  }
+  .fruit#six{
+    animation-delay: 200ms;
+  }
+  .fruit#seven{
+    animation-delay: 200ms;
+  }
+  .fruit#eight{
+    animation-delay: 200ms;
+  }
+  .fruit#nine{
+    animation-delay: 200ms;
+  }
+  .fruit#ten{
+    animation-delay: 200ms;
+  }
+}
+
+@keyframes frootloop{
+  from{
+    transform:translateY(150vh);
+  }
+  to{
+    transform:translateY(-150vh);
+  }
+}
+@keyframes frootroot{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
