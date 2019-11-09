@@ -12,13 +12,11 @@ body.unloaded{
 }
 
 .intro{
-  pointer-events: none;
   position: fixed;
-  width: 120vw;
-  transform:translateY(-40vw);
-  margin-left: -10vw;
-  z-index: -10;
-  will-change: transform;
+  display: block;
+  z-index: 3010;
+  width: 100%;
+  min-height: 100%;
   $fruit-size:20vw;
   .intro--text-wrap{
     width:100%;
@@ -31,6 +29,7 @@ body.unloaded{
       position: absolute;
       display:block;
       height:10vw;
+      text-align: center;
       font-size:10vw;
       top: 50%;
       transform: translateY(-50%);
