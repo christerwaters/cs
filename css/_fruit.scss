@@ -1,17 +1,17 @@
 .fruits{
-  pointer-events: none;
+  display: none;
   position: fixed;
-  width: 120vw;
-  transform:translateY(-40vw);
-  margin-left: -10vw;
-  z-index: -10;
-  will-change: transform;
+  z-index: 3010;
+  width: 100%;
+  margin-top:-20vw;
+  min-height: 120vh;
   $fruit-size:20vw;
   .fruit{
+    margin-top: -20vw;
     width:$fruit-size;
     position: absolute;
-    animation: frootloop 10s infinite linear;
     transform: translateY(100vh);
+    animation: frootloop 10s infinite linear;
     &.fruit-right{
       float: right;
       right: 0;
