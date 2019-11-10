@@ -15,11 +15,6 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   var scroller = $(window).scrollTop();
-//  var rotscroller = scroller*.4;
-//  var vhscroller = scroller*2;
-//  $('.fruits').css({ transform: 'translate(0, -' + vhscroller + 'px)'});
-//  $('.fruit-left img').css({ transform: 'rotate(' + rotscroller + 'deg)'});
-//  $('.fruit-right img').css({ transform: 'rotate(-' + rotscroller + 'deg)'});
   $('#kontakt').css({ transform: 'translate(-' + scroller*2 + 'px, 0)'});
 });
 
