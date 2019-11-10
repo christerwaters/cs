@@ -148,7 +148,8 @@
                         <span class="name"><span class="firstname"><?php echo $firstname ?></span> <span class="lastname"><?php echo $lastname ?></span></span>
                       </span>
                     </div><!--
-              <?php };?><?php}?>
+              <?php };?>
+<!-- --><?php}?>
           <!-- --><div class="join-us">
             <div class="featured-image">
               <img src="<?php bloginfo('template_directory'); ?>/media/join.jpg">
