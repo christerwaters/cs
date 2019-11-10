@@ -65,33 +65,33 @@
       }
       .random-layout{
         border:2rem transparent solid;
-        .pull-md{
+        &.pull-md{
           margin-top:30%;
           .entry{
             margin-top:-30%;
           }
         }
-        .push-md{
+        &.push-md{
           .entry{
             margin-top:30%;
           }
         }
-        .pull-lg{
+        &.pull-lg{
           margin-top:40%;
           .entry{
             margin-top:-40%;
           }
         }
-        .push-lg{
+        &.push-lg{
           .entry{
             margin-top:40%;
           }
         }
-        .centered{
+        &.centered{
           margin-left:auto;
           margin-right:auto;
         }
-        .push-right{
+        &.push-right{
           .sm{
             margin-left:100%-$sm;
           }
