@@ -23,6 +23,7 @@
       display:none;
     }
   }
+  &[data-wtrs-show-on="events"],
   &[data-wtrs-show-on="home"]{
     &.only-text{
       .featured-media{
