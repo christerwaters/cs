@@ -1,0 +1,87 @@
+.fruits{
+  pointer-events: none;
+  position: fixed;
+  width: 120vw;
+  transform:translateY(-40vw);
+  margin-left: -10vw;
+  z-index: -10;
+  will-change: transform;
+  $fruit-size:20vw;
+  .fruit{
+    width:$fruit-size;
+    position: absolute;
+    animation: frootloop 10s infinite linear;
+    transform: translateY(100vh);
+    &.fruit-right{
+      float: right;
+      right: 0;
+      transform:translateX($fruit-size/2);
+    }
+    &.fruit-left{
+      transform:translateX(-$fruit-size/2);
+    }
+    img{
+      pointer-events: none;
+      opacity:1;
+      transition:transform 20ms;
+      width:$fruit-size;
+      will-change: transform;
+      animation: frootroot 1.5s infinite linear;
+    }
+  }
+  .fruit.fruit-left#one{
+    animation-delay: .2s;
+  }
+  .fruit.fruit-right#one{
+    animation-delay: 1s;
+  }
+  .fruit.fruit-left#two{
+    animation-delay: 2s;
+    transform: scale(1.1);
+  }
+  .fruit.fruit-right#two{
+    animation-delay: 3s;
+    transform:scale(1.6);
+  }
+  .fruit.fruit-left#three{
+    animation-delay: 4s;
+    transform:scale(1.2);
+  }
+  .fruit.fruit-right#three{
+    animation-delay: 5s;
+    transform:scale(1.8);
+  }
+  .fruit.fruit-left#four{
+    animation-delay: 6s;
+    transform: scale(1.7);
+  }
+  .fruit.fruit-right#four{
+    animation-delay: 7s;
+    transform:scale(1.1);
+  }
+  .fruit.fruit-left#five{
+    animation-delay: 8s;
+    transform:scale(1);
+  }
+  .fruit.fruit-right#five{
+    animation-delay: 9s;
+    transform:scale(1.1);
+  }
+}
+
+@keyframes frootloop{
+  from{
+    transform:translateY(100vh);
+  }
+  to{
+    transform:translateY(-50vh);
+  }
+}
+@keyframes frootroot{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}

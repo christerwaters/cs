@@ -51,26 +51,26 @@
       </div>
     </div>
 
-<div class="h-p-header" id="home" data-wtrs-show-on="home">
-  <div class="text">
-    <p class="header-text">
-      UTTRYKK FOR DEN NESTE GENERASJONEN
-    </p>
-  </div>
-  <video autoplay muted loop>
-    <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
-  </video>
-</div>
-<section item-title="" class="p-wrap" data-wtrs-show-on="om-oss">
-    <div class="inner">
-      <div class="featured-media">
-        <video poster="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/Citrus_051.jpg" class="js-player" playsinline controls>
-          <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/citrus.mp4" type="video/mp4" />
-        </video>
+    <div class="h-p-header" id="home" data-wtrs-show-on="home">
+      <div class="text">
+        <p class="header-text">
+          UTTRYKK FOR DEN NESTE GENERASJONEN
+        </p>
       </div>
-      <h1>Om Citrus Studio</h1>
+      <video autoplay muted loop>
+        <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/09/Citrus-Studio-Event-001.mp4" type="video/mp4">
+      </video>
     </div>
-  </section>
+    <section item-title="" class="p-wrap" data-wtrs-show-on="om-oss">
+      <div class="inner">
+        <div class="featured-media">
+          <video poster="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/Citrus_051.jpg" class="js-player" playsinline controls>
+            <source src="https://cs.wtrs.dev/wp-content/uploads/sites/2/2019/08/citrus.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <h1>Om Citrus Studio</h1>
+      </div>
+    </section>
 <div class="entries">
     <?php
     $args = array('post_type' => 'Entries'); //declares that we will only be querying the portfolio post type
