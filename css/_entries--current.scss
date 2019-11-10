@@ -92,10 +92,10 @@
           margin-right:auto;
         }
         &.push-right{
-          .sm{
+          &.sm{
             margin-left:100%-$sm;
           }
-          .lg{
+          &.lg{
             margin-left:100%-$lg;
           }
         }
