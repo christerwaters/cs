@@ -33,6 +33,36 @@
   </head>
 
   <body class="unloaded">
+    <?php include 'intro.php';?>
+    <div class="fruits" data-wtrs-show-on="home">
+      <div class="fruit fruit-left" id="one">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
+      </div>
+      <div class="fruit fruit-left" id="two">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-02.png" >
+      </div>
+      <div class="fruit fruit-left" id="three">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
+      </div>
+      <div class="fruit fruit-left" id="four">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-03.png" >
+      </div>
+      <div class="fruit fruit-right" id="one">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-02.png" >
+      </div>
+      <div class="fruit fruit-right" id="two">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
+      </div>
+      <div class="fruit fruit-right" id="three">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-03.png" >
+      </div>
+      <div class="fruit fruit-right" id="four">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-01.png" >
+      </div>
+      <div class="fruit fruit-right" id="five">
+        <img src="<?php bloginfo('template_directory'); ?>/media/citrus-fruit-02.png" >
+      </div>
+    </div>
 
     <div class="menu">
       <div class="menu-overlay"></div>
@@ -149,8 +179,11 @@
                       </span>
                     </div><!--
               <?php };?>
-<!-- --><?php}?>
-          <!-- --><div class="join-us">
+                <?php
+            }
+            ?>
+          <!-- -->
+          <div class="join-us">
             <div class="featured-image">
               <img src="<?php bloginfo('template_directory'); ?>/media/join.jpg">
             </div>
