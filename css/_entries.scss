@@ -73,3 +73,10 @@ $margins: 10%;
 .md{@include flexit($md);}
 .lg{@include flexit($lg);}
 .middle{@include flexalign(center)};
+
+@media only screen and (max-width: 777px) {
+  .xs{@include flexit(100%);}
+  .sm{@include flexit(100%);}
+  .md{@include flexit(100%);}
+  .lg{@include flexit(100%);}
+}
