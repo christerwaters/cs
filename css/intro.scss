@@ -22,7 +22,8 @@ body.unloaded{
   position: fixed;
   z-index: 3010;
   width: 100%;
-  min-height: 100%;
+  margin-top:-20vw;
+  min-height: 120vh;
   $fruit-size:20vw;
   .intro--text-wrap{
     width:100%;
@@ -102,10 +103,10 @@ body.unloaded{
 
 @keyframes frootloop{
   from{
-    transform:translateY(100vh);
+    transform:translateY(100%);
   }
   to{
-    transform:translateY(-50vh);
+    transform:translateY(0%);
   }
 }
 @keyframes frootroot{
