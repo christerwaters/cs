@@ -45,9 +45,10 @@ body.unloaded{
     }
   }
   .fruit{
+    margin-top: -20vw;
     width:$fruit-size;
     position: absolute;
-    transition:transform 20ms;
+    transform: translateY(100vh);
     animation: frootloop 10s infinite linear;
     img{
       pointer-events: none;
@@ -101,10 +102,10 @@ body.unloaded{
 
 @keyframes frootloop{
   from{
-    transform:translateY(150vh);
+    transform:translateY(100vh);
   }
   to{
-    transform:translateY(-150vh);
+    transform:translateY(-50vh);
   }
 }
 @keyframes frootroot{
