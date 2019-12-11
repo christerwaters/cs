@@ -37,13 +37,11 @@ while ( have_posts() ) :
 	endwhile;
 ?>
 <div class="pager">
-<div class="previous">
-</div>
-<div class="back">
-  Tilbake til prosjekter
-</div>
-<div class="next">
-</div>
+  <div class="previous"></div>
+  <div class="back">
+    Tilbake til prosjekter
+  </div>
+  <div class="next"></div>
 </div>
 <?php
   get_footer();
