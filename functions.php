@@ -3,168 +3,19 @@
 add_theme_support( 'post-thumbnails' ); // add featured image support
 add_theme_support( 'post-formats', array( 'video', 'link', 'image' ) ); // add custom formats
 
-if( function_exists('acf_add_local_field_group') ):
 
-acf_add_local_field_group(array(
-	'key' => 'group_5d629db34eec4',
-	'title' => 'Post Settings',
-	'fields' => array(
-		array(
-			'key' => 'field_5d629dbe3b824',
-			'label' => 'Type',
-			'name' => 'format_type',
-			'type' => 'radio',
-			'instructions' => '',
-			'required' => 1,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'choices' => array(
-				'Text' => 'Text',
-				'Video' => 'Video',
-				'Image' => 'Image',
-				'Website' => 'Website',
-			),
-			'allow_null' => 0,
-			'other_choice' => 0,
-			'default_value' => 'Text',
-			'layout' => 'vertical',
-			'return_format' => 'value',
-			'save_other_choice' => 0,
-		),
-		array(
-			'key' => 'field_5db1e17bc87f3',
-			'label' => 'Client',
-			'name' => 'client',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => 'Client',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
-		),
-		array(
-			'key' => 'field_website_url',
-			'label' => 'Website Url',
-			'name' => 'website_url',
-			'type' => 'url',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_5d629dbe3b824',
-						'operator' => '==',
-						'value' => 'Website',
-					),
-				),
-			),
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-		),
-		array(
-			'key' => 'field_5d629de13b825',
-			'label' => 'Video File (mp4)',
-			'name' => 'video_file_mp4',
-			'type' => 'file',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_5d629dbe3b824',
-						'operator' => '==',
-						'value' => 'Video',
-					),
-				),
-			),
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'return_format' => 'url',
-			'library' => 'all',
-			'min_size' => '',
-			'max_size' => '',
-			'mime_types' => 'mp4,mv4',
-		),
-		array(
-			'key' => 'field_5d629e173b826',
-			'label' => 'Video File (ogg)',
-			'name' => 'video_file_ogg',
-			'type' => 'file',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => array(
-				array(
-					array(
-						'field' => 'field_5d629dbe3b824',
-						'operator' => '==',
-						'value' => 'Video',
-					),
-				),
-			),
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'return_format' => 'array',
-			'library' => 'all',
-			'min_size' => '',
-			'max_size' => '',
-			'mime_types' => '',
-		),
-	),
-	'location' => array(
-		array(
-			array(
-				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'post',
-			),
-		),
-		array(
-			array(
-				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'page',
-			),
-		),
-		array(
-			array(
-				'param' => 'post_type',
-				'operator' => '==',
-				'value' => 'portfolio',
-			),
-		),
-	),
-	'menu_order' => 0,
-	'position' => 'side',
-	'style' => 'seamless',
-	'label_placement' => 'top',
-	'instruction_placement' => 'label',
-	'hide_on_screen' => '',
-	'active' => true,
-	'description' => '',
-));
+function cs_enqueue_scripts(){
+  wp_register_script( 'plyr_js', bloginfo('template_directory') . '/js/plyr.js', null, null, true );
+  wp_enqueue_script('plyr_js');
+  wp_register_script( 'main_js', bloginfo('template_directory') . '/js/main.js', null, null, true );
+  wp_enqueue_script('main_js');
+  wp_register_style( 'plyr_css', bloginfo('template_directory') . '/css/plyr.css' );
+  wp_enqueue_style('plyr_css');
+  wp_register_style( 'single_css', bloginfo('template_directory') . '/css/single.css' );
+  wp_enqueue_style('single_css');
+}
+add_action( 'wp_enqueue_scripts', 'cs_enqueue_scripts' );
 
-endif;
+
+
 ?>

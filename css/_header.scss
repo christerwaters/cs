@@ -1,0 +1,124 @@
+
+.logo{
+  position:fixed;
+  width:20vw;
+  height:8vw;
+  top:8vw;
+  right:18vw;
+  img{
+    height:100%;
+    width:100%;
+  }
+}
+
+.menu{
+  position:fixed;
+  right:0;
+  top: 0;
+  left:0;
+  .duvet{
+    display:none;
+  }
+  .burger{
+    position:fixed;
+    top:10vw;
+    right:10vw;
+    width:4vw;
+    height:4vw;
+    .one,
+    .two,
+    .tre{
+      position:absolute;
+      display:block;
+      width:4vw;
+      height:.5vw;
+      background-color:$dark;
+      transition:transform 200ms, top 200ms;
+    }
+    .two{
+      top:1.75vw;
+    }
+    .tre{
+      top:3.5vw;
+    }
+  }
+  nav{
+    margin:0;
+    padding:0;
+    ul{
+      margin:0;
+      padding:0;
+      li{
+        list-style:none;
+        margin:0;
+        font-size:10vw;
+        font-weight:800;
+      }
+    }
+  }
+  &.open{
+    top: 0;
+    .duvet{
+      display:block;
+      left:0;
+      top:0;
+      position:fixed;
+      z-index:2000;
+      width:100vw;
+      height:100vh;
+      background-color:#fff;
+      content:' ';
+    }
+    .burger{
+      z-index:2030;
+      .one{
+        top: 1.75vw;
+        transform:rotate(45deg);
+        transition:transform 200ms, top 200ms;
+      }
+      .two{
+        top: 1.75vw;
+        transform:scale(0);
+        transition:transform 200ms, top 200ms;
+      }
+      .tre{
+        top: 1.75vw;
+        transform:rotate(-45deg);
+        transition:transform 200ms, top 200ms;
+      }
+    }
+    nav{
+      z-index:2002;
+      display:block;
+      width: 90vw;
+      left: 10vw;
+      position: fixed;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
+      ul{
+        padding-top:5vw;
+        padding-bottom:5vw;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        li{
+          line-height:15vw;
+        }
+      }
+    }
+  }
+  nav{
+    display:none;
+  }
+}
+
+
+@media only screen and (min-width: 700px) {
+  .menu.open nav ul{
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+}

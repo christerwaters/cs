@@ -1,37 +1,4 @@
-/*
-  Variables
-*/
-
-
-$primary: #00f;
-$focus: #f90;
-$white: #fff;
-$black:#0D1317;
-$serif: 'Times New Roman','times',serif;
-$sans-serif: 'Arial';
-$handwritten: 'Citrus','Mansalva', cursive;
-$monospace: 'Mukta', monospace;
-$plyr-color: $primary;
-$core_font-family-01: $serif;
-$core_font-family-02: $serif;
-$core_font-family-03: $serif;
-$max-page-width: 1050px;
-$text-size: 1.25rem;
-
-$bw: 3px;
-$sitewidth: 98rem;
-$border:$bw solid $black;
-
-$font-size:2;
-
-
-$black:#0D1317;
-
-$sm-scrn: 48em;
-$md-scrn: 62em;
-$lg-scrn: 75em;
-
-
-$cb:cubic-bezier(.24,.99,.75,1.01);
-$ee:$cb;
-$ees:500ms;
+$dark:#272a31;
+$font-size:7vw;
+$font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
