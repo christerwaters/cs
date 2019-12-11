@@ -23,7 +23,7 @@ while ( have_posts() ) :
     <?php while( have_rows('credits') ): the_row(); ?>
     <?php $userid = the_sub_field('credits_username'); $user_info = get_userdata($userid);  ?>
         <span class="credit"><?php the_sub_field('credits_title'); ?>: <a href=""> <?php echo $user_info->first_name; ?> <?php echo $user_info->last_name; ?> </a></span>
-        <?php $user_info = get_userdata(the_sub_field('credits_username'););
+        <?php $user_info = get_userdata(the_sub_field('credits_username'));
               $username = $user_info->user_login;
               $first_name = $user_info->first_name;
               $last_name = $user_info->last_name;
