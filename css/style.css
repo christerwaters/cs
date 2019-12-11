@@ -1593,13 +1593,13 @@ a.plyr__control::after, a.plyr__control::before {
       left: 0;
       top: 0;
       position: fixed;
-      z-index: 2000;
+      z-index: 3000;
       width: 100vw;
       height: 100vh;
       background-color: #fff;
       content: ' '; }
     .menu.open .burger {
-      z-index: 2030; }
+      z-index: 3030; }
       .menu.open .burger .one {
         top: 1.75vw;
         -webkit-transform: rotate(45deg);
@@ -1625,7 +1625,7 @@ a.plyr__control::after, a.plyr__control::before {
         transition: transform 200ms, top 200ms;
         transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
     .menu.open nav {
-      z-index: 2002;
+      z-index: 3002;
       display: block;
       width: 90vw;
       left: 10vw;
@@ -1646,7 +1646,7 @@ a.plyr__control::after, a.plyr__control::before {
   .menu nav {
     display: none; }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1100px) {
   .menu.open nav ul {
     position: relative;
     top: 0;

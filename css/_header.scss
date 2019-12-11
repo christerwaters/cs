@@ -63,14 +63,14 @@
       left:0;
       top:0;
       position:fixed;
-      z-index:2000;
+      z-index:$z-basis;
       width:100vw;
       height:100vh;
       background-color:#fff;
       content:' ';
     }
     .burger{
-      z-index:2030;
+      z-index:$z-basis+30;
       .one{
         top: 1.75vw;
         transform:rotate(45deg);
@@ -88,7 +88,7 @@
       }
     }
     nav{
-      z-index:2002;
+      z-index:$z-basis+2;
       display:block;
       width: 90vw;
       left: 10vw;
@@ -115,7 +115,7 @@
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1100px) {
   .menu.open nav ul{
     position: relative;
     top: 0;
