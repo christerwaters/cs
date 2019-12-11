@@ -17,11 +17,23 @@ while ( have_posts() ) :
 <h1>
   <?php the_title(); ?>
 </h1>
-<p class="intro">
+<p class="credits">
+  <?php
+    /*
+
+      Here we should create a loop for the credits
+
+    */
+  ?>
+</p>
+<p class="excerpt">
+  <?php
+    the_excerpt();
+  ?>
 </p>
 </div>
 <?php
-  get_template_part( 'content', get_post_format() );
+  the_content();
 	endwhile;
 ?>
 <div class="pager">
