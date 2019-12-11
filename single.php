@@ -18,13 +18,28 @@ while ( have_posts() ) :
   <?php the_title(); ?>
 </h1>
 <p class="credits">
-  <?php
-    /*
+    <?php if( have_rows('credits') ): ?>
 
-      Here we should create a loop for the credits
+    <ul>
 
-    */
-  ?>
+    <?php while( have_rows('credits') ): the_row(); ?>
+
+        <li>sub_field_1 = <?php the_sub_field('credits_title'); ?>, sub_field_2 = <?php the_sub_field('credits_username'); ?>, etc</li>
+
+        <?php
+        if (get_sub_field('is_citrus')==('No')){
+          $user_url == the_sub_field('credits_url');
+        } else {
+          $user_url == ('');
+        }
+
+        ?>
+
+    <?php endwhile; ?>
+
+    </ul>
+
+<?php endif; ?>
 </p>
 <p class="excerpt">
   <?php
