@@ -21,7 +21,7 @@ while ( have_posts() ) :
   <?php if( have_rows('credits') ): ?>
 
     <?php while( have_rows('credits') ): the_row(); ?>
-    <?php $user = get_user_by( 'id', the_sub_field('credits_username') ); ?>
+    <?php $user = get_user_by( 'id', the_sub_field('credits_username'))?>
         <span class="credit"><?php the_sub_field('credits_title'); ?>: <a href=""><?php echo 'User is ' . $user->first_name . ' ' . $user->last_name; ?>.</a></span>
     <?php endwhile; ?>
   <?php endif; ?>
