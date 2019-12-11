@@ -18,28 +18,15 @@ while ( have_posts() ) :
   <?php the_title(); ?>
 </h1>
 <p class="credits">
-    <?php if( have_rows('credits') ): ?>
-
-    <ul>
+  <?php if( have_rows('credits') ): ?>
 
     <?php while( have_rows('credits') ): the_row(); ?>
 
-        <li>sub_field_1 = <?php the_sub_field('credits_title'); ?>, sub_field_2 = <?php the_sub_field('credits_username'); ?>, etc</li>
+        <span class="credit"><?php the_sub_field('credits_title'); ?>: <a href=""> <?php the_sub_field('credits_username'); ?></a></span>
 
-        <?php
-        if (get_sub_field('is_citrus')==('No')){
-          $user_url == the_sub_field('credits_url');
-        } else {
-          $user_url == ('');
-        }
-
-        ?>
 
     <?php endwhile; ?>
-
-    </ul>
-
-<?php endif; ?>
+  <?php endif; ?>
 </p>
 <p class="excerpt">
   <?php
