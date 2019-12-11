@@ -17,11 +17,14 @@ while ( have_posts() ) :
 <h1>
   <?php the_title(); ?>
 </h1>
+<p class="intro">
+</p>
+</div>
 <?php
   get_template_part( 'content', get_post_format() );
 	endwhile;
 ?>
-<div class="footer">
+<div class="pager">
 <div class="previous">
 </div>
 <div class="back">
