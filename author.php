@@ -37,7 +37,7 @@ $city = '3';
 // args
 $args = array(
 	'numberposts'	=> -1,
-	'post_type'		=> 'event',
+	'post_type'		=> 'portfolio',
 	'meta_query'	=> array(
 		'relation'		=> 'OR',
 		array(
