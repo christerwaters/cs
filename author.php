@@ -62,7 +62,7 @@ $the_query = new WP_Query( $args );
   <div class="dir">
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <a href="<?php the_permalink(); ?>">
-      <div class="dir-item portfolio-item" style="background-image:url(https://via.placeholder.com/260x260);">
+      <div class="dir-item portfolio-item" style="background-image:url(<?php echo wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' )['0']);?>);">
         <div class="info">
           <h3>
             <?php the_title(); ?>
