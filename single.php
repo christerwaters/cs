@@ -22,7 +22,7 @@ while ( have_posts() ) :
 
     <?php while( have_rows('credits') ): the_row(); ?>
     <?php $user = get_user_by( 'id', get_sub_field('credits_username'))?>
-        <span class="credit"><?php the_sub_field('credits_title'); ?>: <a href=""><?php echo $user->first_name . ' ' . $user->last_name; ?>.</a></span>
+        <span class="credit"><?php the_sub_field('credits_title'); ?>: <a href="<?php echo get_author_posts_url(get_sub_field('credits_username'));?>"><?php echo $user->first_name . ' ' . $user->last_name; ?>.</a></span>
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
