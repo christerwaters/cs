@@ -11,7 +11,7 @@ $curauthID = $curauth->ID;
 
 <div class="header">
   <h1><?php echo $curauth->display_name; ?></h1>
-  <? echo $curauthID;?>
+  ID: <?php echo $curauthID;?>
 </div>
 
 <?php
