@@ -41,9 +41,9 @@ $args = array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'portfolio',
 	'meta_query'	=> array(
-		'key'		=> 'credits_$_credits_username',
+		'key'		=> 'credits_$_c_username',
 		'compare'	=> '=',
-		'value'		=> $curauth->ID,
+		'value'		=> $curauth->ID
 	)
 );
 
