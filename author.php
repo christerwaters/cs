@@ -43,12 +43,12 @@ $args = array(
 		array(
 			'key'		=> 'credits_$_creditname',
 			'compare'	=> '=',
-			'value'		=> '3',
+			'value'		=> $ciddy,
 		),
 		array(
 			'key'		=> 'credits_$_creditname',
 			'compare'	=> '=',
-			'value'		=> '3',
+			'value'		=> $ciddy,
 		)
 	)
 );
