@@ -9,9 +9,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 
 
 <div class="header">
-  <h1>
-    <span class="fname"><?php echo $curauth->first_name; ?></span> <span class="lname"><?php echo $curauth->last_name; ?></span>
-  </h1>
+  <h1><?php echo $curauth->first_name . ' ' . $curauth->last_name; ?></h1>
 </div>
 
 <?php
