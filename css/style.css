@@ -1665,7 +1665,8 @@ a.plyr__control::after, a.plyr__control::before {
     text-justify: inter-word;
     font-weight: 900;
     word-break: break-all;
-    margin-bottom: 5vw; }
+    margin-bottom: 5vw;
+    text-transform: uppercase; }
   .header p {
     margin-bottom: 8vw; }
 
