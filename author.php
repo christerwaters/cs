@@ -38,19 +38,12 @@ $city = '3';
 $args = array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'portfolio',
-	'meta_query'	=> array(
-		'relation'		=> 'OR',
-		array(
-			'key'		=> 'credits_$_creditname',
-			'compare'	=> '=',
-			'value'		=> '3',
-		),
+	'meta_query'	=> 
 		array(
 			'key'		=> 'credits_$_creditname',
 			'compare'	=> '=',
 			'value'		=> '3',
 		)
-	)
 );
 
 
