@@ -19,7 +19,7 @@ $posts = get_posts(array(
 	'posts_per_page'	=> -1,
 	'post_type'			=> 'portfolio',
 	'meta_key'		=> 'credits_username',
-	'meta_value'	=> $curauth->ID
+	'meta_value'	=> '3'
 ));
 
 if( $posts ): ?>
