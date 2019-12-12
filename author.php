@@ -18,7 +18,8 @@ $curauthID = $curauth->ID;
 $posts = get_posts(array(
 	'posts_per_page'	=> -1,
 	'post_type'			=> 'portfolio',
-	'credits_username' => $curauthID
+	'meta_key'		=> 'credits_username',
+	'meta_value'	=> $curauthID
 ));
 
 if( $posts ): ?>
