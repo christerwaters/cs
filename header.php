@@ -7,11 +7,11 @@
     <div class="logo"><img src=""></div>
     <div class="menu">
       <div class="duvet"></div>
-      <div class="burger">
+      <a class="burger">
         <span class="one"></span>
         <span class="two"></span>
         <span class="tre"></span>
-      </div>
+      </a>
       <nav>
         <ul>
           <li>

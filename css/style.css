@@ -1555,6 +1555,7 @@ a.plyr__control::after, a.plyr__control::before {
   .menu .duvet {
     display: none; }
   .menu .burger {
+    display: block;
     position: fixed;
     top: 10vw;
     right: 10vw;
