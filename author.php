@@ -13,35 +13,62 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
   <p>ID: <?php echo $curauth->ID;?>
 </div>
 
+
+
+
+
+
+
 <?php
 
-$posts = get_posts(array(
-	'posts_per_page'	=> -1,
-	'post_type'			=> 'portfolio',
-	'meta_key'		=> 'credits_username',
-	'meta_value'	=> '3'
-));
+// filter
+function my_posts_where( $where ) {
 
-if( $posts ): ?>
+	$where = str_replace("meta_key = 'credits_$", "meta_key LIKE 'credits_%", $where);
 
+	return $where;
+}
+
+add_filter('posts_where', 'my_posts_where');
+
+
+// vars
+$city = 'Melbourne';
+
+
+// args
+$args = array(
+	'numberposts'	=> -1,
+	'post_type'		=> 'event',
+	'meta_query'	=> array(
+		'key'		=> 'credits_$_credits_username',
+		'compare'	=> '=',
+		'value'		=> $curauth->ID,
+	)
+);
+
+
+// query
+$the_query = new WP_Query( $args );
+
+?>
+<?php if( $the_query->have_posts() ): ?>
 	<ul>
-
-	<?php foreach( $posts as $post ):
-
-		setup_postdata( $post );
-
-		?>
+	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		<li>
 			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 		</li>
-
-	<?php endforeach; ?>
-
+	<?php endwhile; ?>
 	</ul>
-
-	<?php wp_reset_postdata(); ?>
-
 <?php endif; ?>
+
+<?php wp_reset_query();	 // Restore global post data stomped by the_post(). ?>
+
+
+
+
+
+
 
 
 <?php
