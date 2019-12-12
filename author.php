@@ -31,19 +31,26 @@ add_filter('posts_where', 'my_posts_where');
 
 
 // vars
-$city = '3';
+$city = $curauth->ID;
 
 
 // args
 $args = array(
 	'numberposts'	=> -1,
 	'post_type'		=> 'portfolio',
-	'meta_query'	=> 
+	'meta_query'	=> array(
+		'relation'		=> 'OR',
+		array(
+			'key'		=> 'credits_$_creditname',
+			'compare'	=> '=',
+			'value'		=> '3',
+		),
 		array(
 			'key'		=> 'credits_$_creditname',
 			'compare'	=> '=',
 			'value'		=> '3',
 		)
+	)
 );
 
 
