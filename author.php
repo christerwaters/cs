@@ -4,14 +4,13 @@
 get_header();
 // Set the Current Author Variable $curauth
 $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
-$curauthID = $curauth->ID;
 ?>
 
 
 
 <div class="header">
   <h1><?php echo $curauth->display_name; ?></h1>
-  ID: <?php echo $curauthID;?>
+  <p>ID: <?php echo $curauth->ID;?>
 </div>
 
 <?php
