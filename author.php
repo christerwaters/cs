@@ -18,9 +18,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 
 
 
-
 <?php
-
 // filter
 function my_posts_where( $where ) {
 
@@ -33,17 +31,25 @@ add_filter('posts_where', 'my_posts_where');
 
 
 // vars
-$city = 'Melbourne';
+$city = '3';
 
 
 // args
 $args = array(
 	'numberposts'	=> -1,
-	'post_type'		=> 'portfolio',
+	'post_type'		=> 'event',
 	'meta_query'	=> array(
-		'key'		=> 'credits_$_c_username',
-		'compare'	=> '=',
-		'value'		=> $curauth->ID
+		'relation'		=> 'OR',
+		array(
+			'key'		=> 'credits_$_creditname',
+			'compare'	=> '=',
+			'value'		=> '3',
+		),
+		array(
+			'key'		=> 'credits_$_creditname',
+			'compare'	=> '=',
+			'value'		=> '3',
+		)
 	)
 );
 
