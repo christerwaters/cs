@@ -136,13 +136,13 @@ h5 {
 p {
   font-size: 3.5vw;
   line-height: 4.375vw; }
-  p r, p a {
+  p a {
     font-weight: 700;
     font-style: italic;
     display: inline-block; }
-    p r:hover, p a:hover {
+    p a:hover {
       color: transparent; }
-  p r:hover {
+  p a:hover {
     /**Redacted**/
     background: #272a31;
     color: transparent;
@@ -152,7 +152,7 @@ p {
         -ms-user-select: none;
             user-select: none;
     cursor: none; }
-    p r:hover:after, p r:hover:before {
+    p a:hover:after, p a:hover:before {
       width: 100%;
       position: absolute;
       border-radius: .1vw;
@@ -161,30 +161,30 @@ p {
       z-index: -4;
       content: ' ';
       background: #272a31; }
-    p r:hover:before {
+    p a:hover:before {
       height: 75%;
       -webkit-transform: translate(0.4vw, 0.5vw) rotate(3deg);
               transform: translate(0.4vw, 0.5vw) rotate(3deg); }
-    p r:hover:after {
+    p a:hover:after {
       height: 55%;
       -webkit-transform: translate(-0.5vw, 1.4vw) rotate(1deg);
               transform: translate(-0.5vw, 1.4vw) rotate(1deg); }
-    p r:hover:nth-child(1) {
+    p a:hover:nth-child(1) {
       -webkit-transform: rotate(1deg) skew(-4deg);
               transform: rotate(1deg) skew(-4deg); }
-    p r:hover:nth-child(2) {
+    p a:hover:nth-child(2) {
       -webkit-transform: rotate(-1deg) skew(-5deg);
               transform: rotate(-1deg) skew(-5deg); }
-    p r:hover:nth-child(3) {
+    p a:hover:nth-child(3) {
       -webkit-transform: rotate(2deg) skew(-3deg);
               transform: rotate(2deg) skew(-3deg); }
-    p r:hover:nth-child(4) {
+    p a:hover:nth-child(4) {
       -webkit-transform: rotate(1.3deg) skew(-3deg);
               transform: rotate(1.3deg) skew(-3deg); }
-    p r:hover:nth-child(5) {
+    p a:hover:nth-child(5) {
       -webkit-transform: rotate(-0.7deg) skew(-2deg);
               transform: rotate(-0.7deg) skew(-2deg); }
-    p r:hover:nth-child(6) {
+    p a:hover:nth-child(6) {
       -webkit-transform: rotate(-1deg) skew(-5deg);
               transform: rotate(-1deg) skew(-5deg); }
 

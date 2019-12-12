@@ -22,7 +22,7 @@ p{
 
   font-size:$font-size/2;
   line-height:$font-size/2*1.25;
-  r,a{
+  a{
     font-weight:700;
     font-style: italic;
     display:inline-block;
@@ -30,7 +30,7 @@ p{
       color:transparent;
     }
   }
-  r:hover{
+  a:hover{
     /**Redacted**/
     background:$dark;
     color:transparent;
