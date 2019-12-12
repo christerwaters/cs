@@ -1,0 +1,40 @@
+
+.dir{
+  width:100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .dir-item{
+    width:24vw;
+    height:24vw;
+    display:inline-block;
+    background-size:cover;
+    margin-bottom:4vw;
+    &:hover{
+      .info{
+        display:block;
+      }
+    }
+    .info{
+      color:#fff;
+      display:none;
+      width:20vw;
+      height:20vw;
+      margin:1vw;
+      padding:1vw;
+      background:$dark;
+      bottom:0;
+      h3{
+        word-break: break-all;
+        font-size:3vw;
+        line-height:3vw;
+      }
+      .title{
+        font-size:1.5vw;
+      }
+    }
+  }
+}
