@@ -1561,6 +1561,8 @@ a.plyr__control::after, a.plyr__control::before {
     right: 10vw;
     width: 4vw;
     height: 4vw; }
+    .menu .burger:hover {
+      cursor: pointer; }
     .menu .burger .one,
     .menu .burger .two,
     .menu .burger .tre {
