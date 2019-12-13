@@ -1659,6 +1659,7 @@ a.favvv:after {
 a.hae,
 a.play,
 a.favvv {
+  z-index: -1;
   font-weight: 700;
   font-style: italic;
   display: inline-block;
