@@ -6,7 +6,7 @@
 
 
   <body class="<?php global $post;echo $post->post_name;?>">
-    <a href="<?php echo get_home_url;?>">
+    <a href="<?php echo get_site_url();?>">
       <div class="logo">
         <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();}?>
       </div>
@@ -21,16 +21,16 @@
       <nav>
         <ul>
           <li>
-            <a href="<?php echo get_site_url(); ?>/om-oss">HÆ?</a>
+            <a href="<?php echo get_site_url();?>/om-oss">HÆ?</a>
           </li>
           <li>
-            <a href="<?php echo get_site_url(); ?>/prosjekter">PROSJEKTER</a>
+            <a href="<?php echo get_site_url();?>/prosjekter">PROSJEKTER</a>
           </li>
           <li>
-            <a href="<?php echo get_site_url(); ?>/community">COMMUNITY</a>
+            <a href="<?php echo get_site_url();?>/community">COMMUNITY</a>
           </li>
           <li>
-            <a href="<?php echo get_site_url(); ?>/tjenester">TJENESTER</a>
+            <a href="<?php echo get_site_url();?>/tjenester">TJENESTER</a>
           </li>
         </ul>
       </nav>
