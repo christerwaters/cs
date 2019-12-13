@@ -1619,12 +1619,12 @@ a.plyr__control::after, a.plyr__control::before {
 a.hae:after {
   position: absolute !important;
   content: ' ' !important;
-  height: 125% !important;
+  height: 50% !important;
   right: 0;
   width: 124% !important;
   padding: 1rem !important;
   -webkit-transform: translate(-21%, -13%);
-          transform: translate(-21%, -13%);
+  transform: translate(22%, -9%);
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   background-color: transparent !important;
@@ -1636,8 +1636,8 @@ a.play:after {
   height: 22px !important;
   right: 0;
   width: 100% !important;
-  -webkit-transform: translate(0%, 78%);
-          transform: translate(0%, 78%);
+  -webkit-transform: translate(0%, 131%);
+  transform: translate(0%, 131%);
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   background-color: transparent !important;
@@ -1649,8 +1649,8 @@ a.favvv:after {
   height: 40px !important;
   right: 0;
   width: 40px !important;
-  -webkit-transform: translate(327%, 78%);
-          transform: translate(327%, 78%);
+  -webkit-transform: translate(127%, 73%);
+  transform: translate(127%, 73%);
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   background-color: transparent !important;

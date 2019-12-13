@@ -1,43 +1,42 @@
 a.hae:after {
     position: absolute !important;
     content: ' ' !important;
-    height: 125% !important;
+    height: 50% !important;
     right: 0;
     width: 124% !important;
     padding: 1rem !important;
-    transform: translate(-21%, -13%);
+    -webkit-transform: translate(-21%, -13%);
+    transform: translate(22%, -9%);
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-color: transparent !important;
     background-image: url(../media/circle.png) !important;
 }
-
-a.play:after{
+a.play:after {
     position: absolute !important;
     content: ' ' !important;
     height: 22px !important;
     right: 0;
     width: 100% !important;
-    transform: translate(0%, 78%);
+    -webkit-transform: translate(0%, 131%);
+    transform: translate(0%, 131%);
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-color: transparent !important;
     background-image: url(../media/play.png) !important;
-
 }
-
-a.favvv:after{
+a.favvv:after {
     position: absolute !important;
     content: ' ' !important;
     height: 40px !important;
     right: 0;
     width: 40px !important;
-    transform: translate(327%, 78%);
+    -webkit-transform: translate(127%, 73%);
+    transform: translate(127%, 73%);
     background-size: 100% 100% !important;
     background-repeat: no-repeat !important;
     background-color: transparent !important;
     background-image: url(../media/arrow.png) !important;
-
 }
 a.hae,
 a.play,
