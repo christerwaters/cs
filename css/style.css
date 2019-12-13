@@ -1537,6 +1537,43 @@ a.plyr__control::after, a.plyr__control::before {
 .plyr [hidden] {
   display: none !important; }
 
+.dir {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .dir .dir-item {
+    width: 24vw;
+    height: 24vw;
+    display: inline-block;
+    background-size: cover;
+    margin-bottom: 4vw; }
+    .dir .dir-item:hover .info {
+      display: block; }
+    .dir .dir-item .info {
+      color: #fff;
+      display: none;
+      width: 20vw;
+      height: 20vw;
+      margin: 1vw;
+      padding: 1vw;
+      background: #272a31;
+      bottom: 0; }
+      .dir .dir-item .info h3 {
+        word-break: break-all;
+        font-size: 3vw;
+        line-height: 3vw; }
+      .dir .dir-item .info .title {
+        font-size: 1.5vw; }
+
 .logo {
   position: fixed;
   width: 20vw;
