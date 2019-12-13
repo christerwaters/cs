@@ -14,14 +14,19 @@ while ( have_posts() ) :
 	 * (where ___ is the post format) and that will be used instead.
 	 */
 ?>
-<h1>
-  <?php the_title(); ?>
-</h1>
-<p class="excerpt">
-  <?php
-    the_excerpt();
-  ?>
-</p>
+	<?php if ($hide_title!='True'){?>
+	<h1>
+	  <?php the_title(); ?>
+	</h1>
+	<?php } endif ?>
+
+	<?php if ($hide_excerpt!='True'){?>
+	<p class="excerpt">
+	  <?php
+	    the_excerpt();
+	  ?>
+	</p>
+	<?php } endif ?>
 </div>
 <?php
   the_content();

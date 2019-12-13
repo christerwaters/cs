@@ -113,7 +113,9 @@ body {
   width: 80vw;
   margin: 5vw 10vw;
   color: #272a31;
-  font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif; }
+  font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
+  font-size: 2.3333333333vw;
+  line-height: 2.9166666667vw; }
   body.menu-open {
     overflow: hidden; }
 
@@ -187,6 +189,13 @@ p {
     p a:hover:nth-child(6) {
       -webkit-transform: rotate(-1deg) skew(-5deg);
               transform: rotate(-1deg) skew(-5deg); }
+
+ol li {
+  list-style-type: decimal-leading-zero; }
+
+.tjenester ol li,
+.tjenester ul li {
+  font-size: 7vw; }
 
 img {
   display: block;
