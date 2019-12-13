@@ -8,25 +8,20 @@
 	// Start the Loop.
 while ( have_posts() ) :
 	the_post();
-	/*
-	 * Include the post format-specific template for the content. If you want to
-	 * use this in a child theme, then include a file called content-___.php
-	 * (where ___ is the post format) and that will be used instead.
-	 */
 ?>
-	<?php if ($hide_title!='True'){?>
+	<?php if ( get_field('hide_title')!='True'){?>
 	<h1>
 	  <?php the_title(); ?>
 	</h1>
-	<?php } endif ?>
+	<?php }; ?>
 
-	<?php if ($hide_excerpt!='True'){?>
+	<?php if (get_field('hide_excerpt')!='True'){?>
 	<p class="excerpt">
 	  <?php
 	    the_excerpt();
 	  ?>
 	</p>
-	<?php } endif ?>
+	<?php };  ?>
 </div>
 <?php
   the_content();
