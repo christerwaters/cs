@@ -92,6 +92,7 @@ ol{
     li{
       font-size:$font-size;
       line-height:$font-size*1.25;
+      list-style-position: inside;
       &::before,
       &:before {
         font-size:$font-size*.6;

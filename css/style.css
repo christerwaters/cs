@@ -201,7 +201,8 @@ ol li {
 .tjenester ol li,
 .tjenester ul li {
   font-size: 7vw;
-  line-height: 8.75vw; }
+  line-height: 8.75vw;
+  list-style-position: inside; }
   .tjenester ol li::before, .tjenester ol li:before,
   .tjenester ul li::before,
   .tjenester ul li:before {
