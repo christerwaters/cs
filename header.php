@@ -6,7 +6,11 @@
 
 
   <body class="<?php global $post;echo $post->post_name;?>">
-    <a href="<?php echo get_home_url;?>"<div class="logo"><img src=""></div></a>
+    <a href="<?php echo get_home_url;?>">
+      <div class="logo">
+        <img src="<?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();}?>">
+      </div>
+    </a>
     <div class="menu">
       <div class="duvet"></div>
       <a class="burger">
