@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"> <!-- stylesheet for this page -->
   </head>
   <body>
-    <div class="logo"><img src=""></div>
+    <a href="<?php echo get_home_url;?>"<div class="logo"><img src=""></div></a>
     <div class="menu">
       <div class="duvet"></div>
       <a class="burger">
@@ -15,16 +15,16 @@
       <nav>
         <ul>
           <li>
-            HÆ?
+            <a href="<?php echo get_site_url(); ?>">HÆ?</a>
           </li>
           <li>
-            PROSJEKTER
+            <a href="<?php echo get_site_url(); ?>">PROSJEKTER</a>
           </li>
           <li>
-            COMMUNITY
+            <a href="<?php echo get_site_url(); ?>">COMMUNITY</a>
           </li>
           <li>
-            TJENESTER
+            <a href="<?php echo get_site_url(); ?>">TJENESTER</a>
           </li>
         </ul>
       </nav>
