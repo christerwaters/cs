@@ -3,7 +3,9 @@
     <title> Citrus Studio </title>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"> <!-- stylesheet for this page -->
   </head>
-  <body>
+
+
+  <body class="<?php global $post;echo $post->post_name;?>">
     <a href="<?php echo get_home_url;?>"<div class="logo"><img src=""></div></a>
     <div class="menu">
       <div class="duvet"></div>
