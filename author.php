@@ -61,16 +61,8 @@ $the_query = new WP_Query( $args );
 <?php if( $the_query->have_posts() ): ?>
   <div class="dir">
 	<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-    <?php
-
-    /**  Setting up some vars  **/
-
-    $image_full = get_the_post_thumbnail_url(null, full);
-
-     ?>
     <a href="<?php the_permalink(); ?>">
-      <div class="dir-item portfolio-item" style="background-image:url(<?php echo $image_full; ?>);">
+      <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
         <div class="info">
           <h3>
             <?php the_title(); ?>
