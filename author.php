@@ -67,7 +67,7 @@ $the_query = new WP_Query( $args );
     /**  Setting up some vars  **/
 
 
-    $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($the_query->ID), 'full' );
+    $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id(the_post()->ID), 'full' );
     $image_full = $imageid_full['0'];
 
      ?>
