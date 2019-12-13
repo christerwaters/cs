@@ -42,7 +42,13 @@ a.favvv:after{
 a.hae,
 a.play,
 a.favvv{
-  margin-right:.3vw;
+  font-weight: 700;
+  font-style: italic;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  font-size: 80%;
+  margin-right: 2.2vw;
 }
 a.hae:hover:after,
 a.play:hover:after,
