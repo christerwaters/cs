@@ -134,8 +134,8 @@ h5 {
   font-weight: 500; }
 
 p {
-  font-size: 3.5vw;
-  line-height: 4.375vw; }
+  font-size: 2.3333333333vw;
+  line-height: 2.9166666667vw; }
   p a {
     font-weight: 700;
     font-style: italic;
@@ -1568,6 +1568,7 @@ a.plyr__control::after, a.plyr__control::before {
       background: #272a31;
       bottom: 0; }
       .dir .dir-item .info h3 {
+        text-transform: uppercase;
         word-break: break-all;
         font-size: 3vw;
         line-height: 3vw; }
