@@ -120,19 +120,24 @@ body {
     overflow: hidden; }
 
 h1 {
-  font-size: 7vw; }
+  font-size: 7vw;
+  line-height: 8.75vw; }
 
 h2 {
-  font-size: 5.95vw; }
+  font-size: 5.95vw;
+  line-height: 7.4375vw; }
 
 h3 {
-  font-size: 5.0575vw; }
+  font-size: 5.0575vw;
+  line-height: 6.321875vw; }
 
 h4 {
-  font-size: 4.298875vw; }
+  font-size: 4.298875vw;
+  line-height: 5.37359375vw; }
 
 h5 {
   font-size: 4.298875vw;
+  line-height: 4.5675546875vw;
   font-weight: 500; }
 
 p {

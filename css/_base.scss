@@ -14,11 +14,11 @@ body{
     overflow:hidden;
   }
 }
-h1{font-size:$font-size;}
-h2{font-size:$font-size*.85;}
-h3{font-size:$font-size*.85*.85;}
-h4{font-size:$font-size*.85*.85*.85;}
-h5{font-size:$font-size*.85*.85*.85;font-weight:500;}
+h1{font-size:$font-size;line-height:$font-size*1.25;}
+h2{font-size:$font-size*.85;line-height:$font-size*.85*1.25;}
+h3{font-size:$font-size*.85*.85;line-height:$font-size*.85*.85*1.25;}
+h4{font-size:$font-size*.85*.85*.85;line-height:$font-size*.85*.85*.85*1.25;}
+h5{font-size:$font-size*.85*.85*.85;line-height:$font-size*.85*.85*.85*.85*1.25;font-weight:500;}
 
 p{
 
