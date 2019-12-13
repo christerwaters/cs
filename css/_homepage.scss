@@ -1,0 +1,46 @@
+a.hae:after {
+    position: absolute !important;
+    content: ' ' !important;
+    height: 125% !important;
+    right: 0;
+    width: 124% !important;
+    padding: 1rem !important;
+    transform: translate(-21%, -13%);
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/3/2019/12/circle2.png) !important;
+}
+
+a.play:after{
+    position: absolute !important;
+    content: ' ' !important;
+    height: 22px !important;
+    right: 0;
+    width: 100% !important;
+    transform: translate(0%, 78%);
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/3/2019/12/play-video.png) !important;
+
+}
+
+a.favvv:after{
+    position: absolute !important;
+    content: ' ' !important;
+    height: 40px !important;
+    right: 0;
+    width: 40px !important;
+    transform: translate(327%, 78%);
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-color: transparent !important;
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/3/2019/12/arrow2.png) !important;
+
+}
+a.hae:hover:after,
+a.play:hover:after,
+a.favvv:hover:after{
+  background-image:none !important;
+}
