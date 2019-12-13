@@ -90,13 +90,16 @@ ol{
   ol,
   ul{
     li{
-      font-size:$font-size;
-      line-height:$font-size*1.25;
+      font-size:$font-size*.6;
+      line-height:0;
       list-style-position: inside;
+      a{
+        line-height:$font-size*1.25;
+        font-size:$font-size;
+      }
       &::before,
       &:before {
-        font-size:$font-size*.6;
-        line-height:$font-size*1.25*.6;
+        line-height:0;
         display:block;
         content: "\a";
         white-space: pre;
