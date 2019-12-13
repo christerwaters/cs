@@ -207,7 +207,9 @@ ol li {
   .tjenester ul li:before {
     font-size: 4.2vw;
     line-height: 5.25vw;
-    display: block; }
+    display: block;
+    content: "\a";
+    white-space: pre; }
 
 img {
   display: block;
