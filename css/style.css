@@ -1648,7 +1648,28 @@ a.plyr__control::after, a.plyr__control::before {
         list-style: none;
         margin: 0;
         font-size: 10vw;
-        font-weight: 800; }
+        font-weight: 800;
+        -webkit-transform: translate(0px, 4vw);
+                transform: translate(0px, 4vw);
+        max-width: 80vw; }
+        .menu nav ul li:nth-child(1) {
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms; }
+        .menu nav ul li:nth-child(2) {
+          -webkit-transition-delay: 50ms;
+                  transition-delay: 50ms; }
+        .menu nav ul li:nth-child(3) {
+          -webkit-transition-delay: 100ms;
+                  transition-delay: 100ms; }
+        .menu nav ul li:nth-child(4) {
+          -webkit-transition-delay: 150ms;
+                  transition-delay: 150ms; }
+        .menu nav ul li:nth-child(5) {
+          -webkit-transition-delay: 200ms;
+                  transition-delay: 200ms; }
+        .menu nav ul li:nth-child(6) {
+          -webkit-transition-delay: 250ms;
+                  transition-delay: 250ms; }
   .menu.open {
     top: 0; }
     .menu.open .duvet {
@@ -1705,7 +1726,31 @@ a.plyr__control::after, a.plyr__control::before {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
         .menu.open nav ul li {
-          line-height: 15vw; }
+          line-height: 15vw;
+          -webkit-transform: translate(0px, 0vw);
+                  transform: translate(0px, 0vw);
+          -webkit-transition: -webkit-transform 150ms;
+          transition: -webkit-transform 150ms;
+          transition: transform 150ms;
+          transition: transform 150ms, -webkit-transform 150ms; }
+          .menu.open nav ul li:nth-child(1) {
+            -webkit-transition-delay: 0ms;
+                    transition-delay: 0ms; }
+          .menu.open nav ul li:nth-child(2) {
+            -webkit-transition-delay: 50ms;
+                    transition-delay: 50ms; }
+          .menu.open nav ul li:nth-child(3) {
+            -webkit-transition-delay: 100ms;
+                    transition-delay: 100ms; }
+          .menu.open nav ul li:nth-child(4) {
+            -webkit-transition-delay: 150ms;
+                    transition-delay: 150ms; }
+          .menu.open nav ul li:nth-child(5) {
+            -webkit-transition-delay: 200ms;
+                    transition-delay: 200ms; }
+          .menu.open nav ul li:nth-child(6) {
+            -webkit-transition-delay: 250ms;
+                    transition-delay: 250ms; }
   .menu nav {
     display: none; }
 
