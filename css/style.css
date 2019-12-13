@@ -119,6 +119,20 @@ body {
   body.menu-open {
     overflow: hidden; }
 
+h1, h2,
+h3, h4 {
+  font-weight: 700; }
+
+b h1, b h2,
+b h3, b h4,
+strong h1, strong h2,
+strong h3, strong h4,
+h1 b, h2 b,
+h3 b, h4 b,
+h1 strong, h2 strong,
+h3 strong, h4 strong {
+  font-weight: 900; }
+
 h1 {
   font-size: 7vw;
   line-height: 8.75vw; }
@@ -1655,9 +1669,9 @@ a.plyr__control::after, a.plyr__control::before {
         margin: 0;
         font-size: 10vw;
         font-weight: 800;
+        max-width: 80vw;
         -webkit-transform: translate(0px, 4vw);
-                transform: translate(0px, 4vw);
-        max-width: 80vw; }
+                transform: translate(0px, 4vw); }
         .menu nav ul li:nth-child(1) {
           -webkit-transition-delay: 0ms;
                   transition-delay: 0ms; }
