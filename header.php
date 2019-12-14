@@ -11,7 +11,6 @@
         <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();}?>
       </div>
     </a>
-    <div class="dRip">dRip</div>
     <div class="menu">
       <div class="duvet"></div>
       <a class="burger">
