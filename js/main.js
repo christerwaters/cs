@@ -7,10 +7,5 @@ $( ".burger" ).click(function() {
 });
 
 $(".logo").hover(function (){
-  $(".dRip").addClass("dRipped");
-  setTimeout(
-  function()
-  {
-    $(".dRip").removeClass("dRipped");
-  }, 200);
+  $(".dRip").toggleClass("dRipped");
 });
