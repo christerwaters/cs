@@ -5,3 +5,12 @@ $( ".burger" ).click(function() {
   $( ".menu" ).toggleClass("open");
   $( "body" ).toggleClass("menu-open");
 });
+
+$(".logo").hover(function (){
+  $(".dRip").addClass("dRipped");
+  setTimeout(
+  function()
+  {
+    $(".dRip").removeClass("dRipped");
+  }, 5000);
+});

@@ -1618,6 +1618,24 @@ a.plyr__control::after, a.plyr__control::before {
       .dir .dir-item .info .title {
         font-size: 1.5vw; }
 
+.dRip {
+  position: fixed;
+  display: block;
+  width: 5vw;
+  -webkit-transform: translate(-10vw, 0);
+          transform: translate(-10vw, 0);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms; }
+  .dRip.dRipped {
+    -webkit-transform: translate(110vw, 0);
+            transform: translate(110vw, 0);
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms; }
+
 a.hae:after {
   position: absolute !important;
   content: ' ' !important;
