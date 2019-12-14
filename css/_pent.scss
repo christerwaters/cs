@@ -2,9 +2,9 @@
   position:fixed;
   display:block;
   width:5vw;
-  transform:translate(-10vw,0);
+  transform:translate(80vw,-10vh);
   &.dRipped{
-    transform:translate(110vw,0);
+    transform:translate(80vw,110vh);
     transition:transform 200ms;
   }
 }
