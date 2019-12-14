@@ -3,7 +3,6 @@
   display:block;
   width:5vw;
   transform:translate(-10vw,0);
-  transition:transform 200ms;
   &.dRipped{
     transform:translate(110vw,0);
     transition:transform 200ms;

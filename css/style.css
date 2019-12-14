@@ -1623,11 +1623,7 @@ a.plyr__control::after, a.plyr__control::before {
   display: block;
   width: 5vw;
   -webkit-transform: translate(-10vw, 0);
-          transform: translate(-10vw, 0);
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
-  transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms; }
+          transform: translate(-10vw, 0); }
   .dRip.dRipped {
     -webkit-transform: translate(110vw, 0);
             transform: translate(110vw, 0);

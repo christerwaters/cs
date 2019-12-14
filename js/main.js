@@ -12,5 +12,5 @@ $(".logo").hover(function (){
   function()
   {
     $(".dRip").removeClass("dRipped");
-  }, 5000);
+  }, 200);
 });
