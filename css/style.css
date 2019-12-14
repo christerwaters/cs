@@ -214,13 +214,15 @@ ol li {
 
 .tjenester ol li,
 .tjenester ul li {
-  font-size: 3.9vw;
-  line-height: 0;
-  list-style-position: inside; }
+  font-size: 3.25vw;
+  line-height: 2.1666666667vw;
+  list-style-position: inside;
+  margin-bottom: 6vw; }
   .tjenester ol li a,
   .tjenester ul li a {
     line-height: 8.125vw;
-    font-size: 6.5vw; }
+    font-size: 6.5vw;
+    list-style-position: inside; }
   .tjenester ol li::before, .tjenester ol li:before,
   .tjenester ul li::before,
   .tjenester ul li:before {
