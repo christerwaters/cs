@@ -114,8 +114,8 @@ body {
   margin: 5vw 10vw;
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
-  font-size: 2vw;
-  line-height: 2.5vw; }
+  font-size: 1.2vw;
+  line-height: 1.5vw; }
   body.menu-open {
     overflow: hidden; }
 
@@ -134,29 +134,29 @@ h3 strong, h4 strong {
   font-weight: 900; }
 
 h1 {
-  font-size: 6vw;
-  line-height: 7.5vw; }
+  font-size: 3.6vw;
+  line-height: 4.5vw; }
 
 h2 {
-  font-size: 5.1vw;
-  line-height: 6.375vw; }
+  font-size: 3.06vw;
+  line-height: 3.825vw; }
 
 h3 {
-  font-size: 4.335vw;
-  line-height: 5.41875vw; }
+  font-size: 2.601vw;
+  line-height: 3.25125vw; }
 
 h4 {
-  font-size: 3.68475vw;
-  line-height: 4.6059375vw; }
+  font-size: 2.21085vw;
+  line-height: 2.7635625vw; }
 
 h5 {
-  font-size: 3.68475vw;
-  line-height: 3.915046875vw;
+  font-size: 2.21085vw;
+  line-height: 2.349028125vw;
   font-weight: 500; }
 
 p {
-  font-size: 2vw;
-  line-height: 2.5vw; }
+  font-size: 1.2vw;
+  line-height: 1.5vw; }
   p a {
     font-weight: 700;
     font-style: italic;
@@ -214,14 +214,14 @@ ol li {
 
 .tjenester ol li,
 .tjenester ul li {
-  font-size: 3vw;
-  line-height: 2vw;
+  font-size: 1.8vw;
+  line-height: 1.2vw;
   list-style-position: inside;
   margin-bottom: 6vw; }
   .tjenester ol li a,
   .tjenester ul li a {
-    line-height: 7.5vw;
-    font-size: 6vw;
+    line-height: 4.5vw;
+    font-size: 3.6vw;
     list-style-position: inside; }
   .tjenester ol li::before, .tjenester ol li:before,
   .tjenester ul li::before,
@@ -1622,15 +1622,15 @@ a.plyr__control::after, a.plyr__control::before {
   position: fixed;
   display: block;
   width: 5vw;
-  -webkit-transform: translate(80vw, -10vh);
-          transform: translate(80vw, -10vh); }
+  -webkit-transform: translate(80vw, calc((-20vh)-10vw));
+          transform: translate(80vw, calc((-20vh)-10vw)); }
   .dRip.dRipped {
     -webkit-transform: translate(80vw, 110vh);
             transform: translate(80vw, 110vh);
-    -webkit-transition: -webkit-transform 200ms;
-    transition: -webkit-transform 200ms;
-    transition: transform 200ms;
-    transition: transform 200ms, -webkit-transform 200ms; }
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
 
 a.hae:after {
   position: absolute !important;
@@ -1905,5 +1905,4 @@ a.favvv:hover:after {
     content: ' ';
     border-left: #272a31 0.5vw solid;
     border-top: #272a31 0.5vw solid; }
-
 /*# sourceMappingURL=style.css.map */
