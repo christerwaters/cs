@@ -21,8 +21,17 @@ while ( have_posts() ) :
   <?php if( have_rows('credits') ): ?>
 
     <?php while( have_rows('credits') ): the_row(); ?>
-    <?php $user = get_user_by( 'id', get_sub_field('creditname'))?>
-        <span class="credit"><?php the_sub_field('c_title'); ?>: <a href="<?php echo get_author_posts_url(get_sub_field('creditname'));?>"><?php echo $user->display_name; ?>.</a></span>
+      <?php if( get_field('intname') ) { ?>
+        <?php $user = get_user_by( 'id', get_sub_field('intname'))?>
+        <span class="credit">
+          <?php the_sub_field('c_title'); ?>: <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>"><?php echo $user->display_name; ?>.</a>
+        </span>
+      <?php } ?>
+      <?php if( get_field('extname') ) { ?>
+        <span class="credit">
+          <?php the_sub_field('c_title'); ?>: <?php the_sub_field('extname')?>.</a>
+        </span>
+      <?php } ?>
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
