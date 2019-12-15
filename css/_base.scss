@@ -112,6 +112,24 @@ video{
       transition: max-height 200ms;
       max-height: 200vw;
     }
+
+    summary::-webkit-details-marker {
+     display: none
+   }
+
+   summary:after {
+     background: url(some-picture);
+     float: left;
+     height: 20px;
+     width: 20px;
+     content: " ";
+   }
+
+   details[open] summary:after {
+     background: url(other-picture);
+   }
+
+
   .wp-block-coblocks-accordion-item__title{
     strong{
       font-weight:900;
