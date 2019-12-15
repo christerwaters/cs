@@ -1774,13 +1774,15 @@ a.plyr__control::after, a.plyr__control::before {
       background: #272a31;
       bottom: 0;
       text-align: center; }
-      .dir .dir-item .info h3 {
-        text-transform: uppercase;
-        word-break: break-all;
-        font-size: 2vw;
-        line-height: 2vw; }
-      .dir .dir-item .info .title {
-        font-size: 1.5vw; }
+      .dir .dir-item .info .info-m {
+        /*have to keep this here to make the text show in the middle */ }
+        .dir .dir-item .info .info-m h3 {
+          text-transform: uppercase;
+          word-break: break-all;
+          font-size: 2vw;
+          line-height: 2vw; }
+        .dir .dir-item .info .info-m .title {
+          font-size: 1.5vw; }
 
 .tre-i-i.hae:after {
   z-index: -1;

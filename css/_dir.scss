@@ -30,14 +30,16 @@
       background:$dark;
       bottom:0;
       text-align:center;
-      h3{
-        text-transform: uppercase;
-        word-break: break-all;
-        font-size:2vw;
-        line-height:2vw;
-      }
-      .title{
-        font-size:1.5vw;
+      .info-m{ /*have to keep this here to make the text show in the middle */
+        h3{
+          text-transform: uppercase;
+          word-break: break-all;
+          font-size:2vw;
+          line-height:2vw;
+        }
+        .title{
+          font-size:1.5vw;
+        }
       }
     }
   }
