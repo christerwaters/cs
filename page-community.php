@@ -24,6 +24,10 @@ while ( have_posts() ) :
 	<?php };  ?>
 </div>
 
+<?php
+  the_content();
+	endwhile;
+?>
 
 
 
