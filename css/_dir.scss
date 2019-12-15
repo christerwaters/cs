@@ -6,7 +6,6 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: $site-width + $dir-i-m*2;
   margin: -$dir-i-m;
   .dir-item{
@@ -29,6 +28,7 @@
       padding:$dir-i-i-p;
       background:$dark;
       bottom:0;
+      text-align:center;
       h3{
         text-transform: uppercase;
         word-break: break-all;

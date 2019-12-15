@@ -1621,9 +1621,6 @@ a.plyr__control::after, a.plyr__control::before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 82vw;
   margin: -1vw; }
   .dir .dir-item {
@@ -1642,7 +1639,8 @@ a.plyr__control::after, a.plyr__control::before {
       margin: 1vw;
       padding: 1vw;
       background: #272a31;
-      bottom: 0; }
+      bottom: 0;
+      text-align: center; }
       .dir .dir-item .info h3 {
         text-transform: uppercase;
         word-break: break-all;
@@ -1876,4 +1874,5 @@ a.plyr__control::after, a.plyr__control::before {
     top: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
 /*# sourceMappingURL=style.css.map */
