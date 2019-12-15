@@ -47,7 +47,7 @@ a{
   font-style: italic;
   display:inline-block;
   &:hover{
-    background-image: url(../media/a-bg-01.jpg);
+    background-image: $o1;
     background-size: 100% 6vw;
     background-repeat: no-repeat;
     background-position: center;
