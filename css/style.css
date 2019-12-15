@@ -105,6 +105,7 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%; }
 
+/* All of those 3 column layouts, the approach is sort of odd, but it works.  */
 /* width */
 /* margin */
 /* padding */
@@ -120,7 +121,8 @@ body {
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
   font-size: 1.5333333333vw;
-  line-height: 1.5333333333vw; }
+  line-height: 1.5333333333vw;
+  overflow-x: hidden; }
   body.menu-open {
     overflow: hidden; }
 
@@ -1751,12 +1753,12 @@ a.plyr__control::after, a.plyr__control::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: visible;
-  width: 94.65vw;
+  width: 94.67vw;
   /* half of the width of a dir item is added to ensure that we get three per line */
   margin: -1vw; }
   .dir .dir-item {
-    width: 25.3vw;
-    height: 25.3vw;
+    width: 25.34vw;
+    height: 25.34vw;
     display: inline-block;
     background-size: cover;
     border: .01vw solid #fff;
@@ -1772,8 +1774,8 @@ a.plyr__control::after, a.plyr__control::before {
     .dir .dir-item .info {
       color: #fff;
       display: none;
-      width: 21.3vw;
-      height: 21.3vw;
+      width: 21.34vw;
+      height: 21.34vw;
       margin: 1vw;
       padding: 1vw;
       background: #272a31;
@@ -1786,7 +1788,7 @@ a.plyr__control::after, a.plyr__control::before {
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        width: 21.3vw; }
+        width: 21.34vw; }
         .dir .dir-item .info .info-m h3 {
           text-transform: uppercase;
           word-break: break-all;

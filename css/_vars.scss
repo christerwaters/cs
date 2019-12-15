@@ -10,7 +10,10 @@ $site-margin-left:10vw;
 
 $site-width:80vw;
 
-$dir-i-w: 25.3vw; /* width */
+
+
+/* All of those 3 column layouts, the approach is sort of odd, but it works.  */
+$dir-i-w: 25.34vw; /* width */
 $dir-i-m: 1vw; /* margin */
 $dir-i-p: 1vw; /* padding */
 $dir-i-i-m: 1vw; /* margin - info*/
