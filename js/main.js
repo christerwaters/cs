@@ -7,7 +7,7 @@ $( ".burger" ).click(function() {
 });
 
 $("a").hover(function() {
-  var bg = $(this).css('background-image');
+  var bg = $(this).css('background-image').replace('jpg','gif');
   console.log(bg);
-  var bg = $(this).css('background-image',bg.replace(".jpg","gif");
+  var bg = $(this).css('background-image', bg);
 });
