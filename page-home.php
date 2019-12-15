@@ -28,7 +28,9 @@ while ( have_posts() ) :
 
   $posts = get_posts(array(
   	'posts_per_page'	=> 5,
-  	'post_type'			=> 'portfolio'
+  	'post_type'			=> 'portfolio',
+  	'meta_key'		=> 'show_on_home',
+  	'meta_value'	=> 'true'
   ));
 
   if( $posts ): ?>
