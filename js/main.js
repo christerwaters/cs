@@ -6,6 +6,6 @@ $( ".burger" ).click(function() {
   $( "body" ).toggleClass("menu-open");
 });
 
-$(".logo").hover(function (){
-  $(".dRip").toggleClass("dRipped");
+$("a").hover(function() {
+  $("this:after").css("background-image",$("this:after").css("background-image").replace(".jpg","jpg"));
 });

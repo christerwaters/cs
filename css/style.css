@@ -1640,8 +1640,8 @@ a.favvv {
   position: fixed;
   width: 10vw;
   height: 4vw;
-  -webkit-transform: translateY(-10vw);
-          transform: translateY(-10vw);
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
   top: 10vw;
   right: 9vw; }
   .logo img {
