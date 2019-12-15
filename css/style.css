@@ -1814,6 +1814,8 @@ a.plyr__control::after, a.plyr__control::before {
   min-height: 10vw;
   display: block; }
   .header h1 {
+    font-size: 6.9vw;
+    line-height: 9.2vw;
     text-align: justify;
     text-justify: inter-word;
     font-weight: 900;
