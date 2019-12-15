@@ -20,6 +20,9 @@
       .info{
         display:block;
         z-index:2;
+        &:hover{
+          cursor:pointer;
+        }
       }
       cursor:pointer;
     }

@@ -223,6 +223,11 @@ video {
     min-width: 100%;
     display: block; }
 
+.wp-block-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .logo {
   position: fixed;
   width: 10vw;
@@ -1768,6 +1773,8 @@ a.plyr__control::after, a.plyr__control::before {
       .dir .dir-item:hover .info {
         display: block;
         z-index: 2; }
+        .dir .dir-item:hover .info:hover {
+          cursor: pointer; }
     .dir .dir-item .info {
       color: #fff;
       display: none;
