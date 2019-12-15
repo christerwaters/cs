@@ -15,7 +15,7 @@
     background-size:cover;
     border: .01vw solid #fff;
     background-position: center;
-    margin:$dir-i-m;
+    margin:$dir-i-m*.99999999;
     &:hover{
       .info{
         display:block;
