@@ -219,7 +219,7 @@ video {
   .wp-block-coblocks-accordion-item details {
     transition: max-height 200ms;
     max-height: 2vw; }
-  .wp-block-coblocks-accordion-item details open {
+  .wp-block-coblocks-accordion-item details[open] {
     transition: max-height 200ms;
     max-height: 200vw; }
   .wp-block-coblocks-accordion-item .wp-block-coblocks-accordion-item__title strong {
