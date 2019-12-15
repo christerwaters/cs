@@ -39,6 +39,7 @@ p{
 
   font-size:$font-size/3;
   line-height:$font-size/3*1.25;
+  margin-bottom: $font-size/3*1.25;
 }
 
 
@@ -95,13 +96,6 @@ video{
     }
   }
 }
-.blocks-gallery-item.slick-slide{
-  height:auto;
-  width:40vw;
-  .slick-prev:before, .slick-next:before{
-    color:$dark;
-  }
-}
 .wp-block-columns{
   display: flex;
 }
@@ -110,8 +104,22 @@ video{
     -ms-flex-align: center;
     align-items: flex-center;
 }
-.wp-block-coblocks-accordion-item__title{
-  strong{
-    font-weight:900;
+.wp-block-coblocks-accordion-item{
+    margin-bottom: 1vw;
+    details{
+      transition: max-height 200ms;
+      max-height: 2vw;
+    }
+    details open{
+      transition: max-height 200ms;
+      max-height: 200vw;
+    }
+  .wp-block-coblocks-accordion-item__title{
+    strong{
+      font-weight:900;
+    }
+  }
+  .wp-block-coblocks-accordion-item__content{
+    margin-top:2vw;
   }
 }
