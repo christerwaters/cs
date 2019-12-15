@@ -47,7 +47,6 @@ a{
   font-style: italic;
   display:inline-block;
   &:hover{
-    background-image: $o1;
     background-size: 100% 6vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,4 +93,61 @@ img{
 video{
   max-height:95vh;
   max-width:100%;
+}
+
+.header{
+  margin-top:15vw;
+  width:40vw;
+  min-height: 10vw;
+  display:block;
+  h1{
+    font-size:$font-size*1.5;
+    line-height:$font-size*2;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight:900;
+    word-break: break-all;
+    margin-bottom:5vw;
+    text-transform: uppercase;
+  }
+  p{
+    margin-bottom:8vw;
+  }
+}
+
+.pager{
+  padding:10vw 0;
+  display:flex;
+  z-index: -1;
+  .previous,
+  .back,
+  .next{
+    z-index: -1;
+  }
+  .previous{
+    display:inline-block;
+    height:2vw;
+    width:2vw;
+    transform:rotate(-45deg);
+    content:' ';
+    border-left:$dark .5vw solid;
+    border-top:$dark .5vw solid;
+  }
+  .back{
+    font-size:3.5vw;
+    display:inline-block;
+    margin:auto;
+    flex-grow:1;
+    text-align:center;
+  }
+  .next{
+    float:right;
+    display:inline-block;
+    height:2vw;
+    width:2vw;
+    transform:rotate(-225deg);
+    content:' ';
+    border-left:$dark .5vw solid;
+    border-top:$dark .5vw solid;
+  }
 }
