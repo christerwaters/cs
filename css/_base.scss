@@ -48,6 +48,8 @@ a{
   display:inline-block;
   &:hover{
     background-image:url(../media/a-bg-01.jpg);
+    background-size:cover;
+    background-repeat:repeat-y;
   }
 }
 

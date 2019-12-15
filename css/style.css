@@ -163,7 +163,9 @@ a {
   font-style: italic;
   display: inline-block; }
   a:hover {
-    background-image: url(../media/a-bg-01.jpg); }
+    background-image: url(../media/a-bg-01.jpg);
+    background-size: cover;
+    background-repeat: repeat-y; }
 
 ol li {
   list-style-type: decimal-leading-zero; }
