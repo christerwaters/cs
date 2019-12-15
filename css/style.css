@@ -1759,7 +1759,7 @@ a.plyr__control::after, a.plyr__control::before {
     background-size: cover;
     border: .01vw solid #fff;
     background-position: center;
-    margin: 1vw; }
+    margin: 0.99999999vw; }
     .dir .dir-item:hover {
       cursor: pointer; }
       .dir .dir-item:hover .info {
