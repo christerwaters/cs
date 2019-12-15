@@ -94,7 +94,13 @@ video{
     }
   }
 }
-
+.blocks-gallery-item.slick-slide{
+  height:auto;
+  width:40vw;
+  .slick-prev:before, .slick-next:before{
+    color:$dark;
+  }
+}
 .wp-block-columns{
   display: flex;
 }

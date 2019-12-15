@@ -204,6 +204,12 @@ video {
     min-width: 100%;
     display: block; }
 
+.blocks-gallery-item.slick-slide {
+  height: auto;
+  width: 40vw; }
+  .blocks-gallery-item.slick-slide .slick-prev:before, .blocks-gallery-item.slick-slide .slick-next:before {
+    color: #272a31; }
+
 .wp-block-columns {
   display: -webkit-box;
   display: -ms-flexbox;
