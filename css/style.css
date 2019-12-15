@@ -1683,20 +1683,15 @@ a.plyr__control::after, a.plyr__control::before {
 
 .home p .tre-i {
   display: inline-block;
-  width: 33%;
-  z-index: 2; }
+  width: 33%; }
   .home p .tre-i .tre-i-i {
-    z-index: -1;
     font-weight: 700;
     font-style: italic;
     display: inline-block;
     text-decoration: none;
     position: relative;
     font-size: 80%;
-    margin-top: 1.5vw;
-    z-index: 2; }
-    .home p .tre-i .tre-i-i a {
-      z-index: 2; }
+    margin-top: 1.5vw; }
 
 .logo {
   position: fixed;
@@ -1868,5 +1863,4 @@ a.plyr__control::after, a.plyr__control::before {
     top: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
-
 /*# sourceMappingURL=style.css.map */
