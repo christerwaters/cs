@@ -3,7 +3,8 @@ $logo-sizer:50;
   position:fixed;
   width:.20vw*$logo-sizer;
   height:.08vw*$logo-sizer;
-  top:calc(10vw-(.20vw*$logo-sizer));
+  margin-top:-.20vw*$logo-sizer;
+  top:10vw;
   right:.18vw*$logo-sizer;
   img{
     height:100%;
