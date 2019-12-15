@@ -30,7 +30,7 @@ while ( have_posts() ) :
   	'posts_per_page'	=> 5,
   	'post_type'			=> 'portfolio',
   	'meta_key'		=> 'show_on_prosjekter',
-  	'meta_value'	=> 'true'
+  	'meta_value'	=> true
   ));
 
   if( $posts ): ?>
@@ -61,6 +61,18 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

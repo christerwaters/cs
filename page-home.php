@@ -30,7 +30,7 @@ while ( have_posts() ) :
   	'posts_per_page'	=> 5,
   	'post_type'			=> 'portfolio',
   	'meta_key'		=> 'show_on_home',
-  	'meta_value'	=> 'true'
+  	'meta_value'	=> true
   ));
 
   if( $posts ): ?>
