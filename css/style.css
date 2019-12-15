@@ -1652,6 +1652,7 @@ a.plyr__control::after, a.plyr__control::before {
         font-size: 1.5vw; }
 
 .tre-i-i.hae:after {
+  z-index: -1;
   position: absolute;
   content: ' ';
   height: 50%;
@@ -1666,6 +1667,7 @@ a.plyr__control::after, a.plyr__control::before {
   background-image: url(../media/circle.png); }
 
 .tre-i-i.play:after {
+  z-index: -1;
   position: absolute !important;
   content: ' ' !important;
   height: 60% !important;
@@ -1679,6 +1681,7 @@ a.plyr__control::after, a.plyr__control::before {
   background-image: url(../media/play.png); }
 
 .tre-i-i.favvv:after {
+  z-index: -1;
   position: absolute;
   content: ' ';
   height: 130%;
@@ -1873,5 +1876,4 @@ a.plyr__control::after, a.plyr__control::before {
     top: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
-
 /*# sourceMappingURL=style.css.map */
