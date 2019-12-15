@@ -5,11 +5,11 @@ get_header();
 ?>
 
 <div class="dir">
-  
+
 <?php
 
-$users = get_users( array( 'fields' => array( 'ID' ) ) );
-foreach($users as $user_id){
+$users = get_users();
+foreach($users as $user){
 ?>
   <div class="dir-item team-item" style="background-image:url(<?php the_field('profilepic'); ?>);">
     <div class="info">
