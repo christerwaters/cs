@@ -2,6 +2,7 @@
   <head>
     <title> Citrus Studio </title>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"> <!-- stylesheet for this page -->
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/slick/slick.css"> <!-- stylesheet for this page -->
   </head>
 
 
