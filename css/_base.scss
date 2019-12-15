@@ -46,15 +46,9 @@ a{
   font-weight:700;
   font-style: italic;
   display:inline-block;
-  background-image:url(../media/a-bg-01.jpg);
-}
-a:hover{
-  /**Redacted**/
-  background-image:url(../media/a-bg-01.gif);
-  color:transparent;
-  border-radius: .1vw;
-  user-select: none;
-  cursor: none;
+  &:hover{
+    background-image:url(../media/a-bg-01.jpg);
+  }
 }
 
 
