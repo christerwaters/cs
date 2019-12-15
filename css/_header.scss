@@ -1,10 +1,10 @@
-
+$logo-sizer:50;
 .logo{
   position:fixed;
-  width:20vw;
-  height:8vw;
-  top:8vw;
-  right:18vw;
+  width:.20vw*$logo-sizer;
+  height:.08vw*$logo-sizer;
+  top:.08vw*$logo-sizer;
+  right:.18vw*$logo-sizer;
   img{
     height:100%;
     width:100%;
@@ -22,10 +22,10 @@
   .burger{
     display:block;
     position:fixed;
-    top:10vw;
-    right:10vw;
-    width:4vw;
-    height:4vw;
+    top:.10vw*$logo-sizer;
+    right:.10vw*$logo-sizer;
+    width:.04vw*$logo-sizer;
+    height:.04vw*$logo-sizer;
     &:hover{
       cursor:pointer;
     }
@@ -34,16 +34,16 @@
     .tre{
       position:absolute;
       display:block;
-      width:4vw;
-      height:.5vw;
+      width:.04vw*$logo-sizer;
+      height:.005vw*$logo-sizer;
       background-color:$dark;
       transition:transform 200ms, top 200ms;
     }
     .two{
-      top:1.75vw;
+      top:.0175vw*$logo-sizer;
     }
     .tre{
-      top:3.5vw;
+      top:.035vw*$logo-sizer;
     }
   }
   nav{
