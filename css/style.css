@@ -223,48 +223,180 @@ video {
     min-width: 100%;
     display: block; }
 
-.pager {
-  padding: 10vw 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: -1; }
-  .pager .previous,
-  .pager .back,
-  .pager .next {
-    z-index: -1; }
-  .pager .previous {
-    display: inline-block;
-    height: 2vw;
-    width: 2vw;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    content: ' ';
-    border-left: #272a31 0.5vw solid;
-    border-top: #272a31 0.5vw solid; }
-  .pager .back {
-    font-size: 3.5vw;
-    display: inline-block;
-    margin: auto;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: center; }
-  .pager .next {
-    float: right;
-    display: inline-block;
-    height: 2vw;
-    width: 2vw;
-    -webkit-transform: rotate(-225deg);
-            transform: rotate(-225deg);
-    content: ' ';
-    border-left: #272a31 0.5vw solid;
-    border-top: #272a31 0.5vw solid; }
+.logo {
+  position: fixed;
+  width: 10vw;
+  height: 4vw;
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
+  top: 10vw;
+  right: 18vw; }
+  .logo img {
+    height: 100%;
+    width: 100%; }
 
+.menu {
+  z-index: 2000;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0; }
+  .menu .duvet {
+    display: none; }
+  .menu .burger {
+    display: block;
+    position: fixed;
+    top: 10vw;
+    right: 10vw;
+    width: 2vw;
+    height: 2vw;
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
+    .menu .burger:hover {
+      cursor: pointer; }
+    .menu .burger .one,
+    .menu .burger .two,
+    .menu .burger .tre {
+      -webkit-transform: rotate(-1deg);
+              transform: rotate(-1deg);
+      position: absolute;
+      display: block;
+      width: 2vw;
+      height: 0.25vw;
+      background-color: #272a31;
+      -webkit-transition: top 200ms, -webkit-transform 200ms;
+      transition: top 200ms, -webkit-transform 200ms;
+      transition: transform 200ms, top 200ms;
+      transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
+    .menu .burger .two {
+      top: 0.875vw; }
+    .menu .burger .tre {
+      top: 1.75vw; }
+  .menu nav {
+    margin: 0;
+    padding: 0; }
+    .menu nav ul {
+      margin: 0;
+      padding: 0; }
+      .menu nav ul li {
+        list-style: none;
+        margin: 0;
+        font-size: 10vw;
+        font-weight: 800;
+        max-width: 80vw;
+        -webkit-transform: translate(0px, 4vw);
+                transform: translate(0px, 4vw); }
+        .menu nav ul li:nth-child(1) {
+          -webkit-transition-delay: 0ms;
+                  transition-delay: 0ms; }
+        .menu nav ul li:nth-child(2) {
+          -webkit-transition-delay: 50ms;
+                  transition-delay: 50ms; }
+        .menu nav ul li:nth-child(3) {
+          -webkit-transition-delay: 100ms;
+                  transition-delay: 100ms; }
+        .menu nav ul li:nth-child(4) {
+          -webkit-transition-delay: 150ms;
+                  transition-delay: 150ms; }
+        .menu nav ul li:nth-child(5) {
+          -webkit-transition-delay: 200ms;
+                  transition-delay: 200ms; }
+        .menu nav ul li:nth-child(6) {
+          -webkit-transition-delay: 250ms;
+                  transition-delay: 250ms; }
+  .menu.open {
+    top: 0; }
+    .menu.open .duvet {
+      display: block;
+      left: 0;
+      top: 0;
+      position: fixed;
+      z-index: 3000;
+      width: 100vw;
+      height: 100vh;
+      background-color: #fff;
+      content: ' '; }
+    .menu.open .burger {
+      z-index: 3030; }
+      .menu.open .burger .one {
+        top: 1.75vw;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: top 200ms, -webkit-transform 200ms;
+        transition: top 200ms, -webkit-transform 200ms;
+        transition: transform 200ms, top 200ms;
+        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
+      .menu.open .burger .two {
+        top: 1.75vw;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: top 200ms, -webkit-transform 200ms;
+        transition: top 200ms, -webkit-transform 200ms;
+        transition: transform 200ms, top 200ms;
+        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
+      .menu.open .burger .tre {
+        top: 1.75vw;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition: top 200ms, -webkit-transform 200ms;
+        transition: top 200ms, -webkit-transform 200ms;
+        transition: transform 200ms, top 200ms;
+        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
+    .menu.open nav {
+      z-index: 3002;
+      display: block;
+      width: 90vw;
+      left: 10vw;
+      position: fixed;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative; }
+      .menu.open nav ul {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+        .menu.open nav ul li {
+          line-height: 15vw;
+          -webkit-transform: translate(0px, 0vw);
+                  transform: translate(0px, 0vw);
+          -webkit-transition: -webkit-transform 150ms;
+          transition: -webkit-transform 150ms;
+          transition: transform 150ms;
+          transition: transform 150ms, -webkit-transform 150ms; }
+          .menu.open nav ul li:nth-child(1) {
+            -webkit-transition-delay: 0ms;
+                    transition-delay: 0ms; }
+          .menu.open nav ul li:nth-child(2) {
+            -webkit-transition-delay: 50ms;
+                    transition-delay: 50ms; }
+          .menu.open nav ul li:nth-child(3) {
+            -webkit-transition-delay: 100ms;
+                    transition-delay: 100ms; }
+          .menu.open nav ul li:nth-child(4) {
+            -webkit-transition-delay: 150ms;
+                    transition-delay: 150ms; }
+          .menu.open nav ul li:nth-child(5) {
+            -webkit-transition-delay: 200ms;
+                    transition-delay: 200ms; }
+          .menu.open nav ul li:nth-child(6) {
+            -webkit-transition-delay: 250ms;
+                    transition-delay: 250ms; }
+  .menu nav {
+    display: none; }
+
+@media only screen and (min-width: 1100px) {
+  .menu.open nav ul {
+    position: relative;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
 @-webkit-keyframes plyr-progress {
   to {
     background-position: 25px 0; } }
-
 @keyframes plyr-progress {
   to {
     background-position: 25px 0; } }
@@ -1704,176 +1836,42 @@ a.plyr__control::after, a.plyr__control::before {
     font-size: 80%;
     margin-top: 1.5vw; }
 
-.logo {
-  position: fixed;
-  width: 10vw;
-  height: 4vw;
-  -webkit-transform: translateY(-1vw);
-          transform: translateY(-1vw);
-  top: 10vw;
-  right: 18vw; }
-  .logo img {
-    height: 100%;
-    width: 100%; }
-
-.menu {
-  z-index: 2000;
-  position: fixed;
-  right: 0;
-  top: 0;
-  left: 0; }
-  .menu .duvet {
-    display: none; }
-  .menu .burger {
-    display: block;
-    position: fixed;
-    top: 10vw;
-    right: 10vw;
-    width: 2vw;
+.pager {
+  margin: 7vw 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1; }
+  .pager .previous,
+  .pager .back,
+  .pager .next {
+    z-index: -1; }
+  .pager .previous {
+    display: inline-block;
     height: 2vw;
-    -webkit-transform: rotate(1deg);
-            transform: rotate(1deg); }
-    .menu .burger:hover {
-      cursor: pointer; }
-    .menu .burger .one,
-    .menu .burger .two,
-    .menu .burger .tre {
-      -webkit-transform: rotate(-1deg);
-              transform: rotate(-1deg);
-      position: absolute;
-      display: block;
-      width: 2vw;
-      height: 0.25vw;
-      background-color: #272a31;
-      -webkit-transition: top 200ms, -webkit-transform 200ms;
-      transition: top 200ms, -webkit-transform 200ms;
-      transition: transform 200ms, top 200ms;
-      transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
-    .menu .burger .two {
-      top: 0.875vw; }
-    .menu .burger .tre {
-      top: 1.75vw; }
-  .menu nav {
-    margin: 0;
-    padding: 0; }
-    .menu nav ul {
-      margin: 0;
-      padding: 0; }
-      .menu nav ul li {
-        list-style: none;
-        margin: 0;
-        font-size: 10vw;
-        font-weight: 800;
-        max-width: 80vw;
-        -webkit-transform: translate(0px, 4vw);
-                transform: translate(0px, 4vw); }
-        .menu nav ul li:nth-child(1) {
-          -webkit-transition-delay: 0ms;
-                  transition-delay: 0ms; }
-        .menu nav ul li:nth-child(2) {
-          -webkit-transition-delay: 50ms;
-                  transition-delay: 50ms; }
-        .menu nav ul li:nth-child(3) {
-          -webkit-transition-delay: 100ms;
-                  transition-delay: 100ms; }
-        .menu nav ul li:nth-child(4) {
-          -webkit-transition-delay: 150ms;
-                  transition-delay: 150ms; }
-        .menu nav ul li:nth-child(5) {
-          -webkit-transition-delay: 200ms;
-                  transition-delay: 200ms; }
-        .menu nav ul li:nth-child(6) {
-          -webkit-transition-delay: 250ms;
-                  transition-delay: 250ms; }
-  .menu.open {
-    top: 0; }
-    .menu.open .duvet {
-      display: block;
-      left: 0;
-      top: 0;
-      position: fixed;
-      z-index: 3000;
-      width: 100vw;
-      height: 100vh;
-      background-color: #fff;
-      content: ' '; }
-    .menu.open .burger {
-      z-index: 3030; }
-      .menu.open .burger .one {
-        top: 1.75vw;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg);
-        -webkit-transition: top 200ms, -webkit-transform 200ms;
-        transition: top 200ms, -webkit-transform 200ms;
-        transition: transform 200ms, top 200ms;
-        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
-      .menu.open .burger .two {
-        top: 1.75vw;
-        -webkit-transform: scale(0);
-                transform: scale(0);
-        -webkit-transition: top 200ms, -webkit-transform 200ms;
-        transition: top 200ms, -webkit-transform 200ms;
-        transition: transform 200ms, top 200ms;
-        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
-      .menu.open .burger .tre {
-        top: 1.75vw;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        -webkit-transition: top 200ms, -webkit-transform 200ms;
-        transition: top 200ms, -webkit-transform 200ms;
-        transition: transform 200ms, top 200ms;
-        transition: transform 200ms, top 200ms, -webkit-transform 200ms; }
-    .menu.open nav {
-      z-index: 3002;
-      display: block;
-      width: 90vw;
-      left: 10vw;
-      position: fixed;
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: auto;
-      position: relative; }
-      .menu.open nav ul {
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-                transform: translateY(-50%); }
-        .menu.open nav ul li {
-          line-height: 15vw;
-          -webkit-transform: translate(0px, 0vw);
-                  transform: translate(0px, 0vw);
-          -webkit-transition: -webkit-transform 150ms;
-          transition: -webkit-transform 150ms;
-          transition: transform 150ms;
-          transition: transform 150ms, -webkit-transform 150ms; }
-          .menu.open nav ul li:nth-child(1) {
-            -webkit-transition-delay: 0ms;
-                    transition-delay: 0ms; }
-          .menu.open nav ul li:nth-child(2) {
-            -webkit-transition-delay: 50ms;
-                    transition-delay: 50ms; }
-          .menu.open nav ul li:nth-child(3) {
-            -webkit-transition-delay: 100ms;
-                    transition-delay: 100ms; }
-          .menu.open nav ul li:nth-child(4) {
-            -webkit-transition-delay: 150ms;
-                    transition-delay: 150ms; }
-          .menu.open nav ul li:nth-child(5) {
-            -webkit-transition-delay: 200ms;
-                    transition-delay: 200ms; }
-          .menu.open nav ul li:nth-child(6) {
-            -webkit-transition-delay: 250ms;
-                    transition-delay: 250ms; }
-  .menu nav {
-    display: none; }
-
-@media only screen and (min-width: 1100px) {
-  .menu.open nav ul {
-    position: relative;
-    top: 0;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    width: 2vw;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    content: ' ';
+    border-left: #272a31 0.5vw solid;
+    border-top: #272a31 0.5vw solid; }
+  .pager .back {
+    font-size: 3.5vw;
+    display: inline-block;
+    margin: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center; }
+  .pager .next {
+    float: right;
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+    content: ' ';
+    border-left: #272a31 0.5vw solid;
+    border-top: #272a31 0.5vw solid; }
 
 /*# sourceMappingURL=style.css.map */
