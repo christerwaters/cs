@@ -30,7 +30,11 @@
       background:$dark;
       bottom:0;
       text-align:center;
+      position:relative;
       .info-m{ /*have to keep this here to make the text show in the middle */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         h3{
           text-transform: uppercase;
           word-break: break-all;

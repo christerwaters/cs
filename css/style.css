@@ -1773,9 +1773,14 @@ a.plyr__control::after, a.plyr__control::before {
       padding: 1vw;
       background: #272a31;
       bottom: 0;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
       .dir .dir-item .info .info-m {
-        /*have to keep this here to make the text show in the middle */ }
+        /*have to keep this here to make the text show in the middle */
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
         .dir .dir-item .info .info-m h3 {
           text-transform: uppercase;
           word-break: break-all;
