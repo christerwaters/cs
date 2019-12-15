@@ -8,5 +8,5 @@ $( ".burger" ).click(function() {
 
 $("a").hover(function() {
   var bg = $(this).css('background-image');
-  var bg = $(this).css('background-image',bg);
+  var bg = $(this).css('background-image',bg.replace(".jpg","gif");
 });
