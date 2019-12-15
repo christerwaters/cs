@@ -38,63 +38,26 @@ p{
 
   font-size:$font-size/3;
   line-height:$font-size/3*1.25;
-  a{
-    font-weight:700;
-    font-style: italic;
-    display:inline-block;
-    &:hover{
-      color:transparent;
-    }
-  }
-  a:hover{
-    /**Redacted**/
-    background:$dark;
-    color:transparent;
-    border-radius: .1vw;
-    user-select: none;
-    cursor: none;
-    &:after,
-    &:before{
-      width:100%;
-      position:absolute;
-      border-radius: .1vw;
-      left:0;
-      top:0;
-      z-index:-4;
-      content:' ';
-      background:$dark;
-    }
-    &:before{
-      height:75%;
-      transform:translate(.4vw, .5vw) rotate(3deg);
-    }
-    &:after{
-      height:55%;
-      transform:translate(-.5vw, 1.4vw) rotate(1deg);
-    }
-    &:nth-child(1) {
-      transform: rotate(1deg) skew(-4deg);
-    }
-
-    &:nth-child(2) {
-      transform: rotate(-1deg) skew(-5deg);
-    }
-
-    &:nth-child(3) {
-      transform: rotate(2deg) skew(-3deg);
-    }
-
-    &:nth-child(4) {
-      transform: rotate(1.3deg) skew(-3deg);
-    }
-    &:nth-child(5) {
-      transform: rotate(-.7deg) skew(-2deg);
-    }
-    &:nth-child(6) {
-      transform: rotate(-1deg) skew(-5deg);
-    }
-  }
 }
+
+
+
+a{
+  font-weight:700;
+  font-style: italic;
+  display:inline-block;
+  background-image:url(../media/a-bg.jpg);
+}
+a:hover{
+  /**Redacted**/
+  background-image:url(../media/a-bg.gif);
+  color:transparent;
+  border-radius: .1vw;
+  user-select: none;
+  cursor: none;
+}
+
+
 ol{
   li{
     list-style-type: decimal-leading-zero;

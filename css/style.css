@@ -157,57 +157,23 @@ h5 {
 p {
   font-size: 1.2vw;
   line-height: 1.5vw; }
-  p a {
-    font-weight: 700;
-    font-style: italic;
-    display: inline-block; }
-    p a:hover {
-      color: transparent; }
-  p a:hover {
-    /**Redacted**/
-    background: #272a31;
-    color: transparent;
-    border-radius: .1vw;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    cursor: none; }
-    p a:hover:after, p a:hover:before {
-      width: 100%;
-      position: absolute;
-      border-radius: .1vw;
-      left: 0;
-      top: 0;
-      z-index: -4;
-      content: ' ';
-      background: #272a31; }
-    p a:hover:before {
-      height: 75%;
-      -webkit-transform: translate(0.4vw, 0.5vw) rotate(3deg);
-              transform: translate(0.4vw, 0.5vw) rotate(3deg); }
-    p a:hover:after {
-      height: 55%;
-      -webkit-transform: translate(-0.5vw, 1.4vw) rotate(1deg);
-              transform: translate(-0.5vw, 1.4vw) rotate(1deg); }
-    p a:hover:nth-child(1) {
-      -webkit-transform: rotate(1deg) skew(-4deg);
-              transform: rotate(1deg) skew(-4deg); }
-    p a:hover:nth-child(2) {
-      -webkit-transform: rotate(-1deg) skew(-5deg);
-              transform: rotate(-1deg) skew(-5deg); }
-    p a:hover:nth-child(3) {
-      -webkit-transform: rotate(2deg) skew(-3deg);
-              transform: rotate(2deg) skew(-3deg); }
-    p a:hover:nth-child(4) {
-      -webkit-transform: rotate(1.3deg) skew(-3deg);
-              transform: rotate(1.3deg) skew(-3deg); }
-    p a:hover:nth-child(5) {
-      -webkit-transform: rotate(-0.7deg) skew(-2deg);
-              transform: rotate(-0.7deg) skew(-2deg); }
-    p a:hover:nth-child(6) {
-      -webkit-transform: rotate(-1deg) skew(-5deg);
-              transform: rotate(-1deg) skew(-5deg); }
+
+a {
+  font-weight: 700;
+  font-style: italic;
+  display: inline-block;
+  background-image: url(../media/a-bg.jpg); }
+
+a:hover {
+  /**Redacted**/
+  background-image: url(../media/a-bg.gif);
+  color: transparent;
+  border-radius: .1vw;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: none; }
 
 ol li {
   list-style-type: decimal-leading-zero; }
