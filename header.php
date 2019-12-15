@@ -8,11 +8,9 @@
 
 
   <body class="<?php global $post;echo $post->post_name;?>">
-    <a href="<?php echo get_site_url();?>">
-      <div class="logo">
-        <?php if ( function_exists( 'the_custom_logo' ) ) { the_custom_logo();}?>
-      </div>
-    </a>
+    <div class="logo">
+      <?php the_custom_logo();?>
+    </div>
     <div class="menu">
       <div class="duvet"></div>
       <a class="burger">

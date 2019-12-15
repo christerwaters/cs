@@ -5,7 +5,7 @@ $logo-sizer:50;
   height:.08vw*$logo-sizer;
   transform:translateY(-.02vw*$logo-sizer);
   top:10vw;
-  right:18vw;
+  right:$site-margin-right + .04vw*$logo-sizer*2;
   img{
     height:100%;
     width:100%;
