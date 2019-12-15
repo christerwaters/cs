@@ -41,12 +41,12 @@ $args = array(
 	'meta_query'	=> array(
 		'relation'		=> 'OR',
 		array(
-			'key'		=> 'credits_$_creditname',
+			'key'		=> 'credits_$_intname',
 			'compare'	=> '=',
 			'value'		=> $ciddy,
 		),
 		array(
-			'key'		=> 'credits_$_creditname',
+			'key'		=> 'credits_$_intname',
 			'compare'	=> '=',
 			'value'		=> $ciddy,
 		)
