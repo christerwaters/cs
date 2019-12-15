@@ -166,7 +166,8 @@ a {
     background-image: url(../media/a-bg-01.jpg);
     background-size: 100% 6vw;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    cursor: auto; }
 
 ol li {
   list-style-type: decimal-leading-zero; }
