@@ -43,9 +43,11 @@ while ( have_posts() ) :
       <a href="<?php the_permalink(); ?>">
         <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
           <div class="info">
-            <h3>
-              <?php the_title(); ?>
-            </h3>
+            <div class="info-m">
+              <h3>
+                <?php the_title(); ?>
+              </h3>
+            </div>
           </div>
         </div>
       </a>

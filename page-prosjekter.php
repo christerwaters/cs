@@ -30,7 +30,7 @@ while ( have_posts() ) :
   	'posts_per_page'	=> -1,
   	'post_type'			=> 'portfolio',
   	'meta_key'		=> 'show_on_prosjekter',
-  	'meta_value'	=> true
+  	'meta_value'	=> True
   ));
 
   if( $posts ): ?>
@@ -43,10 +43,12 @@ while ( have_posts() ) :
       <a href="<?php the_permalink(); ?>">
         <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
           <div class="info">
-            <h3>
-              <?php the_title(); ?>
-            </h3>
-          </div>
+	          <div class="info-m">
+	            <h3>
+	              <?php the_title(); ?>
+	            </h3>
+	          </div>
+					</div>
         </div>
       </a>
   	<?php endforeach; ?>
