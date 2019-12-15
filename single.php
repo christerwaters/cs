@@ -19,7 +19,7 @@ while ( have_posts() ) :
         <span class="credit">
           <?php the_sub_field('c_title'); ?>:
           <?php if( get_sub_field('extname') ) { ?>
-            <?php the_sub_field('extname')?>.</a>
+            <?php the_sub_field('extname')?>.
           <?php }; ?>
           <?php if( get_sub_field('intname') ) { ?>
             <?php $user = get_user_by( 'id', get_sub_field('intname'))?>
@@ -35,6 +35,11 @@ while ( have_posts() ) :
   <?php
     the_excerpt();
   ?>
+</p>
+<p class="kunde">
+  <?php if( get_field('kunde') ) { ?>
+    <?php the_field('kunde') ?>.
+  <?php }; ?>
 </p>
 </div>
 <?php
