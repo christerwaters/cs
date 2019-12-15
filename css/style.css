@@ -111,11 +111,11 @@ body {
   left: 0;
   padding: 0;
   width: 80vw;
-  margin: 10vw;
+  margin: 11vw 10vw;
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
   font-size: 1.5333333333vw;
-  line-height: 1.9166666667vw; }
+  line-height: 1.5333333333vw; }
   body.menu-open {
     overflow: hidden; }
 
