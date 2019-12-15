@@ -6,11 +6,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: $site-width + $dir-i-m*2;
-  margin-top: -$dir-i-m;
-  margin-right: -$dir-i-m*1.1;
-  margin-bottom: -$dir-i-m;
-  margin-left: -$dir-i-m;
+  width: $site-width + ($dir-i-m*2) + ($dir-i-w/2);
+  margin: -$dir-i-m;
   .dir-item{
     width: $dir-i-w;
     height:$dir-i-w;
@@ -18,7 +15,7 @@
     background-size:cover;
     border: .01vw solid #fff;
     background-position: center;
-    margin:$dir-i-m*.99999999;
+    margin:$dir-i-m;
     &:hover{
       .info{
         display:block;
