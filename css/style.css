@@ -105,6 +105,11 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%; }
 
+/* width */
+/* margin */
+/* padding */
+/* margin - info*/
+/* padding - info */
 body {
   margin: 0;
   top: 0;
@@ -1632,8 +1637,8 @@ a.plyr__control::after, a.plyr__control::before {
     .dir .dir-item .info {
       color: #fff;
       display: none;
-      width: 20vw;
-      height: 20vw;
+      width: 23.3vw;
+      height: 23.3vw;
       margin: 1vw;
       padding: 1vw;
       background: #272a31;
@@ -1641,8 +1646,8 @@ a.plyr__control::after, a.plyr__control::before {
       .dir .dir-item .info h3 {
         text-transform: uppercase;
         word-break: break-all;
-        font-size: 3vw;
-        line-height: 3vw; }
+        font-size: 2vw;
+        line-height: 2vw; }
       .dir .dir-item .info .title {
         font-size: 1.5vw; }
 

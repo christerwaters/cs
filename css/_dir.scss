@@ -7,14 +7,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 82vw;
-  margin: -1vw;
+  width: $site-width + $dir-i-m*2;
+  margin: -$dir-i-m;
   .dir-item{
-    width: 25.3vw;
-    height: 25.3vw;
+    width: $dir-i-w;
+    height:$dir-i-w;
     display:inline-block;
     background-size:cover;
-    margin:1vw;
+    margin:$dir-i-m;
     &:hover{
       .info{
         display:block;
@@ -23,17 +23,17 @@
     .info{
       color:#fff;
       display:none;
-      width:20vw;
-      height:20vw;
-      margin:1vw;
-      padding:1vw;
+      width:$dir-i-w - $dir-i-i-m*2;
+      height:$dir-i-w - $dir-i-i-m*2;
+      margin:$dir-i-i-m;
+      padding:$dir-i-i-p;
       background:$dark;
       bottom:0;
       h3{
         text-transform: uppercase;
         word-break: break-all;
-        font-size:3vw;
-        line-height:3vw;
+        font-size:2vw;
+        line-height:2vw;
       }
       .title{
         font-size:1.5vw;
