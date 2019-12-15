@@ -176,25 +176,6 @@ a {
 ol li {
   list-style-type: decimal-leading-zero; }
 
-.tjenester ol li,
-.tjenester ul li {
-  font-size: 2.3vw;
-  line-height: 1.5333333333vw;
-  list-style-position: inside;
-  margin-bottom: 6vw; }
-  .tjenester ol li a,
-  .tjenester ul li a {
-    line-height: 5.75vw;
-    font-size: 4.6vw;
-    list-style-position: inside; }
-  .tjenester ol li::before, .tjenester ol li:before,
-  .tjenester ul li::before,
-  .tjenester ul li:before {
-    line-height: 0;
-    display: block;
-    content: "\a";
-    white-space: pre; }
-
 img {
   display: block;
   margin: auto;
@@ -1842,6 +1823,13 @@ a.plyr__control::after, a.plyr__control::before {
     border-left: #272a31 0.5vw solid;
     border-top: #272a31 0.5vw solid; }
 
+.om-oss h2 {
+  font-size: 6.91vw;
+  line-height: 6.91vw; }
+.om-oss p {
+  width: 60%;
+  margin: 0 20%; }
+
 .tre-i-i.hae:after {
   z-index: -1;
   position: absolute;
@@ -1901,5 +1889,24 @@ a.plyr__control::after, a.plyr__control::before {
   text-align: center;
   font-weight: 400;
   font-size: 1.5vw; }
+
+.tjenester ol li,
+.tjenester ul li {
+  font-size: 2.3vw;
+  line-height: 1.5333333333vw;
+  list-style-position: inside;
+  margin-bottom: 6vw; }
+  .tjenester ol li a,
+  .tjenester ul li a {
+    line-height: 5.75vw;
+    font-size: 4.6vw;
+    list-style-position: inside; }
+  .tjenester ol li::before, .tjenester ol li:before,
+  .tjenester ul li::before,
+  .tjenester ul li:before {
+    line-height: 0;
+    display: block;
+    content: "\a";
+    white-space: pre; }
 
 /*# sourceMappingURL=style.css.map */

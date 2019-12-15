@@ -1,0 +1,24 @@
+
+.tjenester{
+  ol,
+  ul{
+    li{
+      font-size:$font-size/2;
+      line-height:$font-size/3;
+      list-style-position: inside;
+      margin-bottom: 6vw;
+      a{
+        line-height:$font-size*1.25;
+        font-size:$font-size;
+        list-style-position: inside;
+      }
+      &::before,
+      &:before {
+        line-height:0;
+        display:block;
+        content: "\a";
+        white-space: pre;
+      }
+    }
+  }
+}
