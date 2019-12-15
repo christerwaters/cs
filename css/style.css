@@ -114,8 +114,8 @@ body {
   margin: 5vw 10vw;
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
-  font-size: 1.2vw;
-  line-height: 1.5vw; }
+  font-size: 1.5333333333vw;
+  line-height: 1.9166666667vw; }
   body.menu-open {
     overflow: hidden; }
 
@@ -134,29 +134,29 @@ h3 strong, h4 strong {
   font-weight: 900; }
 
 h1 {
-  font-size: 3.6vw;
-  line-height: 4.5vw; }
+  font-size: 4.6vw;
+  line-height: 5.75vw; }
 
 h2 {
-  font-size: 3.06vw;
-  line-height: 3.825vw; }
+  font-size: 3.91vw;
+  line-height: 4.8875vw; }
 
 h3 {
-  font-size: 2.601vw;
-  line-height: 3.25125vw; }
+  font-size: 3.3235vw;
+  line-height: 4.154375vw; }
 
 h4 {
-  font-size: 2.21085vw;
-  line-height: 2.7635625vw; }
+  font-size: 2.824975vw;
+  line-height: 3.53121875vw; }
 
 h5 {
-  font-size: 2.21085vw;
-  line-height: 2.349028125vw;
+  font-size: 2.824975vw;
+  line-height: 3.0015359375vw;
   font-weight: 500; }
 
 p {
-  font-size: 1.2vw;
-  line-height: 1.5vw; }
+  font-size: 1.5333333333vw;
+  line-height: 1.9166666667vw; }
 
 a {
   font-weight: 700;
@@ -180,14 +180,14 @@ ol li {
 
 .tjenester ol li,
 .tjenester ul li {
-  font-size: 1.8vw;
-  line-height: 1.2vw;
+  font-size: 2.3vw;
+  line-height: 1.5333333333vw;
   list-style-position: inside;
   margin-bottom: 6vw; }
   .tjenester ol li a,
   .tjenester ul li a {
-    line-height: 4.5vw;
-    font-size: 3.6vw;
+    line-height: 5.75vw;
+    font-size: 4.6vw;
     list-style-position: inside; }
   .tjenester ol li::before, .tjenester ol li:before,
   .tjenester ul li::before,
