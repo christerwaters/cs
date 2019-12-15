@@ -5,14 +5,3 @@ $( ".burger" ).click(function() {
   $( ".menu" ).toggleClass("open");
   $( "body" ).toggleClass("menu-open");
 });
-
-
-$(document).ready(function () {
-  $('a').hover(function () {
-    var bg = $(this).css('background-image').replace('jpg','gif');
-    $(this).css('background-image', bg);
-  }, function () {
-    var bg = $(this).css('background-image').replace('gif','jpg');
-    $(this).css('background-image', bg);
-  });
-});
