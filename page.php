@@ -16,11 +16,11 @@ while ( have_posts() ) :
 	<?php }; ?>
 
 	<?php if (get_field('hide_excerpt')!='True'){?>
-	<p class="excerpt">
+	<div class="excerpt">
 	  <?php
 	    the_excerpt();
 	  ?>
-	</p>
+	</div>
 	<?php };  ?>
 </div>
 <?php

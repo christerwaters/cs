@@ -1683,7 +1683,8 @@ a.plyr__control::after, a.plyr__control::before {
 
 .home p .tre-i {
   display: inline-block;
-  width: 33%; }
+  width: 33%;
+  z-index: 2; }
   .home p .tre-i .tre-i-i {
     z-index: -1;
     font-weight: 700;
@@ -1692,7 +1693,10 @@ a.plyr__control::after, a.plyr__control::before {
     text-decoration: none;
     position: relative;
     font-size: 80%;
-    margin-top: 1.5vw; }
+    margin-top: 1.5vw;
+    z-index: 2; }
+    .home p .tre-i .tre-i-i a {
+      z-index: 2; }
 
 .logo {
   position: fixed;
