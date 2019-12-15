@@ -163,9 +163,10 @@ a {
   font-style: italic;
   display: inline-block; }
   a:hover {
-    background-image: url(../media/a-bg-01.jpg);
-    background-size: cover;
-    background-repeat: repeat-y; }
+    background-image: url(../media/a-bg-01.gif);
+    background-size: 100% 6vw;
+    background-repeat: no-repeat;
+    background-position: center; }
 
 ol li {
   list-style-type: decimal-leading-zero; }
@@ -1660,12 +1661,16 @@ a.favvv {
     top: 10vw;
     right: 5vw;
     width: 2vw;
-    height: 2vw; }
+    height: 2vw;
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg); }
     .menu .burger:hover {
       cursor: pointer; }
     .menu .burger .one,
     .menu .burger .two,
     .menu .burger .tre {
+      -webkit-transform: rotate(-1deg);
+              transform: rotate(-1deg);
       position: absolute;
       display: block;
       width: 2vw;

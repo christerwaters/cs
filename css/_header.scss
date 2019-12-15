@@ -27,12 +27,14 @@ $logo-sizer:50;
     right:.10vw*$logo-sizer;
     width:.04vw*$logo-sizer;
     height:.04vw*$logo-sizer;
+    transform:rotate(1deg);
     &:hover{
       cursor:pointer;
     }
     .one,
     .two,
     .tre{
+      transform:rotate(-1deg);
       position:absolute;
       display:block;
       width:.04vw*$logo-sizer;

@@ -47,9 +47,10 @@ a{
   font-style: italic;
   display:inline-block;
   &:hover{
-    background-image:url(../media/a-bg-01.jpg);
-    background-size:cover;
-    background-repeat:repeat-y;
+    background-image: url(../media/a-bg-01.gif);
+    background-size: 100% 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
