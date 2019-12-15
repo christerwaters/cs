@@ -1615,13 +1615,15 @@ a.plyr__control::after, a.plyr__control::before {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  width: 82vw;
+  margin: -1vw; }
   .dir .dir-item {
-    width: 24vw;
-    height: 24vw;
+    width: 25.3vw;
+    height: 25.3vw;
     display: inline-block;
     background-size: cover;
-    margin-bottom: 4vw; }
+    margin: 1vw; }
     .dir .dir-item:hover .info {
       display: block; }
     .dir .dir-item .info {
@@ -1863,4 +1865,5 @@ a.plyr__control::after, a.plyr__control::before {
     top: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
+
 /*# sourceMappingURL=style.css.map */
