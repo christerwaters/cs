@@ -1750,7 +1750,9 @@ a.plyr__control::after, a.plyr__control::before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: visible;
   width: 94.65vw;
+  /* half of the width of a dir item is added to ensure that we get three per line */
   margin: -1vw; }
   .dir .dir-item {
     width: 25.3vw;
