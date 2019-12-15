@@ -10,6 +10,7 @@ $( ".burger" ).click(function() {
 $(document).ready(function () {
   $('a').hover(function () {
     var bg = $(this).css('background-image').replace('jpg','gif');
+    var bg = $(this).css('background-image', 'nada.png');
     var bg = $(this).css('background-image', bg);
   }, function () {
     var bg = $(this).css('background-image').replace('gif','jpg');
