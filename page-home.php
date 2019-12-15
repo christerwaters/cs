@@ -24,35 +24,36 @@ while ( have_posts() ) :
 	<?php };  ?>
 </div>
 
-<div class="dir">
-
 <?php
-$args = array('post_type' => 'portfolio'); //declares that we will only be querying the portfolio post type
-$portfolio_items = get_posts( $args );
-foreach ($portfolio_items as $page_data) {
-    $title = $page_data->post_title;
-    $perm = get_permalink($page_data->ID);
-    $imageid_full = wp_get_attachment_image_src( get_post_thumbnail_id($page_data->ID), 'full' );
-    $image_full = $imageid_full['0'];
-?>
-        <!-- LAY OUT THE TEMPLATE FOR IMAGES HERE -->
 
-          <a href="<?php the_permalink(); ?>">
-            <div class="dir-item portfolio-item" style="background-image:url(<?php echo $image_full; ?>);">
-              <div class="info">
-                <h3>
-                  <?php echo $title; ?>
-                </h3>
-              </div>
-            </div>
-          </a>
-<?php }; ?>
+  $posts = get_posts(array(
+  	'posts_per_page'	=> 5,
+  	'post_type'			=> 'portfolio'
+  ));
 
+  if( $posts ): ?>
 
-</div>
+  <div class="dir">
 
-<p>lio</p>
+  	<?php foreach( $posts as $post ):
+  		setup_postdata( $post );
+  		?>
+      <a href="<?php the_permalink(); ?>">
+        <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
+          <div class="info">
+            <h3>
+              <?php the_title(); ?>
+            </h3>
+          </div>
+        </div>
+      </a>
+  	<?php endforeach; ?>
 
+    </div>
+
+  	<?php wp_reset_postdata(); ?>
+
+  <?php endif; ?>
 
 <?php
   the_content();
