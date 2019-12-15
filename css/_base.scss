@@ -119,5 +119,10 @@ video{
 }
 
 .wp-block-columns{
-  display:flex;
+  display: flex;
+}
+.is-vertically-aligned-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-center;
 }
