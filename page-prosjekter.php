@@ -27,7 +27,7 @@ while ( have_posts() ) :
 <?php
 
   $posts = get_posts(array(
-  	'posts_per_page'	=> 5,
+  	'posts_per_page'	=> -1,
   	'post_type'			=> 'portfolio',
   	'meta_key'		=> 'show_on_prosjekter',
   	'meta_value'	=> true
