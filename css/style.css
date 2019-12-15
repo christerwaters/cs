@@ -1578,7 +1578,7 @@ a.plyr__control::after, a.plyr__control::before {
       .dir .dir-item .info .title {
         font-size: 1.5vw; }
 
-a.hae:after {
+.tre-i-i.hae:after {
   position: absolute;
   content: ' ';
   height: 50%;
@@ -1592,7 +1592,7 @@ a.hae:after {
   background-color: transparent;
   background-image: url(../media/circle.png); }
 
-a.play:after {
+.tre-i-i.play:after {
   position: absolute !important;
   content: ' ' !important;
   height: 60% !important;
@@ -1605,7 +1605,7 @@ a.play:after {
   background-color: transparent !important;
   background-image: url(../media/play.png); }
 
-a.favvv:after {
+.tre-i-i.favvv:after {
   position: absolute;
   content: ' ';
   height: 130%;
