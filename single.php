@@ -18,10 +18,10 @@ while ( have_posts() ) :
     <?php while( have_rows('credits') ): the_row(); ?>
         <span class="credit">
           <?php the_sub_field('c_title'); ?>:
-          <?php if( get_field('extname') ) { ?>
+          <?php if( get_sub_field('extname') ) { ?>
             <?php the_sub_field('extname')?>.</a>
           <?php }; ?>
-          <?php if( get_field('intname') ) { ?>
+          <?php if( get_sub_field('intname') ) { ?>
             <?php $user = get_user_by( 'id', get_sub_field('intname'))?>
             <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
               <?php echo $user->display_name; ?>.
