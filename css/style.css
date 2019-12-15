@@ -1788,6 +1788,44 @@ a.plyr__control::after, a.plyr__control::before {
           font-size: 2vw;
           line-height: 2vw; }
 
+.pager {
+  margin: 7vw 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1; }
+  .pager .previous,
+  .pager .back,
+  .pager .next {
+    z-index: -1; }
+  .pager .previous {
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    content: ' ';
+    border-left: #272a31 0.5vw solid;
+    border-top: #272a31 0.5vw solid; }
+  .pager .back {
+    font-size: 3.5vw;
+    display: inline-block;
+    margin: auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center; }
+  .pager .next {
+    float: right;
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+    -webkit-transform: rotate(-225deg);
+            transform: rotate(-225deg);
+    content: ' ';
+    border-left: #272a31 0.5vw solid;
+    border-top: #272a31 0.5vw solid; }
+
 .tre-i-i.hae:after {
   z-index: -1;
   position: absolute;
@@ -1843,42 +1881,9 @@ a.plyr__control::after, a.plyr__control::before {
     font-size: 80%;
     margin-top: 1.5vw; }
 
-.pager {
-  margin: 7vw 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: -1; }
-  .pager .previous,
-  .pager .back,
-  .pager .next {
-    z-index: -1; }
-  .pager .previous {
-    display: inline-block;
-    height: 2vw;
-    width: 2vw;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    content: ' ';
-    border-left: #272a31 0.5vw solid;
-    border-top: #272a31 0.5vw solid; }
-  .pager .back {
-    font-size: 3.5vw;
-    display: inline-block;
-    margin: auto;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: center; }
-  .pager .next {
-    float: right;
-    display: inline-block;
-    height: 2vw;
-    width: 2vw;
-    -webkit-transform: rotate(-225deg);
-            transform: rotate(-225deg);
-    content: ' ';
-    border-left: #272a31 0.5vw solid;
-    border-top: #272a31 0.5vw solid; }
+.team-item .title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5vw; }
 
 /*# sourceMappingURL=style.css.map */
