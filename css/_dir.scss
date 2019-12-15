@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   width: $site-width + $dir-i-m*2;
-  margin: -$dir-i-m;
+  margin: -$dir-i-m -$dir-i-m*1.1 -$dir-i-m -$dir-i-m;
   .dir-item{
     width: $dir-i-w;
     height:$dir-i-w;
