@@ -42,13 +42,17 @@ while ( have_posts() ) :
 	endwhile;
 ?>
 <div class="pager">
-  <div class="previous"></div>
-  <a href="<?php echo get_site_url();?>/prosjekter">
-    <div class="back">
-      Tilbake til prosjekter
-    </div>
+  <a href="#">
+    <div class="previous"></div>
   </a>
-  <div class="next"></div>
+  <div class="back">
+    <a href="<?php echo get_site_url();?>/prosjekter">
+      Tilbake til prosjekter
+    </a>
+  </div>
+  <a href="#">
+    <div class="next"></div>
+  </a>
 </div>
 <?php
   get_footer();
