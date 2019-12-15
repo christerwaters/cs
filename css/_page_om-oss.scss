@@ -6,9 +6,13 @@
   .wp-block-coblocks-accordion,
   p{
     width: 60%;
-    margin: 0 20%;
+    margin-left:20%;
   }
   .wp-block-coblocks-accordion{
     margin-top:5vw;
+    p{
+      width:100%;
+      margin-left:0;
+    }
   }
 }
