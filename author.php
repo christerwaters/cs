@@ -10,7 +10,7 @@ $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : g
 
 <div class="header">
   <h1><?php echo $curauth->display_name; ?></h1>
-  <p>ID: <?php echo $curauth->ID;$ciddy = $curauth->ID; ?>
+  <?php the_author_meta; ?>
 </div>
 
 
