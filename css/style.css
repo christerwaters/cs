@@ -193,7 +193,8 @@ video {
 .header {
   width: 40vw;
   min-height: 10vw;
-  display: block; }
+  display: block;
+  margin-bottom: 6vw; }
   .header h1 {
     font-size: 6.9vw;
     line-height: 9.2vw;
@@ -201,8 +202,6 @@ video {
     word-break: break-all;
     margin-bottom: 5vw;
     text-transform: uppercase; }
-  .header p {
-    margin-bottom: 8vw; }
   .header .credits .credit {
     min-width: 100%;
     display: block; }
