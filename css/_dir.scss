@@ -23,8 +23,8 @@
     .info{
       color:#fff;
       display:none;
-      width:$dir-i-w - $dir-i-i-m*2;
-      height:$dir-i-w - $dir-i-i-m*2;
+      width:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
+      height:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
       margin:$dir-i-i-m;
       padding:$dir-i-i-p;
       background:$dark;
