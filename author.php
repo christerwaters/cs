@@ -12,6 +12,10 @@ $ciddy = $curauth->ID;
 <div class="header">
   <h1><?php echo $curauth->display_name; ?></h1>
   <?php the_author_meta($ciddy); ?>
+
+  <p class="title">
+    <?php the_field('profiletitle', 'user_'. $ciddy); ?>
+  </p>
 </div>
 
 
