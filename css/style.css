@@ -166,7 +166,7 @@ a {
     background-size: 100% 6vw;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: auto; }
+    cursor: pointer; }
 
 ol li {
   list-style-type: decimal-leading-zero; }
