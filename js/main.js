@@ -10,7 +10,7 @@ $( ".burger" ).click(function() {
 
 $('.blocks-gallery-grid').slick({
   centerMode: true,
-  centerPadding: '3vw',
+  centerPadding: '60px',
   slidesToShow: 3,
   responsive: [
     {
@@ -18,7 +18,7 @@ $('.blocks-gallery-grid').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '2vw',
+        centerPadding: '40px',
         slidesToShow: 3
       }
     },
@@ -27,7 +27,7 @@ $('.blocks-gallery-grid').slick({
       settings: {
         arrows: false,
         centerMode: true,
-        centerPadding: '2vw',
+        centerPadding: '40px',
         slidesToShow: 1
       }
     }
