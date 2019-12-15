@@ -41,9 +41,7 @@
 .home p .tre-i{
   display: inline-block;
   width: 33%;
-  z-index: 2;
   .tre-i-i{
-    z-index:-1;
     font-weight: 700;
     font-style: italic;
     display: inline-block;
@@ -51,9 +49,5 @@
     position: relative;
     font-size: 80%;
     margin-top: 1.5vw;
-    z-index: 2;
-    a{
-      z-index: 2;
-    }
   }
 }
