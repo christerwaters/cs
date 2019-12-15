@@ -24,6 +24,10 @@ while ( have_posts() ) :
 	<?php };  ?>
 </div>
 
+
+
+
+
 <div class="dir">
 
 <?php
@@ -51,5 +55,6 @@ foreach($users as $user){
 ?>
 </div>
 <?php
-get_sidebar();
-get_footer();
+  get_sidebar();
+  get_footer();
+?>
