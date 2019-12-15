@@ -1751,7 +1751,10 @@ a.plyr__control::after, a.plyr__control::before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 82vw;
-  margin: -4.1vw; }
+  margin-top: -1vw;
+  margin-right: -1.1vw;
+  margin-bottom: -1vw;
+  margin-left: -1vw; }
   .dir .dir-item {
     width: 25.3vw;
     height: 25.3vw;
@@ -1896,20 +1899,16 @@ a.plyr__control::after, a.plyr__control::before {
   font-weight: 400;
   font-size: 1.5vw; }
 
-.tjenester ol li,
-.tjenester ul li {
+.tjenester ol li {
   font-size: 2.3vw;
   line-height: 1.5333333333vw;
   list-style-position: inside;
   margin-bottom: 6vw; }
-  .tjenester ol li a,
-  .tjenester ul li a {
+  .tjenester ol li a {
     line-height: 5.75vw;
     font-size: 4.6vw;
     list-style-position: inside; }
-  .tjenester ol li::before, .tjenester ol li:before,
-  .tjenester ul li::before,
-  .tjenester ul li:before {
+  .tjenester ol li::before, .tjenester ol li:before {
     line-height: 0;
     display: block;
     content: "\a";
