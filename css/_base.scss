@@ -108,7 +108,7 @@ video{
       transition: max-height 200ms;
       max-height: 2vw;
     }
-    details open{
+    details[open]{
       transition: max-height 200ms;
       max-height: 200vw;
     }
