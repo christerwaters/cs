@@ -1760,6 +1760,7 @@ a.plyr__control::after, a.plyr__control::before {
     height: 25.3vw;
     display: inline-block;
     background-size: cover;
+    background-position: center;
     margin: 1vw; }
     .dir .dir-item:hover .info {
       display: block; }
