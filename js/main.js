@@ -8,7 +8,7 @@ $( ".burger" ).click(function() {
 
 
 
-$('.wp-block-gallery').slick({
+$('.blocks-gallery-grid').slick({
   centerMode: true,
   centerPadding: '3vw',
   slidesToShow: 3,

@@ -214,6 +214,9 @@ video {
     text-transform: uppercase; }
   .header p {
     margin-bottom: 8vw; }
+  .header .credits .credit {
+    min-width: 100%;
+    display: block; }
 
 .pager {
   padding: 10vw 0;

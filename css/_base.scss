@@ -110,6 +110,12 @@ video{
   p{
     margin-bottom:8vw;
   }
+  .credits{
+    .credit{
+      min-width: 100%;
+      display: block;
+    }
+  }
 }
 
 .pager{
