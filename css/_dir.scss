@@ -35,6 +35,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
+        width:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
         h3{
           text-transform: uppercase;
           word-break: break-all;
