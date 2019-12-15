@@ -3,7 +3,7 @@ $logo-sizer:50;
   position:fixed;
   width:.20vw*$logo-sizer;
   height:.08vw*$logo-sizer;
-  top:8vw;
+  top:calc(10vw-(.20vw*$logo-sizer));
   right:.18vw*$logo-sizer;
   img{
     height:100%;
@@ -22,7 +22,7 @@ $logo-sizer:50;
   .burger{
     display:block;
     position:fixed;
-    top:.10vw*$logo-sizer;
+    top:10vw;
     right:.10vw*$logo-sizer;
     width:.04vw*$logo-sizer;
     height:.04vw*$logo-sizer;

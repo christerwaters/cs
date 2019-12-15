@@ -1680,7 +1680,7 @@ a.favvv:hover:after {
   position: fixed;
   width: 10vw;
   height: 4vw;
-  top: 8vw;
+  top: calc(10vw-(.20vw*$logo-sizer));
   right: 9vw; }
   .logo img {
     height: 100%;
@@ -1696,7 +1696,7 @@ a.favvv:hover:after {
   .menu .burger {
     display: block;
     position: fixed;
-    top: 5vw;
+    top: 10vw;
     right: 5vw;
     width: 2vw;
     height: 2vw; }
