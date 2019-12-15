@@ -1,0 +1,14 @@
+
+
+.plyr__poster,
+.plyr__video-wrapper,
+.plyr--video{
+	background-color:#fff !important;
+}
+.plyr--full-ui input[type=range]{
+	color:#272a31 !important;
+}
+.plyr__control--overlaid,
+.plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true]{
+	background-color:#272a31 !important;
+}
