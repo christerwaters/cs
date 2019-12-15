@@ -5,7 +5,7 @@ $logo-sizer:50;
   height:.08vw*$logo-sizer;
   transform:translateY(-.02vw*$logo-sizer);
   top:10vw;
-  right:.18vw*$logo-sizer;
+  right:18vw;
   img{
     height:100%;
     width:100%;
@@ -24,7 +24,7 @@ $logo-sizer:50;
     display:block;
     position:fixed;
     top:10vw;
-    right:.10vw*$logo-sizer;
+    right:10vw;
     width:.04vw*$logo-sizer;
     height:.04vw*$logo-sizer;
     transform:rotate(1deg);

@@ -1643,7 +1643,7 @@ a.favvv {
   -webkit-transform: translateY(-1vw);
           transform: translateY(-1vw);
   top: 10vw;
-  right: 9vw; }
+  right: 18vw; }
   .logo img {
     height: 100%;
     width: 100%; }
@@ -1659,7 +1659,7 @@ a.favvv {
     display: block;
     position: fixed;
     top: 10vw;
-    right: 5vw;
+    right: 10vw;
     width: 2vw;
     height: 2vw;
     -webkit-transform: rotate(1deg);
