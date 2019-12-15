@@ -116,7 +116,7 @@ body {
   left: 0;
   padding: 0;
   width: 80vw;
-  margin: 11vw 10vw;
+  margin: 10vw;
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
   font-size: 1.5333333333vw;
@@ -1760,10 +1760,14 @@ a.plyr__control::after, a.plyr__control::before {
     height: 25.3vw;
     display: inline-block;
     background-size: cover;
+    border: .01vw solid #fff;
     background-position: center;
     margin: 1vw; }
-    .dir .dir-item:hover .info {
-      display: block; }
+    .dir .dir-item:hover {
+      cursor: pointer; }
+      .dir .dir-item:hover .info {
+        display: block;
+        z-index: 2; }
     .dir .dir-item .info {
       color: #fff;
       display: none;
