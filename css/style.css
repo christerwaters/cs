@@ -1618,21 +1618,18 @@ a.favvv:after {
   background-color: transparent;
   background-image: url(../media/arrow.png); }
 
-a.hae,
-a.play,
-a.favvv {
-  z-index: -1;
-  font-weight: 700;
-  font-style: italic;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-  font-size: 80%;
-  margin-top: 1.5vw; }
-
 .home p .tre-i {
   display: inline-block;
   width: 33%; }
+  .home p .tre-i .tre-i-i {
+    z-index: -1;
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    font-size: 80%;
+    margin-top: 1.5vw; }
 
 .home .header {
   margin-top: 15vw; }
