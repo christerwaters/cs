@@ -18,6 +18,9 @@ foreach($users as $user){
           <h3>
             <?php echo $user->display_name; ?>
           </h3>
+          <p class="title">
+            <?php the_field('profiletitle', 'user_'. $user->ID); ?>
+          </p>
         </div>
       </div>
     </div>

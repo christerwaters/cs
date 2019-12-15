@@ -43,9 +43,11 @@ while ( have_posts() ) :
 ?>
 <div class="pager">
   <div class="previous"></div>
-  <div class="back">
-    Tilbake til prosjekter
-  </div>
+  <a href="<?php echo get_site_url();?>/prosjekter">
+    <div class="back">
+      Tilbake til prosjekter
+    </div>
+  </a>
   <div class="next"></div>
 </div>
 <?php
