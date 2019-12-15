@@ -5,7 +5,7 @@ body{
   left:0;
   padding:0;
   width:80vw;
-  margin:5vw 10vw;
+  margin:10vw;
   color:$dark;
   font-family:'Avenir', 'Montserrat', 'Arial', sans-serif;
   font-size:$font-size/3;
@@ -96,15 +96,12 @@ video{
 }
 
 .header{
-  margin-top:15vw;
   width:40vw;
   min-height: 10vw;
   display:block;
   h1{
     font-size:$font-size*1.5;
     line-height:$font-size*2;
-    text-align: justify;
-    text-justify: inter-word;
     font-weight:900;
     word-break: break-all;
     margin-bottom:5vw;

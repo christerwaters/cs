@@ -111,7 +111,7 @@ body {
   left: 0;
   padding: 0;
   width: 80vw;
-  margin: 5vw 10vw;
+  margin: 10vw;
   color: #272a31;
   font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
   font-size: 1.5333333333vw;
@@ -202,15 +202,12 @@ video {
   max-width: 100%; }
 
 .header {
-  margin-top: 15vw;
   width: 40vw;
   min-height: 10vw;
   display: block; }
   .header h1 {
     font-size: 6.9vw;
     line-height: 9.2vw;
-    text-align: justify;
-    text-justify: inter-word;
     font-weight: 900;
     word-break: break-all;
     margin-bottom: 5vw;
