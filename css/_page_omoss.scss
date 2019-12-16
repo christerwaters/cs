@@ -1,28 +1,17 @@
 .om-oss{
+  .header{
+    display:none;
+  }
   h2{
+    margin-top: 10vw;
     font-size: 6.91vw;
     line-height: 6.91vw;
   }
-  .wp-block-coblocks-accordion,
-  p{
-    width: 60%;
-    margin-left:20%;
-  }
-  .wp-block-coblocks-accordion{
-    margin-top:5vw;
-    p{
-      width:100%;
-      margin-left:0;
-    }
-  }
-}
-.accordion-wrap {
-  width: 80%;
 }
 
 button.accordion {
-  width: 80%;
-  margin-left:10%;
+  width: 60%;
+  margin-left:20%;
   border: none;
   outline: none;
   text-align: left;

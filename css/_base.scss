@@ -96,14 +96,6 @@ video{
 .wp-block-columns{
   display: flex;
 }
-.is-vertically-aligned-center{
-  display: flex;
-  *{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: flex-center;
-  }
-}
 
 .wp-block-jetpack-slideshow_pagination{
   display:none;
