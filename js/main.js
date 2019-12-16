@@ -7,13 +7,6 @@ $( ".burger" ).click(function() {
 });
 
 
-
-$('.blocks-gallery-grid').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3
-});
-
 var accordions = document.getElementsByClassName("accordion");
 
 for (var i = 0; i < accordions.length; i++) {
