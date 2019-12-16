@@ -16,3 +16,40 @@
     }
   }
 }
+.accordion-wrap {
+  width: 80%;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 2vw;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 1.2vw;
+  margin:.3vw 1vw .3vw .3vw;
+  float: left;
+}
+
+button.accordion.is-open:after {
+  content: '\f056';
+}
+
+
+.accordion-content {
+  background-color: white;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
