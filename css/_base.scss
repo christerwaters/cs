@@ -104,40 +104,14 @@ video{
     align-items: flex-center;
   }
 }
-.wp-block-coblocks-accordion-item{
-    margin-bottom: 1vw;
-    details{
-      transition: max-height 200ms;
-      max-height: 2vw;
-    }
-    details[open]{
-      transition: max-height 200ms;
-      max-height: 200vw;
-    }
 
-    summary::-webkit-details-marker {
-     display: none
-   }
-
-   summary:after {
-     background: url(some-picture);
-     float: left;
-     height: 20px;
-     width: 20px;
-     content: " ";
-   }
-
-   details[open] summary:after {
-     background: url(other-picture);
-   }
-
-
-  .wp-block-coblocks-accordion-item__title{
-    strong{
-      font-weight:900;
-    }
-  }
-  .wp-block-coblocks-accordion-item__content{
-    margin-top:2vw;
-  }
+.wp-block-jetpack-slideshow_pagination{
+  display:none;
+}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide{
+  background:transparent;
+}
+.wp-block-jetpack-slideshow{
+  width: 90vw;
+  left: -5vw;
 }
