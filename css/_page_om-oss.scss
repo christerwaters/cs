@@ -21,16 +21,16 @@
 }
 
 button.accordion {
-  width: 100%;
-  background-color: #fff;
+  width: 80%;
+  margin-left:10%;
   border: none;
   outline: none;
   text-align: left;
-  padding: 15px 20px;
+  padding: 1.5vw 2vw;
   font-size: 2vw;
   color: #444;
+
   cursor: pointer;
-  transition: background-color 0.2s linear;
 }
 
 button.accordion:after {
@@ -47,8 +47,7 @@ button.accordion.is-open:after {
 
 
 .accordion-content {
-  background-color: white;
-  padding: 0 20px;
+  padding: 0 2vw;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
