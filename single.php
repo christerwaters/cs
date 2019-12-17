@@ -12,6 +12,11 @@ while ( have_posts() ) :
 <h1>
   <?php the_title(); ?>
 </h1>
+<p class="excerpt">
+  <?php
+    the_excerpt();
+  ?>
+</p>
 <p class="credits">
   <?php if( have_rows('credits') ): ?>
 
@@ -31,14 +36,9 @@ while ( have_posts() ) :
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
-<p class="excerpt">
-  <?php
-    the_excerpt();
-  ?>
-</p>
 <p class="kunde">
   <?php if( get_field('kunde') ) { ?>
-    <?php the_field('kunde') ?>.
+    Kunde: <?php the_field('kunde') ?>.
   <?php }; ?>
 </p>
 </div>
