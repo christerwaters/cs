@@ -98,7 +98,6 @@ video{
 }
 .is-vertically-aligned-center{
   display: flex;
-  vertical-align: middle;
   *{
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -110,10 +109,18 @@ video{
 .wp-block-jetpack-slideshow_pagination{
   display:none;
 }
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide,
 .wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_slide{
-  background:transparent;
+  background:transparent !important;
 }
 .wp-block-jetpack-slideshow{
   width: 90vw;
   left: -5vw;
+}
+
+
+.wp-block-video,
+.wp-block-jetpack-slideshow{
+  margin-top:5vw;
+  margin-bottom:5vw;
 }
