@@ -7,6 +7,10 @@
     font-size: 6.91vw;
     line-height: 6.91vw;
   }
+  p.slim{
+    width: 60%;
+    margin-left:20%;
+  }
 }
 
 button.accordion {
@@ -40,4 +44,8 @@ button.accordion.is-open:after {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+  p{
+    width:60%;
+    margin-left:20%;
+  }
 }
