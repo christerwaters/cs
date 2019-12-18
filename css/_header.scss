@@ -1,6 +1,7 @@
 $logo-sizer:50;
 .logo{
   position:fixed;
+  z-index: 2000;
   width:.20vw*$logo-sizer;
   height:.08vw*$logo-sizer;
   transform:translateY(-.02vw*$logo-sizer);
