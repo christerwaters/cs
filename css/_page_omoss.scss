@@ -7,15 +7,10 @@
     font-size: 6.91vw;
     line-height: 6.91vw;
   }
-  p.slim{
-    width: 60%;
-    margin-left:20%;
-  }
 }
 
 button.accordion {
-  width: 60%;
-  margin-left:20%;
+  width: 100%;
   border: none;
   outline: none;
   text-align: left;
@@ -27,15 +22,15 @@ button.accordion {
 }
 
 button.accordion:after {
-  content: '\f055';
-  font-family: "fontawesome";
+  content: '+';
+  font-family: 'Mansalva';
   font-size: 1.2vw;
   margin:.3vw 1vw .3vw .3vw;
   float: left;
 }
 
 button.accordion.is-open:after {
-  content: '\f056';
+  content: '-';
 }
 
 
