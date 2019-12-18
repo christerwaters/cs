@@ -9,14 +9,21 @@
 while ( have_posts() ) :
 	the_post();
 ?>
-<h1>
-  <?php the_title(); ?>
-</h1>
-<p class="excerpt">
-  <?php
-    the_excerpt();
-  ?>
-</p>
+
+<?php if ( get_field('hide_title')!='True'){?>
+  <h1>
+    <?php the_title(); ?>
+  </h1>
+<?php }; ?>
+
+<?php if ( get_field('hide_excerpt')!='True'){?>
+  <p class="excerpt">
+    <?php
+      the_excerpt();
+    ?>
+  </p>
+<?php }; ?>
+<?php if ( get_field('hide_credits')!='True'){?>
 <p class="credits">
   <?php if( have_rows('credits') ): ?>
 
@@ -36,6 +43,7 @@ while ( have_posts() ) :
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
+<?php }; ?>
 <p class="kunde">
   <?php if( get_field('kunde') ) { ?>
     Kunde: <?php the_field('kunde') ?>.
