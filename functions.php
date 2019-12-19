@@ -18,7 +18,14 @@ if ( in_array( 'editor', (array) $user->roles ) ) {
 function csboth() {
   echo '<style>
     .menu-top#toplevel_page_jetpack,
-    .menu-top#menu-posts{
+    .menu-top#menu-posts,
+    .menu-top#toplevel_page_wpcf7,
+    .menu-top#menu-comments,
+    .menu-top#menu-tools,
+    .wp-admin-bar-wp-logo,
+    .wp-admin-bar-my-sites,
+    .wp-admin-bar-comments
+    .ab-top-secondary.ab-top-menu{
       display:none;
     }
   </style>';
