@@ -35,7 +35,7 @@ while ( have_posts() ) :
           <?php if( get_sub_field('extname') ) { ?>
             <?php the_sub_field('extname')?>.
           <?php }; ?>
-
+          <?php echo get_sub_field('intname');?>
           <?php if( get_sub_field('intname') ) { ?>
             <?php $args = array(
               'orderby'       => 'name',
@@ -49,7 +49,7 @@ while ( have_posts() ) :
               'style'         => 'none',
               'html'          => true,
               'include'       => get_sub_field('intname')); ?>
-            <a href="<?php echo get_author_posts_url();?>">
+            <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
               <?php wp_list_authors( $args ); ?>
             </a>
           <?php }; ?>
