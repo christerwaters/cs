@@ -48,7 +48,7 @@ while ( have_posts() ) :
               'echo'          => true,
               'style'         => 'none',
               'html'          => true,
-              'include'       => get_sub_field('intname'); ?>
+              'include'       => get_sub_field('intname')); ?>
             <a href="<?php echo get_author_posts_url();?>">
               <?php wp_list_authors( $args ); ?>
             </a>
