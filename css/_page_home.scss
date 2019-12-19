@@ -13,6 +13,16 @@
   background-color: transparent;
   background-image: url(../media/circle.png);
 }
+.home .excerpt a:nth-child(1),
+.home .excerpt a:nth-child(2),
+.home .excerpt a:nth-child(3){
+  &:after{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+  }
+}
 .tre-i-i.play:after {
   z-index: -1;
   position: absolute !important;

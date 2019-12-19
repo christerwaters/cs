@@ -25,7 +25,7 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 
-var randomize = $(".community .dir a");
+var randomize = $(".tilfeldig");
 
 for(var i = 0; i < randomize.length; i++){
     var target = Math.floor(Math.random() * randomize.length -1) + 1;

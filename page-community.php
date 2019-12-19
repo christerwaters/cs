@@ -39,6 +39,7 @@ while ( have_posts() ) :
 $users = get_users();
 foreach($users as $user){
 ?>
+<span class="tilfeldig">
   <a href="<?php echo get_author_posts_url($user->ID);?>">
     <div class="dir-item team-item" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
       <div class="info">
@@ -53,6 +54,7 @@ foreach($users as $user){
       </div>
     </div>
   </a>
+</span>
 <?php
 }
 
