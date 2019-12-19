@@ -37,18 +37,9 @@ while ( have_posts() ) :
           <?php }; ?>
           <?php echo get_sub_field('intname');?>
           <?php if( get_sub_field('intname') ) { ?>
-            <?php $args = array(
-              'orderby'       => 'name',
-              'order'         => 'ASC',
-              'number'        => null,
-              'optioncount'   => false,
-              'exclude_admin' => false,
-              'show_fullname' => false,
-              'hide_empty'    => false,
-              'echo'          => true,
-              'style'         => 'none',
-              'html'          => true,
-              'include'       => get_sub_field('intname')); ?>
+              <?php $user = get_user_by( 'ID', get_sub_field('intname') );
+                    echo $user->first_name . ' ' . $user->last_name;
+              ?>
             <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
               <?php wp_list_authors( $args ); ?>
             </a>
