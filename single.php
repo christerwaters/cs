@@ -29,7 +29,9 @@ while ( have_posts() ) :
 
     <?php while( have_rows('credits') ): the_row(); ?>
         <span class="credit">
-          <?php the_sub_field('c_title'); ?>:
+          <?php if( get_sub_field('c_title') ) { ?>
+            <?php the_sub_field('c_title'); ?>:
+          <?php }; ?>
           <?php if( get_sub_field('extname') ) { ?>
             <?php the_sub_field('extname')?>.
           <?php }; ?>
@@ -43,6 +45,7 @@ while ( have_posts() ) :
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
+<?php }; ?>
 <p class="kunde">
   <?php if( get_field('kunde') ) { ?>
     Kunde: <?php the_field('kunde') ?>.
