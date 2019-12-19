@@ -24,9 +24,18 @@ function csboth() {
     .menu-top#menu-tools,
     .wp-admin-bar-wp-logo,
     .wp-admin-bar-my-sites,
-    .wp-admin-bar-comments
-    .ab-top-secondary.ab-top-menu{
+    .wp-admin-bar-comments,
+    .ab-top-secondary.ab-top-menu,
+    .user-rich-editing-wrap,
+    .user-admin-color-wrap,
+    .user-comment-shortcuts-wrap,
+    .show-admin-bar.user-admin-bar-front-wrap{
       display:none;
+    }
+    .disabled{
+      opacity:.5;
+      pointer-events:none;
+      cursor:not-allowed;
     }
   </style>';
 }
