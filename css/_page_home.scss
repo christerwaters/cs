@@ -55,7 +55,9 @@
   }
 }
 
-.home .dir .dir-item:nth-child(4),
-.home .dir .dir-item:nth-child(5) {
-    color:#fff;
+.home .dir a:nth-child(4),
+.home .dir a:nth-child(5){
+  .dir-item{
+    color:#dadada !important;
+  }
 }
