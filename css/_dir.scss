@@ -21,6 +21,12 @@
       .info{
         display:block;
         z-index:2;
+        .info-m{
+          transform: translateY(-50%);
+          &:hover{
+            cursor:pointer;
+          }
+        }
         &:hover{
           cursor:pointer;
         }
@@ -41,7 +47,7 @@
       .info-m{ /*have to keep this here to make the text show in the middle */
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(50%);
         width:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
         h3{
           text-transform: uppercase;
