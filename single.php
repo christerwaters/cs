@@ -36,7 +36,7 @@ while ( have_posts() ) :
             <?php the_sub_field('extname')?>.
           <?php }; ?>
           <?php if( get_sub_field('intname') ) { ?>
-            <?php echo test ?>
+            <?php echo 'test' ?>
               <?php $user = get_user_by( 'ID', get_sub_field('intname') );
                     echo $user->first_name . ' ' . $user->last_name;
               ?>
