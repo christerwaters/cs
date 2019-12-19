@@ -43,29 +43,42 @@ add_action( 'admin_footer', 'user_profile_fields_disable_js' );
 
 }
 
-/**
-* Disables selected fields in WP Admin user profile (profile.php, user-edit.php)
-*/
-function user_profile_fields_disable_js() {
-?>
-<script>
-jQuery(document).ready( function($) {
-var fields_to_disable = ['email', 'role'];
-for(i=0; i<fields_to_disable.length; i++) {
-if ( $('#'+ fields_to_disable[i]).length ) {
-$('#'+ fields_to_disable[i]).attr("disabled", "disabled");
+
+
+
+
+$user = wp_get_current_user();
+if ( in_array( 'author', (array) $user->roles ) ) {
+    add_action('admin_head', 'csboth');
+    add_action('admin_head', 'csauthor');
 }
+$user = wp_get_current_user();
+if ( in_array( 'editor', (array) $user->roles ) ) {
+    add_action('admin_head', 'csboth');
+    add_action('admin_head', 'cseditor');
 }
-});
-</script>
-<?php
+function csboth() {
+  echo '<style>
+    .menu-top#toplevel_page_jetpack,
+    .menu-top#menu-posts{
+      display:none;
+    }
+  </style>';
 }
+function csauthor() {
+  echo '<style>
+    .menu-top#menu-posts{
 
+    }
+  </style>';
+}
+function cseditor() {
+  echo '<style>
+    .menu-top#menu-posts{
 
-
-
-
-
+    }
+  </style>';
+}
 
 
 
