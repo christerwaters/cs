@@ -62,6 +62,8 @@ $cnv: .5;
     border: solid 7px #41403E;
     border: solid 7vw*$cnv #41403E; /* vw */
   }
+  textarea,
+  input[type="email"],
   input[type="text"]{
     width:100%;
   }
