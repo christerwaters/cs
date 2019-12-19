@@ -58,6 +58,12 @@
 .home .dir a:nth-child(4),
 .home .dir a:nth-child(5){
   .dir-item{
-    color:#dadada !important;
+    width: 39vw;
+    .info{
+      width: 35vw;
+      .info-m{
+        width: 35vw;
+      }
+    }
   }
 }
