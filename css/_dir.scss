@@ -17,26 +17,9 @@
     border: .01vw solid #fff;
     background-position: center;
     margin:$dir-i-m;
-    &:hover{
-      .info{
-        display:block;
-        z-index:2;
-        .info-m{
-          transition: transform 200ms  ease-in-out 0;
-          transform: translateY(-50%);
-          &:hover{
-            cursor:pointer;
-          }
-        }
-        &:hover{
-          cursor:pointer;
-        }
-      }
-      cursor:pointer;
-    }
     .info{
       color:#fff;
-      display:none;
+      opacity:0;
       width:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
       height:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
       margin:$dir-i-i-m;
@@ -58,6 +41,23 @@
           line-height:2vw;
         }
       }
+    }
+    &:hover{
+      .info{
+        opacity:1;
+        z-index:2;
+        .info-m{
+          transition: transform 200ms  ease-in-out 0;
+          transform: translateY(-50%);
+          &:hover{
+            cursor:pointer;
+          }
+        }
+        &:hover{
+          cursor:pointer;
+        }
+      }
+      cursor:pointer;
     }
   }
 }
