@@ -28,7 +28,7 @@ while ( have_posts() ) :
   <?php if( have_rows('credits') ): ?>
 
     <?php while( have_rows('credits') ): the_row(); ?>
-        <span class="credit updated">
+        <span class="credit">
           <?php if( get_sub_field('c_title') ) { ?>
             <?php the_sub_field('c_title'); ?>:
           <?php }; ?>
@@ -37,9 +37,20 @@ while ( have_posts() ) :
           <?php }; ?>
 
           <?php if( get_sub_field('intname') ) { ?>
-
-            <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
-                <?php echo get_the_author_meta( 'display_name', get_sub_field('intname'))?>..
+            <?php $args = array(
+              'orderby'       => 'name',
+              'order'         => 'ASC',
+              'number'        => null,
+              'optioncount'   => false,
+              'exclude_admin' => false,
+              'show_fullname' => false,
+              'hide_empty'    => false,
+              'echo'          => true,
+              'style'         => 'none',
+              'html'          => true,
+              'include'       =>  ); ?>
+            <a href="<?php echo get_author_posts_url();?>">
+              <?php wp_list_authors( $args ); ?>
             </a>
           <?php }; ?>
         </span>
