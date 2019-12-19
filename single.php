@@ -39,7 +39,7 @@ while ( have_posts() ) :
           <?php if( get_sub_field('intname') ) { ?>
 
             <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
-                <?php echo get_the_author_meta( 'display_name', get_sub_field('intname'))?>.
+                <?php echo get_the_author_meta( 'display_name', get_sub_field('intname'))?>..
             </a>
           <?php }; ?>
         </span>
