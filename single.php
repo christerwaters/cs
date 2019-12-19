@@ -24,6 +24,8 @@ while ( have_posts() ) :
   </p>
 <?php }; ?>
 <?php if ( get_field('hide_credits')!='True'){?>
+  <style> .credits {display:none !important;} </style>
+<?php }; ?>
 <p class="credits">
   <?php if( have_rows('credits') ): ?>
 
@@ -45,7 +47,6 @@ while ( have_posts() ) :
     <?php endwhile; ?>
   <?php endif; ?>
 </p>
-<?php }; ?>
 <p class="kunde">
   <?php if( get_field('kunde') ) { ?>
     Kunde: <?php the_field('kunde') ?>.
