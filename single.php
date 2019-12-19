@@ -28,7 +28,7 @@ while ( have_posts() ) :
   <?php if( have_rows('credits') ): ?>
 
     <?php while( have_rows('credits') ): the_row(); ?>
-        <span class="credit">
+        <span class="credit updated">
           <?php if( get_sub_field('c_title') ) { ?>
             <?php the_sub_field('c_title'); ?>:
           <?php }; ?>
