@@ -38,7 +38,7 @@ while ( have_posts() ) :
             <?php the_sub_field('extname')?>.
           <?php }; ?>
           <?php if( get_sub_field('intname') ) { ?>
-            <?php echo get_sub_field('intname');?>
+            <?php print_r(get_sub_field('intname'));?>
           <?php }; ?>
         </span>
     <?php endwhile; ?>
