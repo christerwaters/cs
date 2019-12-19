@@ -37,12 +37,6 @@ while ( have_posts() ) :
           <?php }; ?>
           <?php if( get_sub_field('intname') ) { ?>
             <?php echo 'test' ?>
-              <?php $user = get_user_by( 'ID', get_sub_field('intname') );
-                    echo $user->first_name . ' ' . $user->last_name;
-              ?>
-            <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
-              <?php echo ' lol ' ?>
-            </a>
           <?php }; ?>
         </span>
     <?php endwhile; ?>
