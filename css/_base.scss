@@ -48,10 +48,13 @@ a{
   font-weight:700;
   font-style: italic;
   display:inline-block;
+  pointer-events: all;
+  cursor: pointer;
   &:hover{
     background-size: 100% 6vw;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: all;
     cursor:pointer;
   }
 }
