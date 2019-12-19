@@ -35,6 +35,7 @@ while ( have_posts() ) :
           <?php if( get_sub_field('extname') ) { ?>
             <?php the_sub_field('extname')?>
           <?php }; ?>
+          <?php echo 'id is: '. get_sub_field('intname');?>
           <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
             <?php $user = get_user_by( 'ID', get_sub_field('intname') );
                   echo $user->display_name;
