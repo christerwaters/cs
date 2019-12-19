@@ -22,6 +22,7 @@
         display:block;
         z-index:2;
         .info-m{
+          transition: transform 200ms  ease-in-out 0;
           transform: translateY(-50%);
           &:hover{
             cursor:pointer;
@@ -48,6 +49,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(50%);
+        transition: transform 200ms  ease-in-out 0;
         width:$dir-i-w - $dir-i-i-m*2 - $dir-i-i-p*2;
         h3{
           text-transform: uppercase;
