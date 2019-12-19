@@ -33,14 +33,14 @@ while ( have_posts() ) :
             <?php the_sub_field('c_title'); ?>:
           <?php }; ?>
           <?php if( get_sub_field('extname') ) { ?>
-            <?php the_sub_field('extname')?>
+            <?php the_sub_field('extname')?>.
           <?php }; ?>
-          <?php echo 'id is: '. get_sub_field('intname');?>
-          <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
-            <?php $user = get_user_by( 'ID', get_sub_field('intname') );
-                  echo $user->display_name;
-            ?>
-          </a>.
+          <?php if( get_sub_field('intname') ) { ?>
+            <?php $user = get_user_by( 'id', get_sub_field('intname'))?>
+            <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
+              <?php echo $user->display_name; ?>.
+            </a>
+          <?php }; ?>
         </span>
     <?php endwhile; ?>
   <?php endif; ?>
