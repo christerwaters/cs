@@ -41,7 +41,7 @@ while ( have_posts() ) :
                     echo $user->first_name . ' ' . $user->last_name;
               ?>
             <a href="<?php echo get_author_posts_url(get_sub_field('intname'));?>">
-              <?php wp_list_authors( $args ); ?>
+              <?php echo ' lol ' ?>
             </a>
           <?php }; ?>
         </span>
