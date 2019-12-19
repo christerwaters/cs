@@ -41,7 +41,7 @@ while ( have_posts() ) :
   		setup_postdata( $post );
   		?>
       <a href="<?php the_permalink(); ?>">
-        <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
+        <div class="dir-item portfolio-item <?php echo $page_data->post_name; ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
           <div class="info">
             <div class="info-m">
               <h3>
