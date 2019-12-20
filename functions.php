@@ -29,10 +29,14 @@ function csboth() {
     .user-rich-editing-wrap,
     .user-admin-color-wrap,
     .user-comment-shortcuts-wrap,
-    .show-admin-bar.user-admin-bar-front-wrap{
+    .show-admin-bar.user-admin-bar-front-wrap,
+    .user-url-wrap,
+    .user-profile-picture,
+    .profile-php #wpcontent #wpbody-content h2,
+    .wp-admin-bar-new-post{
       display:none;
     }
-    .disabled{
+    .user-nickname-wrap{
       opacity:.5;
       pointer-events:none;
       cursor:not-allowed;
