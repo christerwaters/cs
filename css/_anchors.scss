@@ -1,15 +1,21 @@
 
 @import 'anchors-b64';
 
-
+a{
+  background-image:none;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  color: #000;
+}
 a:nth-child(1):hover{
-  background:$abg01;
+  background-image:$abg01;
 }
 
 a:nth-child(2):hover{
-  background:$abg02;
+  background-image:$abg02;
 }
 
 a:nth-child(3):hover{
-  background:$abg03;
+  background-image:$abg03;
 }
