@@ -15,32 +15,6 @@ body{
     overflow:hidden;
   }
 }
-h1,h2,
-h3,h4{
-  font-weight:700;
-}
-b h1,b h2,
-b h3,b h4,
-strong h1,strong h2,
-strong h3,strong h4,
-h1 b,h2 b,
-h3 b,h4 b,
-h1 strong,h2 strong,
-h3 strong,h4 strong{
-  font-weight:900;
-}
-h1{font-size:$font-size;line-height:$font-size*1.25;}
-h2{font-size:$font-size*.85;line-height:$font-size*.85*1.25;}
-h3{font-size:$font-size*.85*.85;line-height:$font-size*.85*.85*1.25;}
-h4{font-size:$font-size*.85*.85*.85;line-height:$font-size*.85*.85*.85*1.25;}
-h5{font-size:$font-size*.85*.85*.85;line-height:$font-size*.85*.85*.85*.85*1.25;font-weight:500;}
-
-p{
-
-  font-size:$font-size/3;
-  line-height:$font-size/3*1.25;
-  margin-bottom: $font-size/3*1.25;
-}
 
 
 

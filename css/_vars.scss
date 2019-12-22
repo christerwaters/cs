@@ -14,6 +14,13 @@ $site-margin-left:10vw;
 $site-width:80vw;
 
 
+$font-size-h1:$font-size;
+$font-size-h2:$font-size-h1*.85;
+$font-size-h3:$font-size-h2*.85;
+$font-size-h4:$font-size-h3*.85;
+$font-size-h5:$font-size-h4*.85;
+$font-size-p: $font-size-h4*.85;
+
 
 /* All of those 3 column layouts, the approach is sort of odd, but it works.  */
 $dir-i-w: 25.34vw; /* width */
