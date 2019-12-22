@@ -13,7 +13,7 @@ $cnv: .5;
     font-family: $handwritten, cursive;
     /*     font-family: 'Shadows Into Light', cursive; */
     /*     font-family: 'Covered By Your Grace', cursive; */
-    padding: .2rem .4rem;
+    padding: .2vw .4vw;
   }
 
   input,
@@ -30,8 +30,8 @@ $cnv: .5;
     -ms-flex-item-align: center;
         align-self: center;
     outline: none;
-    border: 2px solid $dark;
-    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border: .2vw solid $dark;
+    border-radius: 25.5vw 1.5vw 22.5vw 1.5vw/1.5vw 22.5vw 1.5vw 25.5vw;
     /*
         Above is shorthand for:
         border-top-left-radius: 255px 15px;
