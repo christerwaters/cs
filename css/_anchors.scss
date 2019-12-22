@@ -6,13 +6,13 @@ a{
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position-y: center;
-  color: #000;
 }
 a:hover:after{
   background-image:none;
 }
 a:hover,
 a.abg01:hover{
+  color:#000 !important; /** Sadly we have to override it on this one... **/
   background-image:$abg01;
 }
 

@@ -9,15 +9,15 @@ $ciddy = $curauth->ID;
 
 
 
-<div class="header">description
-  <h1><?php echo $curauth->display_name; ?></h1>
-
+<div class="header">
+  <h1>
+    <?php echo $curauth->display_name;?>
+  </h1>
   <p class="title">
     <?php the_field('profiletitle', 'user_'. $ciddy); ?>
   </p>
-
   <p class="bio">
-    <?php echo $curauth->description; ?>
+    <?php the_field('profilebio', 'user_'. $ciddy); ?>
   </p>
 </div>
 
