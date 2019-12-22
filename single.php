@@ -54,16 +54,9 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<div class="current">
+<div class="counter">
   <?php global $post;
         $current = $post->ID;
-
-      echo 'portfolio' === get_post_type( $current-1 ) ? 'Yes' : 'No';
-      echo 'portfolio' === get_post_type( $current+1 ) ? 'Yes' : 'No';
-
-      echo $current-1;
-      echo $current+1;
-
         ?>
   <?php
   $query = new WP_Query( array(
