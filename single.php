@@ -70,17 +70,9 @@ while ( have_posts() ) :
         foreach( $query->posts as $key => $p )
             if( $post->ID == $p->ID ) $current = $key + 1;
 
+        echo 'portfolio' === get_post_type( $current-1 ) ? 'Yes' : 'No';
+        echo 'portfolio' === get_post_type( $current+1 ) ? 'Yes' : 'No'; 
 
-        if ($current == $all){
-          echo '< is none';
-        } else {
-          echo '< is'. $current+1;
-        }
-        if ($current == 1){
-          echo '> is none';
-        } else {
-          echo '> is'. $current-1;
-        }
 
         echo $all-$current.'/'.$all;
   ?>
