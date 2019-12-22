@@ -89,7 +89,7 @@ function na_remove_slug( $post_link, $post, $leavename ) {
         return $post_link;
     }
 
-    $post_link = str_replace( '/' . $post->post_type . '/', '/' . 'prosjekt' . '/', $post_link );
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
 /*
   In the future we should add this to the settings page
 */
