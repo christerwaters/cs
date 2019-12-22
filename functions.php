@@ -26,6 +26,7 @@ function csboth() {
     #wp-admin-bar-my-sites,
     #wp-admin-bar-comments,
     #wp-admin-bar-new-post,
+    #screen-meta-links,
     .ab-top-secondary.ab-top-menu,
     .user-rich-editing-wrap,
     .user-admin-color-wrap,
