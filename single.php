@@ -55,9 +55,10 @@ while ( have_posts() ) :
 	endwhile;
 ?>
 <div class="">
+  <?php global $post;$current = $post->post_name;?>
   <?php
   $query = new WP_Query( array(
-            'post_type' => 'works',
+            'post_type' => 'portfolio',
             'post_status' => 'publish',
             'posts_per_page' => '-1',
           	'meta_key'		=> 'show_on_prosjekter',
