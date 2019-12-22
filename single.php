@@ -54,7 +54,7 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<div class="">
+<div class="current">
   <?php global $post;
         $current = $post->ID;?>
   <?php
@@ -69,8 +69,17 @@ while ( have_posts() ) :
         $all = $query->post_count;
         foreach( $query->posts as $key => $p )
             if( $post->ID == $p->ID ) $current = $key + 1;
-
-        echo $current.'/'.$all;
+        if ($current = $all){
+          echo '< is none';
+        } else {
+          echo '< is'. $current+1;
+        }
+        if ($current = 1){
+          echo '> is none';
+        } else {
+          echo '> is'. $current-1;
+        }
+        echo $all-$current.'/'.$all;
   ?>
 </div>
 <?php
