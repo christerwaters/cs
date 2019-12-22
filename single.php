@@ -56,7 +56,15 @@ while ( have_posts() ) :
 ?>
 <div class="current">
   <?php global $post;
-        $current = $post->ID;?>
+        $current = $post->ID;
+
+      echo 'portfolio' === get_post_type( $current-1 ) ? 'Yes' : 'No';
+      echo 'portfolio' === get_post_type( $current+1 ) ? 'Yes' : 'No';
+
+      echo $current-1;
+      echo $current+1;
+
+        ?>
   <?php
   $query = new WP_Query( array(
             'post_type' => 'portfolio',
@@ -69,10 +77,6 @@ while ( have_posts() ) :
         $all = $query->post_count;
         foreach( $query->posts as $key => $p )
             if( $post->ID == $p->ID ) $current = $key + 1;
-
-        echo 'portfolio' === get_post_type( $current-1 ) ? 'Yes' : 'No';
-        echo 'portfolio' === get_post_type( $current+1 ) ? 'Yes' : 'No'; 
-
 
         echo $all-$current.'/'.$all;
   ?>
