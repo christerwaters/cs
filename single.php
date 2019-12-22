@@ -61,8 +61,7 @@ while ( have_posts() ) :
             'post_status' => 'publish',
             'posts_per_page' => '-1',
           	'meta_key'		=> 'show_on_prosjekter',
-          	'meta_value'	=> true
-            ),
+          	'meta_value'	=> true,
             'order' => 'ASC'
         ) );
         $all = $query->post_count;
