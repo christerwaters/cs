@@ -23,8 +23,8 @@ button.accordion {
 button.accordion:after {
   content: '+';
   font-family: $handwritten;
-  font-size:$font-size/3;
-  line-height:$font-size/3*1.25;
+  font-size:$font-size-p;
+  line-height:$font-size-p*1.25;
   margin:.3vw 0 .3vw .3vw;
   width:1.8vw;
   float: left;

@@ -54,18 +54,23 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<div class="pager">
-  <a href="#">
-    <div class="previous"></div>
-  </a>
-  <div class="back">
-    <a href="<?php echo get_site_url();?>/prosjekter">
-      Tilbake til prosjekter
-    </a>
-  </div>
-  <a href="#">
-    <div class="next"></div>
-  </a>
+<div class="">
+  <?php
+  $query = new WP_Query( array(
+            'post_type' => 'works',
+            'post_status' => 'publish',
+            'posts_per_page' => '-1',
+          	'meta_key'		=> 'show_on_prosjekter',
+          	'meta_value'	=> true
+            ),
+            'order' => 'ASC'
+        ) );
+        $all = $query->post_count;
+        foreach( $query->posts as $key => $p )
+            if( $post->ID == $p->ID ) $current = $key + 1;
+
+        echo $current.'/'.$all;
+  ?>
 </div>
 <?php
   get_footer();
