@@ -17,15 +17,15 @@ if ( in_array( 'editor', (array) $user->roles ) ) {
 }
 function csboth() {
   echo '<style>
-    /** Hidden fields **/
     .menu-top#toplevel_page_jetpack,
     .menu-top#menu-posts,
     .menu-top#toplevel_page_wpcf7,
     .menu-top#menu-comments,
     .menu-top#menu-tools,
-    .wp-admin-bar-wp-logo,
-    .wp-admin-bar-my-sites,
-    .wp-admin-bar-comments,
+    #wp-admin-bar-wp-logo,
+    #wp-admin-bar-my-sites,
+    #wp-admin-bar-comments,
+    #wp-admin-bar-new-post,
     .ab-top-secondary.ab-top-menu,
     .user-rich-editing-wrap,
     .user-admin-color-wrap,
@@ -34,9 +34,7 @@ function csboth() {
     .user-url-wrap,
     .user-profile-picture,
     .profile-php #wpcontent #wpbody-content h2,
-    .wp-admin-bar-new-post,
     .acf-editor-wrap .wp-editor-tools,
-    .wp-admin-bar-new-post,
     .user-description-wrap,
     #your-profile #mceu_64,
     #your-profile #mceu_65,
@@ -49,7 +47,6 @@ function csboth() {
     #wpfooter{
       display:none !important;
     }
-    /** "Disabled" field **/
     .user-nickname-wrap{
       opacity:.5 !important;
       pointer-events:none !important;
