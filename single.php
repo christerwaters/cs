@@ -55,7 +55,8 @@ while ( have_posts() ) :
 	endwhile;
 ?>
 <div class="">
-  <?php global $post;$current = $post->post_name;?>
+  <?php global $post;
+        $current = $post->ID;?>
   <?php
   $query = new WP_Query( array(
             'post_type' => 'portfolio',
