@@ -41,3 +41,7 @@ button.accordion.is-open:after {
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
 }
+
+.om-oss .handwritten{
+  font-family: $handwritten, cursive !important;
+}
