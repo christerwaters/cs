@@ -1,3 +1,11 @@
+@charset "UTF-8";
+
+$lg-site-width:1400px;
+$vw: 1vw;
+
+/*** LG ***/
+
+
 
 @import 'reset';
 @import 'vars';
@@ -17,3 +25,30 @@
 @import 'page_community';
 @import 'page_tjenester';
 @import 'page_other';
+
+/*** MD ***/
+
+
+/*** LG ***/
+@media only screen and (min-width: $lg-site-width) {
+  $vw: $lg-site-width/100;
+
+  @import 'reset';
+  @import 'vars';
+  @import 'base';
+  @import 'header';
+  @import 'plyr';
+  @import 'plyroverride';
+  @import 'dir';
+  @import 'pagination';
+  @import 'wpcf7';
+  @import 'type';
+  @import 'anchors';
+
+
+  @import 'page_omoss';
+  @import 'page_home';
+  @import 'page_community';
+  @import 'page_tjenester';
+  @import 'page_other';
+}

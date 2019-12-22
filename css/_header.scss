@@ -2,11 +2,11 @@ $logo-sizer:50;
 .logo{
   position:fixed;
   z-index: 2000;
-  width:.20vw*$logo-sizer;
-  height:.08vw*$logo-sizer;
-  transform:translateY(-.02vw*$logo-sizer);
-  top:10vw;
-  right:$site-margin-right + .04vw*$logo-sizer*2;
+  width:.20*$vw*$logo-sizer;
+  height:.08*$vw*$logo-sizer;
+  transform:translateY(-.02*$vw*$logo-sizer);
+  top:10*$vw;
+  right:$site-margin-right + .04*$logo-sizer*2*$vw;
   img{
     height:100%;
     width:100%;
@@ -25,10 +25,10 @@ $logo-sizer:50;
   .burger{
     display:block;
     position:fixed;
-    top:10vw;
-    right:10vw;
-    width:.04vw*$logo-sizer;
-    height:.04vw*$logo-sizer;
+    top:10*$vw;
+    right:10*$vw;
+    width:.04*$vw*$logo-sizer;
+    height:.04*$vw*$logo-sizer;
     transform:rotate(1deg);
     &:hover{
       cursor:pointer;
@@ -39,16 +39,16 @@ $logo-sizer:50;
       transform:rotate(-1deg);
       position:absolute;
       display:block;
-      width:.04vw*$logo-sizer;
-      height:.005vw*$logo-sizer;
+      width:.04*$vw*$logo-sizer;
+      height:.005*$vw*$logo-sizer;
       background-color:$dark;
       transition:transform 200ms, top 200ms;
     }
     .two{
-      top:.0175vw*$logo-sizer;
+      top:.0175*$vw*$logo-sizer;
     }
     .tre{
-      top:.035vw*$logo-sizer;
+      top:.035*$vw*$logo-sizer;
     }
   }
   nav{
@@ -60,10 +60,10 @@ $logo-sizer:50;
       li{
         list-style:none;
         margin:0;
-        font-size:10vw;
+        font-size:10*$vw;
         font-weight:800;
         max-width: $site-width;
-        transform: translate(0px, 4vw);
+        transform: translate(0px, 4*$vw);
         &:nth-child(1) {transition-delay: 0ms; }
         &:nth-child(2) {transition-delay: 50ms; }
         &:nth-child(3) {transition-delay: 100ms;}
@@ -81,7 +81,7 @@ $logo-sizer:50;
       top:0;
       position:fixed;
       z-index:$z-basis;
-      width:100vw;
+      width:100*$vw;
       height:100vh;
       background-color:#fff;
       content:' ';
@@ -89,17 +89,17 @@ $logo-sizer:50;
     .burger{
       z-index:$z-basis+30;
       .one{
-        top: .75vw;
+        top: .75*$vw;
         transform:rotate(45deg);
         transition:transform 200ms, top 200ms;
       }
       .two{
-        top: .75vw;
+        top: .75*$vw;
         transform:scale(0);
         transition:transform 200ms, top 200ms;
       }
       .tre{
-        top: .75vw;
+        top: .75*$vw;
         transform:rotate(-45deg);
         transition:transform 200ms, top 200ms;
       }
@@ -107,22 +107,22 @@ $logo-sizer:50;
     nav{
       z-index:$z-basis+2;
       display:block;
-      width: 90vw;
-      left: 10vw;
+      width: 90*$vw;
+      left: 10*$vw;
       position: fixed;
       height: 100vh;
       overflow-x: hidden;
       overflow-y: auto;
       position: relative;
       ul{
-        padding-top:5vw;
-        padding-bottom:5vw;
+        padding-top:5*$vw;
+        padding-bottom:5*$vw;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         li{
-          line-height:15vw;
-          transform: translate(0px, 0vw);
+          line-height:15*$vw;
+          transform: translate(0px, 0*$vw);
           transition:transform 150ms;
           &:nth-child(1) {transition-delay: 0ms; }
           &:nth-child(2) {transition-delay: 50ms; }

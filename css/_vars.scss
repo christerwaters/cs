@@ -1,17 +1,15 @@
-@charset "UTF-8";
-
 $dark:#272a31;
-$font-size:4.6vw;
+$font-size:4.6*$vw;
 $font-family: 'Avenir', 'Montserrat', 'Arial', sans-serif;
 $handwritten: 'Architects Daughter', 'Comic Sans', cursive;
 $z-basis:3000;
 
-$site-margin-top:10vw;
-$site-margin-right:10vw;
-$site-margin-bottom:10vw;
-$site-margin-left:10vw;
+$site-margin-top:10*$vw;
+$site-margin-right:10*$vw;
+$site-margin-bottom:10*$vw;
+$site-margin-left:10*$vw;
 
-$site-width:80vw;
+$site-width:80*$vw;
 
 
 $font-size-h1:$font-size;
@@ -23,10 +21,10 @@ $font-size-p: $font-size-h4*.85;
 
 
 /* All of those 3 column layouts, the approach is sort of odd, but it works.  */
-$dir-i-w: 25.34vw; /* width */
-$dir-i-m: 1vw; /* margin */
-$dir-i-p: 1vw; /* padding */
-$dir-i-i-m: 1vw; /* margin - info*/
-$dir-i-i-p: 1vw; /* padding - info */
+$dir-i-w: 25.34*$vw; /* width */
+$dir-i-m: 1*$vw; /* margin */
+$dir-i-p: 1*$vw; /* padding */
+$dir-i-i-m: 1*$vw; /* margin - info*/
+$dir-i-i-p: 1*$vw; /* padding - info */
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
