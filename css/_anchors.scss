@@ -8,6 +8,9 @@ a{
   background-position-y: center;
   color: #000;
 }
+a:hover:after{
+  background-image:none;
+}
 a:hover,
 a.abg01:hover{
   background-image:$abg01;
@@ -19,4 +22,11 @@ a.abg02:hover{
 
 a.abg03:hover{
   background-image:$abg03;
+}
+
+
+/*** Dont add bg here :) ***/
+.dir a,
+a.burger{
+  background-image:none;
 }
