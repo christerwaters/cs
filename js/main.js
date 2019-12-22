@@ -28,13 +28,10 @@ $(document).ready(function(){
     var classes = ["abg01", "abg02", "abg03"];
     var curclass = classes[~~(Math.random()*classes.length)];
     $(this).addClass(curclass);  //Add the active class to the area is hovered
-    }, function () {
-        $(this).removeClass(curclass);
-    });
+  }, function () {
+      $(this).removeClass(curclass);
   });
-
 });
-
 var randomize = $(".tilfeldig");
 
 for(var i = 0; i < randomize.length; i++){
