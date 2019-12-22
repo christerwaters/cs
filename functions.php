@@ -45,14 +45,15 @@ function csboth() {
     #your-profile #mceu_68,
     #your-profile #mceu_69,
     #your-profile #mceu_70,
-    #your-profile #mceu_74k,{
-      display:none;
+    #your-profile #mceu_74k,
+    #wpfooter{
+      display:none !important;
     }
     /** "Disabled" field **/
     .user-nickname-wrap{
-      opacity:.5;
-      pointer-events:none;
-      cursor:not-allowed;
+      opacity:.5 !important;
+      pointer-events:none !important;
+      cursor:not-allowed !important;
     }
   </style>';
 }
