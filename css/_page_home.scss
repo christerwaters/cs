@@ -64,7 +64,9 @@
     margin-top: 1.5vw;
   }
 }
-
+.home .handwritten{
+  font-family: $handwritten, cursive !important; 
+}
 .home .dir a:nth-child(4),
 .home .dir a:nth-child(5){
   .dir-item{
