@@ -29,5 +29,8 @@ a.abg03:hover{
 .logo a,
 .dir a,
 a.burger{
-  background-image:none;
+  &:hover,
+  &:hover:after{
+    background-image:none;
+  }
 }
