@@ -69,16 +69,19 @@ while ( have_posts() ) :
         $all = $query->post_count;
         foreach( $query->posts as $key => $p )
             if( $post->ID == $p->ID ) $current = $key + 1;
-        if ($current = $all){
+
+
+        if ($current == $all){
           echo '< is none';
         } else {
           echo '< is'. $current+1;
         }
-        if ($current = 1){
+        if ($current == 1){
           echo '> is none';
         } else {
           echo '> is'. $current-1;
         }
+
         echo $all-$current.'/'.$all;
   ?>
 </div>
