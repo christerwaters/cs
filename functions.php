@@ -4,6 +4,7 @@ add_theme_support( 'post-thumbnails' ); // add featured image support
 add_theme_support( 'post-formats', array( 'video', 'link', 'image' ) ); // add custom formats
 add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'custom-logo' );
+add_theme_support( 'title-tag' );
 
 $user = wp_get_current_user();
 if ( in_array( 'author', (array) $user->roles ) ) {
