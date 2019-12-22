@@ -73,11 +73,44 @@ function cseditor() {
 function cs_imp(){
   wp_register_script( 'plyr_js', get_template_directory_uri() .'/js/plyr.js', null, false, true ); // .'/js/plyr.js', null, null, true );
   wp_enqueue_script('plyr_js');
+  wp_register_script( 'jq', get_template_directory_uri() .'/js/jq.js', null, false, true );
+  wp_enqueue_script('main_js');
   wp_register_script( 'main_js', get_template_directory_uri() .'/js/main.js', null, false, true );
   wp_enqueue_script('main_js');
-  wp_register_style( 'plyr_css', get_template_directory_uri() .'/css/plyr.css' );
+  wp_register_style( 'plyr_css', get_template_directory_uri() .'/css/style.css' );
   wp_enqueue_style('plyr_css');
 }
 add_action( 'wp_enqueue_scripts', 'cs_imp' );
+
+
+function na_remove_slug( $post_link, $post, $leavename ) {
+
+    if ( 'portfolio' != $post->post_type || 'publish' != $post->post_status ) {
+        return $post_link;
+    }
+
+    $post_link = str_replace( '/' . $post->post_type . '/', '/' . 'prosjekt' . '/', $post_link );
+/*
+  In the future we should add this to the settings page
+*/
+    return $post_link;
+}
+add_filter( 'post_type_link', 'na_remove_slug', 10, 3 );
+
+
+function na_parse_request( $query ) {
+
+    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+        return;
+    }
+
+    if ( ! empty( $query->query['name'] ) ) {
+        $query->set( 'post_type', array( 'post', 'portfolio', 'page' ) );
+    }
+}
+add_action( 'pre_get_posts', 'na_parse_request' );
+
+
+
 
 ?>
