@@ -66,13 +66,8 @@ while ( have_posts() ) :
               'post_type' => 'portfolio',
               'post_status' => 'publish',
               'posts_per_page' => '-1',
-              'tax_query' => array(
-                array (
-                  'taxonomy' => 'show_on',
-                  'field' => 'slug',
-                  'terms' => 'portfolio',
-                )
-              ),
+            	'meta_key'		=> 'show_on_prosjekter',
+            	'meta_value'	=> true,
               'order' => 'ASC'
           ) );
           $all = $query->post_count;
