@@ -33,7 +33,7 @@ while ( have_posts() ) :
       array (
         'taxonomy' => 'show_on',
         'field' => 'slug',
-        'terms' => 'home',
+        'terms' => 'home'
       )
     ),
   ));

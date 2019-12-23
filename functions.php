@@ -134,7 +134,7 @@ function create_show_on() {
     'separate_items_with_commas' => __( 'Separate pages with commas' ),
     'add_or_remove_items' => __( 'Add or remove Show on' ),
     'choose_from_most_used' => __( 'Choose from the most used Show on' ),
-    'menu_name' => __( 'Show on' ),
+    'menu_name' => __( 'Show on' )
   );
 
 // Now register the non-hierarchical taxonomy like tag
@@ -146,7 +146,7 @@ function create_show_on() {
     'show_admin_column' => true,
     'update_count_callback' => '_update_post_term_count',
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'show_on' ),
+    'rewrite' => array( 'slug' => 'show_on' )
   ));
 
 
