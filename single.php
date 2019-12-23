@@ -82,7 +82,6 @@ while ( have_posts() ) :
           <div class="tot-count">
             <?php echo $all ?>
           </div>
-    ?>
   </div>
 </div>
 <?php
