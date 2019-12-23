@@ -5,11 +5,11 @@ body{
   left:0;
   padding:0;
   width:$site-width;
-  margin:10vw;
+  margin:10*$vw auto;
   color:$dark;
   font-family:'Avenir', 'Montserrat', 'Arial', sans-serif;
-  font-size:$font-size/3;
-  line-height:$font-size/3;
+  font-size:$font-size-p;
+  line-height:$font-size-p;
   overflow-x: hidden;
   &.menu-open{
     overflow:hidden;
@@ -48,16 +48,16 @@ video{
 }
 
 .header{
-  width:40vw;
-  min-height: 10vw;
+  width:40*$vw;
+  min-height: 10*$vw;
   display:block;
-  margin-bottom:6vw;
+  margin-bottom:6*$vw;
   h1{
     font-size:$font-size*1.5;
     line-height:$font-size*2;
     font-weight:900;
     word-break: break-all;
-    margin-bottom:5vw;
+    margin-bottom:5*$vw;
     text-transform: uppercase;
   }
   .credits{
@@ -88,13 +88,13 @@ video{
   background:transparent !important;
 }
 .wp-block-jetpack-slideshow{
-  width: 90vw;
-  left: -5vw;
+  width: 90*$vw;
+  left: -5*$vw;
 }
 
 
 .wp-block-video,
 .wp-block-jetpack-slideshow{
-  margin-top:5vw;
-  margin-bottom:5vw;
+  margin-top:5*$vw;
+  margin-bottom:5*$vw;
 }
