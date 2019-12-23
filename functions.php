@@ -111,43 +111,43 @@ function na_parse_request( $query ) {
 }
 add_action( 'pre_get_posts', 'na_parse_request' );
 
-//hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
+// Register Custom Taxonomy
+function show_on() {
 
-add_action( 'init', 'create_show_on', 0 );
+	$labels = array(
+		'name'                       => _x( 'Show on pages', 'Taxonomy General Name', 'show_on' ),
+		'singular_name'              => _x( 'Show on page', 'Taxonomy Singular Name', 'show_on' ),
+		'menu_name'                  => __( 'Show on', 'show_on' ),
+		'all_items'                  => __( 'Show on', 'show_on' ),
+		'parent_item'                => __( 'Show on', 'show_on' ),
+		'parent_item_colon'          => __( 'Show on', 'show_on' ),
+		'new_item_name'              => __( 'Show on', 'show_on' ),
+		'add_new_item'               => __( 'Show on', 'show_on' ),
+		'edit_item'                  => __( 'Show on', 'show_on' ),
+		'update_item'                => __( 'Show on', 'show_on' ),
+		'view_item'                  => __( 'Show on', 'show_on' ),
+		'separate_items_with_commas' => __( 'Show on', 'show_on' ),
+		'add_or_remove_items'        => __( 'Show on', 'show_on' ),
+		'choose_from_most_used'      => __( 'Show on', 'show_on' ),
+		'popular_items'              => __( 'Show on', 'show_on' ),
+		'search_items'               => __( 'Show on', 'show_on' ),
+		'not_found'                  => __( 'Show on', 'show_on' ),
+		'no_terms'                   => __( 'Show on', 'show_on' ),
+		'items_list'                 => __( 'Show on', 'show_on' ),
+		'items_list_navigation'      => __( 'Show on', 'show_on' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => false,
+		'show_ui'                    => false,
+		'show_admin_column'          => false,
+		'show_in_nav_menus'          => false,
+		'show_tagcloud'              => false,
+	);
+	register_taxonomy( 'show_on', array( 'portfolio' ), $args );
 
-function create_show_on() {
-
-// Labels part for the GUI
-
-  $labels = array(
-    'name' => _x( 'Show on', 'taxonomy general name' ),
-    'singular_name' => _x( 'Show on', 'taxonomy singular name' ),
-    'search_items' =>  __( 'Search Show on' ),
-    'popular_items' => __( 'Popular Show on' ),
-    'all_items' => __( 'All Show on' ),
-    'parent_item' => null,
-    'parent_item_colon' => null,
-    'edit_item' => __( 'Edit Show on' ),
-    'update_item' => __( 'Update Show on' ),
-    'add_new_item' => __( 'Add New Show on' ),
-    'new_item_name' => __( 'New Topic Show on' ),
-    'separate_items_with_commas' => __( 'Separate pages with commas' ),
-    'add_or_remove_items' => __( 'Add or remove Show on' ),
-    'choose_from_most_used' => __( 'Choose from the most used Show on' ),
-    'menu_name' => __( 'Show on' )
-  );
-
-// Now register the non-hierarchical taxonomy like tag
-
-  register_taxonomy('show_on','post',array(
-    'hierarchical' => false,
-    'labels' => $labels,
-    'show_ui' => true,
-    'show_admin_column' => true,
-    'update_count_callback' => '_update_post_term_count',
-    'query_var' => true,
-    'rewrite' => array( 'slug' => 'show_on' )
-  ));
-
+}
+add_action( 'init', 'show_on', 0 );
 
 ?>
