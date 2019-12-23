@@ -29,7 +29,9 @@ while ( have_posts() ) :
 
       <?php while( have_rows('credits') ): the_row(); ?>
           <span class="credit">
-            <?php the_sub_field('c_title'); ?>:
+            <?php if( get_sub_field('c_title') ) { ?>
+              <?php the_sub_field('c_title'); ?>:
+            <?php }; ?>
             <?php if( get_sub_field('extname') ) { ?>
               <?php the_sub_field('extname')?>.
             <?php }; ?>
@@ -54,25 +56,34 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<div class="counter">
-  <?php global $post;
-        $current = $post->ID;
-        ?>
-  <?php
-  $query = new WP_Query( array(
-            'post_type' => 'portfolio',
-            'post_status' => 'publish',
-            'posts_per_page' => '-1',
-          	'meta_key'		=> 'show_on_prosjekter',
-          	'meta_value'	=> true,
-            'order' => 'ASC'
-        ) );
-        $all = $query->post_count;
-        foreach( $query->posts as $key => $p )
-            if( $post->ID == $p->ID ) $current = $key + 1;
+<div class="pagination">
+  <div class="counter">
+    <?php global $post;
+          $current = $post->ID;
+          ?>
+    <?php
+    $query = new WP_Query( array(
+              'post_type' => 'portfolio',
+              'post_status' => 'publish',
+              'posts_per_page' => '-1',
+            	'meta_key'		=> 'show_on_prosjekter',
+            	'meta_value'	=> true,
+              'order' => 'ASC'
+          ) );
+          $all = $query->post_count;
+          foreach( $query->posts as $key => $p )
+              if( $post->ID == $p->ID ) $current = $key + 1;
+          ?>
 
-        echo $all-$current.'/'.$all;
-  ?>
+          <div class="page-count">
+            <?php echo $all-$current ?>
+          </div>
+          <div class="divi-count"></div>
+          <div class="tot-count">
+            <?php echo $all ?>
+          </div>
+    ?>
+  </div>
 </div>
 <?php
   get_footer();
