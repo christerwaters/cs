@@ -75,13 +75,7 @@ while ( have_posts() ) :
               if( $post->ID == $p->ID ) $current = $key + 1;
           ?>
 
-          <div class="page-count">
-            <?php echo $all-$current ?>
-          </div>
-          <div class="divi-count">/</div>
-          <div class="tot-count">
-            <?php echo $all ?>
-          </div>
+          <div class="page-count"><?php echo $all-$current ?></div><div class="divi-count">/</div><div class="tot-count"><?php echo $all ?></div>
   </div>
 </div>
 
