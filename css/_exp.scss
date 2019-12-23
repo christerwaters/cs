@@ -1,11 +1,11 @@
 .wp-block-video{
   position:relative;
   &:before{
-    transform: translatex(-5vw);
+    transform: translatex(-9vw);
     left: 0;
   }
   &:after{
-    transform: translatex(5vw);
+    transform: translatex(9vw);
     right: 0;
   }
   &:after,
@@ -17,6 +17,6 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 4vw;
+    width: 8vw;
   }
 }
