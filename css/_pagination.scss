@@ -7,7 +7,7 @@
     margin:auto;
     .page-count{
       display: inline-block;
-      transform: translatey(-1.5vw);
+      transform: translatey(-1.5vw) translatex(-.4vw);
       text-align: right;
       width: 4vw;
     }
@@ -24,7 +24,6 @@
     .tot-count{
       display: inline-block;
       width: 4vw;
-      transform: translatex(-0.5vw);
     }
   }
 }
