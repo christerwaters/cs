@@ -108,12 +108,12 @@ $logo-sizer:50;
       z-index:$z-basis+2;
       display:block;
       width: 90*$vw;
-      left: 10*$vw;
       position: fixed;
       height: 100vh;
       overflow-x: hidden;
       overflow-y: auto;
       position: relative;
+      background:#fff;
       ul{
         padding-top:5*$vw;
         padding-bottom:5*$vw;
