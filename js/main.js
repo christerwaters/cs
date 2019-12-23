@@ -23,6 +23,8 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
+
+
 $(document).ready(function(){
   $("a").hover(function(){
     var classes = ["abg01", "abg02", "abg03"];
@@ -33,6 +35,8 @@ $(document).ready(function(){
       $(this).removeClass("abg02");
       $(this).removeClass("abg03");
   });
+  $(".wp-block-video").after("<div class='next'></div>");          // Insert new elements after <img>
+  $(".wp-block-video").before("<div class='previous'></div>");          // Insert new elements before <img>
 });
 var randomize = $(".tilfeldig");
 
