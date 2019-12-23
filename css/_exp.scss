@@ -1,0 +1,9 @@
+.wp-block-video{
+  &:before{
+    content:' ';
+    background:#000;
+    width:2vw;
+    height:100%;
+    display:block;
+  }
+}

@@ -78,7 +78,7 @@ while ( have_posts() ) :
           <div class="page-count">
             <?php echo $all-$current ?>
           </div>
-          <div class="divi-count"></div>
+          <div class="divi-count">/</div>
           <div class="tot-count">
             <?php echo $all ?>
           </div>
