@@ -29,8 +29,13 @@ while ( have_posts() ) :
   $posts = get_posts(array(
   	'posts_per_page'	=> -1,
   	'post_type'			=> 'portfolio',
-  	'meta_key'		=> 'show_on_home',
-  	'meta_value'	=> true
+    'tax_query' => array(
+      array (
+        'taxonomy' => 'show_on',
+        'field' => 'slug',
+        'terms' => 'home',
+      )
+    ),
   ));
 
   if( $posts ): ?>
