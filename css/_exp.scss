@@ -1,14 +1,22 @@
 .wp-block-video{
   position:relative;
   &:before{
-    content:' ';
-    background:#000;
-    width:2vw;
-    height:100%;
-    display:block;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
+    transform: translatex(-5vw);
+    left: 0;
+  }
+  &:after{
+    transform: translatex(5vw);
+    right: 0;
+  }
+  &:after,
+  &:before{
+    content: ' ';
+    background: #000;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4vw;
   }
 }
