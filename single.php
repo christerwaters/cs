@@ -70,7 +70,7 @@ while ( have_posts() ) :
                 array (
                   'taxonomy' => 'show_on',
                   'field' => 'slug',
-                  'terms' => 'portfolio',
+                  'terms' => 'prosjekter',
                 )
               ),
               'order' => 'ASC'
