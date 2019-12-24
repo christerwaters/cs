@@ -54,12 +54,18 @@ function csboth() {
       pointer-events:none !important;
       cursor:not-allowed !important;
     }
+    a.screen-reader-shortcut{
+      display: block;
+      right: 10px;
+      color: #fff;
+      top: 0;
+    }
   </style>';
 }
 function csauthor() {
   echo '<style>
-    .menu-top#menu-posts{
-
+    #acf-group_5df9197159559{
+      display:none;
     }
   </style>';
 }
@@ -112,6 +118,6 @@ function na_parse_request( $query ) {
 add_action( 'pre_get_posts', 'na_parse_request' );
 
 //hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
- 
+
 
 ?>
