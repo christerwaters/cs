@@ -56,30 +56,30 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<div class="pagination">
-  <div class="counter">
-    <?php global $post;
-          $current = $post->ID;
-          ?>
-    <?php
-    $query = new WP_Query( array(
-              'post_type' => 'portfolio',
-              'post_status' => 'publish',
-              'posts_per_page' => '-1',
-            	'meta_key'		=> 'show_on_portfolio',
-            	'meta_value'	=> true,
-              'order' => 'ASC'
-          ) );
-          $all = $query->post_count;
-          foreach( $query->posts as $key => $p )
-              if( $post->ID == $p->ID ) $current = $key + 1;
-          ?>
+<?php if (get_field('show_on_portfolio')) {?>
+  <div class="pagination">
+    <div class="counter">
+      <?php global $post;
+            $current = $post->ID;
+            ?>
+      <?php
+      $query = new WP_Query( array(
+                'post_type' => 'portfolio',
+                'post_status' => 'publish',
+                'posts_per_page' => '-1',
+              	'meta_key'		=> 'show_on_portfolio',
+              	'meta_value'	=> true,
+                'order' => 'ASC'
+            ) );
+            $all = $query->post_count;
+            foreach( $query->posts as $key => $p )
+                if( $post->ID == $p->ID ) $current = $key + 1;
+            ?>
 
-          <div class="page-count"><?php echo $all-$current ?></div><div class="divi-count">/</div><div class="tot-count"><?php echo $all ?></div>
+            <div class="page-count"><?php echo $all-$current ?></div><div class="divi-count">/</div><div class="tot-count"><?php echo $all ?></div>
+    </div>
   </div>
-</div>
-
-
+<?php};?>
 
 
 
