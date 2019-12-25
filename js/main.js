@@ -36,8 +36,8 @@ $(document).ready(function(){
       $(this).removeClass("abg03");
   });
   $(".wp-block-video").addClass("slid");          // Insert new elements after <img>
-  $(".slid").after("<div class='next'></div>");          // Insert new elements after <img>
-  $(".slid").before("<div class='previous'></div>");          // Insert new elements before <img>
+  $(".slid").append("<div class='next'></div>");          // Insert new elements after <img>
+  $(".slid").prepend("<div class='previous'></div>");          // Insert new elements before <img>
 });
 var randomize = $(".tilfeldig");
 
