@@ -23,10 +23,11 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
-$(".next").click(function(){
-  $(this).parent().next(".slid").animate({
-    scrollTop: $(this).offset().top + $(this).height() / 2
-  }, 1000);
+$(".next").click(function() {
+  console.log("reg");
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("this").parent().next(".slid").offset().top
+  }, 200);
 });
 
 $(document).ready(function(){
