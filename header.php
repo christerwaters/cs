@@ -7,6 +7,10 @@
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/style.css"> <!-- stylesheet for this page -->
   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
 
+  <?php
+
+  ?>
+
 	<?php wp_head(); ?>
 </head>
   <body class="<?php global $post;echo $post->post_name;?>">

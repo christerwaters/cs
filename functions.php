@@ -78,10 +78,6 @@ function cseditor() {
 }
 
 function cs_imp(){
-  wp_register_script( 'plyr_js', get_template_directory_uri() .'/js/plyr.js', null, false, true ); // .'/js/plyr.js', null, null, true );
-  wp_enqueue_script('plyr_js');
-  wp_register_script( 'jq', get_template_directory_uri() .'/js/jq.js', null, false, true );
-  wp_enqueue_script('jq_js');
   wp_register_style( 'plyr_css', get_template_directory_uri() .'/css/style.css' );
   wp_enqueue_style('plyr_css');
 }
