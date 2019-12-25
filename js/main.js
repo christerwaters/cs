@@ -40,6 +40,7 @@ $(document).ready(function(){
       $(this).removeClass("abg03");
   });
   $(".wp-block-video").addClass("slid");          // Insert new elements after <img>
+  $(".wp-block-image").addClass("slid");          // Insert new elements after <img>
   $(".slid").append("<div class='next'></div>");          // Insert new elements after <img>
   $(".slid").prepend("<div class='previous'></div>");          // Insert new elements before <img>
 });
