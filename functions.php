@@ -82,8 +82,6 @@ function cs_imp(){
   wp_enqueue_script('plyr_js');
   wp_register_script( 'jq', get_template_directory_uri() .'/js/jq.js', null, false, true );
   wp_enqueue_script('jq_js');
-  wp_register_script( 'main_js', get_template_directory_uri() .'/js/main.js', 'jq_js', false, false );
-  wp_enqueue_script('main_js', array('jq_js'));
   wp_register_style( 'plyr_css', get_template_directory_uri() .'/css/style.css' );
   wp_enqueue_style('plyr_css');
 }
