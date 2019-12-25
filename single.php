@@ -56,7 +56,7 @@ while ( have_posts() ) :
   the_content();
 	endwhile;
 ?>
-<?php if (get_field('show_on_portfolio')) {?>
+<?php if ( get_field('show_on_portfolio') ) { ?>
   <div class="pagination">
     <div class="counter">
       <?php global $post;
@@ -79,7 +79,7 @@ while ( have_posts() ) :
             <div class="page-count"><?php echo $all-$current ?></div><div class="divi-count">/</div><div class="tot-count"><?php echo $all ?></div>
     </div>
   </div>
-<?php};?>
+<?php }; ?>
 
 
 
