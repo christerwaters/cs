@@ -28,11 +28,6 @@ $(".next").click(function(){
     scrollTop: $(this).offset().top + $(this).height() / 2;
   }, 1000);
 });
-$(".previous").click(function(){
-  $(this).parent().previous(".slid").animate({
-    scrollTop: $(this).offset().top + $(this).height() / 2;
-  }, 1000);
-});
 
 $(document).ready(function(){
   $("a").hover(function(){
