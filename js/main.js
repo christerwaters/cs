@@ -25,9 +25,6 @@ for (var i = 0; i < accordions.length; i++) {
 }
 $(".next").click(function() {
   console.log("reg");
-  $([document.documentElement, document.body]).animate({
-    scrollTop: $("this").parent().next(".slid").offset().top
-  }, 200);
 });
 
 $(document).ready(function(){
