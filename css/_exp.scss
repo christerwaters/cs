@@ -1,10 +1,5 @@
 .slid{
   position:relative;
-  &:first-child .previous,
-  &:last-child .next{
-    opacity:.5;
-    pointer-events: none;
-  }
   .previous{
     transform: translatex(-9vw);
     left: 0;

@@ -23,7 +23,16 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
-
+$(".next").click(function(){
+  $(this).parent().next(".slid").animate({
+    scrollTop: $(this).offset().top + $(this).height() / 2;
+  }, 1000);
+});
+$(".previous").click(function(){
+  $(this).parent().previous(".slid").animate({
+    scrollTop: $(this).offset().top + $(this).height() / 2;
+  }, 1000);
+});
 
 $(document).ready(function(){
   $("a").hover(function(){
