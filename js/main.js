@@ -23,7 +23,10 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
-$(".next").click(function() {
+$("#next").click(function() {
+  console.log("reg");
+});
+$("#previous").click(function() {
   console.log("reg");
 });
 

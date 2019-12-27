@@ -1,29 +1,37 @@
 .pagination{
-  width:$dir-i-w + $dir-i-m + $dir-i-p;
+  display: block;
+  min-width: 14.4vw;
+  max-width: $dir-i-w + $dir-i-m + $dir-i-p;
+  text-align: center;
   margin:auto;
-  .counter{
-    width: 8.9009vw;
+  .label{
+    margin-right:.6vw;
+  }
+  .count{
     display:inline-block;
-    margin:auto;
-    .page-count{
-      display: inline-block;
-      transform: translatey(-1.5vw) translatex(-.4vw);
-      text-align: right;
-      width: 4vw;
-    }
-    .divi-count{
-      width: .1043vw;
-      min-width:1px;
-      overflow:hidden;
-      color:transparent;
-      background: #000;
-      display: inline-block;
-      height: 3.2vw;
-      transform: rotate(33deg) translateY(0.4vw);
-    }
-    .tot-count{
-      display: inline-block;
-      width: 4vw;
-    }
+    margin-left: 2vw;
+    margin-right:2vw;
+  }
+  a#previous,
+  a#next{
+    width: 1.8vw;
+    height: 1.6vw;
+  }
+  .previous,
+  .next{
+    width:1vw;
+    height:1vw;
+    display:inline-block;
+    box-sizing:border-box;
+  }
+  .previous{
+    border-top:.121vw solid $dark;
+    border-left:.121vw solid $dark;
+    transform:rotate(-45deg);
+  }
+  .next{
+    border-top: 0.121vw solid $dark;
+    border-right: 0.121vw solid $dark;
+    transform: rotate(45deg);
   }
 }

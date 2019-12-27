@@ -43,7 +43,7 @@
   content: ' ';
   height: 130%;
   right: 0;
-  width: 4vw;
+  width: 4*$vw;
   -webkit-transform: translate(127%, 73%);
   transform: translate(127%, 73%);
   background-size: 100% 100%;
@@ -61,24 +61,24 @@
     text-decoration: none;
     position: relative;
     font-size: 80%;
-    margin-top: 1.5vw;
+    margin-top: 1.5*$vw;
   }
 }
 .home .dir a:nth-child(4),
 .home .dir a:nth-child(5){
   .dir-item{
-    width: 39vw;
+    width: 39*$vw;
     .info{
-      width: 35vw;
+      width: 35*$vw;
       .info-m{
-        width: 35vw;
+        width: 35*$vw;
       }
     }
   }
 }
 .home .header{
-  width: 40vw;
-  min-height: 10vw;
+  width: 40*$vw;
+  min-height: 10*$vw;
   display: block;
-  margin-bottom: 12vw;
+  margin-bottom: 12*$vw;
 }

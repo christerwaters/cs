@@ -75,8 +75,7 @@ while ( have_posts() ) :
             foreach( $query->posts as $key => $p )
                 if( $post->ID == $p->ID ) $current = $key + 1;
             ?>
-
-            <div class="page-count"><?php echo $all-$current ?></div><div class="divi-count">/</div><div class="tot-count"><?php echo $all ?></div>
+            <div class="pagination"><a href="#" id="previous"><div class="previous"></div></a><div class="count"><span class="label">N&#176;</span> <?php echo $all-$current ?> / <?php echo $all ?></div><a href="#" id="next"><div class="next"></div></a></div>
     </div>
   </div>
 <?php }; ?>
