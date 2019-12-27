@@ -1,15 +1,15 @@
 .slid{
   position:relative;
-  .previous{
+  .s-previous{
     transform: translatex(-9vw);
     left: 0;
   }
-  .next{
+  .s-next{
     transform: translatex(9vw);
     right: 0;
   }
-  .previous,
-  .next{
+  .s-previous,
+  .s-next{
     background: #000;
     height: 100%;
     display: block;
