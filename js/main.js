@@ -32,11 +32,8 @@ $(document).on('click', '.s-prev', function() {
 });
 $(document).on('click', '.s-next', function() {
   var scrolltothis = $(this).closest('.slid').next();
-  console.log($(scrolltothis).offset().top);
-  console.log( $(window).height());
-  console.log( $(scrolltothis).outerHeight(true) );
   $('html,body').animate({
-    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
+    scrollTop: $(scrolltothis).offset().top - ( $(document).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
 
