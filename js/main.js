@@ -23,11 +23,11 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
-$("#next").click(function() {
-  console.log("reg");
+$("#next-slid").click(function() {
+  console.log("next");
 });
-$("#previous").click(function() {
-  console.log("reg");
+$("#previous-slid").click(function() {
+  console.log("previous");
 });
 
 $(document).ready(function(){
@@ -42,8 +42,8 @@ $(document).ready(function(){
   });
   $(".wp-block-video").addClass("slid");          // Insert new elements after <img>
   $(".wp-block-image").addClass("slid");          // Insert new elements after <img>
-  $(".slid").append("<div class='next'></div>");          // Insert new elements after <img>
-  $(".slid").prepend("<div class='previous'></div>");          // Insert new elements before <img>
+  $(".slid").append("<a id='next-slid'><div class='next'></div></a>");          // Insert new elements after <img>
+  $(".slid").prepend("<a id='previous-slid'><div class='previous'></div></a>");          // Insert new elements before <img>
 });
 var randomize = $(".tilfeldig");
 
