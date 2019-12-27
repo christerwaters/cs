@@ -1,6 +1,6 @@
 .slid{
   position:relative;
-  .s-previous{
+  .s-prev{
     transform: translatex(-9vw);
     left: 0;
     .arrow{
@@ -14,7 +14,7 @@
       background-image:url(../media/ar1.png);
     }
   }
-  .s-previous,
+  .s-prev,
   .s-next{
     height: 100%;
     display: block;

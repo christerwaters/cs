@@ -24,16 +24,11 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
-$(document).on('click', '.s-previous', function() {
-  $([document.documentElement, document.body]).animate({
-      scrollTop: $(this).closest('.slid').prev().offset().top
-  }, 200);
-
+$(document).on('click', '.s-prev', function() {
+  $('html,body').animate({ scrollTop: $(this).closest('.slid').prev().offset().top - ( $(window).height() - $(this).closest('.slid').prev().outerHeight(true) ) / 2  }, 200);
 });
 $(document).on('click', '.s-next', function() {
-  $([document.documentElement, document.body]).animate({
-      scrollTop: $(this).closest('.slid').next().offset().top
-  }, 200);
+  $('html,body').animate({ scrollTop: $(this).closest('.slid').next().offset().top - ( $(window).height() - $(this).closest('.slid').next().outerHeight(true) ) / 2  }, 200);
 });
 
 $(document).ready(function(){
@@ -49,7 +44,7 @@ $(document).ready(function(){
   $(".wp-block-video").addClass("slid");
   $(".wp-block-image").addClass("slid");
   $(".slid").append("<div class='s-next'><span class='arrow'></span></div>");
-  $(".slid").prepend("<div class='s-previous'><span class='arrow'></span></div>");
+  $(".slid").prepend("<div class='s-prev'><span class='arrow'></span></div>");
 });
 var randomize = $(".tilfeldig");
 
