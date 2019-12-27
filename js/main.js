@@ -26,17 +26,19 @@ for (var i = 0; i < accordions.length; i++) {
 
 $(document).on('click', '.s-prev .arrow', function() {
   var scrolltothis = $(this).closest('.slid').prev('.slid');
-  $('html,body').animate({
-    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
+  $('html, body').animate({
+    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).height() ) / 2
   }, 200);
 });
 $(document).on('click', '.s-next .arrow', function() {
-  var scrolltothis = $(this).closest('.slid').next('.slid');
-  console.log(scrolltothis.height());
-  console.log(scrolltothis.outerHeight());
-  $('html,body').animate({
-    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
-  }, 200);
+  var $window = $(window),
+      $element = $(this).closest('.slid').next('.slid'),
+      elementTop = $element.offset().top,
+      elementHeight = $element.height(),
+      viewportHeight = $window.height(),
+      scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
+
+      $window.scrollTop(scrollIt);
 });
 
 $(document).ready(function(){
