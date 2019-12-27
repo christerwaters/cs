@@ -25,10 +25,14 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 $(document).on('click', '.s-prev', function() {
-  $('html,body').animate({ scrollTop: $(this).closest('.slid').prev().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 200);
+  $('html,body').animate({
+    scrollTop: $(this).closest('.slid').prev().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2
+  }, 200);
 });
 $(document).on('click', '.s-next', function() {
-  $('html,body').animate({ scrollTop: $(this).closest('.slid').next().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2  }, 200);
+  $('html,body').animate({
+    scrollTop: $(this).closest('.slid').next().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2
+  }, 200);
 });
 
 $(document).ready(function(){
