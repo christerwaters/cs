@@ -32,6 +32,8 @@ $(document).on('click', '.s-prev .arrow', function() {
 });
 $(document).on('click', '.s-next .arrow', function() {
   var scrolltothis = $(this).closest('.slid').next('.slid');
+  console.log(scrolltothis.height();)
+  console.log(scrolltothis.outerHeight();)
   $('html,body').animate({
     scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
