@@ -25,13 +25,13 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 $(document).on('click', '.s-prev .arrow', function() {
-  var scrolltothis = $(this).parent().prev();
+  var scrolltothis = $(this).closest('.slid').prev('.slid');
   $('html,body').animate({
     scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
 $(document).on('click', '.s-next .arrow', function() {
-  var scrolltothis = $(this).parent().next();
+  var scrolltothis = $(this).closest('.slid').next('.slid');
   $('html,body').animate({
     scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
