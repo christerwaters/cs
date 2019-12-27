@@ -25,13 +25,15 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 $(document).on('click', '.s-prev', function() {
+  var scrolltothis = $(this).closest('.slid').prev();
   $('html,body').animate({
-    scrollTop: $(this).closest('.slid').prev().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2
+    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
 $(document).on('click', '.s-next', function() {
+  var scrolltothis = $(this).closest('.slid').next();
   $('html,body').animate({
-    scrollTop: $(this).closest('.slid').next().offset().top - ( $(window).height() - $(this).outerHeight(true) ) / 2
+    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
 
@@ -47,7 +49,6 @@ $(document).ready(function(){
   });
   $(".wp-block-video").addClass("slid");
   $(".wp-block-image").addClass("slid");
-  var classes = ["abg01", "abg02", "abg03"];
   $(".slid").append("<div class='s-next'><a class='arrow'></a></div>");
   $(".slid").prepend("<div class='s-prev'><a class='arrow'></a></div>");
 });
