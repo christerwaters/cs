@@ -27,7 +27,7 @@ for (var i = 0; i < accordions.length; i++) {
 $(document).on('click', '.s-previous', function() {
 
   $([document.documentElement, document.body]).animate({
-      scrollTop: $(this).closest('.slid').previous().offset().top
+      scrollTop: $(this).closest('.slid').prev().offset().top
   }, 200);
 
 });
