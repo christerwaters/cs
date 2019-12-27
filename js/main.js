@@ -48,8 +48,8 @@ $(document).ready(function(){
   });
   $(".wp-block-video").addClass("slid");
   $(".wp-block-image").addClass("slid");
-  $(".slid").append("<div class='s-next'></div>");
-  $(".slid").prepend("<div class='s-previous'></div>");
+  $(".slid").append("<div class='s-next'><img src='media/ar1.png'></div>");
+  $(".slid").prepend("<div class='s-previous'><img src='media/al1.png'></div>");
 });
 var randomize = $(".tilfeldig");
 
