@@ -24,13 +24,12 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
-$(".slid").on('click', '.s-previous', function() {
+$(document).on('click', '.s-previous', function() {
     console.log('prev')
 });
-$(".slid").on('click', '.s-next', function() {
+$(document).on('click', '.s-next', function() {
     console.log('next')
 });
-
 
 $(document).ready(function(){
   $("a").hover(function(){
