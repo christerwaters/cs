@@ -38,7 +38,7 @@ $(document).on('click', '.s-next .arrow', function() {
       viewportHeight = $window.height(),
       scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
       $('html, body').animate({
-        $window.scrollTop(scrollIt);
+        scrollTop: scrollIt;
       }, 200);
 });
 
