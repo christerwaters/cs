@@ -24,16 +24,16 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
-$(document).on('click', '.s-prev', function() {
-  var scrolltothis = $(this).closest('.slid').prev();
+$(document).on('click', '.s-prev .arrow', function() {
+  var scrolltothis = $(this).parent().prev(".slid");
   $('html,body').animate({
     scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
-$(document).on('click', '.s-next', function() {
-  var scrolltothis = $(this).closest('.slid').next();
+$(document).on('click', '.s-next .arrow', function() {
+  var scrolltothis = $(this).parent().next(".slid");
   $('html,body').animate({
-    scrollTop: $(scrolltothis).offset().top - ( $(document).height() - $(scrolltothis).outerHeight(true) ) / 2
+    scrollTop: $(scrolltothis).offset().top - ( $(window).height() - $(scrolltothis).outerHeight(true) ) / 2
   }, 200);
 });
 
