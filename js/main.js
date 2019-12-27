@@ -25,10 +25,18 @@ for (var i = 0; i < accordions.length; i++) {
 }
 
 $(document).on('click', '.s-previous', function() {
-    console.log('prev')
+
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(this).closest('.slid').next().offset().top
+  }, 2000);
+
 });
 $(document).on('click', '.s-next', function() {
-    console.log('next')
+
+  $([document.documentElement, document.body]).animate({
+      scrollTop: $(this).closest('.slid').next().offset().top
+  }, 2000);
+
 });
 
 $(document).ready(function(){
