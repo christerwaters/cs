@@ -23,12 +23,14 @@ for (var i = 0; i < accordions.length; i++) {
     }
   }
 }
-$(".s-next").click(function() {
-  console.log("next");
+
+$(".slid").on('click', '.s-previous', function() {
+    console.log('prev')
 });
-$(".s-previous").click(function() {
-  console.log("previous");
+$(".slid").on('click', '.s-next', function() {
+    console.log('next')
 });
+
 
 $(document).ready(function(){
   $("a").hover(function(){
