@@ -61,6 +61,8 @@ $(document).ready(function(){
   $(".wp-block-image").addClass("slid");
   $(".slid").append("<div class='s-next'><a class='arrow'></a></div>");
   $(".slid").prepend("<div class='s-prev'><a class='arrow'></a></div>");
+  $(".slid").first().addClass( "first");
+  $(".slid").last().addClass( "last" );
 });
 var randomize = $(".tilfeldig");
 
