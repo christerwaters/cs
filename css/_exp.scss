@@ -14,6 +14,42 @@
       background-image:url(../media/ar1.png);
     }
   }
+  .s-next.one .arrow{
+    background-image:url(../media/ar1.png);
+  }
+  .s-next.two .arrow{
+    background-image:url(../media/ar2.png);
+  }
+  .s-next.three .arrow{
+    background-image:url(../media/ar3.png);
+  }
+  .s-next.four .arrow{
+    background-image:url(../media/ar4.png);
+  }
+  .s-next.five .arrow{
+    background-image:url(../media/ar5.png);
+  }
+  .s-next.six .arrow{
+    background-image:url(../media/ar6.png);
+  }
+  .s-prev.one .arrow{
+    background-image:url(../media/al1.png);
+  }
+  .s-prev.two .arrow{
+    background-image:url(../media/al2.png);
+  }
+  .s-prev.three .arrow{
+    background-image:url(../media/al3.png);
+  }
+  .s-prev.four .arrow{
+    background-image:url(../media/al4.png);
+  }
+  .s-prev.five .arrow{
+    background-image:url(../media/al5.png);
+  }
+  .s-prev.six .arrow{
+    background-image:url(../media/al6.png);
+  }
   .s-prev,
   .s-next{
     height: 100%;
@@ -31,14 +67,9 @@
       background-position: center;
     }
   }
-  &.first{
-    .s-prev{
-      display: none;
-    }
-  }
-  &.last{
-    .s-next{
-      display: none;
-    }
+  &.first .s-prev,
+  &.last .s-next{
+    opacity: .5;
+    pointer-events:none;
   }
 }

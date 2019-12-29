@@ -63,6 +63,10 @@ $(document).ready(function(){
   $(".slid").prepend("<div class='s-prev'><a class='arrow'></a></div>");
   $(".slid").first().addClass( "first");
   $(".slid").last().addClass( "last" );
+  $(".slid").each(function(){
+      var classes = ["one", "two", "three", "four", "five", "six"];
+      $(this).addClass(classes[~~(Math.random()*classes.length)]);
+  });
 });
 var randomize = $(".tilfeldig");
 
