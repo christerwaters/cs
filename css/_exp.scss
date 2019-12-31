@@ -1,4 +1,7 @@
 .slid{
+  padding-top:10*$vw;
+  padding-bottom:10*$vw;
+  box-sizing: border-box;
   position:relative;
   .s-prev{
     transform: translatex(-9vw);
