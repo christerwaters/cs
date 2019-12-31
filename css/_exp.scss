@@ -67,6 +67,12 @@
       background-position: center;
     }
   }
+  &.first.last {
+    .s-prev,
+    .s-next{
+      display:none;
+    }
+  }
   &.first .s-prev,
   &.last .s-next{
     opacity: .5;
