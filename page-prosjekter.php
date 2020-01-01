@@ -40,7 +40,7 @@ while ( have_posts() ) :
   	<?php foreach( $posts as $post ):
   		setup_postdata( $post );
   		?>
-      <a href="<?php the_permalink(); ?>">
+      <a href="<?php the_permalink(); ?> class="loader-bg">
         <div class="dir-item portfolio-item" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
           <div class="info">
 	          <div class="info-m">
