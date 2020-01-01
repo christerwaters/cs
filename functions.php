@@ -112,6 +112,7 @@ function na_parse_request( $query ) {
 add_action( 'pre_get_posts', 'na_parse_request' );
 
 //hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
+// found on: https://wpquestions.com/RESOLVED_by_me_adjacent_post_with_same_meta_key_and_same_meta_value/7147
 
 function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
 
@@ -144,9 +145,10 @@ function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
   //print_r($postData);
 
   if(empty($postData)) {
+    echo
   } else {
     foreach($postData as $article) {
-      echo get_permalink($article->ID);
+      echo ''. get_permalink($article->ID) . '';
     }
   }
 }
