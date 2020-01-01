@@ -3,8 +3,8 @@
     display:none;
   }
   h2{
-    font-size: 6.91vw;
-    line-height: 6.91vw;
+    font-size: 6.91*$vw;
+    line-height: 6.91*$vw;
   }
 }
 
@@ -13,8 +13,8 @@ button.accordion {
   border: none;
   outline: none;
   text-align: left;
-  padding: 1.5vw 0;
-  font-size: 2vw;
+  padding: 1.5*$vw 0;
+  font-size: 2*$vw;
   color: #444;
 
   cursor: pointer;
@@ -25,8 +25,8 @@ button.accordion:after {
   font-family: $handwritten;
   font-size:$font-size-p;
   line-height:$font-size-p*1.25;
-  margin:.3vw 0 .3vw .3vw;
-  width:1.8vw;
+  margin:.3*$vw 0 .3*$vw .3*$vw;
+  width:1.8*$vw;
   float: left;
 }
 
@@ -36,7 +36,7 @@ button.accordion.is-open:after {
 
 
 .accordion-content {
-  padding: 0 2vw;
+  padding: 0 2*$vw;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;

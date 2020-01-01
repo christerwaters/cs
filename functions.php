@@ -113,5 +113,52 @@ add_action( 'pre_get_posts', 'na_parse_request' );
 
 //hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
 
+function my_adjacent_post($meta_key, $meta_value , $nextprev = 'next' ){
+
+  global $post;
+  $date = $post->post_date;
+
+  global $wpdb;
+
+  if($nextprev == 'next' ) {
+    $sign = '>';
+    $order= 'ASC';
+  }
+  elseif($nextprev == 'prev' ) {
+    $sign = '<';
+    $order= 'DESC';
+  }
+
+  $querystr = "
+  SELECT $wpdb->posts.*
+  FROM $wpdb->posts, $wpdb->postmeta
+  WHERE $wpdb->posts.ID = $wpdb->postmeta.post_id
+  AND $wpdb->postmeta.meta_key = '".$meta_key."'
+  AND $wpdb->postmeta.meta_value = '".$meta_value."'
+  AND $wpdb->posts.post_status = 'publish'
+  AND $wpdb->posts.post_date ".$sign." '".$date."'
+  ORDER BY $wpdb->posts.post_date ".$order."
+  LIMIT 1";
+
+  $postData = $wpdb->get_results($querystr, OBJECT);
+  //print_r($postData);
+
+  if(empty($postData)) {
+  echo "this array is empty, i could use a default content.";
+  } else {
+    foreach($postData as $article) {
+      $list = "this is the ".$nextprev." post";
+      $list .= "<BR>ID : ";
+      $list .= $article->ID;
+      $list .= "<BR>url : ";
+      $list .= get_permalink($article->ID);
+      $list .= "<BR>title : ";
+      $list .= $article->post_title;
+      $list .= "<BR>date : ";
+      $list .= $article->post_date;
+      echo $list;
+    }
+  }
+}
 
 ?>
