@@ -16,6 +16,9 @@
   a#next{
     width: 1.8vw;
     height: 1.6vw;
+    &[href=""]{
+      border-color:rgba($dark,.5);
+    }
   }
   .previous,
   .next{
