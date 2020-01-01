@@ -120,11 +120,11 @@ function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
 
   global $wpdb;
 
-  if($nextprev == 'next' ) {
+  if($nextprev == 'prev' ) {
     $sign = '>';
     $order= 'ASC';
   }
-  elseif($nextprev == 'prev' ) {
+  elseif($nextprev == 'next' ) {
     $sign = '<';
     $order= 'DESC';
   }
@@ -144,7 +144,6 @@ function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
   //print_r($postData);
 
   if(empty($postData)) {
-  echo "this array is empty, i could use a default content.";
   } else {
     foreach($postData as $article) {
       echo get_permalink($article->ID);
