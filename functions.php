@@ -113,7 +113,7 @@ add_action( 'pre_get_posts', 'na_parse_request' );
 
 //hook into the init action and call create_topics_nonhierarchical_taxonomy when it fires
 
-function my_adjacent_post($meta_key, $meta_value , $nextprev = 'next' ){
+function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
 
   global $post;
   $date = $post->post_date;
@@ -147,16 +147,7 @@ function my_adjacent_post($meta_key, $meta_value , $nextprev = 'next' ){
   echo "this array is empty, i could use a default content.";
   } else {
     foreach($postData as $article) {
-      $list = "this is the ".$nextprev." post";
-      $list .= "<BR>ID : ";
-      $list .= $article->ID;
-      $list .= "<BR>url : ";
-      $list .= get_permalink($article->ID);
-      $list .= "<BR>title : ";
-      $list .= $article->post_title;
-      $list .= "<BR>date : ";
-      $list .= $article->post_date;
-      echo $list;
+      echo get_permalink($article->ID);
     }
   }
 }

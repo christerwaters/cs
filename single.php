@@ -79,7 +79,7 @@ while ( have_posts() ) :
               $meta_key = 'show_on_portfolio';
               $meta_value = true;
             ?>
-            <div class="pagination"><a href="<?php my_adjacent_post($meta_key,$meta_value,'prev');?>" id="previous"><div class="previous"></div></a><div class="count"><span class="label">N&#176;</span> <?php echo $all-$current ?> / <?php echo $all ?></div><a href="<?php my_adjacent_post($meta_key,$meta_value,'next');?>" id="next"><div class="next"></div></a></div>
+            <div class="pagination"><a href="<?php the_adjacent_post_url($meta_key,$meta_value,'prev');?>" id="previous"><div class="previous"></div></a><div class="count"><span class="label">N&#176;</span> <?php echo $all-$current ?> / <?php echo $all ?></div><a href="<?php the_adjacent_post_url($meta_key,$meta_value,'next');?>" id="next"><div class="next"></div></a></div>
     </div>
   </div>
 <?php }; ?>
