@@ -42,13 +42,13 @@ foreach($users as $user){
 
 <?php if ( get_field('profilepic', 'user_'. $user->ID)){?>
 <span class="tilfeldig">
-  <a href="<?php echo get_author_posts_url($user->ID);?>">
+  <a href="<?php echo get_author_posts_url($user->ID);?>" class="loader-bg">
     <div class="dir-item team-item" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
       <div class="info">
         <div class="info-m">
-          <h3>
+          <h4>
             <?php echo $user->display_name; ?>
-          </h3>
+          </h4>
           <p class="title">
             <?php the_field('profiletitle', 'user_'. $user->ID); ?>
           </p>
