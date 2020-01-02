@@ -28,10 +28,18 @@ a.abg03:hover{
 /*** Dont add bg here :) ***/
 .pagination a,
 .logo a,
-.dir a,
+.dir a, /* it is redundant */
 a.burger{
   &:hover,
   &:hover:after{
     background-image:none;
   }
+}
+
+
+.dir a.loader-bg{
+  background-image:$loader-b64;
+  background-size:cover;
+  background-size: initial;
+  background-position: center;
 }
