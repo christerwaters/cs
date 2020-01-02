@@ -11,6 +11,7 @@
   margin: -$dir-i-m;
   a.loader-bg{
     background-image:url(../media/loader.gif);
+    background-size:cover;
   }
   .dir-item{
     width: $dir-i-w;
@@ -41,8 +42,6 @@
         h3{
           text-transform: uppercase;
           word-break: break-all;
-          font-size:2vw;
-          line-height:2vw;
         }
       }
     }
