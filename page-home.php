@@ -44,9 +44,9 @@ while ( have_posts() ) :
         <div class="dir-item portfolio-item <?php echo $post->post_name; ?>" style="background-image:url(<?php echo get_the_post_thumbnail_url(null, 'full'); ?>);">
           <div class="info">
             <div class="info-m">
-              <h3>
+              <h4>
                 <?php the_title(); ?>
-              </h3>
+              </h4>
             </div>
           </div>
         </div>
