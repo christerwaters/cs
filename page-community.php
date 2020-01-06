@@ -46,9 +46,9 @@ foreach($users as $user){
     <div class="dir-item team-item" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
       <div class="info">
         <div class="info-m">
-          <h4>
+          <h5>
             <?php echo $user->display_name; ?>
-          </h4>
+          </h5>
           <p class="title">
             <?php the_field('profiletitle', 'user_'. $user->ID); ?>
           </p>
