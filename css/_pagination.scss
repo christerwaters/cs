@@ -4,6 +4,7 @@
   max-width: $dir-i-w + $dir-i-m + $dir-i-p;
   text-align: center;
   margin:auto;
+  margin-top:$dir-i-m + $dir-i-p;
   .label{
     margin-right:.6vw;
   }
