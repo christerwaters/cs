@@ -45,3 +45,14 @@ button.accordion.is-open:after {
 .om-oss p.handwritten{
   font-family: $handwritten, cursive !important;
 }
+.citrus-studio{
+  p{
+    width:$dir-i-w*2 - $dir-i-i-m - $dir-i-i-p;
+  }
+  p.handwritten{
+    font-family: $handwritten, cursive !important;
+  }
+  .header{
+
+  }
+}
