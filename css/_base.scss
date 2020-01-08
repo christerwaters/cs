@@ -52,8 +52,8 @@ video{
   display:block;
   margin-bottom:6*$vw;
   h1{
-    font-size:$font-size*1.5;
-    line-height:$font-size*2;
+    font-size:$font-size-h1;
+    line-height:$font-size-h1*1.5;
     font-weight:900;
     word-break: break-all;
     margin-bottom:5*$vw;
