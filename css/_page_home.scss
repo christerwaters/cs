@@ -1,4 +1,4 @@
-a:nth-child(1):after {
+.tre-i-i.hae:after {
   z-index: -1;
   position: absolute;
   content: ' ';
@@ -23,7 +23,7 @@ a:nth-child(1):after {
 
   }
 }
-a:nth-child(2):after {
+.tre-i-i.play:after {
   z-index: -1;
   position: absolute !important;
   content: ' ' !important;
@@ -37,7 +37,7 @@ a:nth-child(2):after {
   background-color: transparent !important;
   background-image: url(../media/play.png);
 }
-a:nth-child(3):after {
+.tre-i-i.favvv:after {
   z-index: -1;
   position: absolute;
   content: ' ';
@@ -51,9 +51,18 @@ a:nth-child(3):after {
   background-color: transparent;
   background-image: url(../media/arrow.png);
 }
-.home p a{
+.home p .tre-i{
   display: inline-block;
-  margin-top: 1.5*$vw;
+  width: 33%;
+  .tre-i-i{
+    font-weight: 700;
+    font-style: italic;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    font-size: 80%;
+    margin-top: 1.5*$vw;
+  }
 }
 .home .dir a:nth-child(4),
 .home .dir a:nth-child(5){
