@@ -45,7 +45,9 @@ video{
   max-height:100vh;
   max-width:100%;
 }
-
+.the_content p{
+  width: 53.977*$vw;
+}
 .header{
   width: 53.977*$vw;
   min-height: 10*$vw;

@@ -23,10 +23,12 @@ while ( have_posts() ) :
 	</div>
 	<?php };  ?>
 </div>
+<div class="the_content">
 <?php
   the_content();
 	endwhile;
 ?>
+</div>
 <?php
   get_footer();
 ?>
