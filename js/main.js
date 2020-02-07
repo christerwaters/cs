@@ -24,28 +24,6 @@ for (var i = 0; i < accordions.length; i++) {
   }
 }
 
-$(document).on('click', '.s-prev .arrow', function() {
-  var $window = $(window),
-      $element = $(this).closest('.slid').prev('.slid'),
-      elementTop = $element.offset().top,
-      elementHeight = $element.height(),
-      viewportHeight = $window.height(),
-      scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
-      $('html, body').animate({
-        scrollTop: scrollIt
-      }, 200);
-});
-$(document).on('click', '.s-next .arrow', function() {
-  var $window = $(window),
-      $element = $(this).closest('.slid').next('.slid'),
-      elementTop = $element.offset().top,
-      elementHeight = $element.height(),
-      viewportHeight = $window.height(),
-      scrollIt = elementTop - ((viewportHeight - elementHeight) / 2);
-      $('html, body').animate({
-        scrollTop: scrollIt
-      }, 200);
-});
 
 $(document).ready(function(){
   $("a").hover(function(){
@@ -56,16 +34,6 @@ $(document).ready(function(){
       $(this).removeClass("abg01");
       $(this).removeClass("abg02");
       $(this).removeClass("abg03");
-  });
-  $(".wp-block-video").addClass("slid");
-  $(".wp-block-image").addClass("slid");
-  $(".slid").append("<div class='s-next'><a class='arrow'></a></div>");
-  $(".slid").prepend("<div class='s-prev'><a class='arrow'></a></div>");
-  $(".slid").first().addClass( "first");
-  $(".slid").last().addClass( "last" );
-  $(".slid").each(function(){
-      var classes = ["one", "two", "three", "four", "five", "six"];
-      $(this).addClass(classes[~~(Math.random()*classes.length)]);
   });
 });
 var randomize = $(".tilfeldig");
