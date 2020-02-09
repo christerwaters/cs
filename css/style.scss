@@ -26,10 +26,8 @@ $vw: 1vw;
 /*** LG ***/
 .wp-block-video,
 .wp-block-image{
-  margin-top:10*$vw;
-  &.first{ margin-top:0*$vw; }
-  margin-bottom:10*$vw;
-  &.last{ margin-bottom:0*$vw; }
+  margin-top:10vw;
+  margin-bottom:10vw;
   box-sizing: border-box;
   position:relative;
 }
