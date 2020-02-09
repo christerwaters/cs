@@ -35,7 +35,7 @@ while ( have_posts() ) :
 
   if( $posts ): ?>
 
-  <div class="dir">
+  <div class="dir" id="favvv">
 
   	<?php foreach( $posts as $post ):
   		setup_postdata( $post );
