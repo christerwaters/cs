@@ -192,6 +192,16 @@ p.two {
   width: 90vw;
   left: -5vw; }
 
+.back-button {
+  display: block;
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  transform: rotate(45deg);
+  border: .2vw solid #000;
+  border-right: none;
+  border-top: none; }
+
 .logo {
   position: fixed;
   z-index: 2000;
