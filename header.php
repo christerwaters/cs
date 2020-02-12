@@ -14,7 +14,7 @@
 	<?php wp_head(); ?>
 </head>
   <body class="<?php global $post;echo $post->post_name;?>">
-		<?php if (_previous_url() ){?><a href="<?php __previous_url(); ?>"><div class="back"></div></a><?php }; ?>
+		<?php if (_previous_url() ){?><a href="<?php __previous_url(); ?>"><div class="back-button"></div></a><?php }; ?>
     <div class="logo">
       <?php the_custom_logo();?>
     </div>
