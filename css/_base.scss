@@ -81,14 +81,18 @@ p.two{
     vertical-align: middle;
   }
 }
-
-.back-button{
-    display: block;
-    position: fixed;
-    width: 1.7vw;
-    height: 1.7vw;
-    transform: rotate(45deg);
-    border: .2vw solid #000;
-    border-right: none;
-    border-top: none;
+#last-page{
+  position: fixed;
+  .back-button{
+      display: block;
+      width: 1.7vw;
+      height: 1.7vw;
+      transform: rotate(45deg);
+      border: .2vw solid #000;
+      border-right: none;
+      border-top: none;
+  }
+  .label{
+    
+  }
 }
