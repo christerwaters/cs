@@ -14,8 +14,8 @@
 	<?php wp_head(); ?>
 </head>
   <body class="<?php global $post;echo $post->post_name;?>">
-		....
-		<a href="<?php __previous_url(); ?>"><div class="back-button"></div></a>
+
+		<a href="<?php __previous_url(); ?>">WHYYYYYYY<div class="back-button"></div></a>
     <div class="logo">
       <?php the_custom_logo();?>
     </div>
