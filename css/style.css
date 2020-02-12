@@ -158,7 +158,8 @@ p.two {
   width: 53.977vw;
   min-height: 10vw;
   display: block;
-  margin-bottom: 6vw; }
+  margin-bottom: 6vw;
+  margin-top: 5vw; }
   .header h1 {
     font-size: 5.6vw;
     line-height: 8.4vw;
