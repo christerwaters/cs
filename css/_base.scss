@@ -83,6 +83,7 @@ p.two{
 }
 #last-page{
   margin-left: .57vw;
+  top: 9vw;
   position: fixed;
   .back-button{
     display: inline-block;
@@ -94,6 +95,7 @@ p.two{
     border-top: none;
   }
   .label{
+    margin-left:2vw;
     display: inline-block;
   }
 }
