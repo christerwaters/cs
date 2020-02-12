@@ -82,17 +82,18 @@ p.two{
   }
 }
 #last-page{
+  margin-left: .57vw;
   position: fixed;
   .back-button{
-      display: block;
-      width: 1.7vw;
-      height: 1.7vw;
-      transform: rotate(45deg);
-      border: .2vw solid #000;
-      border-right: none;
-      border-top: none;
+    display: inline-block;
+    width: 1.7vw;
+    height: 1.7vw;
+    transform: rotate(45deg);
+    border: .2vw solid #000;
+    border-right: none;
+    border-top: none;
   }
   .label{
-    
+    display: inline-block;
   }
 }
