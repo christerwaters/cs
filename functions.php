@@ -171,4 +171,18 @@ function the_adjacent_post_url($meta_key, $meta_value , $nextprev = 'next' ){
   }
 }
 
+function __previous_url(){
+	if($_SERVER['REQUEST_URI']!==wp_get_raw_referer()){
+		echo wp_get_raw_referer();
+	} else {
+		echo wp_get_canonical_url();
+	}
+};
+function _previous_url(){
+	if($_SERVER['REQUEST_URI']!==wp_get_raw_referer()){
+		return wp_get_raw_referer();
+	} else {
+		return wp_get_canonical_url();
+	}
+};
 ?>
