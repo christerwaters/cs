@@ -17,7 +17,7 @@ body{
 }
 
 
-#the_content ul li:before {
+.the_content ul li:before {
   content: "\002014";
   -webkit-transform: translatex(-($font-size-p*1.2)vw);
           transform: translatex(-($font-size-p*1.2)vw);
