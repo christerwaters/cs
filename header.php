@@ -14,7 +14,7 @@
 	<?php wp_head(); ?>
 </head>
   <body class="<?php global $post;echo $post->post_name;?>">
-		<?php if (_previous_url() ){?><a href="<?php __previous_url(); ?>" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a><?php }; ?>
+		<?php __back_btn(); ?>
     <div class="logo">
       <?php the_custom_logo();?>
     </div>
