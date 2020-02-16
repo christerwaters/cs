@@ -22,7 +22,7 @@ body{
 .the_content ul li:before {
   content: "\002014";
   position: absolute;
-  margin-left:-$font-size-p*2;
+  margin-left:-$font-size-p*1.8;
 }
 
 .the_content ul li {
