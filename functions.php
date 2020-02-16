@@ -20,7 +20,7 @@ function _previous_url(){
 		return wp_get_canonical_url();
 	}
 };
-function _back_btn(){
+function __back_btn(){
   global $post;
   if (get_post_type()=='page' ){
     if (get_the_ID()=='4684'){
