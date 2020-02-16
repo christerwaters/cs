@@ -24,6 +24,9 @@ body{
   position: absolute;
 }
 
+.the_content ul li {
+  margin: ($font-size-p)vw 0 ($font-size-p)vw ($font-size-p*3)vw;
+}
 
 
 a{
