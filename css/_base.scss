@@ -19,13 +19,12 @@ body{
 
 .the_content ul li:before {
   content: "\002014";
-  -webkit-transform: translatex(-($font-size-p*1.2)vw);
-          transform: translatex(-($font-size-p*1.2)vw);
   position: absolute;
+  margin-left:-($font-size-p*2)vw;
 }
 
 .the_content ul li {
-  margin: ($font-size-p)vw 0 ($font-size-p)vw ($font-size-p*3)vw;
+margin-left:($font-size-p*2.2)vw;
 }
 
 
