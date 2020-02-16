@@ -20,11 +20,11 @@ body{
 .the_content ul li:before {
   content: "\002014";
   position: absolute;
-  margin-left:-($font-size-p*2)vw;
+  margin-left:-$font-size-p*2;
 }
 
 .the_content ul li {
-margin-left:($font-size-p*2.2)vw;
+margin-left:$font-size-p*2.2;
 }
 
 
