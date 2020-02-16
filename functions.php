@@ -24,12 +24,12 @@ function __back_btn(){
   global $post;
   if (get_post_type()=='page' ){
     if (get_the_ID()=='4684'){
-      echo '<a href="/">" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
+      echo '<a href="/" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
     } else if (get_the_ID()=='5285'){
-      echo '<a href="/om-oss">" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
+      echo '<a href="/om-oss" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
     }
   } else if (get_post_type()=='portfolio_item' ){
-    echo '<a href="/prosjekter">" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
+    echo '<a href="/prosjekter" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
   }
 }
 $user = wp_get_current_user();
