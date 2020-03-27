@@ -118,8 +118,7 @@ $logo-sizer:50;
         padding-top:5*$vw;
         padding-bottom:5*$vw;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        bottom: 0;
         li{
           line-height:15*$vw;
           transform: translate(0px, 0*$vw);
@@ -136,14 +135,5 @@ $logo-sizer:50;
   }
   nav{
     display:none;
-  }
-}
-
-
-@media only screen and (min-width: 1100px) {
-  .menu.open nav ul{
-    position: relative;
-    top: 0;
-    transform: translateY(0);
   }
 }
