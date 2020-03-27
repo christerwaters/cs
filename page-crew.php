@@ -43,7 +43,7 @@ foreach($users as $user){
 
 <?php if ( get_field('profilepic', 'user_'. $user->ID)){?>
 <span class="tilfeldig">
-  <?php echo user_url($user->ID);?>
+  <?php get_the_author_meta('user_url',$user->ID);?>
     <div class="dir-item team-item" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
       <div class="info">
         <div class="info-m">
