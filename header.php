@@ -31,7 +31,7 @@
             <a href="<?php echo get_site_url();?>/om-oss">HÆ?</a>
           </li>
           <li>
-            <a href="<?php echo get_site_url();?>/crew">COMMUNITY</a>
+            <a href="<?php echo get_site_url();?>/crew">CREW</a>
           </li>
           <li>
             <a href="<?php echo get_site_url();?>/tjenester">TJENESTER</a>
