@@ -31,10 +31,7 @@
             <a href="<?php echo get_site_url();?>/om-oss">HÆ?</a>
           </li>
           <li>
-            <a href="<?php echo get_site_url();?>/prosjekter">PROSJEKTER</a>
-          </li>
-          <li>
-            <a href="<?php echo get_site_url();?>/community">COMMUNITY</a>
+            <a href="<?php echo get_site_url();?>/crew">COMMUNITY</a>
           </li>
           <li>
             <a href="<?php echo get_site_url();?>/tjenester">TJENESTER</a>
