@@ -65,13 +65,35 @@
   }
 }
 .home .dir a:nth-child(1),
-.home .dir a{
+.home .dir a:nth-child(2){
   .dir-item{
     width: 39*$vw;
     .info{
       width: 35*$vw;
       .info-m{
         width: 35*$vw;
+      }
+    }
+  }
+}
+.home .dir a:nth-child(3){
+  .dir-item{
+    width: 52*$vw;
+    .info{
+      width: 44*$vw;
+      .info-m{
+        width: 44*$vw;
+      }
+    }
+  }
+}
+.home .dir a:nth-child(4){
+  .dir-item{
+    width: 26*$vw;
+    .info{
+      width: 22*$vw;
+      .info-m{
+        width: 22*$vw;
       }
     }
   }
