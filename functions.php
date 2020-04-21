@@ -32,6 +32,23 @@ function __back_btn(){
     echo '<a href="/prosjekter" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
   }
 }
+
+add_action( 'after_setup_theme', '__woocommerce' );
+function __woocommerce() {
+	add_theme_support( 'woocommerce', array(
+		'thumbnail_image_width' => (_conf('max_site_width')/get_theme_mod( 'columns', 3)),
+		'single_image_width'    => (_conf('max_site_width')/get_theme_mod( 'columns', 3)),
+
+        'product_grid'          => array(
+            'default_rows'    => 3,
+            'min_rows'        => 2,
+            'max_rows'        => 8,
+            'default_columns' => get_theme_mod( 'columns' ),
+            'min_columns'     => get_theme_mod( 'columns' ),
+            'max_columns'     => get_theme_mod( 'columns' ),
+        ),
+	) );
+}
 $user = wp_get_current_user();
 if ( in_array( 'author', (array) $user->roles ) ) {
     add_action('admin_head', 'csboth');
