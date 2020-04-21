@@ -36,8 +36,8 @@ function __back_btn(){
 add_action( 'after_setup_theme', '__woocommerce' );
 function __woocommerce() {
 	add_theme_support( 'woocommerce', array(
-		'thumbnail_image_width' => (_conf('max_site_width')/get_theme_mod( 'columns', 3)),
-		'single_image_width'    => (_conf('max_site_width')/get_theme_mod( 'columns', 3)),
+		'thumbnail_image_width' => 500,
+		'single_image_width'    => 500,
 
         'product_grid'          => array(
             'default_rows'    => 3,
