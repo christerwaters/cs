@@ -43,9 +43,9 @@ function __woocommerce() {
             'default_rows'    => 3,
             'min_rows'        => 2,
             'max_rows'        => 8,
-            'default_columns' => get_theme_mod( 'columns' ),
-            'min_columns'     => get_theme_mod( 'columns' ),
-            'max_columns'     => get_theme_mod( 'columns' ),
+            'default_columns' => 3,
+            'min_columns'     => 3,
+            'max_columns'     => 3,
         ),
 	) );
 }
