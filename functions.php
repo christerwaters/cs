@@ -32,6 +32,27 @@ function __back_btn(){
     echo '<a href="/prosjekter" id="last-page"><div class="back-button"></div><div class="label">TILBAKE</div></a>';
   }
 }
+/**
+ * @snippet       Automatically Update Cart on Quantity Change - WooCommerce
+ * @how-to        Get CustomizeWoo.com FREE
+ * @sourcecode    https://businessbloomer.com/?p=73470
+ * @author        Rodolfo Melogli
+ * @compatible    Woo 3.5.1
+ */
+
+add_action( 'wp_footer', 'bbloomer_cart_refresh_update_qty' );
+
+function bbloomer_cart_refresh_update_qty() {
+   if (is_cart()) {
+      ?>
+      <script type="text/javascript">
+         jQuery('div.woocommerce').on('click', 'input.qty', function(){
+            jQuery("[name='update_cart']").trigger("click");
+         });
+      </script>
+      <?php
+   }
+}
 
 add_action( 'after_setup_theme', '__woocommerce' );
 function __woocommerce() {
