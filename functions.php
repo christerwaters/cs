@@ -37,6 +37,7 @@ add_action( 'after_setup_theme', '__woocommerce' );
 function __woocommerce() {
 	add_theme_support( 'woocommerce', array(
 		'thumbnail_image_width' => 500,
+		'woocommerce_gallery_thumbnail' => 500,
 		'single_image_width'    => 500,
 
         'product_grid'          => array(
