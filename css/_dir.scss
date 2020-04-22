@@ -1,4 +1,4 @@
-
+.products.columns-3,
 .dir{
   width:100%;
   padding: 0;
@@ -9,6 +9,7 @@
   overflow:visible;
   width: $site-width + ($dir-i-m*2) + ($dir-i-w/2); /* half of the width of a dir item is added to ensure that we get three per line */
   margin: -$dir-i-m;
+  .product,
   .dir-item{
     width: $dir-i-w;
     height:$dir-i-w;
