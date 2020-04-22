@@ -14,10 +14,17 @@
   display: inline-block;
 }
 .product .summary.entry-summary{
-  width: 52vw;
+  width: 51vw;
   margin-left: 2vw;
   display: inline-block;
 }
 .col-1{
   width:100%;
+}
+
+.single_add_to_cart_button.button.alt{
+  font-size:2vw;
+  margin:2vw 1vw;
+  padding:2vw 1vw;
+  border: #000 solid .2vw;
 }
