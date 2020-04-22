@@ -7,6 +7,7 @@
 .checkout .col-2,
 .shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents tr:last-child,
 .cart-subtotal,
+.woocommerce-cart-form__cart-item.cart_item .product-remove,
 .shipping-calculator-button,
 .cart_totals h2,
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
@@ -21,6 +22,9 @@
   width: 51vw;
   margin-left: 2vw;
   display: inline-block;
+}
+.woocommerce-cart-form__cart-item.cart_item .product-thumbnail img{
+  width:20vw;
 }
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals,
 .col-1{
