@@ -6,6 +6,9 @@
 .woocommerce-tabs,
 .checkout .col-2,
 .shop_table tr:last-child,
+.cart-subtotal,
+.shipping-calculator-button,
+.cart_totals h2,
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
 .woocommerce-breadcrumb{
   display: none;
@@ -19,6 +22,7 @@
   margin-left: 2vw;
   display: inline-block;
 }
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals,
 .col-1{
   width:100%;
 }
