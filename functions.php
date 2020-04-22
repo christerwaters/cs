@@ -49,7 +49,10 @@ function __woocommerce() {
         ),
 	) );
 }
-
+function disable_sourceset($sources) {
+ return false;
+}
+add_filter( 'wp_calculate_image_srcset', 'disable_sourceset' );
 add_filter( 'post_thumbnail_html', 'remove_wps_width_attribute', 10 );
 add_filter( 'image_send_to_editor', 'remove_wps_width_attribute', 10 );
 
