@@ -49,6 +49,14 @@ function __woocommerce() {
         ),
 	) );
 }
+
+add_filter( 'post_thumbnail_html', 'remove_wps_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'remove_wps_width_attribute', 10 );
+
+function remove_wps_width_attribute( $html ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
 $user = wp_get_current_user();
 if ( in_array( 'author', (array) $user->roles ) ) {
     add_action('admin_head', 'csboth');

@@ -24,7 +24,7 @@
   display: inline-block;
 }
 .woocommerce-cart-form__cart-item.cart_item .product-thumbnail img{
-  width:20vw;
+  max-width:20vw;
 }
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals,
 .col-1{
