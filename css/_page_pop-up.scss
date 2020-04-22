@@ -5,6 +5,7 @@
 .add_to_cart_button,
 .woocommerce-tabs,
 .checkout .col-2,
+.shop_table tr:last-child,
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
 .woocommerce-breadcrumb{
   display: none;
@@ -24,7 +25,6 @@
 
 .single_add_to_cart_button.button.alt{
   font-size:2vw;
-  margin:2vw 1vw;
-  padding:2vw 1vw;
+  padding:1vw 2vw;
   border: #000 solid .2vw;
 }
