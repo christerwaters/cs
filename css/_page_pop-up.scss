@@ -3,6 +3,8 @@
 .woocommerce-result-count,
 .woocommerce-ordering,
 .add_to_cart_button,
+.woocommerce-tabs,
+.checkout .col-2,
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
 .woocommerce-breadcrumb{
   display: none;
@@ -11,4 +13,7 @@
 .woocommerce-product-gallery{
   width: 26vw;
   display: inline-block;
+}
+.col-1{
+  width:100%;
 }
