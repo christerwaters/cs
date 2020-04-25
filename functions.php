@@ -60,6 +60,19 @@ add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
         'crop' => 1,
     );
 } );
+add_filter( 'template_include', 'first_time_visitor_template', 99 );
+
+function first_time_visitor_template( $template ) {
+
+    if ( // your conditional for first time visitor {
+        $new_template = locate_template( array( 'first-time-template.php' ) );
+        if ( '' != $new_template ) {
+            return $new_template ;
+        }
+    }
+
+    return $template;
+}
 add_action( 'after_setup_theme', '__woocommerce' );
 function __woocommerce() {
 	add_theme_support( 'woocommerce', array(
