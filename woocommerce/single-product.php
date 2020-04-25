@@ -31,7 +31,6 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-  <h1> LOOP: </h1>
 		<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 
@@ -39,7 +38,6 @@ get_header( 'shop' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
-    <h1> MAIN CONTENT: </h1>
 	<?php
 		/**
 		 * woocommerce_after_main_content hook.
@@ -48,16 +46,6 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_after_main_content' );
 	?>
-<h1> SIDEBAR: </h1>
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
-
 <?php
 get_footer( 'shop' );
 
