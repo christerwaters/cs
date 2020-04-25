@@ -67,7 +67,7 @@ function first_time_visitor_template( $template ) {
     if ( // your conditional for first time visitor {
         $new_template = locate_template( array( 'first-time-template.php' ) );
         if ( '' != $new_template ) {
-            return $new_template ;
+            return $new_template
         }
     }
 
