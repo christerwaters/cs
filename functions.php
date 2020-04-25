@@ -55,11 +55,11 @@ function bbloomer_cart_refresh_update_qty() {
 }
 add_filter( 'woocommerce_get_image_size_gallery_thumbnail', function( $size ) {
     return array(
-        'width' => 600,
-        'height' => 600,
-        'crop' => 1,
+        'width' => 800,
+        'crop' => 0,
     );
 } );
+
 add_action( 'after_setup_theme', '__woocommerce' );
 function __woocommerce() {
 	add_theme_support( 'woocommerce', array(
