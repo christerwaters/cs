@@ -30,6 +30,13 @@
   top: 20vw;
   position: absolute;
 }
+form.cart {
+  .single_add_to_cart_button.button.alt,
+  .quantaty{
+    width:7vw;
+    display:inline-block;
+  }
+}
 .woocommerce-cart-form__cart-item.cart_item .product-thumbnail img{
   max-width:20vw;
 }
