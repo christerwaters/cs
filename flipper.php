@@ -1,5 +1,5 @@
 <div class="flipper-wrap">
-  <p>Citrus Studio</p>
+  <p class="flipepr-text">Citrus Studio</p>
   <div class="flipper"></div>
 </div>
 
