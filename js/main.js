@@ -52,10 +52,10 @@ checkSession();
 
 function checkSession(){
    var c = getCookie("visited");
+   var body = document.body;
    if (c === "yes") {
-     alert("Welcome back!");
+      body.classList.add("firsttimer");
    } else {
      setCookie("visited", "yes", 365);
-     alert("Welcome new visitor!");
    }
 }
