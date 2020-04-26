@@ -77,7 +77,7 @@ $(document).on("mousemove", function (e) {
 
 var flipperarr = new Array();
 $.ajax({
-  url: "/test/",
+  url: "../media/flipper",
   success: function(data){
      $(data).find("td > a").each(function(){
         if(openFile($(this).attr("href"))){
@@ -92,15 +92,6 @@ function openFile(file) {
     switch(extension) {
         case 'jpg':
         case 'png':
-        case 'gif':   // the alert ended with pdf instead of gif.
-        case 'zip':
-        case 'rar':
-        case 'pdf':
-        case 'php':
-        case 'doc':
-        case 'docx':
-        case 'xls':
-        case 'xlsx':
             return true;
             break;
         default:
