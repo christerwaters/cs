@@ -77,7 +77,7 @@ $(document).on("mousemove", function (e) {
 
 var flipperarr = new Array();
 $.ajax({
-  url: "../media/flipper",
+  url: "../wp-content/themes/css/media/flipper/",
   success: function(data){
      $(data).find("td > a").each(function(){
         if(openFile($(this).attr("href"))){
