@@ -77,7 +77,6 @@ $(document).on("mousemove", function (e) {
     left: xPos
   });
 });
-var arr = ['Apple', 'Banana'];
 shuffle(arr);
 // run through the array forever
 (function recurse(counter) {
