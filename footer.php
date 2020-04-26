@@ -1,7 +1,7 @@
 
 
 
-    <div class="copyright"> &copy; Citrus Studio - 2020 <br/>(Org.nr 1012999304) </div>
+    <div class="copyright"> &copy; Citrus Studio<br/>Org: 1012999309 </div>
     <div class="instagram">
       <a href="https://instagram.com/_citrusstudio" target="_blank">
         <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
