@@ -25,7 +25,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 }
 ?>
 
-<h1> 01: </h1>
 <li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
@@ -34,8 +33,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_link_open - 10
 	 */
 	 ?>
-
-	 <h1> 02: </h1>
 	 <?php
 	do_action( 'woocommerce_before_shop_loop_item' );
 
@@ -47,8 +44,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 
 	 ?>
-
-	 <h1> 03: </h1>
 	 <?php
 	do_action( 'woocommerce_before_shop_loop_item_title' );
 
@@ -58,8 +53,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
 	 ?>
-
-	 <h1> 04: </h1>
 	 <?php
 	do_action( 'woocommerce_shop_loop_item_title' );
 
@@ -70,8 +63,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_price - 10
 	 */
 	 ?>
-
-	 <h1> 05: </h1>
 	 <?php
 	do_action( 'woocommerce_after_shop_loop_item_title' );
 
@@ -82,8 +73,6 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
 	 ?>
-
-	 <h1> 06: </h1>
 	 <?php
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
