@@ -7,6 +7,7 @@
 .checkout .col-2,
 .shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents tr:last-child,
 .cart-subtotal,
+.woocommerce-loop-product__title,
 .woocommerce-cart-form__cart-item.cart_item .product-remove,
 .shipping-calculator-button,
 .cart_totals h2,
@@ -22,6 +23,13 @@
 .woocommerce-product-gallery__wrapper img{
   width: 26vw;
   height: 26vw;
+}
+.products .product.type-product,
+.products .product.type-product .woocommerce-LoopProduct-link.woocommerce-loop-product__link,
+.products .product.type-product .woocommerce-LoopProduct-link.woocommerce-loop-product__link img{
+  width: 25.34vw;
+  height: 25.34vw;
+  display: inline-block;
 }
 .product .summary.entry-summary{
   width: 51vw;
