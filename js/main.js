@@ -165,7 +165,7 @@ shuffle(arr);
   // run it again for the next number
   setTimeout(function () {
     recurse(counter + 1);
-  }, 50);
+  }, 200);
   // start it for the first number.
 })(0);
 
