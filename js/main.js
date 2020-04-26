@@ -54,8 +54,8 @@ function checkSession(){
    var c = getCookie("visited");
    var body = document.body;
    if (c === "yes") {
-      body.classList.add("firsttimer");
    } else {
      setCookie("visited", "yes", 365);
+    body.classList.add("visited");
    }
 }
