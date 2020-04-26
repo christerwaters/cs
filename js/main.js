@@ -69,7 +69,7 @@ $(document).on("mousemove", function (e) {
   var xPos = e.pageX;
   var yPos = e.pageY;
   // console.log(xPos, yPos);
-  $(".flippertext").css({
+  $(".flipper-text").css({
     top: yPos,
     left: xPos
   });
