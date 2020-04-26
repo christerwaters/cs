@@ -56,5 +56,4 @@ p {
   left: 40vw;
   top: 42%;
 }
-
 </style>

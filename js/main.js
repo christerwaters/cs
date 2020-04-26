@@ -58,22 +58,23 @@ function checkSession(){
   } else {
     setCookie("visited", "yes", 365);
     body.classList.add("firsttimer");
+    var timeoutid = 0;
+    $(document).on("mousemove", function (e) {
+      var xPos = e.pageX;
+      var yPos = e.pageY;
+      // console.log(xPos, yPos);
+      $(".flippertext").css({
+        top: yPos,
+        left: xPos
+      });
+    });
   }
 }
 
 
 
 
-var timeoutid = 0;
-$(document).on("mousemove", function (e) {
-  var xPos = e.pageX;
-  var yPos = e.pageY;
-  // console.log(xPos, yPos);
-  $("p").css({
-    top: yPos,
-    left: xPos
-  });
-});
+
 
 var flipperarr = new Array();
 $.ajax({
