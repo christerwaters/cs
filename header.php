@@ -12,7 +12,7 @@
 	<?php wp_head(); ?>
 </head>
   <body class="<?php global $post;echo $post->post_name;?>">
-
+		<?php include 'flipper.php'; ?>
 		<?php __back_btn(); ?>
     <div class="logo">
       <?php the_custom_logo();?>
