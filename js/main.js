@@ -51,12 +51,12 @@ function getCookie(c_name){var c_value = document.cookie;var c_start = c_value.i
 checkSession();
 
 function checkSession(){
-   var c = getCookie("visited");
-   var body = document.body;
-   if (c === "yes") {
-      body.classList.add("firsttimer");
-   } else {
-     setCookie("visited", "yes", 365);
+  var c = getCookie("visited");
+  var body = document.body;
+  if (c === "yes") {
     body.classList.add("visited");
-   }
+  } else {
+    setCookie("visited", "yes", 365);
+    body.classList.add("firsttimer");
+  }
 }
