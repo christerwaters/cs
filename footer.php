@@ -11,7 +11,18 @@
         </svg>
       </a>
    </div>
-
+   <script> <?php
+   $dp = opendir("/media/flipper");
+   $arrayjs = array();
+   while($currentFile !== false){
+     if($currentFile != "." && $currentFile != ".."){
+       $currentFile = readDir($dp);
+       $arrayjs[] = $currentFile;
+     }
+   }
+   echo "var flipperarr = " . json_encode($arrayjs) . ";";
+   ?> var arr = flipperarr;
+   </script>
     <script src="<?php bloginfo('template_directory'); ?>/js/plyr.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/jq.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
