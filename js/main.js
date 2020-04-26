@@ -79,7 +79,6 @@ $(document).on("mousemove", function (e) {
 });
 
 shuffle(arr);
-
 // run through the array forever
 (function recurse(counter) {
   // get the colour
