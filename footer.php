@@ -14,6 +14,7 @@
     <script src="<?php bloginfo('template_directory'); ?>/js/plyr.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/jq.js"></script>
     <script> <?php $tdir = get_template_directory_uri(); ?>
+    console.log(<?php $tessst = "" . $tdir . "/media/flipper/125.jpg"; echo $tessst;?>);
     var arr = ['data:image/jpeg;base64,<?php base64_encode(file_get_contents("" . $tdir . "/media/flipper/001.jpg"))?>',
                'data:image/jpeg;base64,<?php base64_encode(file_get_contents("" . $tdir . "/media/flipper/002.jpg"))?>',
                'data:image/jpeg;base64,<?php base64_encode(file_get_contents("" . $tdir . "/media/flipper/003.jpg"))?>',
