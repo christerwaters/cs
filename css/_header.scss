@@ -90,17 +90,17 @@ $logo-sizer:50;
     .burger{
       z-index:$z-basis+30;
       .one{
-        top: .75*$vw;
+        top: 10.75*$vw;
         transform:rotate(45deg);
         transition:transform 200ms, top 200ms;
       }
       .two{
-        top: .75*$vw;
+        top: 10.75*$vw;
         transform:scale(0);
         transition:transform 200ms, top 200ms;
       }
       .tre{
-        top: .75*$vw;
+        top: 10.75*$vw;
         transform:rotate(-45deg);
         transition:transform 200ms, top 200ms;
       }
