@@ -78,30 +78,6 @@ $(document).on("mousemove", function (e) {
   });
 });
 
-var flipperarr = new Array();
-$.ajax({
-  url: "../wp-content/themes/cs/media/flipper/",
-  success: function(data){
-     $(data).find("td > a").each(function(){
-        if(openFile($(this).attr("href"))){
-            fileNames.push($(this).attr("href"));
-        }
-     });
-  }
-});
-console.log(flipperarr);
-function openFile(file) {
-    var extension = file.substr( (file.lastIndexOf('.') +1) );
-    switch(extension) {
-        case 'jpg':
-        case 'png':
-            return true;
-            break;
-        default:
-            return false;
-    }
-};
-var arr = flipperarr;
 shuffle(arr);
 
 // run through the array forever
