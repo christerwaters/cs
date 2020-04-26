@@ -83,7 +83,7 @@ shuffle(arr);
   // get the colour
   var color = arr[counter];
   // animate it
-  $(".flipper").css("background-image", "url(/wp-content/themes/cs/media/flipper/" + color + ")");
+  $(".flipper").css("background-image", "url(" + color + ")");
   delete arr[counter];
   // add the value at the end of the array
   arr.push(color);
