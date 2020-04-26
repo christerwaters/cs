@@ -85,15 +85,13 @@ var arr = ['001.jpg',
            '006.jpg',
            '007.jpg',
            '008.jpg'];
-
-
 shuffle(arr);
 // run through the array forever
 (function recurse(counter) {
   // get the colour
   var color = arr[counter];
   // animate it
-  $(".flipper").css("background-image", "url(/" + color + ")");
+  $(".flipper").css("background-image", "url(wp-content/themes/cs/media/flipper/" + color + ")");
   delete arr[counter];
   // add the value at the end of the array
   arr.push(color);
