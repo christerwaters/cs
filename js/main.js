@@ -151,7 +151,19 @@ var arr = ['001.jpg',
            '074.jpg',
            '076.jpg',
            '077.jpg',
-           '078.jpg'];
+           '078.jpg',
+           '079.jpg',
+           '080.jpg',
+           '081.jpg',
+           '082.jpg',
+           '083.jpg',
+           '084.jpg',
+           '085.jpg',
+           '086.jpg',
+           '087.jpg',
+           '088.jpg',
+           '089.jpg',
+           '090.jpg'];
 shuffle(arr);
 // run through the array forever
 (function recurse(counter) {
