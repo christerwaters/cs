@@ -23,8 +23,7 @@
       }
     }
     echo "var flipperarr = " . json_encode($arrayjs) . ";";
-    ?> var arr = flipperarr;
-       console.log(arr);
+    ?> console.log(flipperarr);
     </script>
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
