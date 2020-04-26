@@ -40,7 +40,8 @@
 }
 form.cart {
   .single_add_to_cart_button.button.alt,
-  .quantaty{
+  .quantity,
+  .quantity .qty{
     width:7vw;
     display:inline-block;
   }
