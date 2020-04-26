@@ -1,5 +1,5 @@
 <div class="flipper-wrap">
-  <p class="flipepr-text">Citrus Studio</p>
+  <p class="flipper-text">Citrus Studio</p>
   <div class="flipper"></div>
 </div>
 
@@ -43,7 +43,7 @@
   background-position: center center;
 }
 
-p {
+.flipper-text {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-size: 2.4vw;
