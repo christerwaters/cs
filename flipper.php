@@ -63,9 +63,9 @@
 }
 
   .flipper {
-    animation: flipp;
+    animation: flipp 1s infinite;
   }
-  @flipp {
+  @keyframes flipp {
     <?php
     $array = array(
       "p_001" => "https://citrusstudio.no/wp-content/themes/cs/media/flipper/001.jpg",
