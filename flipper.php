@@ -79,7 +79,7 @@ var arr = [b64_001, b64_002, b64_003, b64_004, b64_005, b64_006, b64_007, b64_00
              // get the colour
              var color = arr[counter];
              // animate it
-             $(".flipper").css("background-image", "url(" + color + ")");
+             $(".flipper").css("background-image", color);
              delete arr[counter];
              // add the value at the end of the array
              arr.push(color);
