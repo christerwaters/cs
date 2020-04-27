@@ -43,7 +43,7 @@
   height: 50vw;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: flipp 1s infinite;
+  animation: flipp 3s infinite;
   background-position: center center;
 }
 
