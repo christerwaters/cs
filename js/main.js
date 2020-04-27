@@ -66,3 +66,14 @@ $(".flipper-wrap").click(function(){
   $("body").removeClass("firsttimer");
   $("body").addClass("visited");
 });
+
+var timeoutid = 0;
+$(document).on("mousemove", function (e) {
+  var xPos = e.pageX;
+  var yPos = e.pageY;
+  // console.log(xPos, yPos);
+  $(".flipper-text").css({
+   top: yPos,
+   left: xPos
+  });
+});

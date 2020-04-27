@@ -63,16 +63,6 @@
 <script>
 var arr = [b64_001, b64_002, b64_003, b64_004, b64_005, b64_006, b64_007, b64_008, b64_009, b64_010];
 
-           var timeoutid = 0;
-           $(document).on("mousemove", function (e) {
-             var xPos = e.pageX;
-             var yPos = e.pageY;
-             // console.log(xPos, yPos);
-             $(".flipper-text").css({
-               top: yPos,
-               left: xPos
-             });
-           });
            shuffle(arr);
            // run through the array forever
            (function recurse(counter) {
