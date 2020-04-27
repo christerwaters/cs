@@ -40,7 +40,7 @@
   width: 50vw;
   margin-left: 25vw;
   max-height: 80vh;
-  background-image:url(<?php echo $imgarray[$array[30]];?>);
+  background-image:url(https://citrusstudio.no/wp-content/themes/cs/media/flipper/016.jpg);
   height: 50vw;
   background-size: contain;
   background-repeat: no-repeat;
