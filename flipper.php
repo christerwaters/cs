@@ -191,48 +191,48 @@
       "p_121" => "https://citrusstudio.no/wp-content/themes/cs/media/flipper/121.jpg",
       "p_122" => "https://citrusstudio.no/wp-content/themes/cs/media/flipper/122.jpg"
       );
-    $array = array (array_rand ( $array [, $num = 42 ] ));
+    $array = array (array_rand ( $array [, $num = 41 ] ));
    ?>
-    0%{<?php echo $array[1]?>}
-    2.5%{<?php echo $array[2]?>}
-    5%{<?php echo $array[3]?>}
-    7.5%{<?php echo $array[4]?>}
-    10%{<?php echo $array[5]?>}
-    12.5%{<?php echo $array[6]?>}
-    15%{<?php echo $array[7]?>}
-    17.5%{<?php echo $array[8]?>}
-    20%{<?php echo $array[9]?>}
-    22.5%{<?php echo $array[10]?>}
-    25%{<?php echo $array[11]?>}
-    27.5%{<?php echo $array[12]?>}
-    30%{<?php echo $array[13]?>}
-    32.5%{<?php echo $array[14]?>}
-    35%{<?php echo $array[15]?>}
-    37.5%{<?php echo $array[16]?>}
-    40%{<?php echo $array[17]?>}
-    42.5%{<?php echo $array[18]?>}
-    45%{<?php echo $array[19]?>}
-    47.5%{<?php echo $array[20]?>}
-    50%{<?php echo $array[21]?>}
-    52.5%{<?php echo $array[22]?>}
-    55%{<?php echo $array[23]?>}
-    57.5%{<?php echo $array[24]?>}
-    60%{<?php echo $array[25]?>}
-    62.5%{<?php echo $array[26]?>}
-    65%{<?php echo $array[27]?>}
-    67.5%{<?php echo $array[28]?>}
-    70%{<?php echo $array[29]?>}
-    72.5%{<?php echo $array[30]?>}
-    75%{<?php echo $array[31]?>}
-    77.5%{<?php echo $array[32]?>}
-    80%{<?php echo $array[33]?>}
-    82.5%{<?php echo $array[34]?>}
-    85%{<?php echo $array[35]?>}
-    87.5%{<?php echo $array[36]?>}
-    90%{<?php echo $array[37]?>}
-    92.5%{<?php echo $array[38]?>}
-    95%{<?php echo $array[39]?>}
-    97.5%{<?php echo $array[40]?>}
-    100%{<?php echo $array[41]?>}
-  }
+    0%{background-image:url(<?php echo $array[1]?>);}
+    2.5%{background-image:url(<?php echo $array[2]?>);}
+    5%{background-image:url(<?php echo $array[3]?>);}
+    7.5%{background-image:url(<?php echo $array[4]?>);}
+    10%{background-image:url(<?php echo $array[5]?>);}
+    12.5%{background-image:url(<?php echo $array[6]?>);}
+    15%{background-image:url(<?php echo $array[7]?>);}
+    17.5%{background-image:url(<?php echo $array[8]?>);}
+    20%{background-image:url(<?php echo $array[9]?>);}
+    22.5%{background-image:url(<?php echo $array[10]?>);}
+    25%{background-image:url(<?php echo $array[11]?>);}
+    27.5%{background-image:url(<?php echo $array[12]?>);}
+    30%{background-image:url(<?php echo $array[13]?>);}
+    32.5%{background-image:url(<?php echo $array[14]?>);}
+    35%{background-image:url(<?php echo $array[15]?>);}
+    37.5%{background-image:url(<?php echo $array[16]?>);}
+    40%{background-image:url(<?php echo $array[17]?>);}
+    42.5%{background-image:url(<?php echo $array[18]?>);}
+    45%{background-image:url(<?php echo $array[19]?>);}
+    47.5%{background-image:url(<?php echo $array[20]?>);}
+    50%{background-image:url(<?php echo $array[21]?>);}
+    52.5%{background-image:url(<?php echo $array[22]?>);}
+    55%{background-image:url(<?php echo $array[23]?>);}
+    57.5%{background-image:url(<?php echo $array[24]?>);}
+    60%{background-image:url(<?php echo $array[25]?>);}
+    62.5%{background-image:url(<?php echo $array[26]?>);}
+    65%{background-image:url(<?php echo $array[27]?>);}
+    67.5%{background-image:url(<?php echo $array[28]?>);}
+    70%{background-image:url(<?php echo $array[29]?>);}
+    72.5%{background-image:url(<?php echo $array[30]?>);}
+    75%{background-image:url(<?php echo $array[31]?>);}
+    77.5%{background-image:url(<?php echo $array[32]?>);}
+    80%{background-image:url(<?php echo $array[33]?>);}
+    82.5%{background-image:url(<?php echo $array[34]?>);}
+    85%{background-image:url(<?php echo $array[35]?>);}
+    87.5%{background-image:url(<?php echo $array[36]?>);}
+    90%{background-image:url(<?php echo $array[37]?>);}
+    92.5%{background-image:url(<?php echo $array[38]?>);}
+    95%{background-image:url(<?php echo $array[39]?>);}
+    97.5%{background-image:url(<?php echo $array[40]?>);}
+    100%{background-image:url(<?php echo $array[41]?>);}
+  );}
 </style>
