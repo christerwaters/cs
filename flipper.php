@@ -40,9 +40,11 @@
   width: 50vw;
   margin-left: 25vw;
   max-height: 80vh;
+  background-image:url(<?php echo $imgarray[$array[30]];?>);
   height: 50vw;
   background-size: contain;
   background-repeat: no-repeat;
+  animation: flipp 1s infinite;
   background-position: center center;
 }
 
@@ -61,10 +63,6 @@
   left: 40vw;
   top: 42%;
 }
-
-  .flipper {
-    animation: flipp 1s infinite;
-  }
   @keyframes flipp {
     <?php
     $imgarray = array(
