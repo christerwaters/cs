@@ -13,52 +13,6 @@
    </div>
     <script src="<?php bloginfo('template_directory'); ?>/js/plyr.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/jq.js"></script>
-
-    <script>
-    var arr = [ "p_001", "p_002", "p_003", "p_004", "p_005", "p_006", "p_007", "p_008", "p_009", "p_010",
-                "p_011", "p_012"];
-
-
-               // run through the array forever
-               (function recurse(counter) {
-                 shuffle(arr);
-                 // get the colour
-                 var color = arr[counter];
-                 // animate it
-                 $("#flipper").attr("class", color).addClass("flipper");
-
-                 delete arr[counter];
-                 // add the value at the end of the array
-                 arr.push(color);
-                 // run it again for the next number
-                 setTimeout(function () {
-                   recurse(counter + 1);
-                 }, 200);
-                 // start it for the first number.
-               })(0);
-
-               function shuffle(array) {
-                 var currentIndex = array.length,
-                   temporaryValue,
-                   randomIndex;
-
-                 // While there remain elements to shuffle...
-                 while (0 !== currentIndex) {
-                   // Pick a remaining element...
-                   randomIndex = Math.floor(Math.random() * currentIndex);
-                   currentIndex -= 1;
-
-                   // And swap it with the current element.
-                   temporaryValue = array[currentIndex];
-                   array[currentIndex] = array[randomIndex];
-                   array[randomIndex] = temporaryValue;
-                 }
-
-                 return array;
-               }
-
-    </script>
-
     <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
 
     <?php wp_footer(); ?>
