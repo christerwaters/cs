@@ -62,6 +62,7 @@
   left: 40vw;
   top: 42%;
 }
+
   @keyframes flipp {
     <?php
     $imgarray = array(
@@ -234,3 +235,13 @@
     100%{background-image:url(<?php echo $imgarray[$array[40]];?>);}
   );}
 </style>
+
+<?php
+$cookiename = 'visited';
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+}
+?>
