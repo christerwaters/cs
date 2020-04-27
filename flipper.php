@@ -233,7 +233,7 @@
     90%{background-image:url(<?php echo $imgarray[$array[37]];?>);}
     92.5%{background-image:url(<?php echo $imgarray[$array[38]];?>);}
     95%{background-image:url(<?php echo $imgarray[$array[39]];?>);}
-    97.5%{background-image:url(<?php echo $imgarray[$array[40]];?>);}
-    100%{background-image:url(<?php echo $imgarray[$array[41]];?>);}
+    97.5%{background-image:url(<?php echo $imgarray[$array[14]];?>);}
+    100%{background-image:url(<?php echo $imgarray[$array[40]];?>);}
   );}
 </style>
