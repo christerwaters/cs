@@ -1,3 +1,9 @@
+<?php
+
+$cookie_name = 'visited';
+if(!isset($_COOKIE[$cookie_name])) {
+
+?>
 <div class="flipper-wrap">
   <p class="flipper-text">Citrus Studio</p>
   <div class="flipper"></div>
@@ -237,11 +243,5 @@
 </style>
 
 <?php
-$cookie_name = 'visited';
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
+};
 ?>
