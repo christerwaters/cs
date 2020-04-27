@@ -67,7 +67,7 @@
   }
   @keyframes flipp {
     <?php
-    $array = array(
+    $imgarray = array(
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/001.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/002.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/003.jpg",
