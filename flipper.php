@@ -191,7 +191,7 @@
       "p_121" => "https://citrusstudio.no/wp-content/themes/cs/media/flipper/121.jpg",
       "p_122" => "https://citrusstudio.no/wp-content/themes/cs/media/flipper/122.jpg"
       );
-    $array = array (array_rand ( $array [, $num = 41 ] ));
+    $array=array_rand($array,41);
    ?>
     0%{background-image:url(<?php echo $array[1]?>);}
     2.5%{background-image:url(<?php echo $array[2]?>);}
