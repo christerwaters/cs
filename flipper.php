@@ -237,7 +237,7 @@
 </style>
 
 <?php
-var $cookiename = 'visited';
+$cookie_name = 'visited';
 if(!isset($_COOKIE[$cookie_name])) {
     echo "Cookie named '" . $cookie_name . "' is not set!";
 } else {
