@@ -31,8 +31,7 @@
   background: #fff;
   overflow: hidden;
 }
-#flipper{display:none;}
-#flipper.flipper {
+.flipper {
   display: block;
   position: absolute;
   top: 50%;
