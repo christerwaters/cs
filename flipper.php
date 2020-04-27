@@ -67,7 +67,7 @@
   }
   @keyframes flipp {
     <?php
-    $imgarray = array(
+    $array = array(
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/001.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/002.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/003.jpg",
@@ -191,48 +191,48 @@
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/121.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/122.jpg"
       );
-    $array=array_rand($array,41);
+    $array= array(array_rand($array,41));
    ?>
-    0%{background-image:url(<?php $arr = $array[1]; echo $imgarray($arr);?>);}
-    2.5%{background-image:url(<?php $arr = $array[2]; echo $imgarray($arr);?>);}
-    5%{background-image:url(<?php $arr = $array[3]; echo $imgarray($arr);?>);}
-    7.5%{background-image:url(<?php $arr = $array[4]; echo $imgarray($arr);?>);}
-    10%{background-image:url(<?php $arr = $array[5]; echo $imgarray($arr);?>);}
-    12.5%{background-image:url(<?php $arr = $array[6]; echo $imgarray($arr);?>);}
-    15%{background-image:url(<?php $arr = $array[7]; echo $imgarray($arr);?>);}
-    17.5%{background-image:url(<?php $arr = $array[8]; echo $imgarray($arr);?>);}
-    20%{background-image:url(<?php $arr = $array[9]; echo $imgarray($arr);?>);}
-    22.5%{background-image:url(<?php $arr = $array[10]; echo $imgarray($arr);?>);}
-    25%{background-image:url(<?php $arr = $array[11]; echo $imgarray($arr);?>);}
-    27.5%{background-image:url(<?php $arr = $array[12]; echo $imgarray($arr);?>);}
-    30%{background-image:url(<?php $arr = $array[13]; echo $imgarray($arr);?>);}
-    32.5%{background-image:url(<?php $arr = $array[14]; echo $imgarray($arr);?>);}
-    35%{background-image:url(<?php $arr = $array[15]; echo $imgarray($arr);?>);}
-    37.5%{background-image:url(<?php $arr = $array[16]; echo $imgarray($arr);?>);}
-    40%{background-image:url(<?php $arr = $array[17]; echo $imgarray($arr);?>);}
-    42.5%{background-image:url(<?php $arr = $array[18]; echo $imgarray($arr);?>);}
-    45%{background-image:url(<?php $arr = $array[19]; echo $imgarray($arr);?>);}
-    47.5%{background-image:url(<?php $arr = $array[20]; echo $imgarray($arr);?>);}
-    50%{background-image:url(<?php $arr = $array[21]; echo $imgarray($arr);?>);}
-    52.5%{background-image:url(<?php $arr = $array[22]; echo $imgarray($arr);?>);}
-    55%{background-image:url(<?php $arr = $array[23]; echo $imgarray($arr);?>);}
-    57.5%{background-image:url(<?php $arr = $array[24]; echo $imgarray($arr);?>);}
-    60%{background-image:url(<?php $arr = $array[25]; echo $imgarray($arr);?>);}
-    62.5%{background-image:url(<?php $arr = $array[26]; echo $imgarray($arr);?>);}
-    65%{background-image:url(<?php $arr = $array[27]; echo $imgarray($arr);?>);}
-    67.5%{background-image:url(<?php $arr = $array[28]; echo $imgarray($arr);?>);}
-    70%{background-image:url(<?php $arr = $array[29]; echo $imgarray($arr);?>);}
-    72.5%{background-image:url(<?php $arr = $array[30]; echo $imgarray($arr);?>);}
-    75%{background-image:url(<?php $arr = $array[31]; echo $imgarray($arr);?>);}
-    77.5%{background-image:url(<?php $arr = $array[32]; echo $imgarray($arr);?>);}
-    80%{background-image:url(<?php $arr = $array[33]; echo $imgarray($arr);?>);}
-    82.5%{background-image:url(<?php $arr = $array[34]; echo $imgarray($arr);?>);}
-    85%{background-image:url(<?php $arr = $array[35]; echo $imgarray($arr);?>);}
-    87.5%{background-image:url(<?php $arr = $array[36]; echo $imgarray($arr);?>);}
-    90%{background-image:url(<?php $arr = $array[37]; echo $imgarray($arr);?>);}
-    92.5%{background-image:url(<?php $arr = $array[38]; echo $imgarray($arr);?>);}
-    95%{background-image:url(<?php $arr = $array[39]; echo $imgarray($arr);?>);}
-    97.5%{background-image:url(<?php $arr = $array[40]; echo $imgarray($arr);?>);}
-    100%{background-image:url(<?php $arr = $array[41]; echo $imgarray($arr);?>);}
+    0%{background-image:url(<?php echo $array[1];?>);}
+    2.5%{background-image:url(<?php echo $array[2]?>);}
+    5%{background-image:url(<?php echo $array[3]?>);}
+    7.5%{background-image:url(<?php echo $array[4]?>);}
+    10%{background-image:url(<?php echo $array[5]?>);}
+    12.5%{background-image:url(<?php echo $array[6]?>);}
+    15%{background-image:url(<?php echo $array[7]?>);}
+    17.5%{background-image:url(<?php echo $array[8]?>);}
+    20%{background-image:url(<?php echo $array[9]?>);}
+    22.5%{background-image:url(<?php echo $array[10]?>);}
+    25%{background-image:url(<?php echo $array[11]?>);}
+    27.5%{background-image:url(<?php echo $array[12]?>);}
+    30%{background-image:url(<?php echo $array[13]?>);}
+    32.5%{background-image:url(<?php echo $array[14]?>);}
+    35%{background-image:url(<?php echo $array[15]?>);}
+    37.5%{background-image:url(<?php echo $array[16]?>);}
+    40%{background-image:url(<?php echo $array[17]?>);}
+    42.5%{background-image:url(<?php echo $array[18]?>);}
+    45%{background-image:url(<?php echo $array[19]?>);}
+    47.5%{background-image:url(<?php echo $array[20]?>);}
+    50%{background-image:url(<?php echo $array[21]?>);}
+    52.5%{background-image:url(<?php echo $array[22]?>);}
+    55%{background-image:url(<?php echo $array[23]?>);}
+    57.5%{background-image:url(<?php echo $array[24]?>);}
+    60%{background-image:url(<?php echo $array[25]?>);}
+    62.5%{background-image:url(<?php echo $array[26]?>);}
+    65%{background-image:url(<?php echo $array[27]?>);}
+    67.5%{background-image:url(<?php echo $array[28]?>);}
+    70%{background-image:url(<?php echo $array[29]?>);}
+    72.5%{background-image:url(<?php echo $array[30]?>);}
+    75%{background-image:url(<?php echo $array[31]?>);}
+    77.5%{background-image:url(<?php echo $array[32]?>);}
+    80%{background-image:url(<?php echo $array[33]?>);}
+    82.5%{background-image:url(<?php echo $array[34]?>);}
+    85%{background-image:url(<?php echo $array[35]?>);}
+    87.5%{background-image:url(<?php echo $array[36]?>);}
+    90%{background-image:url(<?php echo $array[37]?>);}
+    92.5%{background-image:url(<?php echo $array[38]?>);}
+    95%{background-image:url(<?php echo $array[39]?>);}
+    97.5%{background-image:url(<?php echo $array[40]?>);}
+    100%{background-image:url(<?php echo $array[41]?>);}
   );}
 </style>
