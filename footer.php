@@ -36,9 +36,9 @@
                  // get the colour
                  var color = arr[counter];
                  // animate it
-                 $( ".first" ).replaceAll( ".third" );
-                 $(".flipper").removeClass();
-                 $(".flipper").attr('class', color);
+                 $("#flipper").removeClass();
+                 $("#flipper").addClass(".flipper");
+                 $("#flipper").addClass(color);
                  delete arr[counter];
                  // add the value at the end of the array
                  arr.push(color);

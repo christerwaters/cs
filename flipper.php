@@ -31,8 +31,9 @@
   background: #fff;
   overflow: hidden;
 }
-
-.flipper {
+#flipper{display:none;}
+#flipper.flipper {
+  display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
