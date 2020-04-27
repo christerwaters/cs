@@ -52,6 +52,8 @@
   line-height: 2.4vw;
   width: 15.5vw;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
   position: absolute;
   display: block;
   color: black;
