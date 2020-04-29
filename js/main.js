@@ -78,9 +78,23 @@ $(document).on("mousemove", function (e) {
   });
 });
 
+var $document = $(document),
+    $element = $('#some-element'),
+    className = 'hasScrolled';
 
+$document.scroll(function() {
+  if ($document.scrollTop() >= 50) {
+    // user scrolled 50 pixels or more;
+    // do stuff
+    $element.addClass(className);
+  } else {
+    $element.removeClass(className);
+  }
+});
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
-       $(".footer").toggleClass("bottom");
+     $(".footer").addClass("atbottom");
+  } else {
+     $(".footer").removeClass("atbottom");
    }
 });
