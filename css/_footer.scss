@@ -3,22 +3,22 @@
 }
 .footer.atbottom{
   display:block;
-.instagram{
-  left:49vw;
-  position:fixed;
-  display:block;
-  bottom:10vw;
-  width:2vw;
-  svg{
+  .instagram{
+    left:49vw;
+    position:fixed;
+    display:block;
+    bottom:10vw;
     width:2vw;
-    height: 2vw;
+    svg{
+      width:2vw;
+      height: 2vw;
+    }
   }
-}
 
-.copyright{
-  position:fixed;
-  display:block;
-  bottom:10vw;
-  left:10vw;
-}
+  .copyright{
+    position:fixed;
+    display:block;
+    bottom:10vw;
+    left:10vw;
+  }
 }
