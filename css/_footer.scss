@@ -1,24 +1,29 @@
 .footer{
   display:none;
+  .instagram,
+  .copyright{
+    transform: translateY(14vw);
+    position:fixed;
+    display:block;
+    bottom:10vw;
+  }
 }
 .footer.atbottom{
   display:block;
   .instagram{
     left:49vw;
-    position:fixed;
-    display:block;
-    bottom:10vw;
     width:2vw;
     svg{
       width:2vw;
       height: 2vw;
     }
   }
-
   .copyright{
-    position:fixed;
-    display:block;
-    bottom:10vw;
     left:10vw;
+  }
+  .copyright,
+  .instagram{
+    transform: translateY(0vw);
+    transition:transform 150ms;
   }
 }
