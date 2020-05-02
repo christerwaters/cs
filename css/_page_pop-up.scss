@@ -27,6 +27,9 @@
 .woocommerce-product-gallery__wrapper img{
   width: 26vw;
   height: auto;
+  div:nth-child(2){
+    margin-top:10vw;
+  }
 }
 .products .product.type-product,
 .products .product.type-product .woocommerce-LoopProduct-link.woocommerce-loop-product__link,
