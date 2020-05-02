@@ -44,7 +44,7 @@ foreach($users as $user){
 <?php if ( get_field('profilepic', 'user_'. $user->ID)){?>
 <span class="tilfeldig">
   <a href="<?php echo get_the_author_meta('user_url',$user->ID);?>" title="<?php echo $user->display_name; ?>" target="_blank">
-    <div class="dir-item team-item <?php echo $user->display_name; ?>" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
+    <div class="dir-item team-item <?php echo $user->user_nicename; ?>" style="background-image:url(<?php the_field('profilepic', 'user_'. $user->ID); ?>);">
       <div class="info">
         <div class="info-m">
           <h5>
