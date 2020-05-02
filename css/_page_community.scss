@@ -9,6 +9,15 @@
   }
 }
 
+.dir-item.team-item{
+  .info{
+    background-size: contain;
+    background-position: center;
+    .info-m{
+      display: none;
+    }
+  }
+}
 .dir-item.team-item:hover {
   .info{
     background-size: contain;
