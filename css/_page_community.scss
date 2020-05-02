@@ -8,3 +8,43 @@
     margin-bottom: auto;
   }
 }
+
+.dir-item.team-item:hover {
+  .info{
+    background-size: contain;
+    background-position: center;
+    .info-m{
+      display: none;
+    }
+  }
+  &.djess .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/jess.png);
+  }
+  &.elias.lalouchi .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/elias.png);
+  }
+  &.helena.haugen .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/helena.png);
+  }
+  &.marion.fransrud .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/marion.png);
+  }
+  &.temar.hagie .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/temar.png);
+  }
+  &.nadia.alexandra.mutoni .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/nadia.png);
+  }
+  &.maria.maaneskiold .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/maria.png);
+  }
+  &.henriette.furst .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/henriette.png);
+  }
+  &.christer.waters .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/christer-1.png);
+  }
+  &.elvira.panic .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/elvira.png);
+  }
+}
