@@ -23,6 +23,26 @@
 
   }
 }
+.dir#favvv .dir-item:hover {
+  &.onstad-night .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/onsta-night.png);
+  }
+  &.ice-ung .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/ice-ung.png);
+  }
+  &.sykle-uten-hender .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/sykleuhender.png);
+  }
+  &.take-me-to-your-planet .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/TMTYP.png);
+  }
+  &.diawene .info{
+    background-image: url(https://citrusstudio.no/wp-content/uploads/sites/5/2020/05/diawene.png);
+  }
+  .info .info-m{
+    display: none;
+  }
+}
 .tre-i-i.play:after {
   z-index: -1;
   position: absolute !important;
@@ -70,6 +90,7 @@
     .info{
       width: 35*$vw;
       .info-m{
+        display:none;
         width: 35*$vw;
       }
     }
