@@ -11,6 +11,7 @@
 .woocommerce-cart-form__cart-item.cart_item .product-remove,
 .shipping-calculator-button,
 .cart_totals h2,
+.woocommerce-notices-wrapper,
 .related.products,
 .woocommerce-shipping-totals.shipping,
 .woocommerce-product-gallery__wrapper div:first-child,
@@ -48,7 +49,6 @@
 }
 form.cart {
   .single_add_to_cart_button.button.alt,
-  .quantity,
   .quantity .qty{
     width:8vw;
     display:inline-block;
