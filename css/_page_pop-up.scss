@@ -61,9 +61,13 @@ form.cart {
 .col-1{
   width:100%;
 }
+.wc-proceed-to-checkout,
 .input-text.qty.text,
 .single_add_to_cart_button.button.alt{
   font-size:2vw;
   padding:1vw 2vw;
+  color: $dark;
+  background-color:transparent;
+  border-radius:0;
   border: #000 solid .2vw;
 }
