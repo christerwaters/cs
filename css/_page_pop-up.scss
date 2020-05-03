@@ -27,7 +27,7 @@
 .woocommerce-product-gallery__wrapper img{
   width: 26vw;
   height: auto;
-  div:nth-child(2){
+  .woocommerce-product-gallery__image:nth-child(2){
     margin-top:10vw;
   }
 }
