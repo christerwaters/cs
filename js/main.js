@@ -98,3 +98,8 @@ $(window).scroll(function() {
      $(".footer").removeClass("atbottom");
    }
 });
+
+
+$(".woocommerce-product-gallery__image a").click(function () {
+  var addressValue = $(this).attr("href");
+});
