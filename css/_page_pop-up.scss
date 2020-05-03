@@ -48,10 +48,16 @@
   position: absolute;
 }
 form.cart {
-  .single_add_to_cart_button.button.alt,
-  .quantity .qty{
+  .single_add_to_cart_button.button.alt{
     width:8vw;
     display:inline-block;
+  }
+  .quantity{
+    display:inline-block;
+    .qty{
+      display:inline-block;
+      width:4vw;
+    }
   }
 }
 .woocommerce-cart-form__cart-item.cart_item .product-thumbnail img{
