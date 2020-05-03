@@ -62,8 +62,8 @@ form.cart {
   width:100%;
 }
 .woocommerce-input-wrapper input,
-.wc-proceed-to-checkout,
-.wc-proceed-to-checkout:hover,
+.wc-proceed-to-checkout .checkout-button.button.alt.wc-forward,
+.wc-proceed-to-checkout .checkout-button.button.alt.wc-forward:hover,
 .input-text.qty.text,
 .single_add_to_cart_button.button.alt{
   font-size:2vw;
