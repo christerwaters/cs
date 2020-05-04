@@ -56,7 +56,7 @@ function checkSession(){
   if (c === "yes") {
     body.classList.add("visited");
   } else {
-    setCookie("visited", "yes", 365);
+    setCookie("visited", "yes", 10);
     body.classList.add("firsttimer");
   }
 }
