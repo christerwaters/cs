@@ -22,28 +22,28 @@
   display: none;
 }
 .woocommerce-products-header{
-  max-width: 53.977vw;
+  width: 26vw;
 }
 .woocommerce-product-gallery{
-  width: 26vw;
+  width: 53.977vw;
   display: inline-block;
 }
-.woocommerce-product-gallery__wrapper img{
-  width: 26vw;
-  height: auto;
-  .woocommerce-product-gallery__image:nth-child(2){
-    margin-top:10vw;
+.woocommerce-product-gallery__wrapper{
+  margin-top:10vw;
+  img{
+    width: 53.977vw;
+    height: auto;
   }
 }
 .products .product.type-product,
 .products .product.type-product .woocommerce-LoopProduct-link.woocommerce-loop-product__link,
 .products .product.type-product .woocommerce-LoopProduct-link.woocommerce-loop-product__link img{
-  width: 25.34vw;
+
   height: auto;
   display: inline-block;
 }
 .product .summary.entry-summary{
-  width: 51vw;
+  width: 25.34vw;
   margin-left: 2vw;
   display: inline-block;
   top: 20vw;
