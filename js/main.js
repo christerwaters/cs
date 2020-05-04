@@ -102,4 +102,7 @@ $(window).scroll(function() {
 
 $(".woocommerce-product-gallery__image a").click(function () {
   var addressValue = $(this).attr("href");
+  event.preventDefault();
+  $(this).children("img").toggleClass("active");
+  $("body").toggleClass("wcimgopen");
 });
