@@ -135,7 +135,7 @@
 }
 .home .miniprojectsurl{
   margin-top:-20vw;
-  &:after{
+  a:after{
     z-index: -1;
     position: absolute;
     content: ' ';
