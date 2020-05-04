@@ -126,6 +126,15 @@
     }
   }
 }
+.home .dir a:nth-child(4){
+  .dir-item{
+    padding-bottom: 22vw;
+    .info{
+      height: 40*$vw;
+    }
+  }
+}
+
 .home .header{
   min-height: 10*$vw;
   display: block;
