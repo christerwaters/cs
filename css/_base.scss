@@ -5,6 +5,7 @@ body{
   left:0;
   padding:0 0 14vw 0;
   width:$site-width;
+  min-height:100vh;
   margin:10*$vw auto;
   color:$dark;
   font-family:'Avenir', 'Montserrat', 'Arial', sans-serif;
