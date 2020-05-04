@@ -65,13 +65,15 @@ form.cart {
 .woocommerce-cart-form__cart-item.cart_item .product-thumbnail img{
   max-width:20vw;
 }
-.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals,
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals,
 .col-1{
   width:100%;
 }
 .select2-selection.select2-selection--single,
 .woocommerce-input-wrapper input,
-.woocommerce .button.alt,
+.woocommerce button.button.alt,
 .wc-proceed-to-checkout .checkout-button.button.alt.wc-forward,
 .wc-proceed-to-checkout .checkout-button.button.alt.wc-forward:hover,
 .input-text.qty.text,
@@ -82,4 +84,5 @@ form.cart {
   background-color:transparent;
   border-radius:0;
   border: #000 solid .2vw;
+  min-height: 4.5vw;
 }
