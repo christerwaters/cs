@@ -10,6 +10,9 @@
 }
 .footer.atbottom{
   display:block;
+  &.handlevogn{
+    display:none;
+  }
   .instagram{
     left:49vw;
     width:2vw;
