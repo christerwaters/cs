@@ -76,11 +76,13 @@ form.cart {
   max-width:20vw;
 }
 .woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,
 .woocommerce .cart-collaterals .cart_totals,
 .woocommerce-page .cart-collaterals .cart_totals,
 .col-1{
   width:100%;
 }
+.woocommerce-form__input.woocommerce-form__input-checkbox.input-checkbox,
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
