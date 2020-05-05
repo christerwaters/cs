@@ -21,6 +21,11 @@
 .woocommerce-breadcrumb{
   display: none;
 }
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment,
+.woocommerce-terms-and-conditions{
+  background-color:#fff;
+  border:none;
+}
 .woocommerce-products-header{
   width: 53.977vw;
   .page-description,
@@ -76,6 +81,10 @@ form.cart {
 .col-1{
   width:100%;
 }
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt,
 .select2-selection.select2-selection--single,
 .woocommerce-input-wrapper input,
 .woocommerce button.button.alt,
