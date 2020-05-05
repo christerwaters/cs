@@ -23,6 +23,11 @@
 }
 .woocommerce-products-header{
   width: 53.977vw;
+  .page-description,
+  .woocommerce-products-header__title{
+    margin-bottom:2vw;
+  }
+  margin-top:10vw;
 }
 .woocommerce-product-gallery{
   width: 53.977vw;
