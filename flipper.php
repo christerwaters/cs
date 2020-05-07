@@ -36,6 +36,8 @@ if(!isset($_COOKIE[$cookie_name])) {
   z-index: 2000;
   background: #fff;
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 .flipper {
   display: block;
@@ -49,7 +51,7 @@ if(!isset($_COOKIE[$cookie_name])) {
   height: 50vw;
   background-size: contain;
   background-repeat: no-repeat;
-  animation: flipp 7s infinite step-end;
+  animation: flipp 2s infinite step-end;
   background-position: center center;
 }
 
