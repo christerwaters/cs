@@ -92,7 +92,7 @@ $document.scroll(function() {
   }
 });
 $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - $(window).width()*0.1}) {
      $(".footer").addClass("atbottom");
   } else {
      $(".footer").removeClass("atbottom");
