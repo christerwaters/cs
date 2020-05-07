@@ -21,23 +21,27 @@ if(!isset($_COOKIE[$cookie_name])) {
 .firsttimer * {
   cursor: none;
 }
-
+.flipper-wrap,
 .visited .flipper-wrap,
 .visited .flipper-wrap * {
   display: none;
 }
-
+body.firsttimer *{
+  opacity:0;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+}
 .firsttimer .flipper-wrap {
   top:0;
   left:0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  display:block;
+  height: 100vh;
   position: fixed;
   z-index: 2000;
   background: #fff;
   overflow: hidden;
-  width: 100vw;
-  height: 100vh;
 }
 .flipper {
   display: block;
