@@ -9,10 +9,3 @@
 
 get_header();
 ?>
-
-<div class="fo-o-fo" style="text-align:center;">
-	404
-</div>
-
-<?php
-get_footer();
