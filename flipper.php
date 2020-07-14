@@ -16,7 +16,6 @@
   cursor: none;
 }
 body.firsttimer *{
-  opacity:0;
   overflow: hidden;
   left: 0;
   top: 0;
