@@ -190,7 +190,7 @@ body.firsttimer *{
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/121-min.jpg",
       "https://citrusstudio.no/wp-content/themes/cs/media/flipper/122-min.jpg"
       );
-    $array=array_rand($imgarray,21);
+    $array=array_rand($imgarray,22);
 
    ?>
     0%{background-image:url(<?php echo $imgarray[$array[1]];?>);}
