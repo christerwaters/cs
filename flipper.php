@@ -15,11 +15,6 @@
 .firsttimer * {
   cursor: none;
 }
-.flipper-wrap,
-.visited .flipper-wrap,
-.visited .flipper-wrap * {
-  display: none;
-}
 body.firsttimer *{
   opacity:0;
   overflow: hidden;

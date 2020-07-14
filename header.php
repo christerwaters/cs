@@ -11,5 +11,5 @@
 
 	<?php wp_head(); ?>
 </head>
-  <body class="<?php global $post;echo $post->post_name;?>">
+  <body class="<?php global $post;echo $post->post_name;?> firsttimer">
 		<?php include 'flipper.php'; ?>
