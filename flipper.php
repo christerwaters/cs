@@ -216,7 +216,3 @@ body.firsttimer *{
     100%{background-image:url(<?php echo $imgarray[$array[21]];?>);}
   );}
 </style>
-
-<?php
-};
-?>
