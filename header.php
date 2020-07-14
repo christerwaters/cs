@@ -13,3 +13,6 @@
 </head>
   <body class="<?php global $post;echo $post->post_name;?> firsttimer">
 		<?php include 'flipper.php'; ?>
+
+		    <script src="<?php bloginfo('template_directory'); ?>/js/main.js"></script>
+		        <script src="<?php bloginfo('template_directory'); ?>/js/jq.js"></script>
