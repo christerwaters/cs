@@ -1,9 +1,3 @@
-<?php
-
-$cookie_name = 'visited';
-if(!isset($_COOKIE[$cookie_name])) {
-
-?>
 <div class="flipper-wrap">
   <p class="flipper-text">UNDER UTVIKLING</p>
   <div class="flipper"></div>
